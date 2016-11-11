@@ -1,0 +1,45 @@
+html{
+	background:black;
+}
+body{
+	background:black;
+}
+
+body{
+	background: black;
+}
+.Text_M{
+	z-index: 0;
+	width:100%;
+	background: black;
+	margin:0, auto;
+	text-align:center;
+	color:white;
+	font-size:5em;
+	font-family: 'Dosis', sans-serif;
+}
+
+.Text_M2{
+	z-index: 0;
+	display: inline;
+	background: black;
+	Font-size:20px;
+	font-family:'Dosis', sans-serif;
+	margin: 0, auto;
+
+}
+
+.Text_M3{
+		z-index: 0;
+	background: black;
+	Font-size:.5em;
+	font-family:'Dosis', sans-serif;
+	margin: 0, auto;
+
+}
+
+.loop{
+	z-index: 1;
+	display: block;
+}
+
