@@ -1,6 +1,7 @@
 html,body{
 	height:100%;
 	background: #00aeff;
+	
 		-webkit-animation: opacity_02 2s ease 0s 1 alternate;
 		-moz-animation: opacity_02 2s ease 0s 1 alternate;
 		-o-animation: opacity_02 2s ease 0s 1 alternate;
@@ -63,7 +64,7 @@ html,body{
 }
 .Text_M{
 	/*Center*/
-	margin-left:.1em;
+	margin-left:.2em;
 	display:flex;
 	align-items:center;
     justify-content:center;
@@ -86,6 +87,7 @@ html,body{
 }
 
 .Text_M3{
+	margin-left: .8em;
 	color:white;
 	margin-bottom:20%;
     flex-direction:column;
