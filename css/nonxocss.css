@@ -1,7 +1,27 @@
 html,body{
 	height:100%;
-
+	background: #00aeff;
+		-webkit-animation: opacity_02 2s ease 0s 1 alternate;
+		-moz-animation: opacity_02 2s ease 0s 1 alternate;
+		-o-animation: opacity_02 2s ease 0s 1 alternate;
+		animation: opacity_02 2s ease 0s 1 alternate;
 }
+		@keyframes opacity_02{
+		    0% { opacity: 0 ; }
+		  100% { opacity: 1; }
+		}
+		@-moz-keyframes opacity_02{
+		    0% { opacity: 0 ; }
+		  100% { opacity: 1; }
+		}
+		@-webkit-keyframes opacity_02{
+		    from { opacity: 0 ; }
+		  	  to { opacity: 1; }
+		}
+		@-o-keyframes opacity_02{
+		    from { opacity: 0 ; }
+		  	  to { opacity: 1; }
+		}
 
 .containerx{
 	background: linear-gradient(180deg, #00aeff, #000000);
