@@ -1,45 +1,75 @@
-html{
-	background:black;
-}
-body{
-	background:black;
+html,body{
+	height:100%;
+
 }
 
-body{
-	background: black;
+.containerx{
+	background: linear-gradient(180deg, #00aeff, #000000);
+	background-size: 400%;
+	min-height: 100%;
+	min-width:100%;
+	height:100%;
+	
+	margin:0, auto;
+	padding:0;
+
+
+		-webkit-animation: gra_bg 9s cubic-bezier(0.645, 0.045, 0.355, 1) infinite;
+		-moz-animation: gra_bg 9s cubic-bezier(0.645, 0.045, 0.355, 1) infinite;
+		animation: gra_bg 9s cubic-bezier(0.645, 0.045, 0.355, 1) infinite;
+}
+		@-webkit-keyframes gra_bg {
+		    0%{background-position:54% 0%}
+		    50%{background-position:47% 100%}
+		    100%{background-position:54% 0%}
+		}
+		@-moz-keyframes gra_bg {
+		    0%{background-position:54% 0%}
+		    50%{background-position:47% 100%}
+		    100%{background-position:54% 0%}
+		}
+		@keyframes gra_bg { 
+		    0%{background-position:54% 0%}
+		    50%{background-position:47% 100%}
+		    100%{background-position:54% 0%}
+		}
+
+.Text_M0
+{
+	height:60%;
+
+	text-align:center;
+
 }
 .Text_M{
-	z-index: 0;
-	width:100%;
-	background: black;
-	margin:0, auto;
+	/*Center*/
+	display:flex;
+	align-items:center;
+    justify-content:center;
+	
 	text-align:center;
+
+	height:100%;
 	color:white;
 	font-size:5em;
 	font-family: 'Dosis', sans-serif;
 }
 
+
 .Text_M2{
-	z-index: 0;
 	display: inline;
-	background: black;
-	Font-size:20px;
+	Font-size:.2em;
 	font-family:'Dosis', sans-serif;
 	margin: 0, auto;
 
 }
 
 .Text_M3{
-		z-index: 0;
-	background: black;
-	Font-size:.5em;
+	color:white;
+	margin-bottom:20%;
+    flex-direction:column;
+	display:inline-block;
+	font-size:1em;
 	font-family:'Dosis', sans-serif;
 	margin: 0, auto;
-
 }
-
-.loop{
-	z-index: 1;
-	display: block;
-}
-
