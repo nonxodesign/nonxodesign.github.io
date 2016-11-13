@@ -7,3 +7,7 @@ body{
 .navbar{
 	background: rgba( 255, 255, 255, .7);
 }
+
+.line{
+	color:#f000; size:10px; width:100%;
+}
