@@ -28,32 +28,40 @@ html,body{
 
 .containerx{
 	background: linear-gradient(180deg, #00aeff, #000000);
-	background-size: 400%;
-	min-height: 100%;
-	min-width:100%;
+	background-size: 400% 400%;
 	height:100%;
 	margin:0, auto;
 	padding:0;
 
 		-webkit-animation: gra_bg 9s cubic-bezier(0.645, 0.045, 0.355, 1) infinite;
-		-moz-animation: gra_bg 9s cubic-bezier(0.645, 0.045, 0.355, 1) infinite;
+		-moz-animation: gra_bg 9s cubic-bezier(0.645, 0.045, 0.355, 1)  infinite;
 		animation: gra_bg 9s cubic-bezier(0.645, 0.045, 0.355, 1) infinite;
 }
-		@-webkit-keyframes gra_bg {
+		
+		@-webkit-keyframes gra_bg{
 		    0%{background-position:54% 0%}
 		    50%{background-position:47% 100%}
 		    100%{background-position:54% 0%}
 		}
-		@-moz-keyframes gra_bg {
+
+		@keyframes gra_bg{ 
 		    0%{background-position:54% 0%}
 		    50%{background-position:47% 100%}
 		    100%{background-position:54% 0%}
 		}
-		@keyframes gra_bg { 
+		
+		@-moz-keyframes gra_bg{
 		    0%{background-position:54% 0%}
 		    50%{background-position:47% 100%}
 		    100%{background-position:54% 0%}
 		}
+
+		@-o-keyframes gra_bg{
+			0%{background-position:54% 0%}
+		    50%{background-position:47% 100%}
+		    100%{background-position:54% 0%}
+		}
+		
 
 .Text_M0
 {
