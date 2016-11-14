@@ -8,6 +8,11 @@ body{
 	background: rgba( 255, 255, 255, .7);
 }
 
-.line{
-	color:#f000; size:10px; width:100%;
+.article-title{
+	font-size: 4em; 
+	display:block; 
+	margin: -10em 5em 7em -1em;
+	color:#3399FF;
+	font-family:'Dosis', sans-serif;
 }
+
