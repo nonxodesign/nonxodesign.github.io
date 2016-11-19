@@ -145,9 +145,10 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 }
 
 .footer{
-	background-color:#292f36;
-	border-top:3px solid #aaa;
-	box-shadow:0 2px 2px -1px #292f36 inset;
+	color:white;
+	background-color:#161616;
+	font-size: 11px;
+	text-align:center;
 
 }
 
