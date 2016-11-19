@@ -11,13 +11,14 @@ body{
 }
 
 .article-title{
+	text-decoration: underline;
 	z-index: 5;
-	font-size: 4em; 
+	font-size: 3em; 
 	display:block; 
 	/*margin: -10em 5em 7em -3%;*/
 	padding:0;
-	color:#3399FF;
-	font-family:'DIN Next Slab','Dosis', sans-serif;
+	color:#3366CC;
+	font-family:'Roboto Slab' ,'Dosis', sans-serif;
 }
 
 .article-content{
