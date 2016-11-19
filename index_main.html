@@ -12,7 +12,7 @@
 
 	<!-- google font -->
 	<link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet">
-
+    
 
 
 
@@ -31,6 +31,11 @@
 	        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
     </script>
+
+
+    <!-- logo loop -->
+    <script src=".js/bodymovin.js" type="text/javascript"></script>
+
 </head>
 
 
@@ -46,7 +51,13 @@
             </a>
             </div>
         </div>
-
+bodymovin.loadAnimation({
+  container: element, // the dom element
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  animationData: JSON.parse(animationData) // the animation data
+});
         
 
 <!-- 社群連結 -->
