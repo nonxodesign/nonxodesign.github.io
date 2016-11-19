@@ -6,7 +6,7 @@
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
-  font-family:'DIN Next Slab', sans-serif;
+  font-family:'Roboto Slab' , sans-serif;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
@@ -108,7 +108,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family:'DIN Next Slab', monospace, monospace;
+  font-family:'Roboto Slab' , monospace, monospace;
   font-size: 1em;
 }
 button,
@@ -267,7 +267,7 @@ th {
   }
 }
 @font-face {
-  font-family:'DIN Next Slab', 'Glyphicons Halflings';
+  font-family:'Roboto Slab' , 'Glyphicons Halflings';
 
   src: url('../fonts/glyphicons-halflings-regular.eot');
   src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
@@ -276,7 +276,7 @@ th {
   position: relative;
   top: 1px;
   display: inline-block;
-  font-family:'DIN Next Slab', 'Glyphicons Halflings';
+  font-family:'Roboto Slab' , 'Glyphicons Halflings';
   font-style: normal;
   font-weight: normal;
   line-height: 1;
@@ -902,7 +902,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family:'DIN Next Slab', "Helvetica Neue", Helvetica, 'Noto Sans TC', sans-serif, Arial, sans-serif;
+  font-family:'Roboto Slab' , "Helvetica Neue", Helvetica, 'Noto Sans TC', sans-serif, Arial, sans-serif;
   font-size: 14px;
   color: #333;
   background-color: #fff;
@@ -911,7 +911,7 @@ input,
 button,
 select,
 textarea {
-  font-family:'DIN Next Slab', inherit;
+  font-family:'Roboto Slab' , inherit;
   font-size: inherit;
   line-height: inherit;
 }
@@ -1002,7 +1002,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family:'DIN Next Slab', inherit;
+  font-family:'Roboto Slab' , inherit;
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
@@ -1340,7 +1340,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family:'DIN Next Slab', Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family:'Roboto Slab' , Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 code {
   padding: 2px 4px;
@@ -1395,6 +1395,7 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  padding-top:5%;
 }
 @media (min-width: 768px) {
   .container {
@@ -5596,7 +5597,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family:'DIN Next Slab', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family:'Roboto Slab' , "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
   font-weight: normal;
   line-height: 1.4;
@@ -5704,7 +5705,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family:'DIN Next Slab', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family:'Roboto Slab' , "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-weight: normal;
   line-height: 1.42857143;
@@ -5961,7 +5962,7 @@ button.close {
   width: 20px;
   height: 20px;
   margin-top: -10px;
-  font-family:'DIN Next Slab', serif;
+  font-family:'Roboto Slab' , serif;
 }
 .carousel-control .icon-prev:before {
   content: '\2039';
