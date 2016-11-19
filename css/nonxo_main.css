@@ -14,11 +14,11 @@ body{
 	/*margin: -10em 5em 7em -3%;*/
 	padding:0;
 	color:#3399FF;
-	font-family:'Dosis', sans-serif;
+	font-family:'DIN Next Slab','Dosis', sans-serif;
 }
 
 .article-content{
-	font-size: 2rem;
+	font-size: 1.5rem;
 	line-height: 2;
 	text-align: justify;
 	text-justify:inter-ideograph;
@@ -29,4 +29,13 @@ body{
 	height:600px;
 	position: relative;
 	top:50px;
+  	display: flex;
+  	align-items:center;
 }
+.col-3{
+	width:27%;
+}
+
+font-family: 'DIN Next Slab Medium'
+font-family: 'DIN Next Slab'
+font-family: 'DIN Next Slab Ultra Light'
