@@ -11,6 +11,7 @@ body{
 }
 
 .article-title{
+	z-index: 5;
 	font-size: 4em; 
 	display:block; 
 	/*margin: -10em 5em 7em -3%;*/
@@ -28,7 +29,7 @@ body{
 
 .row{
 	overflow: hidden;
-	height:600px;
+	height:35em;
 	position: relative;
 	top:50px;
   	display: flex;
