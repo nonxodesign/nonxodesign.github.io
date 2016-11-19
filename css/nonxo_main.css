@@ -1,4 +1,4 @@
-
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
 
 body{
 	background: #ccc;
@@ -11,8 +11,15 @@ body{
 .article-title{
 	font-size: 4em; 
 	display:block; 
-	margin: -10em 5em 7em -1em;
+	/*margin: -10em 5em 7em -3%;*/
+	padding:0;
 	color:#3399FF;
 	font-family:'Dosis', sans-serif;
 }
 
+.article-content{
+	font-size: 2rem;
+	line-height: 2;
+	text-align: justify;
+	text-justify:inter-ideograph;
+}
