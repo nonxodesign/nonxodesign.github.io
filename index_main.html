@@ -15,10 +15,9 @@
     
 
 
-
 	<!-- Headroom.js -->
 	<link rel="stylesheet" href="./js/head/main_used.css">
-
+    
 	<!-- 分析??? -->
     <script type="text/javascript" async="" src="./js/head/ga.js"></script><script type="text/javascript">
       var _gaq = _gaq || [];
@@ -31,7 +30,8 @@
 	        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
     </script>
-
+    <!-- logo anim -->
+    <script src="./img/svg/bodymovin.js"></script>
 
 
 </head>
@@ -43,7 +43,12 @@
 <!-- LOGO -->
     	<div class="brand">
             <a href="/index.html" class="brand header__link">
-                <b class="brand__forename"><img src="./img/20x20_1.gif" style="width:50px;"></b>
+                <b class="brand__forename">
+                    <script>
+                       var anim = bodymovin.loadAnimation(animData);
+                    </script>
+                    
+
                 <b class="brand__forename">NONXO</b>
                 <b class="brand__surname"></b>
             </a>
@@ -139,6 +144,16 @@
 
 
 
+
+<script>
+                        var animData = {
+                            container: document.getElementById('container'),
+                            renderer: 'svg',
+                            loop: true,
+                            autoplay: true,
+                            path: 'http://nonxo.com/img/svg/data.json'
+                        };
+                    </script>
 
 
 
