@@ -44,11 +44,8 @@
     	<div class="brand">
             <a href="/index.html" class="brand header__link">
                 <b class="brand__forename">
-                    <script>
-                       var anim = bodymovin.loadAnimation(animData);
-                    </script>
-                    
-
+                    <div class="logoani">
+                    </div>
                 <b class="brand__forename">NONXO</b>
                 <b class="brand__surname"></b>
             </a>
@@ -145,14 +142,16 @@
 
 
 
-<script>
+                    <script>
                         var animData = {
-                            container: document.getElementById('container'),
+                            logoani: document.getElementById('logoani'),
                             renderer: 'svg',
                             loop: true,
                             autoplay: true,
                             path: 'http://nonxo.com/img/svg/data.json'
                         };
+
+                       var anim = bodymovin.loadAnimation(animData);
                     </script>
 
 
