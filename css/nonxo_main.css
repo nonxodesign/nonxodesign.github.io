@@ -3,7 +3,7 @@
 
 
 body{
-	background: #ccc;
+	background: #FFF;
 }
 
 .navbar{
@@ -32,12 +32,13 @@ body{
 	overflow: hidden;
 	height:35em;
 	position: relative;
-	top:50px;
+	top:2em;
   	display: flex;
   	align-items:center;
 }
 .col-3{
 	width:27%;
+	float:right;
 }
 
 #aaa{
