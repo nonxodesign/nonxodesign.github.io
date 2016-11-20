@@ -37,15 +37,18 @@ body{
   	align-items:center;
 }
 .col-3{
-	width:27%;
+	width:30%;
 	float:right;
+	padding-right:1em;
 }
 
-#aaa{
+#logo-loop{
 	display: block;
 	position:absolute;
-	width:8em;
+	width:5em;
 	z-index: 6;
-	margin:-.6em;
+	margin: .2em;
 
 }
+
+<i class="fa fa-facebook" aria-hidden="true"></i>
