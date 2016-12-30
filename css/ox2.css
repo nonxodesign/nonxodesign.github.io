@@ -1,0 +1,22 @@
+.item { 
+	width: 15em; 
+	margin: 10px; 
+	float: left; 
+	}
+
+dd{
+	margin: 5px;
+		}
+		.item img{
+			width: 220px;
+			height:auto;
+		}
+		
+		#info{
+			width:50%;
+			margin:0 auto;
+			text-align:center;
+			font-family:"微軟正黑體", "Microsoft JhengHei", "新細明體", "PMingLiU", "細明體", "MingLiU", "標楷體", "DFKai-sb", Helvetica, Arial, FreeSans, sans-serif;
+			font-size:18px;
+			line-height:1.7em;
+		}

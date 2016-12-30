@@ -1,31 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="description" content="nonxo">
-	<meta name="keywords" content="叉圈設計">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> 叉圈設計 nonxo </title>
-    <Link rel="stylesheet" href="./css/bootstrap.css" />
-    <!-- <Link rel="stylesheet" href="./css/bootstrap.min.css" /> -->
-    <Link rel="stylesheet" href="./css/nonxo_coming.css" />
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!-- google font -->
-	<link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet">
+		<title>XOdds DESIGN</title>
 
-</head>
-<body>
-<!-- <a  href="/index_main.html" style="text-decoration: none"> -->
-	<div class="containerx">
+		<!-- search -->
+		<meta name="keywords" content="xoddsdesign">
+		<meta name="description" content="xoddsdesign">
+		<meta name="keywords" content="XO odds Design">
+		<meta name="description" content="XO odds Design">
+		<meta name="keywords" content="叉圈設計">
+		<meta name="description" content="叉圈設計">
 
-		<div class="Text_M0">
-		 <div class="Text_M">NONXO
-		 <div class="Text_M2"> ™</div>
-		 </div>
-		 <div class="Text_M3">Official Website is Coming...</div>
-		 </div>
 
-	</div>
-</a>
-</body>
-</html>
+		<!-- stylesheet -->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css" />	
+		<link rel="stylesheet" href="./css/ox2.css" media="screen">
+		<link rel="stylesheet" href="css/masonry-docs.css" media="screen">
+
+		<!-- Google Font -->
+		<link href="https://fonts.googleapis.com/css?family=Baloo+Tamma|Ubuntu" rel="stylesheet">
+		<!-- <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"> -->
+
+
+<!-- 
+		<script type='text/javascript' src="/js/jquery-1.9.1.min.js"></script>
+		<script src="/js/masonry2.min.js"></script> -->
+		</script><script src="./js/ex/jquery-1.8.1.min.js.下載"></script>
+		<script src="./js/ex/jquery.masonry.min.js.下載"></script>
+		\
+		</head>
+
+
+		<body>
+			<div id="info">Masonry 效果DEMO，請試著改變視窗大小看看效果。</div>
+				<div id="container" style="position: relative; height: 2000px;" class="masonry"> 
+					<div class="item masonry-brick" ><img src="img/1.jpg" width=100%> </a> Content1</div>
+					<div class="item masonry-brick" ><img src="img/2.jpg" width=100%> </a> Content1</div>
+					<div class="item masonry-brick" ><img src="img/ox1.jpg" width=100%> </a> Content1</div>
+					<div class="item masonry-brick" ><img src="img/ox2.jpg" width=100%> </a> Content1</div>
+					<div class="item masonry-brick" ><img src="img/4.jpg" width=100%> </a> Content1</div>
+					<div class="item masonry-brick" ><img src="img/3.jpg" width=100%> </a> Content1</div>
+					<div class="item masonry-brick" ><img src="img/5.jpg" width=100%> </a> Content1</div>
+					<div class="item masonry-brick" ><img src="img/1.jpg" width=100%> </a> Content1</div>
+					<div class="item masonry-brick" ><img src="img/2.jpg" width=100%> </a> Content1</div>
+					<div class="item masonry-brick" ><img src="img/ox1.jpg" width=100%> </a> Content1</div>
+					<div class="item masonry-brick" ><img src="img/ox2.jpg" width=100%> </a> Content1</div>
+					<div class="item masonry-brick" ><img src="img/4.jpg" width=100%> </a> Content1</div>
+					<div class="item masonry-brick" ><img src="img/3.jpg" width=100%> </a> Content1</div>
+					<div class="item masonry-brick" ><img src="img/5.jpg" width=100%> </a> Content1</div>
+					<div class="item masonry-brick" ><img src="img/1.jpg" width=100%> </a> Content1</div>
+					<div class="item masonry-brick" ><img src="img/2.jpg" width=100%> </a> Content1</div>
+					<div class="item masonry-brick" ><img src="img/ox1.jpg" width=100%> </a> Content1</div>
+					<div class="item masonry-brick" ><img src="img/ox2.jpg" width=100%> </a> Content1</div>
+					<div class="item masonry-brick" ><img src="img/4.jpg" width=100%> </a> Content1</div>
+					<div class="item masonry-brick" ><img src="img/3.jpg" width=100%> </a> Content1</div>
+					<div class="item masonry-brick" ><img src="img/5.jpg" width=100%> </a> Content1</div>
+					<div class="item masonry-brick" ><img src="img/1.jpg" width=100%> </a> Content1</div>
+					<div class="item masonry-brick" ><img src="img/2.jpg" width=100%> </a> Content1</div>
+					<div class="item masonry-brick" ><img src="img/ox1.jpg" width=100%> </a> Content1</div>
+					<div class="item masonry-brick" ><img src="img/ox2.jpg" width=100%> </a> Content1</div>
+					<div class="item masonry-brick" ><img src="img/4.jpg" width=100%> </a> Content1</div>
+					<div class="item masonry-brick" ><img src="img/3.jpg" width=100%> </a> Content1</div>
+					<div class="item masonry-brick" ><img src="img/5.jpg" width=100%> </a> Content1</div>
+					</div>
+
+
+
+			<script>
+			
+			$(function(){
+				var $container = $('#container');
+				$container.imagesLoaded(function(){
+					$container.masonry({
+						itemSelector : '.item',
+						columnWidth : 15
+					});
+				});
+			});
+			
+			</script>
+		</body>
+		</html>
