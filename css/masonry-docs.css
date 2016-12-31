@@ -455,7 +455,6 @@ html.export {
 body {
   color: #333;
   /*background: #EFEFEF;*/
-  background-image:url('img/bg.png');
 }
 
 /* ---- links ---- */
@@ -1011,21 +1010,16 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
 ------------------------- */
 
 .container {
-  margin-left: 10px;
-  margin-right: 10px;
-  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
-  padding-top:80px;
 
 }
 
 @media screen and ( min-width: 1100px ) {
   
   .container {
-    margin-left: 6%;
-    margin-right: 200px;
+
     margin: 0 auto;
-    padding-top:170px;
   }
 
 }
@@ -1245,7 +1239,7 @@ two columns for large devices
 /* hero
 ------------------------- */
 
-.hero-grid {
+.grid {
   padding: 10px 1%;
   margin: 20px 0;
   /*background: white;*/
@@ -1253,12 +1247,12 @@ two columns for large devices
 }
 
 /* necessary for proper sizing with margins */
-.hero-grid__grid-sizer {
+.grid__grid-sizer {
   position: absolute;
 }
 
-.hero-grid__item,
-.hero-grid__grid-sizer {
+.grid__item,
+.grid__grid-sizer {
   width: 47%;
   margin: 0 .5% 20px .5%;
   box-shadow:4px 4px 5px rgba(20%,20%,40%,0.2);
@@ -1267,12 +1261,12 @@ two columns for large devices
   padding-top:.8em;*/
 }
 
-.hero-grid__gutter-sizer {
+.grid__gutter-sizer {
   width: 2%;
 }
 
 /*物件圓角*/
-.hero-grid__item {
+.grid__item {
   float: left;
   border-radius: 5px 5px 0px 0px ;
   background: #EFEFEF;
@@ -1284,7 +1278,7 @@ two columns for large devices
 
 /* ----  ---- */
 
-.hero__title {
+.title {
   padding-top: .5em;
   font-family: 'Baloo Tamma', cursive;
   margin: 0;
@@ -1294,26 +1288,26 @@ two columns for large devices
   font-family: 
 }
 
-.hero__tagline {
+.tagline {
   font-size: 1.4rem;
   margin: 0 0 10px;
 }
 
 /* ---- texty ---- */
 
-.hero-grid__item--texty {
+.grid__item--texty {
   padding: 10px;
 }
 
-.hero-grid__item--width2,
-.hero-grid__item--width3,
-.hero-grid__item--width4 {
+.grid__item--width2,
+.grid__item--width3,
+.grid__item--width4 {
   width: 96%;
 }
 
 /* ---- ---- */
 
-.hero-grid__big-button {
+.grid__big-button {
   position: relative;
   display: block;
   padding: 10px;
@@ -1324,7 +1318,7 @@ two columns for large devices
   line-height: 1.2;
 }
 
-.hero-grid__big-button:hover {
+.grid__big-button:hover {
   background: #55565a;
   color: white;
 }
@@ -1340,35 +1334,35 @@ two columns for large devices
 
 /* ----  ---- */
 
-.hero__what-is-title {
+.what-is-title {
   margin: 0 0 10px;
 }
 
-.hero__what-is-description {
+.what-is-description {
   margin: 0;
 }
 
-/* ---- .hero-grid__example-link ---- */
+/* ---- .grid__example-link ---- */
 
-.hero__example-link {
+.example-link {
   display: block;
   background: #D26;
   border-radius: 8px;
   color: white;
 }
 
-.hero__example-link:hover {
+.example-link:hover {
   background: #55565a;
   color: white;
 }
 
-.hero__example-link__img {
+.example-link__img {
   display: block;
   width: 100%;
   margin: 0;
 }
 
-.hero__example-link__title {
+.example-link__title {
   margin: 0;
   padding: 10px;
   font-size: 0.9rem;
@@ -1377,40 +1371,40 @@ two columns for large devices
 /* enough width for 4 columns */
 @media screen and ( min-width: 768px ) {
 
-  .hero-grid__grid-sizer,
-  .hero-grid__item {
+  .grid__grid-sizer,
+  .grid__item {
     width: 22.5%;
   }
 
-  .hero-grid__item--width2 {
+  .grid__item--width2 {
     width: 47%;
   }
 
 
-  .hero-grid__item--width3 {
+  .grid__item--width3 {
     width: 71.5%;
   }
-  .hero-grid__item--width4 {
+  .grid__item--width4 {
     width: 96%;
   }
 
-  .hero__title {
+  .title {
     font-size: 6rem;
   }
 
-  .hero__tagline {
+  .tagline {
     font-size: 2rem;
   }
 
-  .hero__what-is-title {
+  .what-is-title {
     font-size: 2rem;
   }
 
-  .hero__what-is-description {
+  .what-is-description {
     font-size: 1.1rem;
   }
 
-  .hero-grid__big-button {
+  .grid__big-button {
     padding-left: 60px;
     min-height: 60px;
   }
