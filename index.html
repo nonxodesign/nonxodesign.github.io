@@ -125,19 +125,20 @@
 		$(function (){
 			var $container = $('#container');
 		 
+			
+
 			//當圖片讀取完畢才執行
-			$('.container').imagesLoaded(function (){
-		 
-				// initialize
-				$('.container').masonry({
-					columnWidth: 'grid__grid-sizer',
-					isFitWidth: true,
-					itemSelector: '.grid__item',
-		 			
-				})
-		 
+			$container.imagesLoaded(function (){
+ 
+			// initialize
+			$container.masonry({
+				columnWidth: 'grid__grid-sizer',
+				itemSelector: '.grid__item',
+ 
+					})
+			 
+				});
 			});
-		});
-		</script>
+			</script>
 	</body>
 </html>
