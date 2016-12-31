@@ -206,7 +206,7 @@ sup {
  */
 
 img {
-  border-radius: 5px;
+  /*border-radius: 5px;*/
 }
 
 /**
@@ -942,10 +942,10 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
   border-radius: 0;
   margin-right: 1px;
 }
-
+/*
 .button-group .button:first-child { border-radius: 0.5em 0 0 0.5em; }
 .button-group .button:last-child { border-radius: 0 0.5em 0.5em 0; }
-
+*/
 /* call out
 ------------------------- */
 
@@ -1095,6 +1095,8 @@ two columns for large devices
 .grid {
   background: white;
   border-radius: 5px;
+  width:100%;
+  margin:0 auto;
 }
 
 /* clearfix */
@@ -1240,8 +1242,8 @@ two columns for large devices
 ------------------------- */
 
 .grid {
-  padding: 10px 1%;
-  margin: 20px 0;
+  padding: 200px 0 0 em;
+  width:100%;
   /*background: white;*/
   border-radius: 10px;
 }
@@ -1254,8 +1256,8 @@ two columns for large devices
 .grid__item,
 .grid__grid-sizer {
   width: 47%;
-  margin: 0 .5% 20px .5%;
-  box-shadow:4px 4px 5px rgba(20%,20%,40%,0.2);
+  margin: 0 .2% 20px .2%;
+  /*box-shadow:4px 4px 5px rgba(20%,20%,40%,0.2);*/
  
 /*  padding:.5em;
   padding-top:.8em;*/
@@ -1267,11 +1269,10 @@ two columns for large devices
 
 /*物件圓角*/
 .grid__item {
-  float: left;
-  border-radius: 5px 5px 0px 0px ;
+  /*float: left;*/
+  /*border-radius: 5px 5px 0px 0px ;*/
   background: #EFEFEF;
   margin-bottom: 5px;
-  padding:0 px;
   text-align:center;
   background: white;
 }
@@ -1313,7 +1314,7 @@ two columns for large devices
   padding: 10px;
   background: #D26;
   color: white;
-  border-radius: 8px;
+  /*border-radius: 8px;*/
   font-size: 1.1rem;
   line-height: 1.2;
 }
@@ -1584,7 +1585,7 @@ two columns for large devices
 /* bottom nav */
 .content ~ .site-nav .container {
   position: relative;
-  margin-top: 80px;
+  margin: 20px 1em 1em 1em ;
   border-top: 2px solid white;
   border-bottom: none;
 
