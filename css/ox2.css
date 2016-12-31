@@ -16,7 +16,7 @@ dd{
 			width:50%;
 			margin:0 auto;
 			text-align:center;
-			font-family:"微軟正黑體", "Microsoft JhengHei", "新細明體", "PMingLiU", "細明體", "MingLiU", "標楷體", "DFKai-sb", Helvetica, Arial, FreeSans, sans-serif;
-			font-size:18px;
+			font-family:'Roboto Slab', serif,"微軟正黑體", "Microsoft JhengHei", "新細明體", "PMingLiU", "細明體", "MingLiU", "標楷體", "DFKai-sb", Helvetica, Arial, FreeSans, sans-serif;
+			font-size:10px;
 			line-height:1.7em;
 		}

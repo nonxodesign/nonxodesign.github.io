@@ -7,7 +7,7 @@
  */
 
 html {
-  font-family: sans-serif; /* 1 */
+  font-family: 'Roboto Slab', serif, sans-serif; /* 1 */
   line-height: 1.15; /* 2 */
   -ms-text-size-adjust: 100%; /* 3 */
   -webkit-text-size-adjust: 100%; /* 3 */
@@ -205,9 +205,36 @@ sup {
  * Remove the border on images inside links in IE 10-.
  */
 
-img {
-  /*border-radius: 5px;*/
-}
+ .image img {
+      /*border-radius*/: 0.375em;
+      display: block;
+      width: 100%;
+    }
+ .image{
+    display: inline-block;
+    position: relative;
+    
+  }
+
+
+a.image {
+    overflow: hidden;
+  }
+
+    a.image img {
+      -moz-transition: -moz-transform 0.2s ease;
+      -webkit-transition: -webkit-transform 0.2s ease;
+      -ms-transition: -ms-transform 0.2s ease;
+      transition: transform 0.2s ease;
+    }
+
+    a.image:hover img {
+      -moz-transform: scale(1.075);
+      -webkit-transform: scale(1.075);
+      -ms-transform: scale(1.075);
+      transform: scale(1.075);
+    }
+
 
 /**
  * Hide the overflow in IE.
@@ -229,7 +256,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace, monospace; /* 1 */
+  font-family: 'Roboto Slab', serif, monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
 
@@ -441,13 +468,13 @@ red #D26
 
 /* font-size on html for rem*/
 html {
-  font-family: Texta, sans-serif;
-  font-size: 17px;
+  font-family: 'Roboto Slab', serif, Texta, sans-serif;
+  font-size: 12px;
   line-height: 1.5;
 }
 
 html.export {
-  font-family: sans-serif;
+  font-family: 'Roboto Slab', serif, sans-serif;
   font-size: 15px;
 }
 
@@ -463,6 +490,8 @@ a,
 a code {
   color: #55565a;
   text-decoration: none;
+  margin:0;
+  padding:0;
 }
 
 a:hover,
@@ -473,8 +502,18 @@ a:hover code {
 
 /* ---- headers ---- */
 
-h1, h2, h3, h4 {
-  line-height: 1.25;
+h1, h2, h3, h4{
+  line-height: 1;
+  margin: .5em;
+
+}
+
+p{
+  margin: .7em;
+  margin-top: 1em;
+  color:grey;
+  font-size: 10px
+
 }
 
 /* ---- lists ---- */
@@ -486,14 +525,14 @@ ul, ol {
 /* ---- code ---- */
 
 pre, code {
-  font-family: Consolas, Menlo, monospace;
+  font-family: 'Roboto Slab', serif, Consolas, Menlo, monospace;
   font-size: 14px;
 }
 
 @media screen and ( min-width: 768px ) {
 
   html {
-    font-size: 19px;
+    font-size: 15px;
   }
 
   html.export { font-size: 16px; }
@@ -601,9 +640,8 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
 }
 
 .content h3 {
-  font-size: 1.6rem;
+  font-size: 111.6rem;
   border-top: 1px solid white;
-  padding-top: 20px;
   margin-top: 50px;
   margin-bottom: 30px;
 }
@@ -773,7 +811,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
 
 /* Texta Heavy */
 @font-face {
-  font-family: 'Texta';
+  font-family: 'Roboto Slab', serif, 'Texta';
   font-weight: bold;
   font-style: normal;
   src: url('../fonts/2D333F_0_0.woff2') format('woff2'),
@@ -782,7 +820,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
 
 /* Texta Italic */
 @font-face {
-  font-family: 'Texta';
+  font-family: 'Roboto Slab', serif, 'Texta';
   font-weight: normal;
   font-style: italic;
   src: url('../fonts/2D333F_1_0.woff2') format('woff2'),
@@ -791,7 +829,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
 
 /* Texta Regular */
 @font-face {
-  font-family: 'Texta';
+  font-family: 'Roboto Slab', serif, 'Texta';
   src: url('../fonts/2D333F_2_0.woff2') format('woff2'),
     url('../fonts/2D333F_2_0.woff') format('woff');
 }
@@ -942,10 +980,10 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
   border-radius: 0;
   margin-right: 1px;
 }
-/*
+
 .button-group .button:first-child { border-radius: 0.5em 0 0 0.5em; }
 .button-group .button:last-child { border-radius: 0 0.5em 0.5em 0; }
-*/
+
 /* call out
 ------------------------- */
 
@@ -970,7 +1008,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
   border-radius: 50%;
   text-align: center;
   color: white;
-  font-family: Consolas, Georgia, serif;
+  font-family: 'Roboto Slab', serif, Consolas, Georgia, serif;
   font-style: italic;
 }
 
@@ -1010,16 +1048,31 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
 ------------------------- */
 
 .container {
-  width: 100%;
-  margin: 0 auto;
+  margin-left: 10px;
+  margin-right: 10px;
+  /*margin: 0 auto;*/
+  padding-top:80px;
+  overflow: hidden;
+
+  animation : fadein 3s;
+  -webkit-transition: opacity 3s ease-in;
+  -moz-transition:    opacity 3s ease-in;
+  -o-transition:      opacity 3s ease-in;
+  -ms-transition:     opacity 3s ease-in;
+  transition:         opacity 3s ease-in;
 
 }
 
 @media screen and ( min-width: 1100px ) {
   
   .container {
-
+    margin-left: 6%;
+    margin-right: 200px;
     margin: 0 auto;
+    padding-top:170px;
+    width: 100%;
+    max-width: 1300px;
+
   }
 
 }
@@ -1095,8 +1148,8 @@ two columns for large devices
 .grid {
   background: white;
   border-radius: 5px;
-  width:100%;
-  margin:0 auto;
+
+  overflow: hidden;
 }
 
 /* clearfix */
@@ -1242,8 +1295,8 @@ two columns for large devices
 ------------------------- */
 
 .grid {
-  padding: 200px 0 0 em;
-  width:100%;
+  padding: 10px 1%;
+  margin: 20px 0;
   /*background: white;*/
   border-radius: 10px;
 }
@@ -1255,9 +1308,8 @@ two columns for large devices
 
 .grid__item,
 .grid__grid-sizer {
-  width: 47%;
-  margin: 0 .2% 20px .2%;
-  /*box-shadow:4px 4px 5px rgba(20%,20%,40%,0.2);*/
+  width: 33%;
+  margin: 0 1% 30px .5%;
  
 /*  padding:.5em;
   padding-top:.8em;*/
@@ -1269,11 +1321,10 @@ two columns for large devices
 
 /*物件圓角*/
 .grid__item {
-  /*float: left;*/
-  /*border-radius: 5px 5px 0px 0px ;*/
+  float:right;
+  border-radius: 5px 5px 0px 0px ;
   background: #EFEFEF;
-  margin-bottom: 5px;
-  text-align:center;
+  margin-bottom: 5em;
   background: white;
 }
 
@@ -1281,12 +1332,11 @@ two columns for large devices
 
 .title {
   padding-top: .5em;
-  font-family: 'Baloo Tamma', cursive;
+  font-family: 'Roboto Slab', serif, 'Baloo Tamma', cursive;
   margin: 0;
   line-height: .7;
   font-size: 2rem;
   color: #D26;
-  font-family: 
 }
 
 .tagline {
@@ -1314,7 +1364,7 @@ two columns for large devices
   padding: 10px;
   background: #D26;
   color: white;
-  /*border-radius: 8px;*/
+  border-radius: 8px;
   font-size: 1.1rem;
   line-height: 1.2;
 }
@@ -1369,12 +1419,42 @@ two columns for large devices
   font-size: 0.9rem;
 }
 
+
+
+
+
+
+
+
+
+@media screen and ( max-width: 567px ) {
+
+  .grid__grid-sizer,
+  .grid__item {
+    width: 100%;
+    float:right;
+  }
+}
+
+@media screen and ( max-width: 1100px ) {
+
+  .grid__grid-sizer,
+  .grid__item {
+    width: 100%;
+    float:right;
+  }
+}
+
+
+
+
 /* enough width for 4 columns */
 @media screen and ( min-width: 768px ) {
 
   .grid__grid-sizer,
   .grid__item {
-    width: 22.5%;
+    width: 31%;
+    float:right;
   }
 
   .grid__item--width2 {
@@ -1585,7 +1665,7 @@ two columns for large devices
 /* bottom nav */
 .content ~ .site-nav .container {
   position: relative;
-  margin: 20px 1em 1em 1em ;
+  margin-top: 80px;
   border-top: 2px solid white;
   border-bottom: none;
 
@@ -1767,6 +1847,7 @@ two columns for large devices
   margin-right: auto;
   margin-left: auto;
 
+
 }
 
 .bootstrap-3__col-xs-4,
@@ -1837,4 +1918,34 @@ two columns for large devices
 .stamp--stamp-methods-demo {
   left: 10px;
   top: 10px;
+}
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }

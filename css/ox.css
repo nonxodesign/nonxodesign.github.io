@@ -51,7 +51,7 @@
 .list_01{
 	flex-wrap: nowrap;
 	font-size: 1em;
-	color:black;font-family: 'Ubuntu', sans-serif;
+	color:black;font-family: 'Roboto Slab', serif,'Ubuntu', sans-serif;
 	padding:5px;
 	border-bottom: 1px solid #55565a;
 
