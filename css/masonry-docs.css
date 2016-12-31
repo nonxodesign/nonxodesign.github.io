@@ -216,6 +216,7 @@ sup {
     
   }
 
+@media screen and ( min-width: 800px ) {
 
 a.image {
     overflow: hidden;
@@ -234,6 +235,7 @@ a.image {
       -ms-transform: scale(1.075);
       transform: scale(1.075);
     }
+  }
 
 
 /**
@@ -274,9 +276,10 @@ figure {
  */
 
 hr {
-  box-sizing: content-box; /* 1 */
+  /*box-sizing: content-box; /* 1 */*/
   height: 0; /* 1 */
   overflow: visible; /* 2 */
+  color:red;
 }
 
 /* Forms
@@ -869,7 +872,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
 }
 
 /* tablet-ish */
-@media screen and ( min-width: 800px ) {
+
 
   .row {
     margin-bottom: 0.8em;
@@ -1051,8 +1054,6 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
   margin-left: 10px;
   margin-right: 10px;
   /*margin: 0 auto;*/
-  padding-top:80px;
-  overflow: hidden;
 
   animation : fadein 3s;
   -webkit-transition: opacity 3s ease-in;
@@ -1067,9 +1068,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
   
   .container {
     margin-left: 6%;
-    margin-right: 200px;
     margin: 0 auto;
-    padding-top:170px;
     width: 100%;
     max-width: 1300px;
 
@@ -1147,11 +1146,13 @@ two columns for large devices
 
 .grid {
   background: white;
-  border-radius: 5px;
-
-  overflow: hidden;
 }
 
+@media screen and ( min-width: 768px ) {
+  .grid {
+    margin-left: 2.5em;
+  }
+}
 /* clearfix */
 .grid:after {
   content: '';
@@ -1294,12 +1295,6 @@ two columns for large devices
 /* hero
 ------------------------- */
 
-.grid {
-  padding: 10px 1%;
-  margin: 20px 0;
-  /*background: white;*/
-  border-radius: 10px;
-}
 
 /* necessary for proper sizing with margins */
 .grid__grid-sizer {
@@ -1453,7 +1448,7 @@ two columns for large devices
 
   .grid__grid-sizer,
   .grid__item {
-    width: 31%;
+    width: 30%;
     float:right;
   }
 
