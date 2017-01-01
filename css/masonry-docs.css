@@ -527,13 +527,14 @@ h1, h2, h3, h4, h5{
   -webkit-writing-mode: vertical-rl;
   writing-mode: vertical-rl;
   float: right;
-  margin: 1em .5em 0 2em;
+  margin: 1em .5em 3em 2em;
   color: #00ccff;
   padding: 12px 5px;
   border: solid #00ccff .5px;
   font-size: 12px;
-
-
+}
+#content_year {
+  margin-top: 3em;
 }
 
 h1:hover, h2:hover, h3:hover,  h5:hover{
@@ -1351,9 +1352,18 @@ two columns for large devices
   float:right;
   border-bottom: dotted #ccc 1px;
   background: #EFEFEF;
-  padding-bottom: 5em;
+  /*padding-bottom: 5em;*/
   margin-bottom: 3em;
+  margin-top:5em;
   background: white;
+}
+
+.grid__item:hover {
+  /*border: solid 1px grey;*/
+  background: rgba(0, 0, 0, .1);
+  
+  
+
 }
 
 /* ----  ---- */
