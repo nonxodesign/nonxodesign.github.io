@@ -460,7 +460,7 @@ textarea {
 light gray #D8D5D2
 dark gray #333
 purple #55565a
-red #D26
+red #333
 */
 
 * {
@@ -499,24 +499,56 @@ a code {
 
 a:hover,
 a:hover code {
-  color: #D26;
+  color: #aaa;
 }
 
 
 /* ---- headers ---- */
 
-h1, h2, h3, h4{
-  line-height: 1;
+h1, h2, h3, h4, h5{
+  line-height: 1.2;
   margin: .5em;
+  font-family: 'Roboto Slab';
+  font-weight: 400;
+  display: inline-block;
+  color:black;
+}
+#title-vertical {
+  font-weight: 100;
+  margin: 0;
+  margin-top: .8em;
+  float: right;
+  line-height: 2;
+  color: #666;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+}
+#content_vertical{
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+  float: right;
+  margin: 1em .5em 0 2em;
+  color: #00ccff;
+  padding: 12px 5px;
+  border: solid #00ccff .5px;
+  font-size: 12px;
+
 
 }
 
+h1:hover, h2:hover, h3:hover,  h5:hover{
+  background: #00ccff;
+}
+
+
 p{
+  font-family: 'Roboto Slab';
+  font-weight: 400;
   margin: .7em;
   margin-top: 1em;
   color:grey;
-  font-size: 10px
-
+  font-size: 10px;
+  line-height:1.6;
 }
 
 /* ---- lists ---- */
@@ -579,7 +611,7 @@ a code {
 
 a:hover code {
   color: white;
-  background: #D26;
+  background: #333;
 }
 
 code .string,
@@ -638,7 +670,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
 
 .content h2:target {
   padding-left: 0.5em;
-  background: #D26;
+  background: #333;
   color: white;
 }
 
@@ -755,7 +787,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
 .animate-item-size-demo .item-content {
   width: 60px;
   height: 60px;
-  background: #D26;
+  background: #333;
   border: 2px solid #333;
   border-color: hsla(0, 0%, 0%, 0.5);
   border-radius: 5px;
@@ -960,7 +992,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
 .button:active,
 .button.is-checked,
 .button.is-selected {
-  background-color: #D26;
+  background-color: #333;
 }
 
 .button:active {
@@ -1231,7 +1263,7 @@ two columns for large devices
   width: 80px;
   height: 60px;
   float: left;
-  background: #D26;
+  background: #333;
   border: 2px solid #333;
   border-color: hsla(0, 0%, 0%, 0.5);
   border-radius: 5px;
@@ -1317,9 +1349,10 @@ two columns for large devices
 /*物件圓角*/
 .grid__item {
   float:right;
-  border-radius: 5px 5px 0px 0px ;
+  border-bottom: dotted #ccc 1px;
   background: #EFEFEF;
-  margin-bottom: 5em;
+  padding-bottom: 5em;
+  margin-bottom: 3em;
   background: white;
 }
 
@@ -1331,7 +1364,7 @@ two columns for large devices
   margin: 0;
   line-height: .7;
   font-size: 2rem;
-  color: #D26;
+  color: #333;
 }
 
 .tagline {
@@ -1357,7 +1390,7 @@ two columns for large devices
   position: relative;
   display: block;
   padding: 10px;
-  background: #D26;
+  background: #333;
   color: white;
   border-radius: 8px;
   font-size: 1.1rem;
@@ -1392,7 +1425,7 @@ two columns for large devices
 
 .example-link {
   display: block;
-  background: #D26;
+  background: #333;
   border-radius: 8px;
   color: white;
 }
@@ -1509,7 +1542,7 @@ two columns for large devices
   padding: 0px;
   background: #E8E5E2;
   border-radius: 5px;
-  color: #D26;
+  color: #333;
 }
 
 .other-product__link:hover {
@@ -1698,17 +1731,17 @@ two columns for large devices
 }
 
 .site-nav__item--homepage a {
-  color: #D26;
+  color: #333;
 }
 
 .site-nav__item a:hover {
-  background: #D26;
+  background: #333;
   color: white;
 }
 
 .site-nav__item a:active {
   background: white;
-  color: #D26;
+  color: #333;
 }
 
 /* selected */
@@ -1786,7 +1819,7 @@ two columns for large devices
 
 /* animate-item-size-item__content is visible, and transitions size */
 .animate-item-size-item__content {
-  background: #D26;
+  background: #333;
   border: 2px solid #333;
   border-color: hsla(0, 0%, 0%, 0.7);
   border-radius: 5px;
@@ -1859,7 +1892,7 @@ two columns for large devices
 
 .bootstrap-3__grid-item-content {
   height: 100px;
-  background: #D26;
+  background: #333;
   border: 2px solid hsla(0, 0%, 0%, 0.5);
   border-radius: 5px;
 }
