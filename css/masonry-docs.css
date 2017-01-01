@@ -513,6 +513,18 @@ h1, h2, h3, h4, h5{
   display: inline-block;
   color:black;
 }
+
+h5 {
+  font-size: 15px
+}
+
+.aaa{
+  display:none;
+}
+.aaa:hover{
+
+}
+
 #title-vertical {
   font-weight: 100;
   margin: 0;
@@ -530,16 +542,15 @@ h1, h2, h3, h4, h5{
   margin: 1em .5em 3em 2em;
   color: #00ccff;
   padding: 12px 5px;
-  border: solid #00ccff .5px;
   font-size: 12px;
+  border: 1px solid #00ccff;
 }
+
 #content_year {
   margin-top: 3em;
 }
 
-h1:hover, h2:hover, h3:hover,  h5:hover{
-  background: #00ccff;
-}
+
 
 
 p{
@@ -1361,7 +1372,7 @@ two columns for large devices
 .grid__item:hover {
   /*border: solid 1px grey;*/
   background: rgba(0, 0, 0, .1);
-  
+
   
 
 }
