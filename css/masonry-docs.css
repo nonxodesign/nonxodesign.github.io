@@ -13,44 +13,16 @@
 
 
 
-@font-face {
-  font-family: MyCustomFont;
-  src: local(Heiti TC), local("微軟正黑體");
-  /* no unicode-range; default to all characters */
-}
 
-/* Latin characters 專用 */
-@font-face {
-  font-family:  MyCustomFont; /* 同樣的 font-family */
-  unicode-range: U+00-024F;  /* Latin, Latin1 Sup., Ext-A, Ext-B */
-  src: local('Catamaran'),     /* OS X preferred */
-       local(Arial);         /* Other OS */
-}
-
-/* 注音符號專用 */
-@font-face {
-  font-family:  MyCustomFont;      /* 同樣的 font-family */
-  unicode-range: U+3100-312F;     /* Bopomofo */
-  src: local(Heiti TC),          /* OS X */
-       local("微軟正黑體"); /* Windows Vista+ */
-}
-
-/* 日文假名專用 */
-@font-face {
-  font-family:  MyCustomFont;            /* 同樣的 font-family */
-  unicode-range: U+3040-30FF;           /* Hiragana, Katakana */
-  src: local(Hiragino Kaku Gothic Pro), /* OS X */
-       local(Meiryo);                   /* Windows Vista+ */
-}
 
 body {
-  font-family: MyCustomFont,'Noto Sans TC', sans-serif;
+  font-family: 'Catamaran','Noto Sans TC', sans-serif;
 }
 
 
 
 html {
-  font-family: MyCustomFont,'Noto Sans TC', sans-serif; /* 1 */
+  font-family: 'Catamaran','Noto Sans TC', sans-serif; /* 1 */
   line-height: 1.15; /* 2 */
   -ms-text-size-adjust: 100%; /* 3 */
   -webkit-text-size-adjust: 100%; /* 3 */
@@ -301,7 +273,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: MyCustomFont,'Noto Sans TC', sans-serif, monospace, monospace; /* 1 */
+  font-family: 'Catamaran','Noto Sans TC', sans-serif, monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
 
@@ -514,13 +486,13 @@ red #333
 
 /* font-size on html for rem*/
 html {
-  font-family: MyCustomFont,'Noto Sans TC', sans-serif, Texta, sans-sans-serif;
+  font-family: 'Catamaran','Noto Sans TC', sans-serif, Texta, sans-sans-serif;
   font-size: 12px;
   line-height: 1.5;
 }
 
 html.export {
-  font-family: MyCustomFont,'Noto Sans TC', sans-serif, sans-sans-serif;
+  font-family: 'Catamaran','Noto Sans TC', sans-serif, sans-sans-serif;
   font-size: 15px;
 }
 
@@ -551,7 +523,7 @@ a:hover code {
 h1, h2, h3, h4, h5{
   line-height: 1.2;
   margin: .5em;
-  font-family: MyCustomFont,'Noto Sans TC',
+  font-family: 'Catamaran','Noto Sans TC',
   font-weight: 400;
   display: inline-block;
   color:black;
@@ -600,7 +572,7 @@ h5 {
 
 
 p{
-  font-family: MyCustomFont,'Noto Sans TC',
+  font-family: 'Catamaran','Noto Sans TC',
   font-weight: 400;
   
   color:grey;
@@ -622,7 +594,7 @@ ul, ol {
 /* ---- code ---- */
 
 pre, code {
-  font-family: MyCustomFont,'Noto Sans TC', sans-serif, Consolas, Menlo, monospace;
+  font-family: 'Catamaran','Noto Sans TC', sans-serif, Consolas, Menlo, monospace;
   font-size: 14px;
 }
 
@@ -908,7 +880,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
 
 /* Texta Heavy */
 @font-face {
-  font-family: MyCustomFont,'Noto Sans TC', sans-serif, 'Texta';
+  font-family: 'Catamaran','Noto Sans TC', sans-serif, 'Texta';
   font-weight: bold;
   font-style: normal;
   src: url('../fonts/2D333F_0_0.woff2') format('woff2'),
@@ -917,7 +889,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
 
 /* Texta Italic */
 @font-face {
-  font-family: MyCustomFont,'Noto Sans TC', sans-serif, 'Texta';
+  font-family: 'Catamaran','Noto Sans TC', sans-serif, 'Texta';
   font-weight: normal;
   font-style: italic;
   src: url('../fonts/2D333F_1_0.woff2') format('woff2'),
@@ -926,7 +898,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
 
 /* Texta Regular */
 @font-face {
-  font-family: MyCustomFont,'Noto Sans TC', sans-serif, 'Texta';
+  font-family: 'Catamaran','Noto Sans TC', sans-serif, 'Texta';
   src: url('../fonts/2D333F_2_0.woff2') format('woff2'),
     url('../fonts/2D333F_2_0.woff') format('woff');
 }
@@ -1105,7 +1077,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
   border-radius: 50%;
   text-align: center;
   color: white;
-  font-family: MyCustomFont,'Noto Sans TC', sans-serif, Consolas, Georgia, sans-serif;
+  font-family: 'Catamaran','Noto Sans TC', sans-serif, Consolas, Georgia, sans-serif;
   font-style: italic;
 }
 
@@ -1431,7 +1403,7 @@ two columns for large devices
 
 .title {
   padding-top: .5em;
-  font-family: MyCustomFont,'Noto Sans TC', sans-serif, 'Baloo Tamma', cursive;
+  font-family: 'Catamaran','Noto Sans TC', sans-serif, 'Baloo Tamma', cursive;
   margin: 0;
   line-height: .7;
   font-size: 2rem;
