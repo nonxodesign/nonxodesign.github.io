@@ -7,7 +7,7 @@
  */
 
 html {
-  font-family: 'Roboto Slab', serif, sans-serif; /* 1 */
+  font-family:'Catamaran',  , serif, sans-serif; /* 1 */
   line-height: 1.15; /* 2 */
   -ms-text-size-adjust: 100%; /* 3 */
   -webkit-text-size-adjust: 100%; /* 3 */
@@ -258,7 +258,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: 'Roboto Slab', serif, monospace, monospace; /* 1 */
+  font-family:'Catamaran',  , serif, monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
 
@@ -471,13 +471,13 @@ red #333
 
 /* font-size on html for rem*/
 html {
-  font-family: 'Roboto Slab', serif, Texta, sans-serif;
+  font-family:'Catamaran',  , serif, Texta, sans-serif;
   font-size: 12px;
   line-height: 1.5;
 }
 
 html.export {
-  font-family: 'Roboto Slab', serif, sans-serif;
+  font-family:'Catamaran',  , serif, sans-serif;
   font-size: 15px;
 }
 
@@ -508,10 +508,11 @@ a:hover code {
 h1, h2, h3, h4, h5{
   line-height: 1.2;
   margin: .5em;
-  font-family: 'Roboto Slab';
+  font-family:'Catamaran',  ;
   font-weight: 400;
   display: inline-block;
   color:black;
+  letter-spacing: 2px;
 }
 
 h5 {
@@ -539,28 +540,34 @@ h5 {
   -webkit-writing-mode: vertical-rl;
   writing-mode: vertical-rl;
   float: right;
-  margin: 1em .5em 3em 2em;
-  color: #00ccff;
+  margin: 1.5em .5em 4em 1.5em;
+  color: black;
   padding: 12px 5px;
   font-size: 12px;
-  border: 1px solid #00ccff;
+  border: 1px solid black;
+
 }
 
 #content_year {
-  margin-top: 3em;
+  margin-top: 1em;
+  /*margin-left: 4.5em;*/
 }
 
 
 
 
 p{
-  font-family: 'Roboto Slab';
+  font-family:'Catamaran',  ;
   font-weight: 400;
-  margin: .7em;
-  margin-top: 1em;
+  
   color:grey;
   font-size: 10px;
-  line-height:1.6;
+  line-height:1.8;
+  letter-spacing: 1.5px;
+
+  margin: .7em;
+  margin-top: 1em;
+  /*margin-bottom:;*/
 }
 
 /* ---- lists ---- */
@@ -572,7 +579,7 @@ ul, ol {
 /* ---- code ---- */
 
 pre, code {
-  font-family: 'Roboto Slab', serif, Consolas, Menlo, monospace;
+  font-family:'Catamaran',  , serif, Consolas, Menlo, monospace;
   font-size: 14px;
 }
 
@@ -858,7 +865,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
 
 /* Texta Heavy */
 @font-face {
-  font-family: 'Roboto Slab', serif, 'Texta';
+  font-family:'Catamaran',  , serif, 'Texta';
   font-weight: bold;
   font-style: normal;
   src: url('../fonts/2D333F_0_0.woff2') format('woff2'),
@@ -867,7 +874,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
 
 /* Texta Italic */
 @font-face {
-  font-family: 'Roboto Slab', serif, 'Texta';
+  font-family:'Catamaran',  , serif, 'Texta';
   font-weight: normal;
   font-style: italic;
   src: url('../fonts/2D333F_1_0.woff2') format('woff2'),
@@ -876,7 +883,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
 
 /* Texta Regular */
 @font-face {
-  font-family: 'Roboto Slab', serif, 'Texta';
+  font-family:'Catamaran',  , serif, 'Texta';
   src: url('../fonts/2D333F_2_0.woff2') format('woff2'),
     url('../fonts/2D333F_2_0.woff') format('woff');
 }
@@ -1055,7 +1062,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
   border-radius: 50%;
   text-align: center;
   color: white;
-  font-family: 'Roboto Slab', serif, Consolas, Georgia, serif;
+  font-family:'Catamaran',  , serif, Consolas, Georgia, serif;
   font-style: italic;
 }
 
@@ -1364,14 +1371,14 @@ two columns for large devices
   border-bottom: dotted #ccc 1px;
   background: #EFEFEF;
   /*padding-bottom: 5em;*/
-  margin-bottom: 3em;
-  margin-top:5em;
+  margin-bottom: 2em;
+  margin-top:2em;
+  padding-bottom: 2em;
   background: white;
 }
 
 .grid__item:hover {
   /*border: solid 1px grey;*/
-  background: rgba(0, 0, 0, .1);
 
   
 
@@ -1381,7 +1388,7 @@ two columns for large devices
 
 .title {
   padding-top: .5em;
-  font-family: 'Roboto Slab', serif, 'Baloo Tamma', cursive;
+  font-family:'Catamaran',  , serif, 'Baloo Tamma', cursive;
   margin: 0;
   line-height: .7;
   font-size: 2rem;

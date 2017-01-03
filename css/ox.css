@@ -2,6 +2,7 @@
 @media screen and ( max-width: 1921px ) {
 
 .TopBar{
+	max-width:1200px;
 	width: 70%;
 }
 }
@@ -10,10 +11,11 @@
 	.TopBar{
 		margin:0 auto;
 		width: 100%;
-		max-width: 1800px;
+		max-width: 1500px;
 		height: 250px;
-		padding: 10.4em 4em 0 2em;
+		padding: 2em 4em 0 2em;
 		margin-bottom: -3em;
+
 	}
 
 
@@ -23,14 +25,14 @@
 /*logo hover浮出字*/
 
 .logo{
-	margin: 10em 0 0 3em;
+	margin: 1em 0 0 1.5em;
 	display: inline-block;
 }
 
 .logomask h5{
 	color: white;
 	background: black; 
-	padding: .5em 1em;
+	padding: .5em 1.4em .5em 1em;
 	border: 1px solid black;
 }
 	.logomask,.logo{
@@ -63,25 +65,27 @@
 
 	.bar_item li{
 		display: inline;
+		list-style: none;
+		margin:1em;
 
 	}
 
 	.bar_item h5{
-		padding: .5em 2em .7em 2em;
-		margin:0;
+		
+		margin:0 ;
 	}
 	.bar_item h5:hover{
-		color: white;
-		background:black;
+		color: blue;
 
 		opacity:1;
-	   background-color: rgba(0,0,0, 1);
-	   -webkit-transition: 	all 0.5s ease;
-	   -moz-transition: 	all 0.5s ease;
-	   -o-transition: 		all 0.5s ease;
-	   -ms-transition: 		all 0.5s ease;
-	   transition: 			all 0.5s ease;
-	   m
+		background-color: rgba(0,0,0, 0	);
+		
+		transition: 			all 0.5s ease;
+			-webkit-transition: all 0.5s ease;
+			-moz-transition: 	all 0.5s ease;
+			-o-transition: 		all 0.5s ease;
+			-ms-transition: 	all 0.5s ease;
+	   
 	}
 
 	.bar_item{
@@ -98,7 +102,8 @@
 	}
 
 	.logo{
-	margin:30em 1em;
+	margin:  1em;
+
 
 	}
 
