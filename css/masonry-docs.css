@@ -543,7 +543,7 @@ h1, h2, h3, h4, h5{
 }
 
 h2 {
-  font-size: 1.3em;
+  font-size: 1.em;
 }
 h5 {
   font-size: 15px;
@@ -606,6 +606,7 @@ p{
 }
 
 .content_text{
+    
     text-align: justify;
   　text-justify: inter-ideograph;
   　-ms-text-justify: inter-ideograph; /*IE9*/
