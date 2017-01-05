@@ -219,6 +219,18 @@ sup {
 /**
  * Remove the border on images inside links in IE 10-.
  */
+.contentimg{
+  margin-top: em;
+}
+
+@media screen and ( max-width: 1024px ) {
+  .grid__item_content{
+    width:100%
+  } 
+  .content_text{
+  width:100%;
+  }
+}
 
  .image img {
       /*border-radius*/: 0.375em;
@@ -530,8 +542,11 @@ h1, h2, h3, h4, h5{
   letter-spacing: 2px;
 }
 
+h2 {
+  font-size: 1.3em;
+}
 h5 {
-  font-size: 15px
+  font-size: 15px;
 }
 
 .aaa{
@@ -573,6 +588,7 @@ h5 {
 
 
 p{
+
   font-family: 'Catamaran','Noto Sans TC',
   font-weight: 400;
   
@@ -581,8 +597,23 @@ p{
   line-height:1.6;
   letter-spacing: 1px;
   margin: .5em 0 0 0 ;
-
   /*margin-bottom:;*/
+}
+
+.content_title{
+  margin-left:1em;
+
+}
+
+.content_text{
+    text-align: justify;
+  　text-justify: inter-ideograph;
+  　-ms-text-justify: inter-ideograph; /*IE9*/
+  　-moz-text-align-last:justify; /*Firefox*/
+  　-webkit-text-align-last:justify; /*Chrome*/
+
+     width: 70%;
+     margin-left: 1em;
 }
 
 /* ---- lists ---- */
@@ -1374,6 +1405,10 @@ two columns for large devices
  
 /*  padding:.5em;
   padding-top:.8em;*/
+}
+
+.grid__item_content{
+  width: 100%;
 }
 
 .grid__gutter-sizer {

@@ -239,6 +239,15 @@
 
 }}
 
+.mannercolor{
+	width: 1em;
+	height: 1em;
+	background-color: #ef858c;
+	display:inline-block;
+}
+
+
+
 
 @keyframes fadeinout { /* flame pulses */
   0%   { opacity:1; }
