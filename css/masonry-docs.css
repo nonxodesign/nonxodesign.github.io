@@ -9,7 +9,7 @@
 
 
 
-@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css)
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css)}
 
 
 
@@ -26,6 +26,7 @@ html {
   line-height: 1.15; /* 2 */
   -ms-text-size-adjust: 100%; /* 3 */
   -webkit-text-size-adjust: 100%; /* 3 */
+
 }
 
 /**
@@ -34,6 +35,7 @@ html {
 
 body {
   margin: 0;
+
 
 }
 
@@ -1409,7 +1411,8 @@ two columns for large devices
 }
 
 .grid__item_content{
-  width: 100%;
+  width: 70%;
+  margin:0 auto;
 }
 
 .grid__gutter-sizer {
@@ -1743,14 +1746,23 @@ two columns for large devices
 /* site-footer
 ------------------------- */
 
+
 .site-footer {
   color: #888;
-  background: #F8F5F2;
+  /*background: #F8F5F2;*/
   padding: 40px 0;
   position: relative;
-  z-index: 10; /* above page-nav */
+  border: 1px solid black;
+  margin: 2em 1.5em;
 }
 
+.footer__text{
+  font-size:1em;
+  width: 25%;
+  margin: 1em 2em;
+  display: inline-block;
+  vertical-align: text-top;
+}
 /* site nav
 ------------------------- */
 

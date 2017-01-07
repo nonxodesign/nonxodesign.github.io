@@ -1,10 +1,14 @@
 
 @media screen and ( max-width: 1921px ) {
 
-.TopBar{
-	max-width:1200px;
-	width: 70%;
-}
+	.TopBar{
+		max-width:1200px;
+		width: 70%;
+	}
+	.footer{
+		background: #333;
+
+	}
 }
 @media screen and ( min-width: 767px ) {
 
@@ -15,8 +19,12 @@
 		height: 250px;
 		padding: 2em 4em 0 2em;
 		margin-bottom: -3em;
+	}
+	.footer{
 
 	}
+}
+
 
 
 
@@ -42,6 +50,7 @@
 	background: black; 
 	padding: .5em 1.1em .5em 1em;
 	border: 1px solid black;
+	font-weight:300;
 }
 	.logomask,.logo{
 		position:absolute;
@@ -92,11 +101,11 @@
 		opacity:1;
 		background-color: rgba(0,0,0, 0	);
 		
-		transition: 			all 1s ;
-			-webkit-transition: all 1s ;
-			-moz-transition: 	all 1s ;
-			-o-transition: 		all 1s ;
-			-ms-transition: 	all 1s ;
+		transition: 			all .5s ease;
+			-webkit-transition: all .5s ease;
+			-moz-transition: 	all .5s ease;
+			-o-transition: 		all .5s ease;
+			-ms-transition: 	all .5s ease;
 	   
 	}
 
