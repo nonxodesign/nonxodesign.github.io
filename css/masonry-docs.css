@@ -1758,10 +1758,15 @@ two columns for large devices
 
 .footer__text{
   font-size:1em;
-  width: 25%;
   margin: 1em 2em;
   display: inline-block;
   vertical-align: text-top;
+}
+
+@media screen and ( min-width: 767px ) {
+  .footer__text{
+    width:40%;
+  }
 }
 /* site nav
 ------------------------- */
