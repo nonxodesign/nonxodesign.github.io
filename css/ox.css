@@ -1,20 +1,25 @@
 
-@media screen and ( max-width: 1921px ) {
+@media screen and ( max-width: 766px ) {
 
 	.TopBar{
 		max-width:1200px;
 		width: 70%;
+		z-index: 15;
+		margin-top:5em;
+		margin-bottom:10em;
 	}
 }
 @media screen and ( min-width: 767px ) {
 
 	.TopBar{
-		margin:0 auto;
+		/*margin:0 auto;*/
 		width: 100%;
-		max-width: 1500px;
-		height: 250px;
-		padding: 2em 4em 0 2em;
-		margin-bottom: -3em;
+		/*max-width: 1500px;*/
+		height: 100px;
+		padding: 2em 0em 0 2em;
+		margin-bottom: -2em;
+		position:fixed;
+		z-index: 15;
 	}
 }
 
@@ -26,24 +31,24 @@
 /*logo hover浮出字*/
 
 .logo{
-	margin: 1em 0 0 1.5em;
+	margin: 2em 0 0 -1em;
 	display: inline-block;
+
 }
 .nonxo{
 	
-	border: 1px solid black; 
-	padding:.5em 1.0em;
-	color:white; 	
-	text-shadow: 0 0 1px #000, 0 0 1px #000, 0 0 1px #000, 0 0 1px #000, 0 0 1px #000, 0 0 1px #000, 0 0 1px #000, 0 0 1px #000;
-
+	/*border: 1px solid rgba(0, 0, 0, .2 ); */
+	padding: .7em 2em .6em 2em;
+	color: rgba(0,0,0,1);
+	/*text-shadow: 0 0 1px #000, 0 0 1px #000, 0 0 1px #000, 0 0 1px #000, 0 0 1px #000, 0 0 1px #000, 0 0 1px #000, 0 0 1px #000;*/
 }
 
 .logomask h5{
-	color: white;
-	background: black; 
-	padding: .5em 1.1em .5em 1em;
-	border: 1px solid black;
-	font-weight:300;
+	color: rgba(0, 0, 0, 1 );;
+	background: white; 
+	padding: .7em 2em .6em 2.2em;
+	/*border: 1px solid rgba(0, 0, 0, .2 );*/
+	font-weight:700;
 }
 	.logomask,.logo{
 		position:absolute;
@@ -56,11 +61,11 @@
 	   filter: alpha(opacity=0);
 	   opacity: 0;
 	   background-color: rgba(0,0,0, 0);
-	   -webkit-transition: 	all 0.2s ease;
-	   -moz-transition: 	all 0.2s ease;
-	   -o-transition: 		all 0.2s ease;
-	   -ms-transition: 		all 0.2s ease;
-	   transition: 			all 0.2s ease;
+	   -webkit-transition: 	all .3s ease;
+	   -moz-transition: 	all .3s ease;
+	   -o-transition: 		all .3s ease;
+	   -ms-transition: 		all .3s ease;
+	   transition: 			all .3s ease;
 	   m
 
 
@@ -77,22 +82,32 @@
 		display: inline;
 		list-style: none;
 		margin:1em;
-		
 
+	}
+
+	.iconaa{
+		width:100%;
+		padding:0;
+		margin:0;
+	}
+	ul{
+		padding:0;
 
 	}
 
 	.bar_item h5{
-		border: 1px solid white;
+		/*border: 1px solid white;*/
+		background: white;
 		margin:0 ;
-		padding: .2em 1em;
+		padding: .3em 1em .2em 1em;
 	}
 	.bar_item h5:hover{
 		
-		border: 1px solid black;
-		padding: .2em 1em;
+		/*border: 1px solid rgba(0, 0, 0, .2 );*/
+		padding: .3em 1em .2em 1em;
 		opacity:1;
-		background-color: rgba(0,0,0, 0	);
+		background-color: rgba(0,0,0, 1	);
+		color:white;
 		
 		transition: 			all .5s ease;
 			-webkit-transition: all .5s ease;
@@ -117,7 +132,7 @@
 
 	.logo{
 	margin:  1em;
-
+	display: none;	
 
 	}
 
@@ -155,7 +170,9 @@
 
 
 
-
+.fadedown img{
+	display:none;
+}
 
 @media screen and ( min-width: 1024px ) {
 
@@ -182,11 +199,12 @@
 				-ms-transition: 	all 0.5s ease;
 				/*filter:blur( .2em);*/
 	}
+
 }
 
 
 
-@media screen and ( max-width: 1023px ) and (min-width: 200px){
+@media screen and  (max-width: 760px){
 
 	.fadedown{
 		position: absolute;
@@ -206,21 +224,6 @@
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .logo{
 	width: 15em;
 }}
@@ -238,16 +241,14 @@
 .list_01{
 	flex-wrap: nowrap;
 	font-size: 1em;
-	color:black;font-family: 'Roboto Slab', serif,'Ubuntu', sans-serif;
+	color:black;
+	font-family: 'Roboto Slab', serif,'Ubuntu', sans-serif;
 	padding:5px;
 	border-bottom: 1px solid #55565a;
 
 	
 }
 
-.logo{
-	width: 15em;
-}
 
 .hero{
 	margin-top:50px;

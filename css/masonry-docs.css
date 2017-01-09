@@ -9,20 +9,17 @@
 
 
 
-@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css)}
-
-
-
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css)
 
 
 body {
-  font-family: 'Catamaran','Noto Sans TC', sans-serif;
+  font-family: 'Ubuntu','Noto Sans TC', sans-serif;
 }
 
 
 
 html {
-  font-family: 'Catamaran','Noto Sans TC', sans-serif; /* 1 */
+  font-family: 'Ubuntu','Noto Sans TC', sans-serif; /* 1 */
   line-height: 1.15; /* 2 */
   -ms-text-size-adjust: 100%; /* 3 */
   -webkit-text-size-adjust: 100%; /* 3 */
@@ -236,7 +233,7 @@ sup {
 
  .image img {
       /*border-radius*/: 0.375em;
-      display: block;
+      /*display: block;*/
       width: 100%;
     }
  .image{
@@ -287,7 +284,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: 'Catamaran','Noto Sans TC', sans-serif, monospace, monospace; /* 1 */
+  font-family: 'Ubuntu','Noto Sans TC', sans-serif, monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
 
@@ -500,13 +497,13 @@ red #333
 
 /* font-size on html for rem*/
 html {
-  font-family: 'Catamaran','Noto Sans TC', sans-serif, Texta, sans-sans-serif;
+  font-family: 'Ubuntu','Noto Sans TC', sans-serif, Texta, sans-sans-serif;
   font-size: 12px;
   line-height: 1.5;
 }
 
 html.export {
-  font-family: 'Catamaran','Noto Sans TC', sans-serif, sans-sans-serif;
+  font-family: 'Ubuntu','Noto Sans TC', sans-serif, sans-sans-serif;
   font-size: 15px;
 }
 
@@ -534,21 +531,31 @@ a:hover code {
 
 /* ---- headers ---- */
 
-h1, h2, h3, h4, h5{
+h1, h3, h4, h5{
   line-height: 1.2;
   margin: .5em;
-  font-family: 'Catamaran','Noto Sans TC',
+  font-family: 'Ubuntu','Noto Sans TC',
+  font-weight: 300;
+  display: inline-block;
+  color:black;
+  letter-spacing: px;
+}
+
+h2 {
+  font-size: 1em;
+  line-height: 1.2;
+  font-family: 'Ubuntu','Noto Sans TC',
   font-weight: 400;
   display: inline-block;
   color:black;
   letter-spacing: 2px;
-}
 
-h2 {
-  font-size: 1.em;
 }
 h5 {
-  font-size: 15px;
+  font-size: 1.2em;
+  font-weight: 400;
+  color: rgba(0,0,0,.5);
+
 }
 
 .aaa{
@@ -583,7 +590,7 @@ h5 {
 #content_year {
   /*margin-left: 4.5em;*/
   font-weight: 450;
-  letter-spacing: 3px;
+  /*letter-spacing: 3px;*/
 }
 
 
@@ -591,19 +598,24 @@ h5 {
 
 p{
 
-  font-family: 'Catamaran','Noto Sans TC',
+  font-family: 'Ubuntu','Noto Sans TC',
   font-weight: 400;
   
   color:#999;
   font-size: 1.2em;
-  line-height:1.6;
-  letter-spacing: 1px;
+  line-height: 2;
+  letter-spacing: .5px;
   margin: .5em 0 0 0 ;
   /*margin-bottom:;*/
 }
 
 .content_title{
-  margin-left:1em;
+  
+  font-size:2em;
+  font-weight:400;
+  letter-spacing: 5px;
+  padding:.5em 9em 1em 0;
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
 
 }
 
@@ -616,32 +628,35 @@ p{
   　-webkit-text-align-last:justify; /*Chrome*/
 
      width: 70%;
-     margin-left: 1em;
+     /*margin-left: 1em;*/
+
+
 }
 
 /* ---- lists ---- */
 
-ul, ol {
-  padding-left: 1.8em;
+ul, ol, li {
+    list-style: none;
+    display: inline-block;
 }
 
 /* ---- code ---- */
 
 pre, code {
-  font-family: 'Catamaran','Noto Sans TC', sans-serif, Consolas, Menlo, monospace;
+  font-family: 'Ubuntu','Noto Sans TC', sans-serif, Consolas, Menlo, monospace;
   font-size: 14px;
 }
 
 @media screen and ( min-width: 768px ) {
 
   html {
-    font-size: 15px;
+    /*font-size: 15px;*/
   }
 
   html.export { font-size: 16px; }
 
   pre, code, kbd {
-    font-size: 15px;
+    /*font-size: 15px;*/
   }
 
 }
@@ -914,7 +929,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
 
 /* Texta Heavy */
 @font-face {
-  font-family: 'Catamaran','Noto Sans TC', sans-serif, 'Texta';
+  font-family: 'Ubuntu','Noto Sans TC', sans-serif, 'Texta';
   font-weight: bold;
   font-style: normal;
   src: url('../fonts/2D333F_0_0.woff2') format('woff2'),
@@ -923,7 +938,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
 
 /* Texta Italic */
 @font-face {
-  font-family: 'Catamaran','Noto Sans TC', sans-serif, 'Texta';
+  font-family: 'Ubuntu','Noto Sans TC', sans-serif, 'Texta';
   font-weight: normal;
   font-style: italic;
   src: url('../fonts/2D333F_1_0.woff2') format('woff2'),
@@ -932,7 +947,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
 
 /* Texta Regular */
 @font-face {
-  font-family: 'Catamaran','Noto Sans TC', sans-serif, 'Texta';
+  font-family: 'Ubuntu','Noto Sans TC', sans-serif, 'Texta';
   src: url('../fonts/2D333F_2_0.woff2') format('woff2'),
     url('../fonts/2D333F_2_0.woff') format('woff');
 }
@@ -1111,7 +1126,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
   border-radius: 50%;
   text-align: center;
   color: white;
-  font-family: 'Catamaran','Noto Sans TC', sans-serif, Consolas, Georgia, sans-serif;
+  font-family: 'Ubuntu','Noto Sans TC', sans-serif, Consolas, Georgia, sans-serif;
   font-style: italic;
 }
 
@@ -1442,7 +1457,7 @@ two columns for large devices
 
 .title {
   padding-top: .5em;
-  font-family: 'Catamaran','Noto Sans TC', sans-serif, 'Baloo Tamma', cursive;
+  font-family: 'Ubuntu','Noto Sans TC', sans-serif, 'Baloo Tamma', cursive;
   margin: 0;
   line-height: .7;
   font-size: 2rem;
@@ -1752,13 +1767,13 @@ two columns for large devices
   /*background: #F8F5F2;*/
   padding: 40px 0;
   position: relative;
-  border: 1px solid black;
+  border-top: 1px solid rgba(0, 0, 0, .2);
   margin: 2em 1.5em;
 }
 
 .footer__text{
   font-size:1em;
-  margin: 1em 2em;
+  margin: 1em 2em 0em 2em;
   display: inline-block;
   vertical-align: text-top;
 }
