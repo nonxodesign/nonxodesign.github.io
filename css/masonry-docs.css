@@ -611,27 +611,32 @@ p{
 
 .content_title{
   
-  font-size:2em;
+  font-size:1.5em;
   font-weight:400;
   letter-spacing: 5px;
-  padding:.5em 9em 1em 0;
-  border-bottom: 1px solid rgba(0, 0, 0, .2);
+
 
 }
 
 .content_text{
-
     text-align: justify;
   　text-justify: inter-ideograph;
   　-ms-text-justify: inter-ideograph; /*IE9*/
   　-moz-text-align-last:justify; /*Firefox*/
   　-webkit-text-align-last:justify; /*Chrome*/
+  
+     width: 100%;
 
-     width: 70%;
+    
      /*margin-left: 1em;*/
-
-
 }
+
+@media screen and ( min-width: 768px ) {
+  .content_text{
+    width:70%;
+  }
+}
+
 
 /* ---- lists ---- */
 
@@ -1426,9 +1431,15 @@ two columns for large devices
 }
 
 .grid__item_content{
-  width: 70%;
+  width: 75%;
   margin:0 auto;
 }
+@media screen and (max-width: 768px){
+  .grid__item_content{
+     width: 95%;
+   }
+}
+
 
 .grid__gutter-sizer {
   width: 2%;

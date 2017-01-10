@@ -8,6 +8,9 @@
 		margin-top:5em;
 		margin-bottom:10em;
 	}
+	.logomask{
+		display:none;
+	}
 }
 @media screen and ( min-width: 767px ) {
 
