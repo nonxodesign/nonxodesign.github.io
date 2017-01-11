@@ -219,7 +219,7 @@ sup {
  * Remove the border on images inside links in IE 10-.
  */
 .contentimg{
-  margin-top: .5em;
+  margin-top: 1px;
 }
 
 @media screen and ( max-width: 1024px ) {
