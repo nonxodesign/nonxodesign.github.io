@@ -542,7 +542,7 @@ h1, h3, h4, h5{
 }
 
 h2 {
-  font-size: 1em;
+  font-size: 1.2em;
   line-height: 1.2;
   font-family: 'Ubuntu','Noto Sans TC',
   font-weight: 400;
@@ -588,9 +588,9 @@ h5 {
 }
 
 #content_year {
-  /*margin-left: 4.5em;*/
+  margin-right: 10em;
   font-weight: 450;
-  /*letter-spacing: 3px;*/
+  letter-spacing: 1px;
 }
 
 
@@ -598,12 +598,12 @@ h5 {
 
 p{
 
-  font-family: 'Ubuntu','Noto Sans TC',
+  font-family: 'Ubuntu','Noto Sans TC', sans-serif;
   font-weight: 400;
   
   color:#999;
-  font-size: 1.2em;
-  line-height: 2;
+  font-size: 1em;
+  line-height: 1.6;
   letter-spacing: .5px;
   margin: .5em 0 0 0 ;
   /*margin-bottom:;*/
@@ -1563,21 +1563,13 @@ two columns for large devices
 
 
 
-@media screen and ( max-width: 567px ) {
-
-  .grid__grid-sizer,
-  .grid__item {
-    width: 100%;
-    float:right;
-  }
-}
 
 @media screen and ( max-width: 1100px ) {
 
   .grid__grid-sizer,
   .grid__item {
     width: 100%;
-    float:right;
+
   }
 }
 
@@ -1779,7 +1771,7 @@ two columns for large devices
   padding: 40px 0;
   position: relative;
   border-top: 1px solid rgba(0, 0, 0, .2);
-  margin: 2em 1.5em;
+  margin: 2em 1em;
 }
 
 .footer__text{
@@ -1787,6 +1779,7 @@ two columns for large devices
   margin: 1em 2em 0em 2em;
   display: inline-block;
   vertical-align: text-top;
+
 }
 
 @media screen and ( min-width: 767px ) {

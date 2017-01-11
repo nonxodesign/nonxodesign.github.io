@@ -151,26 +151,6 @@
 
 
 
-@media screen and ( min-width: 768px ) {
-.list_box{
-	float: right;
-	margin:1em 2em 2em 2em;
-	margin-right: 5em;
-	z-index: 2;
-
-
-}
-
-.list_01{
-	flex-wrap: nowrap;
-	display:inline;
-	font-size: 2em;
-	color:black;font-family: 'Ubuntu', sans-serif;
-	
-}
-
-
-
 
 
 .fadedown img{
@@ -207,29 +187,20 @@
 
 
 
-@media screen and  (max-width: 760px){
+@media screen and  (max-width: 1023px){
 
 	.fadedown{
 		position: absolute;
-		opacity: 0;
-		display: none;
-
+		opacity: 1;
 	}
 	.fade-inout{	
-		opacity: 0;
-		display: none;
+		opacity: 1;
 	}
-	.grid__item .fadedown:hover{
-		display: none;
-
-			
-	}
-
 }
 
 .logo{
 	width: 15em;
-}}
+}
 
 @media screen and ( max-width: 768px ) {
 .list_box{
