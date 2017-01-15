@@ -633,6 +633,10 @@ p{
      /*margin-left: 1em;*/
 }
 
+video{
+  width:100%;
+}
+
 @media screen and ( min-width: 768px ) {
   .content_text{
     width:70%;
