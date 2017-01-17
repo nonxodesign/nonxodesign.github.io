@@ -602,7 +602,7 @@ p{
   font-family: 'Ubuntu','Noto Sans TC', sans-serif;
   font-weight: 400;
   
-  color:#999;
+  color: #000;
   font-size: 1em;
   line-height: 1.6;
   letter-spacing: .5px;
@@ -610,11 +610,17 @@ p{
   /*margin-bottom:;*/
 }
 
+
+::selection  {
+  color:#95a5a6;
+  background:#ecf0f1;
+}
+
 .content_title{
   
   font-size:1.5em;
   font-weight:400;
-  letter-spacing: 2px;
+  letter-spacing: px;
 
 
 }

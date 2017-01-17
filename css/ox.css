@@ -129,32 +129,7 @@
 
 
 @media screen and ( max-width: 767px ) {
-	.logomask{
-		display: none;	
-	}
 
-	.logo{
-	margin:  1em;
-	display: none;	
-
-	}
-
-	.bar_item{
-		display:none;
-	}
-}
-
-
-
-
-
-
-
-
-
-
-.fadedown img{
-	display:none;
 }
 
 @media screen and ( min-width: 1024px ) {
@@ -195,6 +170,14 @@
 	}
 	.fade-inout{	
 		opacity: 1;
+	}
+	.logomask{
+		display: none;	
+	}
+
+
+	.fadedown{
+		display:none;
 	}
 }
 
