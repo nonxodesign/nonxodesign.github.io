@@ -224,12 +224,13 @@ sup {
 
 }
 
-@media screen and ( max-width: 1024px ) {
+@media screen and ( max-width: 765px ) {
   .grid__item_content{
-    width:100%
+    width:100%;
   } 
   .content_text{
-  width:90%;
+    width: 95%;
+    float: left;
   }
 }
 
@@ -607,8 +608,8 @@ p{
   color: #000;
   font-size: 1em;
   line-height: 1.6;
-  letter-spacing: .5px;
-  margin: .5em 0 0 .5em ;
+  /*letter-spacing: .5px;*/
+  margin: .5em 0 0 0;
   /*margin-bottom:;*/
 }
 
@@ -623,7 +624,7 @@ p{
   font-size:1.5em;
   font-weight:400;
   letter-spacing: px;
-
+  margin:.5em;
 
 }
 
@@ -634,7 +635,7 @@ p{
   　-moz-text-align-last:justify; /*Firefox*/
   　-webkit-text-align-last:justify; /*Chrome*/
   
-     width: 100%;
+
      margin-bottom:3em;
 
     
@@ -647,7 +648,8 @@ video{
 
 @media screen and ( min-width: 768px ) {
   .content_text{
-    width:70%;
+    margin: .5em 0 0 .5em;
+    width:50%;
   }
 }
 
@@ -1206,7 +1208,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
     margin: 0 auto;
     width: 100%;
     max-width: 1300px;
-    padding-top:10em;
+
   }
 
 }
