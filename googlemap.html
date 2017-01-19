@@ -1,0 +1,52 @@
+	
+<header>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmT11xVkxOkJ_q6h_VzeYUlFOGXu7VH8A&callback=initMap"></script>
+	<!-- key=金鑰 -->
+	<script type="text/javascript">
+		//經緯度可從 http://www.mygeoposition.com/ 取得
+		lat = 25.067335; //緯度
+		lng = 121.529916; //經度
+		function initialize() {
+			var latlng = new google.maps.LatLng(lat, lng);
+			//zoom 參數可控制地圖預設縮放大小
+			var settings = {
+				zoom: 16,
+				// center: latlng,
+
+				center: {lat: 25.068088, lng: 121.531147},
+				mapTypeControl: true,
+				mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
+				navigationControl: true,
+				navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			};
+			var map = new google.maps.Map(document.getElementById("map_canvas"), settings);
+			//google.maps.Size = logo.png 圖片尺寸
+			//google.maps.Point = logo.png 錨點位置 (尖端部份)
+			var companyLogo = new google.maps.MarkerImage('img/icon/logoplace2.png',
+				new google.maps.Size(200,120),
+				new google.maps.Point(0,0),
+				new google.maps.Point(19,100)
+			);
+			var companyPos = new google.maps.LatLng(lat, lng);
+			//title = 滑鼠游標停在 logo.png 時出現的說明文字
+			var companyMarker = new google.maps.Marker({
+				position: companyPos,
+				map: map,
+				icon: companyLogo,
+				title:"NONXO.com"
+			});
+		}
+		</script>
+</header>
+
+
+<body onload="initialize()">
+	<!-- google map -->
+		       	
+				<div class="Gmap">
+					  <div class="maptext"> <h5 style="color:black">NONXO </h5> Location</div>
+					  <div id="map_canvas"></div>
+				</div>
+			 </div>
+ </body>
