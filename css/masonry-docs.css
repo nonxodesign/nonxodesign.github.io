@@ -1803,10 +1803,10 @@ two columns for large devices
 .maptext{
   font-weight: 500;
   position: absolute;
-  padding: 1em 1.8em 1em 1.8em;
+  padding: .5em 1.8em .5em 1.2em;
   margin: .7em;
   background: white;
-  border-radius: 8px;
+  border-radius: 6px;
   color: black;
   z-index: 1;
   box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.1), 0 5px 20px 0 rgba(0, 0, 0, 0.1);
