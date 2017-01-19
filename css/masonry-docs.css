@@ -1780,29 +1780,79 @@ two columns for large devices
 
 /* site-footer
 ------------------------- */
+#map_canvas{
 
-
-.site-footer {
-  color: #888;
-  /*background: #F8F5F2;*/
-  padding: 40px 0;
+  width:100%; height:300px;
   position: relative;
-  border-top: 1px solid rgba(0, 0, 0, .2);
-  /*margin: 2em 1em;*/
+       -webkit-filter: grayscale(100%); 
+        -moz-filter: grayscale(100%); 
+        -ms-filter: grayscale(100%); 
+        -o-filter: grayscale(100%); 
+        filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);  
+        _filter:none; 
 }
 
-.footer__text{
-  font-size:1em;
-  margin: 1em 2em 0em .5em;
-  display: inline-block;
-  vertical-align: text-top;
+.Gmap{
+  width:100%; height:300px;
+  overflow:hidden;
+  float:right;
+  margin:1em 0;
 
 }
+
+.maptext{
+  position: absolute;
+  padding: 1.2em;
+  margin: .7em;
+  background: white;
+  border-radius: 10px;
+  color: black;
+  z-index: 1;
+
+}
+
+@media screen and ( min-width: 769px ) {
+  #map_canvas{
+    width:100%; height:250px;
+    overflow:hidden;
+    margin:0 auto;
+
+  }
+    .Gmap{
+    width:40%;
+    overflow:hidden;
+  }
+
+  }
+  .site-footer {
+    color: #888;
+    /*background: #F8F5F2;*/
+    padding: 40px 0;
+    position: relative;
+    border-top: 1px solid rgba(0, 0, 0, .2);
+    width: 98%;
+    padding:1em;
+    margin:0 auto;
+    /*z-index: -5;*/
+
+    /*margin: 2em 1em;*/
+  }
+}
+
+  .footer__text{
+    font-size:1em;
+    margin: 1em 2em 0em .5em;
+    display: inline-block;
+    vertical-align: text-top;
+    
+  }
 
 @media screen and ( min-width: 767px ) {
   .footer__text{
-    width:40%;
-    margin: 1em 2em 0 2em;
+    width:25%;
+    float: left;
+    padding:1em;
+    /*margin: 1em 2em 0 2em;*/
   }
 }
 /* site nav

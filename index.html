@@ -69,25 +69,41 @@
 	</script><script src="./js/ex/jquery-1.8.1.min.js.下載"></script>
 	<script src="./js/ex/jquery.masonry.min.js.下載"></script>
 	
-<!-- 		<script type='text/javascript'>
-			$(function(){
-			$(window).load(function(){
-		　　$(window).bind('scroll resize', function(){
-		　　var $this = $(this);
-		　　var $this_Top=$this.scrollTop();
-
-		　　//當高度小於100時，關閉區塊 
-		　　　if($this_Top > 1){
-		　　　$('#top-bar').stop().animate({top:"-600px"});
-		　　　}
-		　　　　if($this_Top < 2){
-		　　　　$('#top-bar').stop().animate({top:"0px"});
-		　　　 }
-		　　　}).scroll();
-		　});
-		});
-
-		</script> -->
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<script type="text/javascript">
+		//經緯度可從 http://www.mygeoposition.com/ 取得
+		lat = 25.1140150; //緯度
+		lng = 121.5219850; //經度
+		function initialize() {
+			var latlng = new google.maps.LatLng(lat, lng);
+			//zoom 參數可控制地圖預設縮放大小
+			var settings = {
+				zoom: 16,
+				center: latlng,
+				mapTypeControl: true,
+				mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
+				navigationControl: true,
+				navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			};
+			var map = new google.maps.Map(document.getElementById("map_canvas"), settings);
+			//google.maps.Size = logo.png 圖片尺寸
+			//google.maps.Point = logo.png 錨點位置 (尖端部份)
+			var companyLogo = new google.maps.MarkerImage('img/icon/logoplace.png',
+				new google.maps.Size(252,119),
+				new google.maps.Point(0,0),
+				new google.maps.Point(19,100)
+			);
+			var companyPos = new google.maps.LatLng(lat, lng);
+			//title = 滑鼠游標停在 logo.png 時出現的說明文字
+			var companyMarker = new google.maps.Marker({
+				position: companyPos,
+				map: map,
+				icon: companyLogo,
+				title:"NONXO.com"
+			});
+		}
+		</script>
 
 		
 
@@ -99,7 +115,7 @@
 	
 
 
-	<body>
+	<body >
 	
 	
 	<div class="TopBar">
@@ -122,7 +138,7 @@
 
 
 
-	<div class="hero" data-js-module="hero" style="padding-top:10em;">
+	<div class="hero" data-js-module="hero" >
       <div id="container" class="container" >
         <div class="grid clearfix">	
           <div class="grid__grid-sizer"></div>
@@ -258,7 +274,7 @@
 					</div>
 
 					
-
+		
 
 
 
@@ -273,7 +289,7 @@
 
 
 		<div class="site-footer">
-   			 <div class="container" style="margin:1em;">
+   			 <!-- <div class="container" style="margin:1em; width:100%"> -->
   
 		      <p class="footer__text">
 		        <a href="nonxo.com">NONXO.com</a> is a design studio in Taiwan, <br/>seviced with graphic design, commercial design, motion graphics and animation works. Hope you enjoy it, you may contact us : 
@@ -286,6 +302,18 @@
 		        <a href=""></a>
 		        </a>
 		       </p>
+
+
+		       	<!-- google map -->
+		       	<body onload="initialize()">
+				<div class="Gmap">
+					  <div class="maptext"> NONXO map</div>
+					  <div id="map_canvas"></div>
+				</div>
+			 </div>
+
+
+
 
       	</div>
       	</div>
