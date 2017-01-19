@@ -1780,50 +1780,10 @@ two columns for large devices
 
 /* site-footer
 ------------------------- */
-#map_canvas{
 
-  width:100%; height:300px;
-  position: relative;
-       -webkit-filter: grayscale(100%); 
-        -moz-filter: grayscale(100%); 
-        -ms-filter: grayscale(100%); 
-        -o-filter: grayscale(100%); 
-        filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);  
-        _filter:none; 
-}
-
-.Gmap{
-  width:100%; height:350px;
-  overflow:hidden;
-  float:right;
-  margin:1em 0;
-
-}
-
-.maptext{
-  font-weight: 500;
-  position: absolute;
-  padding: .5em 1.8em .5em 1.2em;
-  margin: .7em;
-  background: white;
-  border-radius: 6px;
-  color: black;
-  z-index: 1;
-  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.1), 0 5px 20px 0 rgba(0, 0, 0, 0.1);
-
-}
 
 @media screen and ( min-width: 769px ) {
-  #map_canvas{
-    width:100%; height:350px;
-    overflow:hidden;
-    margin:0 auto;
 
-  }
-    .Gmap{
-    width:40%;
-    overflow:hidden;
-  }
 
   }
   .site-footer {
@@ -1853,7 +1813,7 @@ two columns for large devices
   .footer__text{
     width:25%;
     float: left;
-    padding:1em;
+    padding:1em 2em 0 1em;
     /*margin: 1em 2em 0 2em;*/
   }
 }
