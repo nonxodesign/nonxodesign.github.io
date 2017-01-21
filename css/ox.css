@@ -69,9 +69,6 @@
 	   -o-transition: 		all .3s ease;
 	   -ms-transition: 		all .3s ease;
 	   transition: 			all .3s ease;
-	   m
-
-
 	}
 
 	.logohover a:hover .logomask{
@@ -125,26 +122,20 @@
 
 	}
 }
-
-
-
-@media screen and ( max-width: 767px ) {
-
-}
-
-@media screen and ( min-width: 1024px ) {
+{}
+@media screen and ( min-width: 767px ) {
 
 	.fadedown{
-		z-index: : -1;
+		z-index: : 10;
 		position: absolute;
 		opacity: 0;
-
-
+		color:black;
 	}
-	.fade-inout{
 
+	.fade-inout{
 		z-index: 1;
 	}
+
 	.grid__item .fadedown:hover{
 
 			opacity:1;
@@ -157,7 +148,6 @@
 				-ms-transition: 	all 0.5s ease;
 				/*filter:blur( .2em);*/
 	}
-
 }
 
 
@@ -165,8 +155,7 @@
 @media screen and  (max-width: 1023px){
 
 	.fadedown{
-		position: absolute;
-		opacity: 1;
+		display:none;
 	}
 	.fade-inout{	
 		opacity: 1;
@@ -174,43 +163,37 @@
 	.logomask{
 		display: none;	
 	}
-
-
-	.fadedown{
-		display:none;
-	}
 }
 
 .logo{
 	width: 15em;
 }
 
+
+
+
 @media screen and ( max-width: 768px ) {
-.list_box{
-	margin: 0 auto;
-	margin:1em 2em 2em 2em;
-	margin-right: 5em;
-	z-index: 2;
-	display:none;
+	.list_box{
+		margin: 0 auto;
+		margin:1em 2em 2em 2em;
+		margin-right: 5em;
+		z-index: 2;
+		display:none;
 
+	}
+
+	.list_01{
+		flex-wrap: nowrap;
+		font-size: 1em;
+		color:black;
+		font-family: 'Roboto Slab', serif,'Ubuntu', sans-serif;
+		padding:5px;
+		border-bottom: 1px solid #55565a;
+	}
+	.hero{
+		margin-top:50px;
+	}
 }
-
-.list_01{
-	flex-wrap: nowrap;
-	font-size: 1em;
-	color:black;
-	font-family: 'Roboto Slab', serif,'Ubuntu', sans-serif;
-	padding:5px;
-	border-bottom: 1px solid #55565a;
-
-	
-}
-
-
-.hero{
-	margin-top:50px;
-
-}}
 
 .mannercolor{
 	width: 1em;

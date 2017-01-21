@@ -231,6 +231,7 @@ sup {
   .content_text{
     width: 95%;
     float: left;
+    margin:0 1em;
   }
 }
 
@@ -607,7 +608,7 @@ p{
   
   color: #000;
   font-size: 1em;
-  line-height: 1.6;
+  line-height: 1.58;
   /*letter-spacing: .5px;*/
   margin: .5em 0 0 0;
   /*margin-bottom:;*/
@@ -622,8 +623,9 @@ p{
 .content_title{
   
   font-size:1.5em;
-  font-weight:400;
-  letter-spacing: px;
+  font-weight:600;
+  line-height: 1.2;
+  letter-spacing: 1px;
   margin:.5em;
 
 }
@@ -634,10 +636,14 @@ p{
   　-ms-text-justify: inter-ideograph; /*IE9*/
   　-moz-text-align-last:justify; /*Firefox*/
   　-webkit-text-align-last:justify; /*Chrome*/
-  
-
      margin-bottom:3em;
 
+  /*  -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    -o-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90deg);*/
+  
     
      /*margin-left: 1em;*/
 }
@@ -650,6 +656,7 @@ video{
   .content_text{
     margin: .5em 0 0 .5em;
     width:50%;
+    float:right;
   }
 }
 
@@ -1793,8 +1800,9 @@ two columns for large devices
     position: relative;
     border-top: 1px solid rgba(0, 0, 0, .2);
     width: 98%;
-    padding:1em;
-    margin:0 auto;
+    padding: 1em;
+    margin: 0 auto;
+    height: 16em;
     /*z-index: -5;*/
 
     /*margin: 2em 1em;*/
