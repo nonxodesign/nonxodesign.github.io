@@ -50,7 +50,7 @@
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.css" />	 -->
 		<link rel="stylesheet" href="css/ox.css" media="screen">
 		<link rel="stylesheet" href="css/masonry-docs.css" media="screen">
-		
+		<link rel="stylesheet" href="css/loading_animate.css" media="screen">
 		<!-- Google Font -->
 		<!-- <link href="https://fonts.googleapis.com/css?family=Baaloo+Tamma|Ubuntu" rel="stylesheet"> -->
 		<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
@@ -82,8 +82,11 @@
 
 
 	<body onload="initialize()">
+
+
 	
-	
+
+
 	<div class="TopBar">
 		
 			<div class="logo logohover">
@@ -114,7 +117,14 @@
             <p class="tagline">XO</p>
           </div> -->
 <!-- －－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－ -->
+				<!-- loading_animation -->
+		<div class="spinner">
+		  <div class="dot1"></div>
+		  <div class="dot2"></div>
+		</div>
 
+		
+	<!-- loading_animation end -->
 				<a href="./#" class="image">
 					<div class="grid__item">
 						<img class="fadedown" src="./img/indeximg/indeximg_square_line.svg" height=100% width=100%> 
@@ -291,7 +301,11 @@
 		        </a>
 		       </p><br><br><br><br><br>	<br><br><br><br><br>	
 
-
+		<script>
+			jQuery(window).load(function() {
+			jQuery("#spinner").fadeOut(500);
+			});
+		</script>
 		       	
 
 
