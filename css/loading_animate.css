@@ -6,6 +6,17 @@
   background: white;
 }
 
+.Animate_bg2{
+  background: white;
+    
+  animation : fadein 2s;
+  -webkit-transition: opacity 2s ease-in infinite;
+  -moz-transition:    opacity 2s ease-in infinite;
+  -o-transition:      opacity 2s ease-in infinite;
+  -ms-transition:     opacity 2s ease-in infinite;
+  transition:         opacity 2s ease-in infinite;
+}
+
 .spinner {
   margin: 0 auto;
   width: 500px;
@@ -51,5 +62,54 @@
   } 50% { 
     transform: scale(1.0);
     -webkit-transform: scale(1.0);
+  }
+}
+
+
+
+/*----------------------------------------*/
+
+
+
+.path1 {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: dash1 3s ease-in-out infinite;
+}
+.path2 {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: dash2 3s ease-in-out infinite;
+}
+.path3 {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: dash3 3s ease-in-out infinite;
+}
+
+@keyframes dash1 {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 1000;
+  }
+}
+
+@keyframes dash2 {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 1000;
+  }
+}
+
+@keyframes dash3 {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 1000;
   }
 }
