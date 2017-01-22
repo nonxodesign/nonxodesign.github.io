@@ -1,9 +1,9 @@
 .Animate_bg {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100em;
+  height: 100%;
   z-index: 100000;
   background: #f2f2f2;
   margin: 0 auto;
