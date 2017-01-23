@@ -126,7 +126,7 @@
 @media screen and ( min-width: 767px ) {
 
 	.fadedown{
-		z-index: : 10;
+		z-index: 10;
 		position: absolute;
 		opacity: 0;
 		color:black;
@@ -151,17 +151,31 @@
 }
 
 
+.indeximg{
+	width: 50%;
+	margin: 0 auto;
+	padding-top: 10em;
+}
 
-@media screen and  (max-width: 1023px){
+@media screen and  (max-width: 766px){
+
+	.indeximg{
+		width: 100%;
+		padding-top:0;
+	}
 
 	.fadedown{
 		display:none;
 	}
-	.fade-inout{	
-		opacity: 1;
-	}
 	.logomask{
 		display: none;	
+	}
+	.fade-inout {	
+		opacity: 1;
+	}
+	
+	.image {
+		width: 50%;
 	}
 }
 

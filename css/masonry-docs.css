@@ -595,6 +595,28 @@ h5 {
   margin-right: 10em;
   font-weight: 600;
   letter-spacing: 1px;
+}
+
+
+@media screen and  (max-width: 766px){
+  
+  #content_year{
+    margin-right: 0;
+    padding-left: 1em;
+    display: inline-block;
+    width:50%;
+  }
+
+  .content_text_index{
+    float: left;
+    width: 40%;
+    margin-left: 1em;
+  }
+
+  .image{
+    float: left;
+    width: 50%;
+  }
 
 }
 
@@ -627,6 +649,7 @@ p{
   line-height: 1.2;
   letter-spacing: 1px;
   margin:.5em;
+
 
 }
 
@@ -1590,7 +1613,9 @@ two columns for large devices
 
 @media screen and ( max-width: 1100px ) {
 
-  .grid__grid-sizer,
+  .grid__grid-sizer{
+    width: 100%;
+  }
   .grid__item {
     width: 100%;
 
