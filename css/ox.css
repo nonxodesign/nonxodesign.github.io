@@ -130,12 +130,14 @@
 		position: absolute;
 		opacity: 0;
 		color:black;
-		
-		mix-blend-mode: darken     ;
+
+		/*mix-blend-mode: darken;*/
 	}
 
 	.fade-inout{
 		z-index: 1;
+		/*-webkit-filter: grayscale(100%); 
+    	filter: grayscale(100%);*/
 	}
 
 	.fade-inout{
