@@ -238,11 +238,11 @@ sup {
  .image img {
       /*border-radius*/: 0.375em;
       /*display: block;*/
-      width: 100%;
     }
  .image{
     display: inline-block;
     position: relative;
+    overflow: hidden;
     
   }
 
@@ -250,6 +250,8 @@ sup {
 
 a.image {
     overflow: hidden;
+    height:100%;
+    width:100%;
   }
 
     a.image img {
@@ -598,18 +600,46 @@ h5 {
 }
 
 
-@media screen and  (max-width: 766px){
+@media screen and  (min-width: 768px){
+  .content_text_index{
+    color:white;
+    display: inline-block;
+    margin: 2.5em;
+    margin-top: 14.5em;
+  }
+  #content_year2{
+    display:none;
+
+  }
+}
+
+
+
+
+@media screen and  (max-width: 768px){
   
   #content_year{
     margin-right: 0;
     padding-left: 1em;
     display: inline-block;
-    width:50%;
+    width:40%;
+    float: left;
+    position: absolute;
+    display: none;
+  }
+
+    #content_year2{
+    font-weight: 500;
+    padding-bottom: 1em;
+    margin-right: 0;
+    display: inline-block;
+    width: 100%;
+    float: left;
   }
 
   .content_text_index{
     float: left;
-    width: 40%;
+    width: 90%;
     margin-left: 1em;
   }
 
@@ -922,8 +952,6 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
   width: 60px;
   height: 60px;
   background: #333;
-  border: 2px solid #333;
-  border-color: hsla(0, 0%, 0%, 0.5);
   border-radius: 5px;
   -webkit-transition: width 0.4s, height 0.4s;
      -moz-transition: width 0.4s, height 0.4s;
@@ -1238,7 +1266,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
     margin-left: 6%;
     margin: 0 auto;
     width: 100%;
-    max-width: 1300px;
+    max-width: 1400px;
 
 
   }
@@ -1319,7 +1347,7 @@ two columns for large devices
 
 @media screen and ( min-width: 768px ) {
   .grid {
-    margin-left: 2.5em;
+    /*margin-left: 2.5em;*/
   }
 }
 /* clearfix */
@@ -1401,7 +1429,6 @@ two columns for large devices
   height: 60px;
   float: left;
   background: #333;
-  border: 2px solid #333;
   border-color: hsla(0, 0%, 0%, 0.5);
   border-radius: 5px;
 }
@@ -1473,7 +1500,7 @@ two columns for large devices
 .grid__item,
 .grid__grid-sizer {
   width: 33%;
-  margin: 0 1% 30px .5%;
+  overflow: hidden;
  
 /*  padding:.5em;
   padding-top:.8em;*/
@@ -1497,12 +1524,8 @@ two columns for large devices
 /*物件圓角*/
 .grid__item {
   float:right;
-  border-bottom: dotted #ccc 1px;
   background: #EFEFEF;
   /*padding-bottom: 5em;*/
-  margin-bottom: 2em;
-  margin-top:2em;
-  padding-bottom: 2em;
   background: white;
 }
 
@@ -1632,8 +1655,7 @@ two columns for large devices
 
   .grid__grid-sizer,
   .grid__item {
-    width: 30%;
-    float:right;
+    width: 25%; 
   }
 
   .grid__item--width2 {
