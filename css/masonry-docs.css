@@ -605,11 +605,20 @@ h5 {
     color:white;
     display: inline-block;
     margin: 2.5em;
-    margin-top: 14.5em;
+    margin-top: 9em;
   }
   #content_year2{
     display:none;
 
+  }
+}
+
+@media screen and  (min-width: 1300px){
+  .content_text_index{
+    color:white;
+    display: inline-block;
+    margin: 2.5em;
+    margin-top: 14em;
   }
 }
 
@@ -1259,10 +1268,10 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
 
 }
 
-@media screen and ( min-width: 1100px ) {
+@media screen and ( min-width: 960px ) {
   
   .container {
-    padding-top: 3em;
+    padding-top: 10em;
     margin-left: 6%;
     margin: 0 auto;
     width: 100%;
@@ -1639,10 +1648,10 @@ two columns for large devices
 @media screen and ( max-width: 1100px ) {
 
   .grid__grid-sizer{
-    width: 100%;
+    width: 95%;
   }
   .grid__item {
-    width: 100%;
+    width: 95%;
 
   }
 }
