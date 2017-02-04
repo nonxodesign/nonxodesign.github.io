@@ -267,9 +267,9 @@
 	}
 
 	.index_title {
-		
+		letter-spacing: 1px;
 		display: inline-block;
-		font-weight: 600;
+		font-weight: 300;
 		z-index: 15;
 		font-size: 1.2em;
 		margin: 2em;
@@ -278,6 +278,7 @@
 	}
 
 	h8 {
+		letter-spacing: 3px;
 		display: inline;
 		z-index: 15;
 		margin: 3em;
