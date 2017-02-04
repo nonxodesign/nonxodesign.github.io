@@ -1853,13 +1853,12 @@ two columns for large devices
   .site-footer {
     color: #888;
     /*background: #F8F5F2;*/
-    padding: 40px 0;
     position: relative;
     border-top: 1px solid rgba(0, 0, 0, .2);
     width: 98%;
-    padding: 1em;
     margin: 0 auto;
-    height: 16em;
+    padding: 1em;
+    padding-bottom: 4em;
     /*z-index: -5;*/
 
     /*margin: 2em 1em;*/
