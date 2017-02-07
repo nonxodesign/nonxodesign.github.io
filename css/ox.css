@@ -189,7 +189,7 @@
 		width: 50%;
 		overflow: hidden;
 	}
-	.overlay {
+	.overlay, .overlay2{
 		width: 50%;
 		float: right;
 		display: inline-block;
@@ -239,6 +239,23 @@
 	    transition: opacity 0.4s ease;
 	}
 
+	.overlay2 {
+
+		
+	    position: absolute;
+	    width: 100%;
+	    height: 100%;
+	    top: 0;
+	    left: 0;
+	    background-color: rgba( 255,255,255, .9);
+	    opacity: 0;
+		
+	    -webkit-transition: opacity 0.4s ease;
+	    -moz-transition: opacity 0.4s ease;
+	    -o-transition: opacity 0.4s ease;
+	    transition: opacity 0.4s ease;
+	}
+
 	.index_img img {
 	    width: 100%;
 
@@ -262,6 +279,10 @@
 	.index_img:hover .overlay {
 	    opacity: 1;
 	}
+	.index_img:hover .overlay2 {
+	    opacity: 1;
+	}
+
 	.index_img {
 	    float: left;
 	}

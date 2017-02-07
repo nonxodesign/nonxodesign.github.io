@@ -221,6 +221,7 @@ sup {
  */
 .contentimg{
   margin:0 auto;
+  display: inline-block;
 
 }
 
@@ -1350,6 +1351,7 @@ two columns for large devices
 .grid {
   background: white;
   width: 95%;
+  margin: 0 auto;
 }
 
 @media screen and ( min-width: 768px ) {
