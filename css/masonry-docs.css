@@ -1255,12 +1255,12 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
   transition:         opacity 3s ease-in;
 }
 
-@media screen and ( min-width: 768px ) {
+@media screen and ( min-width: 769px ) {
   
   .container {
     margin-left: 6%;
     /*margin: 0 auto;*/
-    padding-top:9em;
+    padding-top: 6em;
   }
 }
 
@@ -1662,6 +1662,11 @@ two columns for large devices
   .grid__grid-sizer,
   .grid__item {
     width: 300px; 
+    padding: 1.2em;
+  }
+
+  .grid__item__big {
+    width: 600px; 
     padding: 1.2em;
   }
 
