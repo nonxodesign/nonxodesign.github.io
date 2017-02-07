@@ -119,9 +119,8 @@
 
 <!-- <video controls auoplay loop> -->
 						<div class="indeximg">
-							<video  autoplay loop  style="margin:1em 0em;">
+							<video id="video"  autoplay loop  style="margin:1em 0em;">
 							  <source src="./img/work/shark_animation/web_6.mp4" type="video/mp4" >
-							  <source src="./img/work/shark_animation/web_6.mp4" type="video/ogg">
 							 <!--  Your browser does not support the video tag. -->
 							</video>
 						</div>
@@ -214,8 +213,11 @@
 		 <script type="text/javascript" src="/js/imagesloaded.pkgd.min.js"></script>
 		 <script type="text/javascript" src="/js/imagesloaded.pkgd.js"></script>
 		<script>
-	
-			</script>
+			var video = document.getElementById('video');
+			video.addEventListener('click',function(){
+			  video.play();
+			},false);
+		</script>
 
 
 			<!-- fb內嵌 -->

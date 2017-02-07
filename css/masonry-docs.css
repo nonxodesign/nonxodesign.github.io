@@ -606,7 +606,6 @@ h5 {
     display: inline-block;
     height:100%;
     margin: 2.5em;
-    margin-top: 7em;
     letter-spacing: .5px;
   }
   #content_year2{
@@ -1858,7 +1857,7 @@ two columns for large devices
     width: 98%;
     margin: 0 auto;
     padding: 1em;
-    padding-bottom: 4em;
+    padding-bottom:4em;
     /*z-index: -5;*/
 
     /*margin: 2em 1em;*/
