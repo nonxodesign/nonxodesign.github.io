@@ -222,8 +222,18 @@ sup {
 .contentimg{
   margin:0 auto;
   display: inline-block;
-
+  width: 100%;
 }
+
+.contentimg_sn{
+  margin:0 auto;
+  display: inline-block;
+  width: 100%;
+}
+.contentimgflex{
+  width: 100%;
+}
+
 
 @media screen and ( max-width: 765px ) {
   .grid__item_content{
@@ -1261,7 +1271,6 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
   .container {
     margin-left: 6%;
     /*margin: 0 auto;*/
-    padding-top: 6em;
   }
 }
 
@@ -1668,7 +1677,8 @@ two columns for large devices
   }
 
   .grid__item__big {
-    width: 600px; 
+    width: 600px;
+    height: 300px;
     padding: 1.2em;
   }
 
@@ -1863,8 +1873,9 @@ two columns for large devices
     border-top: 1px solid rgba(0, 0, 0, .2);
     width: 98%;
     margin: 0 auto;
-    padding: 1em;
-    padding-bottom:4em;
+    padding: 2em 1em;
+    bottom: 6em;
+
     /*z-index: -5;*/
 
     /*margin: 2em 1em;*/
