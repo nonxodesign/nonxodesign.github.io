@@ -1270,6 +1270,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
   
   .container {
     margin-left: 6%;
+    
     /*margin: 0 auto;*/
   }
 }
