@@ -47,12 +47,22 @@
 }
 
 .logomask h5{
-	color: rgba(0, 0, 0, 1 );;
+	/*color: rgba(0, 0, 0, 1 );;*/
 	background: white; 
 	padding: .7em 2em .6em 2.2em;
 	/*border: 1px solid rgba(0, 0, 0, .2 );*/
 	font-weight:700;
 }
+
+
+.logoicon{
+	opacity: 1;
+}
+
+.logoicon:hover{
+	opacity: 0;
+}
+
 	.logomask,.logo{
 		position:absolute;
 		top: 0;
@@ -303,7 +313,7 @@
 		letter-spacing: 3px;
 		display: inline;
 		z-index: 15;
-		margin: 3em;
+		margin: 2.7em;
 		float:right;
 		color: white;
 			-webkit-writing-mode: vertical-rl;
