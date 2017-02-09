@@ -11,6 +11,11 @@
 	.logomask{
 		display:none;
 	}
+
+	.youtubeframe{
+		width: 100%;
+		height: 18em;
+	}
 }
 @media screen and ( min-width: 767px ) {
 
@@ -23,6 +28,10 @@
 		margin-bottom: -2em;
 		position:fixed;
 		z-index: 15;
+	}
+	.youtubeframe{
+		width: 100%;
+		height: 40em;
 	}
 }
 
@@ -47,7 +56,7 @@
 }
 
 .logomask h5{
-	/*color: rgba(0, 0, 0, 1 );;*/
+	color: rgba(0, 0, 0, 1 );;
 	background: white; 
 	padding: .7em 2em .6em 2.2em;
 	/*border: 1px solid rgba(0, 0, 0, .2 );*/
@@ -55,13 +64,6 @@
 }
 
 
-.logoicon{
-	opacity: 1;
-}
-
-.logoicon:hover{
-	opacity: 0;
-}
 
 	.logomask,.logo{
 		position:absolute;

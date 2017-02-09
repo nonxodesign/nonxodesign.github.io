@@ -224,6 +224,13 @@ sup {
   display: inline-block;
   width: 100%;
 }
+.contentimg_s{
+  margin:0 auto;
+  display: inline-block;
+  width: 49%;
+}
+
+
 
 .contentimg_sn{
   margin:0 auto;
@@ -614,7 +621,7 @@ h5 {
 @media screen and  (min-width: 768px){
   .content_text_index{
     color:white;
-    display: inline-block;
+    display: block;
     height:100%;
     margin: 2.5em;
     letter-spacing: .5px;
