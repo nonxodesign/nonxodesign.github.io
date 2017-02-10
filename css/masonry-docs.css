@@ -229,6 +229,12 @@ sup {
   display: inline-block;
   width: 49%;
 }
+.contentimg_ss{
+  margin:0 auto;
+  display: inline-block;
+  width: 49.5%;
+}
+
 
 .contentimg_sn{
   margin:0 auto;
@@ -240,6 +246,12 @@ sup {
   .contentimg{
     width:90%;
   }
+
+  .contentimg_ss{
+  margin:0 auto;
+  display: inline-block;
+  width: 44.8%;
+}
 
   }
 
@@ -1675,6 +1687,7 @@ two columns for large devices
 
   .grid__grid-sizer{
     width: 95%;
+
   }
   .grid__item {
     width: 95%;
