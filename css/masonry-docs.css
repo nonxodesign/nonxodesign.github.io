@@ -224,15 +224,11 @@ sup {
   display: inline-block;
   width: 100%;
 }
-.contentimg_s{
-  margin:0 auto;
-  display: inline-block;
-  width: 49%;
-}
+
 .contentimg_ss{
   margin:0 auto;
   display: inline-block;
-  width: 49.4%;
+  width: 49.8%;
 }
 
 
@@ -250,7 +246,7 @@ sup {
   .contentimg_ss{
   margin:0 auto;
   display: inline-block;
-  width: 44.8%;
+  width: 49.8%;
 }
 
   }
@@ -746,7 +742,7 @@ video{
 
 @media screen and ( min-width: 768px ) {
   .content_text{
-    margin: .5em 0 0 .5em;
+    margin: .5em 0 0 1em;
     width:45%;
     float:right;
   }
@@ -1552,17 +1548,18 @@ two columns for large devices
 /*  padding:.5em;
   padding-top:.8em;*/
 }
-
-.grid__item_content{
-  width: 80%;
-  margin:0 auto;
+@media screen and (min-width: 766px){
+  .grid__item_content{
+    width: 75%;
+    margin:0 auto;
+  }
 }
 
 @media screen and (min-width: 1441px){
-  .grid__item_content{
-  width: 60%;
-  margin:0 auto;
-}
+    .grid__item_content{
+    width: 60%;
+    margin:0 auto;
+    }
 }
 
 
