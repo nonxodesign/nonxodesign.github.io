@@ -228,7 +228,7 @@ sup {
 .contentimg_ss{
   margin:0 auto;
   display: inline-block;
-  width: 49.8%;
+  width: 49.5%;
 }
 
 
@@ -1710,6 +1710,7 @@ two columns for large devices
     height: 304.79px;
     padding: 1.2em;
   }
+
 
   .grid__item--width2 {
     width: 47%;
