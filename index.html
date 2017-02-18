@@ -159,9 +159,8 @@
 
 
 	
-	
 	<div class="hero" data-js-module="hero" >
-      <div id="container" class="container" style="padding-top:10em; margin-left:6%">
+      <div id="container" class="container">
         <div class="grid">	 
         	<!-- <div class="grid clearfix"> -->
           <div class="grid__grid-sizer"></div>
@@ -514,6 +513,7 @@
 		</div>
 		</div>
 		</div>
+		</div>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
@@ -526,7 +526,7 @@
 			      	<a href="#" style=" font-size: 1em">
 				        nonxo.com</a>, a design studio in Taiwan, <br/>provide commercial design, motion graphics and animation design service. Hope you enjoy it, you may contact us : <br/><br/>
 
-			  <a href="mailto:info@nonxo.com">
+			  <a href="mailto:info@nonxo.com" class="biao1">
 				        <i id="icon_s" class="fa fa-envelope-o" style="margin-right: .5em;"></i>
 				        info@nonxo.com</a>
 		       </p>
@@ -584,9 +584,10 @@
 			$container.imagesLoaded(function (){
  
 			// initialize
-			$container.masonry({
+			$('.hero').masonry({
+				itemSelector: '.grid__item',
 				columnWidth: 10,
-				itemSelector: '.grid__item'
+				 isFitWidth: true
  
 					})
 			 
@@ -594,6 +595,24 @@
 			});
 			</script>
 
+
+			<!-- <script type="text/javascript"> 
+				function copyUrl2() 
+				{ 
+				var Url2=document.getElementById("biao1"); 
+				Url2.select(); // 选择对象 
+				document.execCommand("Copy"); // 执行浏览器复制命令 
+				alert("email 已複製到剪貼簿"); 
+				} 
+				</script> 
+				<textarea  id="biao1">info@nonxo.com</textarea> 
+				<input type="button" onClick="copyUrl2()" value="Copy" /> -->
+			<script type="text/javascript">
+			function copybutton( URL ){ 
+	   		window.clipboardData.setData( 'Text' , URL ); 
+	  		alert('Copying!'); 
+			} 
+			</script>
 	
 	</body>
 </html>

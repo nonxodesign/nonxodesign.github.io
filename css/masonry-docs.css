@@ -1291,12 +1291,15 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
   transition:         opacity 3s ease-in;
 }
 
+.hero{
+  margin: 0 auto;
+  width: 100%;
+}
+
 @media screen and ( min-width: 769px ) {
-  
-  .container {
-    
-    /*margin: 0 auto;*/
-  }
+    .hero{
+    padding-top: 10em;
+   }
 }
 
 @media screen and ( max-width: 767px ) {
@@ -1310,10 +1313,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
   }
 }
 
-.hero{
-  margin: 0 auto;
-  width: 100%;
-}
+
 /* duo
 two columns for large devices
 ------------------------- */
