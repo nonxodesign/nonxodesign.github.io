@@ -1894,8 +1894,12 @@ two columns for large devices
 
 @media screen and ( min-width: 769px ) {
 
+  .site-footer {
 
+    bottom: 4em;
   }
+}
+
   .site-footer {
     color: #888;
     /*background: #F8F5F2;*/
@@ -1903,8 +1907,7 @@ two columns for large devices
     border-top: 1px solid rgba(0, 0, 0, .2);
     width: 98%;
     margin: 0 auto;
-    padding: 2em 1em;
-    bottom: 6em;
+    padding: 1.5em 1em;
 
     /*z-index: -5;*/
 
@@ -1912,20 +1915,34 @@ two columns for large devices
   }
 }
 
-  .footer__text{
-    font-size:1em;
-    margin: 1em 2em 0em .5em;
+  .footer__text {
+    font-size: 1.3em;
+    margin: 1em 2em 0em 22em;
     display: inline-block;
     vertical-align: text-top;
-    
+    line-height: 1.6;
+  }
+
+  .footer__text2{
+    margin-top: 2em;
   }
 
 @media screen and ( min-width: 767px ) {
   .footer__text{
-    width:25%;
+    font-size:1.2em;
+    width:35%;
     float: left;
-    padding:1em 2em 0 1em;
+    padding:1em 5em 0 1em;
+    line-height: 1.6;
     /*margin: 1em 2em 0 2em;*/
+
+  }
+
+  .footer__text2{
+    margin-top: 0;
+    width: 20em;
+    float: right; 
+    padding-right: .5em;
   }
 }
 /* site nav

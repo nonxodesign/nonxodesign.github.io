@@ -58,8 +58,38 @@
 	text-decoration: underline;
 }
 
+.blog_box{
+	font-size: 1em; 
+	padding: 5px;
+	border: 1px solid #333;
+
+}
+.blog_icon{
+	background: url(../img/icon/blog_icon-02-02.svg);
+	width: 62px;
+	height: 36px;
+	display: inline-block;
+}
+
+#icon_s{
+	margin-right: .8em;
+	font-size: 24px;
+	color: #999;
+}
 
 
+@media screen and ( min-width: 767px ) {
+
+	#icon_s{
+	margin-right: 1.2em;
+	font-size: 24px;
+	color: #999;
+	}
+
+	#icon_s:hover{
+		color: #333;
+	}
+}
 
 /*logo hover浮出字*/
 
