@@ -20,6 +20,12 @@
 	.aa{
 		display:none;
 	}
+	.imgbig{
+		display: none;
+	}
+	.imgsmall{
+		
+	}
 }
 @media screen and ( min-width: 767px ) {
 
@@ -36,6 +42,13 @@
 	.youtubeframe{
 		width: 100%;
 		height: 40em;
+	}
+	
+	.imgbig{
+		
+	}
+	.imgsmall{
+		display:none;
 	}
 
 }
