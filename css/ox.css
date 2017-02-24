@@ -54,6 +54,28 @@
 
 }
 
+.about_text{
+	float: right;
+	color: black; 
+	font-size: 1.4em; 
+	line-height: 2; 
+	width: 500px;
+	hyphens: auto;
+	
+	text-align: justify;
+	text-justify: inter-ideograph;
+	-ms-text-justify: inter-ideograph; /*IE9*/
+	-moz-text-align-last:justify; /*Firefox*/
+	-webkit-text-align-last:justify; /*Chrome*/
+}
+.about_title{
+	font-size: 2em;
+	color: black;
+	font-weight: 700;
+
+}
+
+
 .collection_text{
 	color: #333; 
 	font-size: 1em; 
@@ -318,10 +340,10 @@
 	}
 
 	#overlay_a{
-		-webkit-transition: all 0.4s ease;
-	    -moz-transition: all 0.4s ease;
-	    -o-transition: all 0.4s ease;
-	    transition: all 0.4s ease;
+		-webkit-transition: all 0.8s ease;
+	    -moz-transition: all 0.8s ease;
+	    -o-transition: all 0.8s ease;
+	    transition: all 0.8s ease;
 	    transform: translateX( -10px);
 	}
 	
@@ -330,15 +352,16 @@
 	}
 
 	#overlay_b{
-		-webkit-transition: all 0.4s ease;
-	    -moz-transition: all 0.4s ease;
-	    -o-transition: all 0.4s ease;
-	    transition: all 0.4s ease;
-	    transform: translateY(-285px);
+		-webkit-transition: all .4s ease;
+	    -moz-transition: all .4s ease;
+	    -o-transition: all .4s ease;
+	    transition: all .4s ease;
+	    transform: translateY(-290px);
 	}
 	
 	#overlay_a:hover ~ #overlay_b{
-		transform: translateY(-270px);
+		transform: translateY(-275px);
+		
 	}
 
 
