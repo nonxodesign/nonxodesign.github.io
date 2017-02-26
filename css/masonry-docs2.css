@@ -1302,7 +1302,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
 
 .hero{
   margin: 0 auto;
-  width: 100%;
+  width: 95%;
   margin-bottom:20em;
   padding-top: 5em;
 
@@ -1687,7 +1687,7 @@ two columns for large devices
 
 
   .grid__item__big {
-    width: 100%;
+    width: 99.3%;
     padding: .2em .5em;
   }
 
