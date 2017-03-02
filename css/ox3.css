@@ -299,10 +299,10 @@
 	    transform: translateX( -10px);
 	}
 	
-	#overlay_a:hover{
+	/*#overlay_a:hover{
 		transform: translateX( 0px);
 	}
-
+*/
 	#overlay_b{
 		-webkit-transition: all .4s ease;
 	    -moz-transition: all .4s ease;
@@ -311,10 +311,16 @@
 	    transform: translateY(-290px);
 	}
 	
-	#overlay_a:hover ~ #overlay_b{
-		transform: translateY(-270px);
-		
-	}
+	/*#overlay_a:hover ~ #overlay_b{
+		transform: translateX( 0px);	
+	}*/
+
+	.index_img:hover #overlay_a{
+		transform: translateX( 0px);
+	} 
+	.index_img:hover #overlay_b{
+		transform: translateY(-270px);	
+	} 
 
 
 
