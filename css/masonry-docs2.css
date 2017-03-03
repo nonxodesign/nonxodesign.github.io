@@ -1923,6 +1923,10 @@ two columns for large devices
 
   .footer__text2{
     margin-top: 2em;
+    text-align: center;
+  }
+  .footer__text3{
+    text-align: center;
   }
 
 @media screen and ( min-width: 767px ) {
@@ -1942,6 +1946,10 @@ two columns for large devices
     width: 20em;
     float: right; 
     padding-right: .5em;
+  }
+  .footer__text3{
+    margin-top:2em;
+    float: left;
   }
 }
 /* site nav
