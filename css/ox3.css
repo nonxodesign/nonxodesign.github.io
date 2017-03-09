@@ -387,7 +387,7 @@
 	}
 	.index_img:hover .overlay {
 	    opacity: 1;
-	    /*will-change: transform;*/
+	    /*will-change: transform; safari 字閃爍有用*/
 	    /*-webkit-backface-visibility: hidden;*/
 	    /*-webkit-transform-style: preserve-3d;*/
 	    transform: translate3d(0,0,0);
