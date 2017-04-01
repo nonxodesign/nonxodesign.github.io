@@ -123,3 +123,33 @@ html,body{
 	margin: 0, auto;
 }
 
+
+.Text_M_2{
+	/*Center*/
+	margin-left:.1em;
+	display:flex;
+	align-items:center;
+    justify-content:center;
+	
+	text-align:center;
+
+	height:100%;
+	color:white;
+	font-size: 5em;
+
+	font-family: 'Quicksand', sans-serif;
+}
+
+.Text_M5{
+	margin-left: -.1em;
+	font-size: 2em;
+	font-weight: 500;
+	color:white;
+	letter-spacing: -1px;
+	/*margin-bottom:5%;*/
+    /*flex-direction:column;*/
+	display:inline-block;
+	line-height: 1.4;
+	font-family:'Quicksand', sans-serif;
+	margin: 0, auto;
+}
