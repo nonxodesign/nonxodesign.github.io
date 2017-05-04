@@ -1289,9 +1289,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
 ------------------------- */
 
 .container {
-  margin-left: 10px;
-  margin-right: 10px;
-  /*margin: 0 auto;*/
+  margin: 0 auto;
 
   animation : fadein 3s;
   -webkit-transition: opacity 3s ease-in;
@@ -1303,7 +1301,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
 
 .hero{
   margin: 0 auto;
-  width: 95%;
+  width: 80%;
   margin-bottom:20em;
   padding-top: 5em;
 
@@ -1317,13 +1315,14 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
 }
 
 @media screen and ( max-width: 767px ) {
-  
+  .hero {
+    width: 100%;
+  }
   .container {
-    margin-left: 6%;
     margin: 0 auto;
-    width: 95%;
+    /*width: 95%;*/
     max-width: 1400px;
-    padding-top:4em;
+    /*padding-top:4em;*/
   }
 }
 
