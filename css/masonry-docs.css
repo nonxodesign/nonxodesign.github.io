@@ -9,18 +9,18 @@
 
 
 
-@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css)
-
+/*@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css)*/
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
 
 body,html {
   
-  font-family: 'Quicksand','Noto Sans TC', sans-serif;
+  font-family: 'Noto Sans TC','Quicksand', sans-serif;
 }
 
 
 
 html {
-  font-family: 'Quicksand','Noto Sans TC', sans-serif; /* 1 */
+   font-family: 'Noto Sans TC','Quicksand', sans-serif; /* 1 */
   line-height: 1.15; /* 2 */
   -ms-text-size-adjust: 100%; /* 3 */
   -webkit-text-size-adjust: 100%; /* 3 */
@@ -691,7 +691,7 @@ h5 {
 
 p{
 
-  font-family: 'Quicksand','Noto Sans TC', sans-serif;
+    font-family: 'Noto Sans TC','Quicksand', sans-serif;
   font-weight: 400;
   text-shadow: 0 0 0.5px rgba(0,0,0,0.2);
   color: #000;
