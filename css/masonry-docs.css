@@ -14,13 +14,13 @@
 
 body,html {
   
-  font-family: 'Quicksand', 'Noto Sans TC', sans-serif;
+  font-family: Quicksand, Noto Sans TC, sans-serif;
 }
 
 
 
 html {
-   font-family: 'Quicksand', 'Noto Sans TC', sans-serif; /* 1 */
+   font-family: Quicksand, Noto Sans TC, sans-serif; /* 1 */
   line-height: 1.15; /* 2 */
   -ms-text-size-adjust: 100%; /* 3 */
   -webkit-text-size-adjust: 100%; /* 3 */
@@ -320,7 +320,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: 'Quicksand','Noto Sans TC', sans-serif, monospace, monospace; /* 1 */
+  font-family: Quicksand,Noto Sans TC, sans-serif, monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
 
@@ -533,20 +533,20 @@ red #333
 
 /* font-size on html for rem*/
 html {
-  font-family: 'Quicksand','Noto Sans TC', sans-serif;
+  font-family: Quicksand,Noto Sans TC, sans-serif;
   font-size: 12px;
   line-height: 1.5;
 }
 
 html.export {
-  font-family: 'Quicksand','Noto Sans TC', sans-serif;
+  font-family: Quicksand,Noto Sans TC, sans-serif;
   font-size: 15px;
 }
 
 
 body {
   color: #333;
-  font-family: 'Quicksand','Noto Sans TC', sans-serif;
+  font-family: Quicksand,Noto Sans TC, sans-serif;
   /*background: #EFEFEF;*/
 }
 
@@ -571,7 +571,7 @@ a:hover code {
 h1, h3, h4, h5{
   line-height: 1.2;
   margin: .5em;
-  font-family: 'Quicksand','Noto Sans TC',
+  font-family: Quicksand,Noto Sans TC,
   font-weight: 300;
   display: inline-block;
   color:black;
@@ -580,7 +580,7 @@ h1, h3, h4, h5{
 h2 {
   font-size: 1.2em;
   line-height: 1.2;
-  font-family: 'Quicksand','Noto Sans TC',
+  font-family: Quicksand,Noto Sans TC,
   font-weight: 400;
   display: inline-block;
   color:black;
@@ -692,7 +692,7 @@ h5 {
 
 p{
 
-    font-family: 'Quicksand', 'Noto Sans TC', sans-serif;
+    font-family: Quicksand, Noto Sans TC, sans-serif;
   font-weight: 400;
   text-shadow: 0 0 0.5px rgba(0,0,0,0.2);
   color: #000;
@@ -767,7 +767,7 @@ ul, ol, li {
 /* ---- code ---- */
 
 pre, code {
-  font-family: 'Quicksand','Noto Sans TC', sans-serif, Consolas, Menlo, monospace;
+  font-family: Quicksand,Noto Sans TC, sans-serif, Consolas, Menlo, monospace;
   font-size: 14px;
 }
 
@@ -1051,7 +1051,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
 
 /* Texta Heavy */
 @font-face {
-  font-family: 'Quicksand','Noto Sans TC', sans-serif, 'Texta';
+  font-family: Quicksand,Noto Sans TC, sans-serif, 'Texta';
   font-weight: bold;
   font-style: normal;
   src: url('../fonts/2D333F_0_0.woff2') format('woff2'),
@@ -1060,7 +1060,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
 
 /* Texta Italic */
 @font-face {
-  font-family: 'Quicksand','Noto Sans TC', sans-serif, 'Texta';
+  font-family: Quicksand,Noto Sans TC, sans-serif, 'Texta';
   font-weight: normal;
   font-style: italic;
   src: url('../fonts/2D333F_1_0.woff2') format('woff2'),
@@ -1069,7 +1069,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
 
 /* Texta Regular */
 @font-face {
-  font-family: 'Quicksand','Noto Sans TC', sans-serif, 'Texta';
+  font-family: Quicksand,Noto Sans TC, sans-serif, 'Texta';
   src: url('../fonts/2D333F_2_0.woff2') format('woff2'),
     url('../fonts/2D333F_2_0.woff') format('woff');
 }
@@ -1248,7 +1248,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
   border-radius: 50%;
   text-align: center;
   color: white;
-  font-family: 'Quicksand','Noto Sans TC', sans-serif, Consolas, Georgia, sans-serif;
+  font-family: Quicksand,Noto Sans TC, sans-serif, Consolas, Georgia, sans-serif;
   font-style: italic;
 }
 
@@ -1598,7 +1598,7 @@ two columns for large devices
 
 .title {
   padding-top: .5em;
-  font-family: 'Quicksand','Noto Sans TC', sans-serif, 'Baloo Tamma', cursive;
+  font-family: Quicksand,Noto Sans TC, sans-serif, 'Baloo Tamma', cursive;
   margin: 0;
   line-height: .7;
   font-size: 2rem;
