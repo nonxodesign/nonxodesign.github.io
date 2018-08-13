@@ -691,7 +691,7 @@ h5 {
 
 p{
 
-    font-family: 'Noto Sans TC','Quicksand', sans-serif;
+    font-family: 'Quicksand', 'Noto Sans TC', sans-serif;
   font-weight: 400;
   text-shadow: 0 0 0.5px rgba(0,0,0,0.2);
   color: #000;
