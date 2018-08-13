@@ -533,19 +533,20 @@ red #333
 
 /* font-size on html for rem*/
 html {
-  font-family: 'Quicksand','Noto Sans TC', sans-serif, Texta, sans-sans-serif;
+  font-family: 'Quicksand','Noto Sans TC', sans-serif;
   font-size: 12px;
   line-height: 1.5;
 }
 
 html.export {
-  font-family: 'Quicksand','Noto Sans TC', sans-serif, sans-sans-serif;
+  font-family: 'Quicksand','Noto Sans TC', sans-serif;
   font-size: 15px;
 }
 
 
 body {
   color: #333;
+  font-family: 'Quicksand','Noto Sans TC', sans-serif;
   /*background: #EFEFEF;*/
 }
 
