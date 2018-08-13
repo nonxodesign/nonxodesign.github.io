@@ -14,13 +14,13 @@
 
 body,html {
   
-  font-family: 'Noto Sans TC','Quicksand', sans-serif;
+  font-family: 'Quicksand', 'Noto Sans TC', sans-serif;
 }
 
 
 
 html {
-   font-family: 'Noto Sans TC','Quicksand', sans-serif; /* 1 */
+   font-family: 'Quicksand', 'Noto Sans TC', sans-serif; /* 1 */
   line-height: 1.15; /* 2 */
   -ms-text-size-adjust: 100%; /* 3 */
   -webkit-text-size-adjust: 100%; /* 3 */
