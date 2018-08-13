@@ -14,7 +14,8 @@
 
 body,html {
 
-  font-family: Quicksand,Noto Sans TC, sans-serif;
+  font-family: Quicksand, Noto Sans TC, sans-serif;
+  text-align: justify;
 }
 
 
@@ -727,7 +728,7 @@ p{
 
 .content_text{
     hyphens: auto;
-    /*text-align: justify;*/
+    text-align: justify;
   　/*text-justify: inter-ideograph;
   　-ms-text-justify: inter-ideograph;
   　-moz-text-align-last:justify; 

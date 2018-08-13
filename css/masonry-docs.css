@@ -15,12 +15,12 @@
 body,html {
   
   font-family: Quicksand, Noto Sans TC, sans-serif;
+  text-align: justify;
 }
 
 
 
 html {
-   font-family: Quicksand, Noto Sans TC, sans-serif; /* 1 */
   line-height: 1.15; /* 2 */
   -ms-text-size-adjust: 100%; /* 3 */
   -webkit-text-size-adjust: 100%; /* 3 */
@@ -533,7 +533,6 @@ red #333
 
 /* font-size on html for rem*/
 html {
-  font-family: Quicksand,Noto Sans TC, sans-serif;
   font-size: 12px;
   line-height: 1.5;
 }
@@ -727,7 +726,7 @@ p{
 
 .content_text{
     hyphens: auto;
-    /*text-align: justify;*/
+    text-align: justify;
   　/*text-justify: inter-ideograph;
   　-ms-text-justify: inter-ideograph;
   　-moz-text-align-last:justify; 
