@@ -13,14 +13,13 @@
 @import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
 
 body,html {
-  
+
   font-family: Quicksand,Noto Sans TC, sans-serif;
 }
 
 
 
 html {
-  font-family: Quicksand,Noto Sans TC, sans-serif; /* 1 */
   line-height: 1.15; /* 2 */
   -ms-text-size-adjust: 100%; /* 3 */
   -webkit-text-size-adjust: 100%; /* 3 */
@@ -534,7 +533,6 @@ red #333
 
 /* font-size on html for rem*/
 html {
-  font-family: Quicksand,Noto Sans TC, sans-serif, Texta, sans-sans-serif;
   font-size: 12px;
   line-height: 1.5;
 }
