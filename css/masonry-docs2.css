@@ -10,12 +10,14 @@
 
 
 /*@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css)*/
-@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+/*@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);*/
 
 body,html {
 
   font-family: Quicksand, Noto Sans TC, sans-serif;
   text-align: justify;
+  /*letter-spacing: 1px;*/
+  font-weight: 500;
 }
 
 
@@ -1901,7 +1903,7 @@ two columns for large devices
     border-top: 1px solid rgba(0, 0, 0, .2);
     width: 98%;
     margin: 0 auto;
-    padding: 1.5em 1em;
+    padding: 2em 0em 5em 1em;
 
     /*z-index: -5;*/
 
@@ -1911,17 +1913,39 @@ two columns for large devices
 
   .footer__text {
     font-size: 1em;
-    margin: 1em 2em 0em 22em;
-    display: inline-block;
+    font-weight: 900;
     vertical-align: text-top;
     line-height: 1.6;
-    hyphens: auto;
-    color: grey;
+    width:100%;
+    /*hyphens: auto;*/
+    color: black;
+  }
+
+  .footer__bottom {
+    display: block;
+    letter-spacing: 1px;
+    margin:0 0em .5em 1em;
+    font-size:1.1em;
+    font-weight: 900;
+  }
+  .footer__copyright{
+    font-size:.5em;
+    color:white; 
+    font-weight:300;
+  }
+   .footer__copyright:hover{
+    color:black;
+      animation : fadein 1s;
+    -webkit-transition: opacity 3s ease-in;
+    -moz-transition:    opacity 3s ease-in;
+    -o-transition:      opacity 3s ease-in;
+   -ms-transition:     opacity 3s ease-in;
+   transition:         opacity 3s ease-in;
   }
 
   .footer__text2{
     margin-top: 2em;
-    text-align: center;
+    text-align: right;
   }
   .footer__text3{
     text-align: center;
@@ -1930,7 +1954,7 @@ two columns for large devices
 @media screen and ( min-width: 767px ) {
   .footer__text{
     font-size:1.2em;
-    width:35%;
+    width:100%;
     float: left;
     padding:1em 5em 0 1em;
     line-height: 1.6;
@@ -1938,11 +1962,19 @@ two columns for large devices
     /*margin: 1em 2em 0 2em;*/
 
   }
+  .footer__bottom {
+    display: inline-block;
+    letter-spacing: .5px;
+    margin:0 0em 0 1em;
+    font-size:1.1em;
+    font-weight: 900;
+  }
+
 
   .footer__text2{
     margin-top: 0;
     width: 20em;
-    float: right; 
+    float: right;
     padding-right: .5em;
   }
   .footer__text3{

@@ -107,9 +107,11 @@
 }
 
 #icon_s{
-	margin-right: .8em;
+	margin: 0 .8em 0 0;
 	font-size: 24px;
 	color: #999;
+	float:left;
+
 }
 
 
@@ -119,6 +121,7 @@
 	margin-right: 1.2em;
 	font-size: 24px;
 	color: #999;
+	float:right;
 	}
 
 	#icon_s:hover{
@@ -407,7 +410,7 @@
 		/*text-shadow: 0 0 .5px rgba(255,255,255,.5);*/
 		letter-spacing: 1px;
 		display: inline-block;
-		font-weight: 400;
+		font-weight: 500;
 		z-index: 15;
 		font-size: 1.2em;
 		margin: 2em;

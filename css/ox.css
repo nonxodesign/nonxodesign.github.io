@@ -117,6 +117,7 @@
 	margin-right: .8em;
 	font-size: 24px;
 	color: #999;
+	
 }
 
 
@@ -440,7 +441,6 @@
 		text-shadow: 0 0 .5px rgba(255,255,255,.5);
 		letter-spacing: 1px;
 		display: inline-block;
-		font-weight: 200;
 		z-index: 15;
 		font-size: 1.2em;
 		margin: 2em;
