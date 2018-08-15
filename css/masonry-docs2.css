@@ -20,17 +20,12 @@
         font-weight: normal;
         font-style: normal;
 }
-@font-face {
-    font-family: BB;
-    src: url(./media/DINNextLTPro-Bold_0.otf) format("opentype");
-}
 
 body,html {
 
-  font-family: 'Alte-DIN-1451-Mittelschrift',quicksand,serif;
+  font-family: 'Alte-DIN-1451-Mittelschrift';
   text-align: justify;
   /*letter-spacing: 1px;*/
-  font-weight: 500;
 }
 
 
