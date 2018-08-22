@@ -4,7 +4,7 @@
 	.TopBar{
 		max-width:1200px;
 		width: 70%;
-		z-index: 15;
+		z-index: 1000;
 		margin-top:5em;
 		margin-bottom:10em;
 	}
@@ -37,7 +37,7 @@
 		padding: 2em 0em 0 2em;
 		margin-bottom: -2em;
 		position:fixed;
-		z-index: 15;
+		z-index: 1000;
 	}
 	.youtubeframe{
 		width: 100%;
@@ -146,7 +146,7 @@
 
 .logomask h5{
 	color: rgba(0, 0, 0, 1 );;
-	background: white; 
+	background: #f9f9f9; 
 	padding: .7em 2em .6em 2.2em;
 	/*border: 1px solid rgba(0, 0, 0, .2 );*/
 	font-weight:700;
