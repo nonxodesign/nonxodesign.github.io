@@ -5,8 +5,8 @@
 		max-width:1200px;
 		width: 70%;
 		z-index: 1000;
-		margin-top:5em;
-		margin-bottom:10em;
+		/*margin-top:5em;*/
+		/*margin-bottom:10em;*/
 	}
 	.logomask{
 		display:none;

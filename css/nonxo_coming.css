@@ -25,12 +25,15 @@ html,body{
 		}
 
 .css{}
+.hero{
+	position: absolute;
+}
 
 .containerx{
 	background: linear-gradient(135deg, #f9f9f9, #ccc);
 	/*background-size: 400% 400%;*/
 	width:100%;
-	height:100%;
+	height:100vh;
 	margin:0, auto;
 	padding:0;
 
