@@ -5,7 +5,8 @@
 		max-width:1200px;
 		width: 70%;
 		z-index: 1000;
-		
+		position: fixed;
+		transform:translateY(120%);
 	}
 	.logomask{
 		display:none;
@@ -145,7 +146,7 @@
 
 .logomask h5{
 	color: rgba(0, 0, 0, 1 );;
-	background: #f9f9f9; 
+	background: #fff; 
 	padding: .7em 2em .6em 2.2em;
 	/*border: 1px solid rgba(0, 0, 0, .2 );*/
 	font-weight:700;

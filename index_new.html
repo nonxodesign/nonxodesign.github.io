@@ -57,35 +57,16 @@
 
 	    <!-- iPad icon (Retina) -->
 	    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/icon/iphone_icon/apple-touch-icon-ipad@2x.png">
-<!-- iphone icon end -->
-
-<!-- 'Catamaran','Noto Sans TC' -->
 
 
-		<!-- stylesheet --><!-- 
-		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
-		<link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css" />
-		<link rel="stylesheet" href="bootstrap/css/bootstrap.css" />	 -->
+	
 		<link rel="stylesheet" href="css/ox3.css" media="screen">
 		<link rel="stylesheet" href="css/masonry-docs2.css" media="screen">
 		<link rel="stylesheet" href="css/loading_animate.css" media="screen">
-		<!-- Google Font -->
-		<!-- <link href="https://fonts.googleapis.com/css?family=Baaloo+Tamma|Ubuntu" rel="stylesheet"> -->
-		
-		<!-- <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosanstc.css"> -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet"> -->
 
-
-	<!-- <script type='text/javascript' src="./js/jquery-1.9.1.min.js"></script> -->
-
-	<!-- <script src="./js/masonry-docs.min.js"></script> -->
-	<!-- <script src="./js/jquery-3.1.0.js"></script> -->
-	<!-- imagesloadded -->
-	<!-- <script type="text/javascript" src="./js/imagesloaded.pkgd.min.js"></script> -->
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
-	</script><script src="./js/ex/jquery-1.8.1.min.js.下載"></script>
 	<script src="./js/ex/jquery.masonry.min.js.下載"></script>
 	<script src="./js/jquery.transit.min.js"></script>
  	
@@ -104,19 +85,21 @@
 	        		$('.S_0').transition({ y: '-6vh' },700 ,'ease');
 					$('.S_3').transition({ y: '-6vh' },1000 ,'ease');
 	        		$('.P_1').transition({ y: '-2vh',opacity:1 },1000 ,'ease');
+	        		$('#about_cross').transition({ opacity:1, y: '-64vh'},800 ,'ease');
    				});
 
    				
 			});
 
 			$(document).ready(function(){
-	    		$("#div1").click(function(){
+	    		$("#about_cross").click(function(){
 	        		$("#about_show").fadeOut();
 	        		$('.about__link').transition({ y: 0 },800 ,'ease');
 	        		$('.project__link').transition({ opacity:1 },400 ,'ease');
 	        		$('.P_1').transition({ opacity:0,  y: '1vh' },300 ,'ease');
 	        		$('.S_0').transition({ y: '6vh' },700 ,'ease');
 	        		$('.S_3').transition({ y: '6vh' },1100 ,'ease');
+
    				});
    				
 			});
@@ -129,15 +112,7 @@
 
 
 <body>
-
-	
-
-	
-	<div id="div1" style="right:50px;width:20px;height:20px;background-color:red; display:inline-block"></div>
-
-
 	<div class="TopBar">
-		
 			<div class="logo logohover">
 				<a href="./index.html">
 					<img src="./img/icon/nonxo-08.svg" alt="叉圈設計 nonxo" style="width:100%;">
@@ -161,8 +136,10 @@
 		      <div class="footer__text"">
 		      	<ul>
 			      	<li><button class="about__link">
-			      		<span>About Us</span></button></li><br/><br/>
-			      	
+				      		<span>About Us</span>
+				      	</button>
+				      </li><br/><br/>
+			      	<li><button id="about_cross">X</button></li>
 			      	<li><a href="project.html"><button class="project__link">
 			      		Project</button></a></li><br/><br/>
 
@@ -186,6 +163,7 @@
 
 
 	<div id="about_show">
+		
 		<div class="about_container">
 			<h2 class="S_0">NONXO WORKSHOP<hr>
 			<p class="P_1"><br/>
@@ -226,8 +204,8 @@
 <!-- －－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－ -->
 					
 					<div class="grid__item__full" >
-							<a href="./poster_collection">
-								<img src="./img/index_bigimg/s01.jpg" alt="叉圈設計 nonxo" style="width:100%">
+							<a href="./poster_collection.html">
+								<img src="./img/index_bigimg/s02.png" alt="叉圈設計 nonxo" style="width:100%">
 									</a><br/>
 						
 					</div>

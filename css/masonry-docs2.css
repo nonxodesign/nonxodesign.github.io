@@ -571,7 +571,6 @@ html.export {
 
 body {
   color: #333;
-  background: #f9f9f9;
 }
 
 /* ---- links ---- */
@@ -1344,6 +1343,26 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
   font-size:2em;
 }
 
+#about_cross{
+  transform:translateY(-40vh);
+  z-index: 10000;
+  position:fixed;
+  background:red;
+  height:5vh;
+  width:5vw;
+  color:#333;
+  cursor: grab;
+  text-decoration: none;
+  border: 0;
+  opacity:0;
+
+
+}
+   #div1{
+    z-index: 10000;
+    position:fixed;
+  }
+
 .about_container{
   width:75%;
   padding-top: 18.6vh;
@@ -1373,57 +1392,169 @@ body{
 
 }
 
-.grid__item:nth-child(1) div{
-  animation-delay:.1s;
+@media screen and ( min-width: 1800px ) {
+  .grid__item:nth-child(1) div{
+    animation-delay:.1s;
+  }
+
+  .grid__item:nth-child(2) div{
+    animation-delay:.2s;
+  }
+
+
+  .grid__item:nth-child(3) div{
+    animation-delay:.3s;
+  }
+
+  .grid__item:nth-child(4) div{
+    animation-delay:.4s;
+  }
+  /*___________________________________*/
+
+  .grid__item:nth-child(5) div{
+    animation-delay:.2s;
+  }
+
+  .grid__item:nth-child(6) div{
+    animation-delay:.3s;
+  }
+
+  .grid__item:nth-child(7) div{
+    animation-delay:.4s;
+  }
+
+  .grid__item:nth-child(8) div{
+    animation-delay:.5s;
+  }
+  .grid__item:nth-child(9) div{
+    animation-delay: .6s;
+  }
+  /*____________________________________*/
+  .grid__item:nth-child(10) div{
+    animation-delay:.5s;
+  }
+  .grid__item:nth-child(11) div{
+    animation-delay:.6s;
+  }
+  .grid__item:nth-child(12) div{
+    animation-delay:.7s;
+  }
+
+  .grid__item:nth-child(13) div{
+    animation-delay:.8s;
+  }
 }
 
-.grid__item:nth-child(2) div{
-  animation-delay:.2s;
-}
+
+@media screen and ( max-width: 1799px ) {
+  .grid__item:nth-child(1) div{
+    animation-delay:.1s;
+  }
+
+  .grid__item:nth-child(2) div{
+    animation-delay:.2s;
+  }
 
 
-.grid__item:nth-child(3) div{
-  animation-delay:.3s;
+  .grid__item:nth-child(3) div{
+    animation-delay:.3s;
+  }
+  /*___________________________________*/
+  .grid__item:nth-child(4) div{
+    animation-delay:.2s;
+  }
+
+
+  .grid__item:nth-child(5) div{
+    animation-delay:.3s;
+  }
+
+  .grid__item:nth-child(6) div{
+    animation-delay:.4s;
+  }
+
+  .grid__item:nth-child(7) div{
+    animation-delay:.5s;
+  }
+
+  /*___________________________________*/
+  .grid__item:nth-child(8) div{
+    animation-delay:.3s;
+  }
+  .grid__item:nth-child(9) div{
+    animation-delay: .4s;
+  }
+  .grid__item:nth-child(10) div{
+    animation-delay:.5s;
+  }
+  .grid__item:nth-child(11) div{
+    animation-delay:.7s;
+  }
+    /*___________________________________*/
+  .grid__item:nth-child(12) div{
+    animation-delay:.1s;
+  }
+
+  .grid__item:nth-child(13) div{
+    animation-delay:.2s;
+  }
 }
 
-.grid__item:nth-child(4) div{
-  animation-delay:.4s;
-}
-/*___________________________________*/
+@media screen and ( max-width: 1500px ) {
+  .grid__item:nth-child(1) div{
+    animation-delay:.1s;
+  }
 
-.grid__item:nth-child(5) div{
-  animation-delay:.2s;
-}
+  .grid__item:nth-child(2) div{
+    animation-delay:.2s;
+  }
 
-.grid__item:nth-child(6) div{
-  animation-delay:.3s;
-}
+  /*___________________________________*/
+  .grid__item:nth-child(3) div{
+    animation-delay:.2s;
+  }
 
-.grid__item:nth-child(7) div{
-  animation-delay:.4s;
-}
+  .grid__item:nth-child(4) div{
+    animation-delay:.3s;
+  }
 
-.grid__item:nth-child(8) div{
-  animation-delay:.5s;
-}
-.grid__item:nth-child(9) div{
-  animation-delay: .6s;
-}
-/*____________________________________*/
-.grid__item:nth-child(10) div{
-  animation-delay:.2s;
-}
-.grid__item:nth-child(11) div{
-  animation-delay:.3s;
-}
-.grid__item:nth-child(12) div{
-  animation-delay:.4s;
-}
 
-.grid__item:nth-child(13) div{
-  animation-delay:.5s;
-}
+  .grid__item:nth-child(5) div{
+    animation-delay:.4s;
+  }
 
+  /*___________________________________*/
+  .grid__item:nth-child(6) div{
+    animation-delay:.4s;
+  }
+
+  .grid__item:nth-child(7) div{
+    animation-delay:.5s;
+  }
+
+  .grid__item:nth-child(8) div{
+    animation-delay:.7s;
+  }
+
+    /*___________________________________*/
+  .grid__item:nth-child(9) div{
+    animation-delay: .2s;
+  }
+  .grid__item:nth-child(10) div{
+    animation-delay:.3s;
+  }
+  .grid__item:nth-child(11) div{
+    animation-delay:.4s;
+  }
+    /*___________________________________*/
+  .grid__item:nth-child(12) div{
+    animation-delay:.1s;
+  }
+
+  .grid__item:nth-child(13) div{
+    animation-delay:.2s;
+  }
+}
 
 
 
@@ -1530,16 +1661,24 @@ two columns for large devices
 
 .grid {
   background: white;
-  width: 95%;
+  width: 90vw;
   margin: 0 auto;
+  overflow:hidden;
+  padding-top: 15vh;
+
 
 }
 
 @media screen and ( min-width: 768px ) {
   .grid {
-    width:60%;
+    width:80vw;
+    padding-top: 3vh;
+    float:right;
   }
 }
+
+
+
 /* clearfix */
 .grid:after {
   content: '';
@@ -1812,7 +1951,7 @@ two columns for large devices
 .grid__grid-sizer,
   .grid__item {
     width: 49.5%; 
-
+    display: inline-block;
     padding: .2em .5em;
   }
 
@@ -1829,20 +1968,12 @@ two columns for large devices
 /* enough width for 4 columns */
 @media screen and ( min-width: 768px ) {
 
-  #div1{
-    z-index: 10000;
-    position:fixed;
-  }
-
-  #div2{
-    left:1vw;
-    z-index: 1000;
-    position: fixed;
-  }
+ 
   .grid__grid-sizer,
   .grid__item {
     width: 300px; 
     padding: 1.2em;
+    display:inline-block;
   }
 
   .grid__item__big {
