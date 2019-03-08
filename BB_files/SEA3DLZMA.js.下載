@@ -23,7 +23,7 @@ THE SOFTWARE.
 /*
 References:
 - "LZMA SDK" by Igor Pavlov
-  http://www.7-zip.org/sdk.html
+  https://www.7-zip.org/sdk.html
 */
 
 'use strict';
@@ -774,7 +774,7 @@ SEA3D.LZMA = function () {
 
 /**
  * 	SEA3D LZMA
- * 	@author Sunag / http://www.sunag.com.br/
+ * 	@author Sunag / https://www.sunag.com.br/
  */
 
 SEA3D.File.LZMAUncompress = function ( data ) {

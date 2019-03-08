@@ -168,7 +168,7 @@ o<i.length;
 o++){var s=i[o];
 n&&n[s]&&(this.off(t,s),delete n[s]),s.apply(this,e)}return this}},e.allOff=function(){delete this._events,delete this._onceEvents},t}),function(t,e){"function"==typeof define&&define.amd?define("get-size/get-size",[],function(){return e()}):"object"==("undefined"==typeof module?"undefined":_typeof(module))&&module.exports?module.exports=e():t.getSize=e()}(window,function(){function g(t){var e=parseFloat(t);
 return-1==t.indexOf("%")&&!isNaN(e)&&e}function y(t){var e=getComputedStyle(t);
-return e||i("Style returned "+e+". Are you running this code in a hidden iframe on Firefox? See http://bit.ly/getsizebug1"),e}function b(t){if(function(){if(!w){w=!0;
+return e||i("Style returned "+e+". Are you running this code in a hidden iframe on Firefox? See https://bit.ly/getsizebug1"),e}function b(t){if(function(){if(!w){w=!0;
 var t=document.createElement("div");
 t.style.width="200px",t.style.padding="1px 2px 3px 4px",t.style.borderStyle="solid",t.style.borderWidth="1px 2px 3px 4px",t.style.boxSizing="border-box";
 var e=document.body||document.documentElement;
@@ -379,7 +379,7 @@ this.dispatchEvent("staticClick",t,[e,n,o])},o.onscroll=function(){var t=n(),e=t
 return e.bindTap=function(t){t&&(this.unbindTap(),this.tapElement=t,this._bindStartEvent(t,!0))},e.unbindTap=function(){this.tapElement&&(this._bindStartEvent(this.tapElement,!0),delete this.tapElement)},e.pointerUp=function(t,e){if(!this.isIgnoringMouseUp||"mouseup"!=t.type){var i=l.getPointerPoint(e),n=this.tapElement.getBoundingClientRect(),o=a.pageXOffset,s=a.pageYOffset;
 if(i.x>=n.left+o&&i.x<=n.right+o&&i.y>=n.top+s&&i.y<=n.bottom+s&&this.emitEvent("tap",[t,e]),"mouseup"!=t.type){this.isIgnoringMouseUp=!0;
 var r=this;
-setTimeout(function(){delete r.isIgnoringMouseUp},400)}}},e.destroy=function(){this.pointerDone(),this.unbindTap()},t}),function(n,o){"function"==typeof define&&define.amd?define("flickity/js/prev-next-button",["./flickity","tap-listener/tap-listener","fizzy-ui-utils/utils"],function(t,e,i){return o(n,t,e,i)}):"object"==("undefined"==typeof module?"undefined":_typeof(module))&&module.exports?module.exports=o(n,require("./flickity"),require("tap-listener"),require("fizzy-ui-utils")):o(n,n.Flickity,n.TapListener,n.fizzyUIUtils)}(window,function(t,e,i,n){function o(t,e){this.direction=t,this.parent=e,this._create()}var s="http://www.w3.org/2000/svg";
+setTimeout(function(){delete r.isIgnoringMouseUp},400)}}},e.destroy=function(){this.pointerDone(),this.unbindTap()},t}),function(n,o){"function"==typeof define&&define.amd?define("flickity/js/prev-next-button",["./flickity","tap-listener/tap-listener","fizzy-ui-utils/utils"],function(t,e,i){return o(n,t,e,i)}):"object"==("undefined"==typeof module?"undefined":_typeof(module))&&module.exports?module.exports=o(n,require("./flickity"),require("tap-listener"),require("fizzy-ui-utils")):o(n,n.Flickity,n.TapListener,n.fizzyUIUtils)}(window,function(t,e,i,n){function o(t,e){this.direction=t,this.parent=e,this._create()}var s="https://www.w3.org/2000/svg";
 (o.prototype=Object.create(i.prototype))._create=function(){this.isEnabled=!0,this.isPrevious=-1==this.direction;
 var t=this.parent.options.rightToLeft?1:-1;
 this.isLeft=this.direction==t;

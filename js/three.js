@@ -328,8 +328,8 @@
 	var ObjectSpaceNormalMap = 1;
 
 	/**
-	 * @author alteredq / http://alteredqualia.com/
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author alteredq / https://alteredqualia.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	var _Math = {
@@ -339,7 +339,7 @@
 
 		generateUUID: ( function () {
 
-			// http://stackoverflow.com/questions/105034/how-to-create-a-guid-uuid-in-javascript/21963136#21963136
+			// https://stackoverflow.com/questions/105034/how-to-create-a-guid-uuid-in-javascript/21963136#21963136
 
 			var lut = [];
 
@@ -398,7 +398,7 @@
 
 		},
 
-		// http://en.wikipedia.org/wiki/Smoothstep
+		// https://en.wikipedia.org/wiki/Smoothstep
 
 		smoothstep: function ( x, min, max ) {
 
@@ -479,10 +479,10 @@
 	};
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
-	 * @author philogb / http://blog.thejit.org/
-	 * @author egraether / http://egraether.com/
-	 * @author zz85 / http://www.lab4games.net/zz85/blog
+	 * @author mrdoob / https://mrdoob.com/
+	 * @author philogb / https://blog.thejit.org/
+	 * @author egraether / https://egraether.com/
+	 * @author zz85 / https://www.lab4games.net/zz85/blog
 	 */
 
 	function Vector2( x, y ) {
@@ -976,16 +976,16 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
-	 * @author supereggbert / http://www.paulbrunt.co.uk/
-	 * @author philogb / http://blog.thejit.org/
-	 * @author jordi_ros / http://plattsoft.com
-	 * @author D1plo1d / http://github.com/D1plo1d
-	 * @author alteredq / http://alteredqualia.com/
-	 * @author mikael emtinger / http://gomo.se/
-	 * @author timknip / http://www.floorplanner.com/
-	 * @author bhouston / http://clara.io
-	 * @author WestLangley / http://github.com/WestLangley
+	 * @author mrdoob / https://mrdoob.com/
+	 * @author supereggbert / https://www.paulbrunt.co.uk/
+	 * @author philogb / https://blog.thejit.org/
+	 * @author jordi_ros / https://plattsoft.com
+	 * @author D1plo1d / https://github.com/D1plo1d
+	 * @author alteredq / https://alteredqualia.com/
+	 * @author mikael emtinger / https://gomo.se/
+	 * @author timknip / https://www.floorplanner.com/
+	 * @author bhouston / https://clara.io
+	 * @author WestLangley / https://github.com/WestLangley
 	 */
 
 	function Matrix4() {
@@ -1437,7 +1437,7 @@
 			var n41 = te[ 3 ], n42 = te[ 7 ], n43 = te[ 11 ], n44 = te[ 15 ];
 
 			//TODO: make this more efficient
-			//( based on http://www.euclideanspace.com/maths/algebra/matrix/functions/inverse/fourD/index.htm )
+			//( based on https://www.euclideanspace.com/maths/algebra/matrix/functions/inverse/fourD/index.htm )
 
 			return (
 				n41 * (
@@ -1508,7 +1508,7 @@
 
 		getInverse: function ( m, throwOnDegenerate ) {
 
-			// based on http://www.euclideanspace.com/maths/algebra/matrix/functions/inverse/fourD/index.htm
+			// based on https://www.euclideanspace.com/maths/algebra/matrix/functions/inverse/fourD/index.htm
 			var te = this.elements,
 				me = m.elements,
 
@@ -1662,7 +1662,7 @@
 
 		makeRotationAxis: function ( axis, angle ) {
 
-			// Based on http://www.gamedev.net/reference/articles/article1199.asp
+			// Based on https://www.gamedev.net/reference/articles/article1199.asp
 
 			var c = Math.cos( angle );
 			var s = Math.sin( angle );
@@ -1910,10 +1910,10 @@
 	} );
 
 	/**
-	 * @author mikael emtinger / http://gomo.se/
-	 * @author alteredq / http://alteredqualia.com/
-	 * @author WestLangley / http://github.com/WestLangley
-	 * @author bhouston / http://clara.io
+	 * @author mikael emtinger / https://gomo.se/
+	 * @author alteredq / https://alteredqualia.com/
+	 * @author WestLangley / https://github.com/WestLangley
+	 * @author bhouston / https://clara.io
 	 */
 
 	function Quaternion( x, y, z, w ) {
@@ -2113,7 +2113,7 @@
 
 			var x = euler._x, y = euler._y, z = euler._z, order = euler.order;
 
-			// http://www.mathworks.com/matlabcentral/fileexchange/
+			// https://www.mathworks.com/matlabcentral/fileexchange/
 			// 	20696-function-to-convert-between-dcm-euler-angles-quaternions-and-euler-vectors/
 			//	content/SpinCalc.m
 
@@ -2180,7 +2180,7 @@
 
 		setFromAxisAngle: function ( axis, angle ) {
 
-			// http://www.euclideanspace.com/maths/geometry/rotations/conversions/angleToQuaternion/index.htm
+			// https://www.euclideanspace.com/maths/geometry/rotations/conversions/angleToQuaternion/index.htm
 
 			// assumes axis is normalized
 
@@ -2199,7 +2199,7 @@
 
 		setFromRotationMatrix: function ( m ) {
 
-			// http://www.euclideanspace.com/maths/geometry/rotations/conversions/matrixToQuaternion/index.htm
+			// https://www.euclideanspace.com/maths/geometry/rotations/conversions/matrixToQuaternion/index.htm
 
 			// assumes the upper 3x3 of m is a pure rotation matrix (i.e, unscaled)
 
@@ -2409,7 +2409,7 @@
 
 		multiplyQuaternions: function ( a, b ) {
 
-			// from http://www.euclideanspace.com/maths/algebra/realNormedAlgebra/quaternions/code/index.htm
+			// from https://www.euclideanspace.com/maths/algebra/realNormedAlgebra/quaternions/code/index.htm
 
 			var qax = a._x, qay = a._y, qaz = a._z, qaw = a._w;
 			var qbx = b._x, qby = b._y, qbz = b._z, qbw = b._w;
@@ -2432,7 +2432,7 @@
 
 			var x = this._x, y = this._y, z = this._z, w = this._w;
 
-			// http://www.euclideanspace.com/maths/algebra/realNormedAlgebra/quaternions/slerp/
+			// https://www.euclideanspace.com/maths/algebra/realNormedAlgebra/quaternions/slerp/
 
 			var cosHalfTheta = w * qb._w + x * qb._x + y * qb._y + z * qb._z;
 
@@ -2540,12 +2540,12 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
-	 * @author kile / http://kile.stravaganza.org/
-	 * @author philogb / http://blog.thejit.org/
-	 * @author mikael emtinger / http://gomo.se/
-	 * @author egraether / http://egraether.com/
-	 * @author WestLangley / http://github.com/WestLangley
+	 * @author mrdoob / https://mrdoob.com/
+	 * @author kile / https://kile.stravaganza.org/
+	 * @author philogb / https://blog.thejit.org/
+	 * @author mikael emtinger / https://gomo.se/
+	 * @author egraether / https://egraether.com/
+	 * @author WestLangley / https://github.com/WestLangley
 	 */
 
 	function Vector3( x, y, z ) {
@@ -3268,9 +3268,9 @@
 	} );
 
 	/**
-	 * @author alteredq / http://alteredqualia.com/
-	 * @author WestLangley / http://github.com/WestLangley
-	 * @author bhouston / http://clara.io
+	 * @author alteredq / https://alteredqualia.com/
+	 * @author WestLangley / https://github.com/WestLangley
+	 * @author bhouston / https://clara.io
 	 * @author tschw
 	 */
 
@@ -3652,8 +3652,8 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
-	 * @author alteredq / http://alteredqualia.com/
+	 * @author mrdoob / https://mrdoob.com/
+	 * @author alteredq / https://alteredqualia.com/
 	 * @author szimek / https://github.com/szimek/
 	 */
 
@@ -3669,7 +3669,7 @@
 
 			} else {
 
-				canvas = document.createElementNS( 'http://www.w3.org/1999/xhtml', 'canvas' );
+				canvas = document.createElementNS( 'https://www.w3.org/1999/xhtml', 'canvas' );
 				canvas.width = image.width;
 				canvas.height = image.height;
 
@@ -3702,8 +3702,8 @@
 	};
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
-	 * @author alteredq / http://alteredqualia.com/
+	 * @author mrdoob / https://mrdoob.com/
+	 * @author alteredq / https://alteredqualia.com/
 	 * @author szimek / https://github.com/szimek/
 	 */
 
@@ -3744,7 +3744,7 @@
 		this.generateMipmaps = true;
 		this.premultiplyAlpha = false;
 		this.flipY = true;
-		this.unpackAlignment = 4;	// valid values: 1, 2, 4, 8 (see http://www.khronos.org/opengles/sdk/docs/man/xhtml/glPixelStorei.xml)
+		this.unpackAlignment = 4;	// valid values: 1, 2, 4, 8 (see https://www.khronos.org/opengles/sdk/docs/man/xhtml/glPixelStorei.xml)
 
 		// Values of encoding !== THREE.LinearEncoding only supported on map, envMap and emissiveMap.
 		//
@@ -4009,11 +4009,11 @@
 	} );
 
 	/**
-	 * @author supereggbert / http://www.paulbrunt.co.uk/
-	 * @author philogb / http://blog.thejit.org/
-	 * @author mikael emtinger / http://gomo.se/
-	 * @author egraether / http://egraether.com/
-	 * @author WestLangley / http://github.com/WestLangley
+	 * @author supereggbert / https://www.paulbrunt.co.uk/
+	 * @author philogb / https://blog.thejit.org/
+	 * @author mikael emtinger / https://gomo.se/
+	 * @author egraether / https://egraether.com/
+	 * @author WestLangley / https://github.com/WestLangley
 	 */
 
 	function Vector4( x, y, z, w ) {
@@ -4254,7 +4254,7 @@
 
 		setAxisAngleFromQuaternion: function ( q ) {
 
-			// http://www.euclideanspace.com/maths/geometry/rotations/conversions/quaternionToAngle/index.htm
+			// https://www.euclideanspace.com/maths/geometry/rotations/conversions/quaternionToAngle/index.htm
 
 			// q is assumed to be normalized
 
@@ -4282,7 +4282,7 @@
 
 		setAxisAngleFromRotationMatrix: function ( m ) {
 
-			// http://www.euclideanspace.com/maths/geometry/rotations/conversions/matrixToAngle/index.htm
+			// https://www.euclideanspace.com/maths/geometry/rotations/conversions/matrixToAngle/index.htm
 
 			// assumes the upper 3x3 of m is a pure rotation matrix (i.e, unscaled)
 
@@ -4637,7 +4637,7 @@
 
 	/**
 	 * @author szimek / https://github.com/szimek/
-	 * @author alteredq / http://alteredqualia.com/
+	 * @author alteredq / https://alteredqualia.com/
 	 * @author Marius Kintel / https://github.com/kintel
 	 */
 
@@ -4724,7 +4724,7 @@
 	} );
 
 	/**
-	 * @author alteredq / http://alteredqualia.com
+	 * @author alteredq / https://alteredqualia.com
 	 */
 
 	function WebGLRenderTargetCube( width, height, options ) {
@@ -4742,7 +4742,7 @@
 	WebGLRenderTargetCube.prototype.isWebGLRenderTargetCube = true;
 
 	/**
-	 * @author alteredq / http://alteredqualia.com/
+	 * @author alteredq / https://alteredqualia.com/
 	 */
 
 	function DataTexture( data, width, height, format, type, mapping, wrapS, wrapT, magFilter, minFilter, anisotropy, encoding ) {
@@ -4766,8 +4766,8 @@
 	DataTexture.prototype.isDataTexture = true;
 
 	/**
-	 * @author bhouston / http://clara.io
-	 * @author WestLangley / http://github.com/WestLangley
+	 * @author bhouston / https://clara.io
+	 * @author WestLangley / https://github.com/WestLangley
 	 */
 
 	function Box3( min, max ) {
@@ -5377,8 +5377,8 @@
 	} );
 
 	/**
-	 * @author bhouston / http://clara.io
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author bhouston / https://clara.io
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	function Sphere( center, radius ) {
@@ -5552,7 +5552,7 @@
 	} );
 
 	/**
-	 * @author bhouston / http://clara.io
+	 * @author bhouston / https://clara.io
 	 */
 
 	function Plane( normal, constant ) {
@@ -5792,9 +5792,9 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
-	 * @author alteredq / http://alteredqualia.com/
-	 * @author bhouston / http://clara.io
+	 * @author mrdoob / https://mrdoob.com/
+	 * @author alteredq / https://alteredqualia.com/
+	 * @author bhouston / https://clara.io
 	 */
 
 	function Frustum( p0, p1, p2, p3, p4, p5 ) {
@@ -6394,7 +6394,7 @@
 	};
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	var ColorKeywords = { 'aliceblue': 0xF0F8FF, 'antiquewhite': 0xFAEBD7, 'aqua': 0x00FFFF, 'aquamarine': 0x7FFFD4, 'azure': 0xF0FFFF,
@@ -7191,9 +7191,9 @@
 	};
 
 	/**
-	 * @author alteredq / http://alteredqualia.com/
-	 * @author mrdoob / http://mrdoob.com/
-	 * @author mikael emtinger / http://gomo.se/
+	 * @author alteredq / https://alteredqualia.com/
+	 * @author mrdoob / https://mrdoob.com/
+	 * @author mikael emtinger / https://gomo.se/
 	 */
 
 	var ShaderLib = {
@@ -7439,7 +7439,7 @@
 	};
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	function WebGLAnimation() {
@@ -7494,7 +7494,7 @@
 	}
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	function WebGLAttributes( gl ) {
@@ -7647,9 +7647,9 @@
 	}
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
-	 * @author WestLangley / http://github.com/WestLangley
-	 * @author bhouston / http://clara.io
+	 * @author mrdoob / https://mrdoob.com/
+	 * @author WestLangley / https://github.com/WestLangley
+	 * @author bhouston / https://clara.io
 	 */
 
 	function Euler( x, y, z, order ) {
@@ -7992,7 +7992,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	function Layers() {
@@ -8036,10 +8036,10 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
-	 * @author mikael emtinger / http://gomo.se/
-	 * @author alteredq / http://alteredqualia.com/
-	 * @author WestLangley / http://github.com/WestLangley
+	 * @author mrdoob / https://mrdoob.com/
+	 * @author mikael emtinger / https://gomo.se/
+	 * @author alteredq / https://alteredqualia.com/
+	 * @author WestLangley / https://github.com/WestLangley
 	 * @author elephantatwork / www.elephantatwork.ch
 	 */
 
@@ -8914,9 +8914,9 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
-	 * @author mikael emtinger / http://gomo.se/
-	 * @author WestLangley / http://github.com/WestLangley
+	 * @author mrdoob / https://mrdoob.com/
+	 * @author mikael emtinger / https://gomo.se/
+	 * @author WestLangley / https://github.com/WestLangley
 	*/
 
 	function Camera() {
@@ -8985,8 +8985,8 @@
 	} );
 
 	/**
-	 * @author alteredq / http://alteredqualia.com/
-	 * @author arose / http://github.com/arose
+	 * @author alteredq / https://alteredqualia.com/
+	 * @author arose / https://github.com/arose
 	 */
 
 	function OrthographicCamera( left, right, top, bottom, near, far ) {
@@ -9127,8 +9127,8 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
-	 * @author alteredq / http://alteredqualia.com/
+	 * @author mrdoob / https://mrdoob.com/
+	 * @author alteredq / https://alteredqualia.com/
 	 */
 
 	function Face3( a, b, c, normal, color, materialIndex ) {
@@ -9185,12 +9185,12 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
-	 * @author kile / http://kile.stravaganza.org/
-	 * @author alteredq / http://alteredqualia.com/
-	 * @author mikael emtinger / http://gomo.se/
-	 * @author zz85 / http://www.lab4games.net/zz85/blog
-	 * @author bhouston / http://clara.io
+	 * @author mrdoob / https://mrdoob.com/
+	 * @author kile / https://kile.stravaganza.org/
+	 * @author alteredq / https://alteredqualia.com/
+	 * @author mikael emtinger / https://gomo.se/
+	 * @author zz85 / https://www.lab4games.net/zz85/blog
+	 * @author bhouston / https://clara.io
 	 */
 
 	var geometryId = 0; // Geometry uses even numbers as Id
@@ -9608,7 +9608,7 @@
 			if ( areaWeighted ) {
 
 				// vertex normals weighted by triangle areas
-				// http://www.iquilezles.org/www/articles/normals/normals.htm
+				// https://www.iquilezles.org/www/articles/normals/normals.htm
 
 				var vA, vB, vC;
 				var cb = new Vector3(), ab = new Vector3();
@@ -10612,7 +10612,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	function BufferAttribute( array, itemSize, normalized ) {
@@ -11023,7 +11023,7 @@
 	Float64BufferAttribute.prototype.constructor = Float64BufferAttribute;
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	function DirectGeometry() {
@@ -11293,7 +11293,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	function arrayMax( array ) {
@@ -11313,8 +11313,8 @@
 	}
 
 	/**
-	 * @author alteredq / http://alteredqualia.com/
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author alteredq / https://alteredqualia.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	var bufferGeometryId = 1; // BufferGeometry uses odd numbers as Id
@@ -12428,7 +12428,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 * @author Mugen87 / https://github.com/Mugen87
 	 */
 
@@ -12624,7 +12624,7 @@
 	BoxBufferGeometry.prototype.constructor = BoxBufferGeometry;
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 * @author Mugen87 / https://github.com/Mugen87
 	 */
 
@@ -12744,8 +12744,8 @@
 	PlaneBufferGeometry.prototype.constructor = PlaneBufferGeometry;
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
-	 * @author alteredq / http://alteredqualia.com/
+	 * @author mrdoob / https://mrdoob.com/
+	 * @author alteredq / https://alteredqualia.com/
 	 */
 
 	var materialId = 0;
@@ -13125,8 +13125,8 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
-	 * @author alteredq / http://alteredqualia.com/
+	 * @author mrdoob / https://mrdoob.com/
+	 * @author alteredq / https://alteredqualia.com/
 	 *
 	 * parameters = {
 	 *  color: <hex>,
@@ -13239,7 +13239,7 @@
 	};
 
 	/**
-	 * @author alteredq / http://alteredqualia.com/
+	 * @author alteredq / https://alteredqualia.com/
 	 *
 	 * parameters = {
 	 *  defines: { "label" : "value" },
@@ -13424,7 +13424,7 @@
 	};
 
 	/**
-	 * @author bhouston / http://clara.io
+	 * @author bhouston / https://clara.io
 	 */
 
 	function Ray( origin, direction ) {
@@ -13556,7 +13556,7 @@
 
 			return function distanceSqToSegment( v0, v1, optionalPointOnRay, optionalPointOnSegment ) {
 
-				// from http://www.geometrictools.com/GTEngine/Include/Mathematics/GteDistRaySegment.h
+				// from https://www.geometrictools.com/GTEngine/Include/Mathematics/GteDistRaySegment.h
 				// It returns the min distance between the ray and the segment
 				// defined by v0 and v1
 				// It can also set two optional targets :
@@ -13875,7 +13875,7 @@
 
 			return function intersectTriangle( a, b, c, backfaceCulling, target ) {
 
-				// from http://www.geometrictools.com/GTEngine/Include/Mathematics/GteIntrRay3Triangle3.h
+				// from https://www.geometrictools.com/GTEngine/Include/Mathematics/GteIntrRay3Triangle3.h
 
 				edge1.subVectors( b, a );
 				edge2.subVectors( c, a );
@@ -13966,8 +13966,8 @@
 	} );
 
 	/**
-	 * @author bhouston / http://clara.io
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author bhouston / https://clara.io
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	function Triangle( a, b, c ) {
@@ -14011,7 +14011,7 @@
 		}(),
 
 		// static/instance method to calculate barycentric coordinates
-		// based on: http://www.blackpawn.com/texts/pointinpoly/default.html
+		// based on: https://www.blackpawn.com/texts/pointinpoly/default.html
 		getBarycoord: function () {
 
 			var v0 = new Vector3();
@@ -14311,10 +14311,10 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
-	 * @author alteredq / http://alteredqualia.com/
-	 * @author mikael emtinger / http://gomo.se/
-	 * @author jonobr1 / http://jonobr1.com/
+	 * @author mrdoob / https://mrdoob.com/
+	 * @author alteredq / https://alteredqualia.com/
+	 * @author mikael emtinger / https://gomo.se/
+	 * @author jonobr1 / https://jonobr1.com/
 	 */
 
 	function Mesh( geometry, material ) {
@@ -14759,7 +14759,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	function WebGLBackground( renderer, state, objects, premultipliedAlpha ) {
@@ -14888,7 +14888,7 @@
 	}
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	function WebGLBufferRenderer( gl, extensions, info, capabilities ) {
@@ -14945,7 +14945,7 @@
 	}
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	function WebGLCapabilities( gl, extensions, parameters ) {
@@ -15218,7 +15218,7 @@
 	}
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	function WebGLExtensions( gl ) {
@@ -15277,7 +15277,7 @@
 	}
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	function WebGLGeometries( gl, attributes, info ) {
@@ -15455,7 +15455,7 @@
 	}
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	function WebGLIndexedBufferRenderer( gl, extensions, info, capabilities ) {
@@ -15603,7 +15603,7 @@
 	}
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	function absNumericalSort( a, b ) {
@@ -15712,7 +15712,7 @@
 	}
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	function WebGLObjects( geometries, info ) {
@@ -15762,7 +15762,7 @@
 	}
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	function CubeTexture( images, mapping, wrapS, wrapT, magFilter, minFilter, format, type, anisotropy, encoding ) {
@@ -15800,7 +15800,7 @@
 	/**
 	 * @author tschw
 	 * @author Mugen87 / https://github.com/Mugen87
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 *
 	 * Uniforms of a program.
 	 * Those form a tree structure with a special top-level container for the root,
@@ -15881,7 +15881,7 @@
 
 		if ( firstElem <= 0 || firstElem > 0 ) return array;
 		// unoptimized: ! isNaN( firstElem )
-		// see http://jacksondunstan.com/articles/983
+		// see https://jacksondunstan.com/articles/983
 
 		var n = nBlocks * blockSize,
 			r = arrayCacheF32[ n ];
@@ -16651,7 +16651,7 @@
 	};
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	function addLineNumbers( string ) {
@@ -16695,7 +16695,7 @@
 	}
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	var programIdCount = 0;
@@ -17417,7 +17417,7 @@
 	}
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	function WebGLPrograms( renderer, extensions, capabilities ) {
@@ -17769,7 +17769,7 @@
 	}
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	function painterSortStable( a, b ) {
@@ -17928,7 +17928,7 @@
 	}
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	function UniformsCache() {
@@ -18366,10 +18366,10 @@
 	}
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
-	 * @author alteredq / http://alteredqualia.com/
+	 * @author mrdoob / https://mrdoob.com/
+	 * @author alteredq / https://alteredqualia.com/
 	 * @author bhouston / https://clara.io
-	 * @author WestLangley / http://github.com/WestLangley
+	 * @author WestLangley / https://github.com/WestLangley
 	 *
 	 * parameters = {
 	 *
@@ -18447,7 +18447,7 @@
 	};
 
 	/**
-	 * @author WestLangley / http://github.com/WestLangley
+	 * @author WestLangley / https://github.com/WestLangley
 	 *
 	 * parameters = {
 	 *
@@ -18526,8 +18526,8 @@
 	};
 
 	/**
-	 * @author alteredq / http://alteredqualia.com/
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author alteredq / https://alteredqualia.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	function WebGLShadowMap( _renderer, _objects, maxTextureSize ) {
@@ -18944,7 +18944,7 @@
 	}
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	function WebGLState( gl, extensions, utils, capabilities ) {
@@ -19902,7 +19902,7 @@
 	}
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	function WebGLTextures( _gl, extensions, state, properties, capabilities, utils, info ) {
@@ -19928,7 +19928,7 @@
 
 				var scale = maxSize / Math.max( image.width, image.height );
 
-				var canvas = document.createElementNS( 'http://www.w3.org/1999/xhtml', 'canvas' );
+				var canvas = document.createElementNS( 'https://www.w3.org/1999/xhtml', 'canvas' );
 				canvas.width = Math.floor( image.width * scale );
 				canvas.height = Math.floor( image.height * scale );
 
@@ -19955,7 +19955,7 @@
 
 			if ( image instanceof HTMLImageElement || image instanceof HTMLCanvasElement || image instanceof ImageBitmap ) {
 
-				if ( _canvas === undefined ) _canvas = document.createElementNS( 'http://www.w3.org/1999/xhtml', 'canvas' );
+				if ( _canvas === undefined ) _canvas = document.createElementNS( 'https://www.w3.org/1999/xhtml', 'canvas' );
 
 				_canvas.width = _Math.floorPowerOfTwo( image.width );
 				_canvas.height = _Math.floorPowerOfTwo( image.height );
@@ -20798,7 +20798,7 @@
 	}
 
 	/**
-	 * @author thespite / http://www.twitter.com/thespite
+	 * @author thespite / https://www.twitter.com/thespite
 	 */
 
 	function WebGLUtils( gl, extensions, capabilities ) {
@@ -20961,7 +20961,7 @@
 	}
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	function Group() {
@@ -20981,9 +20981,9 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
-	 * @author greggman / http://games.greggman.com/
-	 * @author zz85 / http://www.lab4games.net/zz85/blog
+	 * @author mrdoob / https://mrdoob.com/
+	 * @author greggman / https://games.greggman.com/
+	 * @author zz85 / https://www.lab4games.net/zz85/blog
 	 * @author tschw
 	 */
 
@@ -21047,7 +21047,7 @@
 		 */
 		setFocalLength: function ( focalLength ) {
 
-			// see http://www.bobatkins.com/photography/technical/field_of_view.html
+			// see https://www.bobatkins.com/photography/technical/field_of_view.html
 			var vExtentSlope = 0.5 * this.getFilmHeight() / focalLength;
 
 			this.fov = _Math.RAD2DEG * 2 * Math.atan( vExtentSlope );
@@ -21219,7 +21219,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	function ArrayCamera( array ) {
@@ -21239,7 +21239,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	function WebVRManager( renderer ) {
@@ -21627,7 +21627,7 @@
 	}
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	function WebXRManager( renderer ) {
@@ -21922,9 +21922,9 @@
 	}
 
 	/**
-	 * @author supereggbert / http://www.paulbrunt.co.uk/
-	 * @author mrdoob / http://mrdoob.com/
-	 * @author alteredq / http://alteredqualia.com/
+	 * @author supereggbert / https://www.paulbrunt.co.uk/
+	 * @author mrdoob / https://mrdoob.com/
+	 * @author alteredq / https://alteredqualia.com/
 	 * @author szimek / https://github.com/szimek/
 	 * @author tschw
 	 */
@@ -21935,7 +21935,7 @@
 
 		parameters = parameters || {};
 
-		var _canvas = parameters.canvas !== undefined ? parameters.canvas : document.createElementNS( 'http://www.w3.org/1999/xhtml', 'canvas' ),
+		var _canvas = parameters.canvas !== undefined ? parameters.canvas : document.createElementNS( 'https://www.w3.org/1999/xhtml', 'canvas' ),
 			_context = parameters.context !== undefined ? parameters.context : null,
 
 			_alpha = parameters.alpha !== undefined ? parameters.alpha : false,
@@ -24522,8 +24522,8 @@
 	}
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
-	 * @author alteredq / http://alteredqualia.com/
+	 * @author mrdoob / https://mrdoob.com/
+	 * @author alteredq / https://alteredqualia.com/
 	 */
 
 	function FogExp2( color, density ) {
@@ -24554,8 +24554,8 @@
 	};
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
-	 * @author alteredq / http://alteredqualia.com/
+	 * @author mrdoob / https://mrdoob.com/
+	 * @author alteredq / https://alteredqualia.com/
 	 */
 
 	function Fog( color, near, far ) {
@@ -24589,7 +24589,7 @@
 	};
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	function Scene() {
@@ -24883,7 +24883,7 @@
 	} );
 
 	/**
-	 * @author alteredq / http://alteredqualia.com/
+	 * @author alteredq / https://alteredqualia.com/
 	 *
 	 * parameters = {
 	 *  color: <hex>,
@@ -24933,8 +24933,8 @@
 	};
 
 	/**
-	 * @author mikael emtinger / http://gomo.se/
-	 * @author alteredq / http://alteredqualia.com/
+	 * @author mikael emtinger / https://gomo.se/
+	 * @author alteredq / https://alteredqualia.com/
 	 */
 
 	var geometry;
@@ -25103,9 +25103,9 @@
 	} );
 
 	/**
-	 * @author mikael emtinger / http://gomo.se/
-	 * @author alteredq / http://alteredqualia.com/
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mikael emtinger / https://gomo.se/
+	 * @author alteredq / https://alteredqualia.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	function LOD() {
@@ -25274,10 +25274,10 @@
 	} );
 
 	/**
-	 * @author mikael emtinger / http://gomo.se/
-	 * @author alteredq / http://alteredqualia.com/
-	 * @author michael guerrero / http://realitymeltdown.com
-	 * @author ikerr / http://verold.com
+	 * @author mikael emtinger / https://gomo.se/
+	 * @author alteredq / https://alteredqualia.com/
+	 * @author michael guerrero / https://realitymeltdown.com
+	 * @author ikerr / https://verold.com
 	 */
 
 	function Skeleton( bones, boneInverses ) {
@@ -25448,9 +25448,9 @@
 	} );
 
 	/**
-	 * @author mikael emtinger / http://gomo.se/
-	 * @author alteredq / http://alteredqualia.com/
-	 * @author ikerr / http://verold.com
+	 * @author mikael emtinger / https://gomo.se/
+	 * @author alteredq / https://alteredqualia.com/
+	 * @author ikerr / https://verold.com
 	 */
 
 	function Bone() {
@@ -25470,9 +25470,9 @@
 	} );
 
 	/**
-	 * @author mikael emtinger / http://gomo.se/
-	 * @author alteredq / http://alteredqualia.com/
-	 * @author ikerr / http://verold.com
+	 * @author mikael emtinger / https://gomo.se/
+	 * @author alteredq / https://alteredqualia.com/
+	 * @author ikerr / https://verold.com
 	 */
 
 	function SkinnedMesh( geometry, material ) {
@@ -25671,8 +25671,8 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
-	 * @author alteredq / http://alteredqualia.com/
+	 * @author mrdoob / https://mrdoob.com/
+	 * @author alteredq / https://alteredqualia.com/
 	 *
 	 * parameters = {
 	 *  color: <hex>,
@@ -25722,7 +25722,7 @@
 	};
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	function Line( geometry, material, mode ) {
@@ -25967,7 +25967,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	function LineSegments( geometry, material ) {
@@ -26046,7 +26046,7 @@
 	} );
 
 	/**
-	 * @author mgreter / http://github.com/mgreter
+	 * @author mgreter / https://github.com/mgreter
 	 */
 
 	function LineLoop( geometry, material ) {
@@ -26066,8 +26066,8 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
-	 * @author alteredq / http://alteredqualia.com/
+	 * @author mrdoob / https://mrdoob.com/
+	 * @author alteredq / https://alteredqualia.com/
 	 *
 	 * parameters = {
 	 *  color: <hex>,
@@ -26125,7 +26125,7 @@
 	};
 
 	/**
-	 * @author alteredq / http://alteredqualia.com/
+	 * @author alteredq / https://alteredqualia.com/
 	 */
 
 	function Points( geometry, material ) {
@@ -26263,7 +26263,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	function VideoTexture( video, mapping, wrapS, wrapT, magFilter, minFilter, format, type, anisotropy ) {
@@ -26295,7 +26295,7 @@
 	} );
 
 	/**
-	 * @author alteredq / http://alteredqualia.com/
+	 * @author alteredq / https://alteredqualia.com/
 	 */
 
 	function CompressedTexture( mipmaps, width, height, format, type, mapping, wrapS, wrapT, magFilter, minFilter, anisotropy, encoding ) {
@@ -26323,7 +26323,7 @@
 	CompressedTexture.prototype.isCompressedTexture = true;
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	function CanvasTexture( canvas, mapping, wrapS, wrapT, magFilter, minFilter, format, type, anisotropy ) {
@@ -26373,7 +26373,7 @@
 	DepthTexture.prototype.isDepthTexture = true;
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 * @author Mugen87 / https://github.com/Mugen87
 	 */
 
@@ -26550,7 +26550,7 @@
 	 * @author Mugen87 / https://github.com/Mugen87
 	 *
 	 * Parametric Surfaces Geometry
-	 * based on the brilliant article by @prideout http://prideout.net/blog/?p=44
+	 * based on the brilliant article by @prideout https://prideout.net/blog/?p=44
 	 */
 
 	// ParametricGeometry
@@ -26704,7 +26704,7 @@
 	/**
 	 * @author clockworkgeek / https://github.com/clockworkgeek
 	 * @author timothypratley / https://github.com/timothypratley
-	 * @author WestLangley / http://github.com/WestLangley
+	 * @author WestLangley / https://github.com/WestLangley
 	 * @author Mugen87 / https://github.com/Mugen87
 	 */
 
@@ -27502,7 +27502,7 @@
 	 * @author oosmoxiecode
 	 * @author Mugen87 / https://github.com/Mugen87
 	 *
-	 * based on http://www.blackpawn.com/texts/pqtorus/
+	 * based on https://www.blackpawn.com/texts/pqtorus/
 	 */
 
 	// TorusKnotGeometry
@@ -27687,7 +27687,7 @@
 
 	/**
 	 * @author oosmoxiecode
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 * @author Mugen87 / https://github.com/Mugen87
 	 */
 
@@ -28317,7 +28317,7 @@
 	}
 
 	// Simon Tatham's linked list merge sort algorithm
-	// http://www.chiark.greenend.org.uk/~sgtatham/algorithms/listsort.html
+	// https://www.chiark.greenend.org.uk/~sgtatham/algorithms/listsort.html
 
 	function sortLinked( list ) {
 
@@ -28630,7 +28630,7 @@
 	}
 
 	/**
-	 * @author zz85 / http://www.lab4games.net/zz85/blog
+	 * @author zz85 / https://www.lab4games.net/zz85/blog
 	 */
 
 	var ShapeUtils = {
@@ -28723,7 +28723,7 @@
 	}
 
 	/**
-	 * @author zz85 / http://www.lab4games.net/zz85/blog
+	 * @author zz85 / https://www.lab4games.net/zz85/blog
 	 *
 	 * Creates extruded geometry from a path shape.
 	 *
@@ -28952,7 +28952,7 @@
 				var v_trans_x, v_trans_y, shrink_by; // resulting translation vector for inPt
 
 				// good reading for geometry algorithms (here: line-line intersection)
-				// http://geomalgorithms.com/a05-_intersect-1.html
+				// https://geomalgorithms.com/a05-_intersect-1.html
 
 				var v_prev_x = inPt.x - inPrev.x,
 					v_prev_y = inPt.y - inPrev.y;
@@ -29546,8 +29546,8 @@
 	}
 
 	/**
-	 * @author zz85 / http://www.lab4games.net/zz85/blog
-	 * @author alteredq / http://alteredqualia.com/
+	 * @author zz85 / https://www.lab4games.net/zz85/blog
+	 * @author alteredq / https://alteredqualia.com/
 	 *
 	 * Text = 3D Text
 	 *
@@ -29622,7 +29622,7 @@
 	TextBufferGeometry.prototype.constructor = TextBufferGeometry;
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 * @author benaadams / https://twitter.com/ben_a_adams
 	 * @author Mugen87 / https://github.com/Mugen87
 	 */
@@ -29912,7 +29912,7 @@
 
 	/**
 	 * @author zz85 / https://github.com/zz85
-	 * @author bhouston / http://clara.io
+	 * @author bhouston / https://clara.io
 	 * @author Mugen87 / https://github.com/Mugen87
 	 */
 
@@ -30088,7 +30088,7 @@
 	LatheBufferGeometry.prototype.constructor = LatheBufferGeometry;
 
 	/**
-	 * @author jonobr1 / http://jonobr1.com
+	 * @author jonobr1 / https://jonobr1.com
 	 * @author Mugen87 / https://github.com/Mugen87
 	 */
 
@@ -30303,7 +30303,7 @@
 	}
 
 	/**
-	 * @author WestLangley / http://github.com/WestLangley
+	 * @author WestLangley / https://github.com/WestLangley
 	 * @author Mugen87 / https://github.com/Mugen87
 	 */
 
@@ -30409,7 +30409,7 @@
 	EdgesGeometry.prototype.constructor = EdgesGeometry;
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 * @author Mugen87 / https://github.com/Mugen87
 	 */
 
@@ -30717,7 +30717,7 @@
 	CylinderBufferGeometry.prototype.constructor = CylinderBufferGeometry;
 
 	/**
-	 * @author abelnation / http://github.com/abelnation
+	 * @author abelnation / https://github.com/abelnation
 	 */
 
 	// ConeGeometry
@@ -30927,7 +30927,7 @@
 	});
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 *
 	 * parameters = {
 	 *  color: <THREE.Color>
@@ -30963,7 +30963,7 @@
 	};
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	function RawShaderMaterial( parameters ) {
@@ -30980,7 +30980,7 @@
 	RawShaderMaterial.prototype.isRawShaderMaterial = true;
 
 	/**
-	 * @author WestLangley / http://github.com/WestLangley
+	 * @author WestLangley / https://github.com/WestLangley
 	 *
 	 * parameters = {
 	 *  color: <hex>,
@@ -31153,7 +31153,7 @@
 	};
 
 	/**
-	 * @author WestLangley / http://github.com/WestLangley
+	 * @author WestLangley / https://github.com/WestLangley
 	 *
 	 * parameters = {
 	 *  reflectivity: <float>
@@ -31198,8 +31198,8 @@
 	};
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
-	 * @author alteredq / http://alteredqualia.com/
+	 * @author mrdoob / https://mrdoob.com/
+	 * @author alteredq / https://alteredqualia.com/
 	 *
 	 * parameters = {
 	 *  color: <hex>,
@@ -31362,7 +31362,7 @@
 	};
 
 	/**
-	 * @author takahirox / http://github.com/takahirox
+	 * @author takahirox / https://github.com/takahirox
 	 *
 	 * parameters = {
 	 *  gradientMap: new THREE.Texture( <Image> )
@@ -31399,8 +31399,8 @@
 	};
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
-	 * @author WestLangley / http://github.com/WestLangley
+	 * @author mrdoob / https://mrdoob.com/
+	 * @author WestLangley / https://github.com/WestLangley
 	 *
 	 * parameters = {
 	 *  opacity: <float>,
@@ -31488,8 +31488,8 @@
 	};
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
-	 * @author alteredq / http://alteredqualia.com/
+	 * @author mrdoob / https://mrdoob.com/
+	 * @author alteredq / https://alteredqualia.com/
 	 *
 	 * parameters = {
 	 *  color: <hex>,
@@ -31613,7 +31613,7 @@
 	};
 
 	/**
-	 * @author alteredq / http://alteredqualia.com/
+	 * @author alteredq / https://alteredqualia.com/
 	 *
 	 * parameters = {
 	 *  color: <hex>,
@@ -31681,7 +31681,7 @@
 	});
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	var Cache = {
@@ -31725,7 +31725,7 @@
 	};
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	function LoadingManager( onLoad, onProgress, onError ) {
@@ -31821,7 +31821,7 @@
 	var DefaultLoadingManager = new LoadingManager();
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	var loading = {};
@@ -32135,7 +32135,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 *
 	 * Abstract Base class to block based textures loader (dds, pvr, ...)
 	 */
@@ -32357,7 +32357,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 
@@ -32399,7 +32399,7 @@
 
 			}
 
-			var image = document.createElementNS( 'http://www.w3.org/1999/xhtml', 'img' );
+			var image = document.createElementNS( 'https://www.w3.org/1999/xhtml', 'img' );
 
 			function onImageLoad() {
 
@@ -32460,7 +32460,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 
@@ -32531,7 +32531,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 
@@ -32592,7 +32592,7 @@
 	} );
 
 	/**
-	 * @author zz85 / http://www.lab4games.net/zz85/blog
+	 * @author zz85 / https://www.lab4games.net/zz85/blog
 	 * Extensible curve object
 	 *
 	 * Some common of curve methods:
@@ -32854,7 +32854,7 @@
 
 		computeFrenetFrames: function ( segments, closed ) {
 
-			// see http://www.cs.indiana.edu/pub/techreports/TR425.pdf
+			// see https://www.cs.indiana.edu/pub/techreports/TR425.pdf
 
 			var normal = new Vector3();
 
@@ -33180,7 +33180,7 @@
 	 *
 	 * Centripetal CatmullRom Curve - which is useful for avoiding
 	 * cusps and self-intersections in non-uniform catmull rom curves.
-	 * http://www.cemyuksel.com/research/catmullrom_param/catmullrom.pdf
+	 * https://www.cemyuksel.com/research/catmullrom_param/catmullrom.pdf
 	 *
 	 * curve.type accepts centripetal(default), chordal and catmullrom
 	 * curve.tension is used for catmullrom which defaults to 0.5
@@ -33189,8 +33189,8 @@
 
 	/*
 	Based on an optimized c++ solution in
-	 - http://stackoverflow.com/questions/9489736/catmull-rom-curve-with-no-cusps-and-no-self-intersections/
-	 - http://ideone.com/NoEbVM
+	 - https://stackoverflow.com/questions/9489736/catmull-rom-curve-with-no-cusps-and-no-self-intersections/
+	 - https://ideone.com/NoEbVM
 
 	This CubicPoly class could be used for reusing some variables and calculations,
 	but for three.js curve use, it could be possible inlined and flatten into a single function call
@@ -33426,10 +33426,10 @@
 	};
 
 	/**
-	 * @author zz85 / http://www.lab4games.net/zz85/blog
+	 * @author zz85 / https://www.lab4games.net/zz85/blog
 	 *
 	 * Bezier Curves formulas obtained from
-	 * http://en.wikipedia.org/wiki/Bézier_curve
+	 * https://en.wikipedia.org/wiki/Bézier_curve
 	 */
 
 	function CatmullRom( t, p0, p1, p2, p3 ) {
@@ -34054,7 +34054,7 @@
 	});
 
 	/**
-	 * @author zz85 / http://www.lab4games.net/zz85/blog
+	 * @author zz85 / https://www.lab4games.net/zz85/blog
 	 *
 	 **/
 
@@ -34310,7 +34310,7 @@
 	} );
 
 	/**
-	 * @author zz85 / http://www.lab4games.net/zz85/blog
+	 * @author zz85 / https://www.lab4games.net/zz85/blog
 	 * Creates free form 2d path using series of points, lines or curves.
 	 **/
 
@@ -34483,7 +34483,7 @@
 	} );
 
 	/**
-	 * @author zz85 / http://www.lab4games.net/zz85/blog
+	 * @author zz85 / https://www.lab4games.net/zz85/blog
 	 * Defines a 2d shape plane using paths.
 	 **/
 
@@ -34593,8 +34593,8 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
-	 * @author alteredq / http://alteredqualia.com/
+	 * @author mrdoob / https://mrdoob.com/
+	 * @author alteredq / https://alteredqualia.com/
 	 */
 
 	function Light( color, intensity ) {
@@ -34650,7 +34650,7 @@
 	} );
 
 	/**
-	 * @author alteredq / http://alteredqualia.com/
+	 * @author alteredq / https://alteredqualia.com/
 	 */
 
 	function HemisphereLight( skyColor, groundColor, intensity ) {
@@ -34687,7 +34687,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	function LightShadow( camera ) {
@@ -34743,7 +34743,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	function SpotLightShadow() {
@@ -34780,7 +34780,7 @@
 	} );
 
 	/**
-	 * @author alteredq / http://alteredqualia.com/
+	 * @author alteredq / https://alteredqualia.com/
 	 */
 
 	function SpotLight( color, intensity, distance, angle, penumbra, decay ) {
@@ -34846,7 +34846,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 
@@ -34902,7 +34902,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	function DirectionalLightShadow( ) {
@@ -34918,8 +34918,8 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
-	 * @author alteredq / http://alteredqualia.com/
+	 * @author mrdoob / https://mrdoob.com/
+	 * @author alteredq / https://alteredqualia.com/
 	 */
 
 	function DirectionalLight( color, intensity ) {
@@ -34958,7 +34958,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	function AmbientLight( color, intensity ) {
@@ -34980,7 +34980,7 @@
 	} );
 
 	/**
-	 * @author abelnation / http://github.com/abelnation
+	 * @author abelnation / https://github.com/abelnation
 	 */
 
 	function RectAreaLight( color, intensity, width, height ) {
@@ -35026,8 +35026,8 @@
 
 	/**
 	 * @author tschw
-	 * @author Ben Houston / http://clara.io/
-	 * @author David Sarno / http://lighthaus.us/
+	 * @author Ben Houston / https://clara.io/
+	 * @author David Sarno / https://lighthaus.us/
 	 */
 
 	var AnimationUtils = {
@@ -35205,7 +35205,7 @@
 	 *
 	 * References:
 	 *
-	 * 		http://www.oodesign.com/template-method-pattern.html
+	 * 		https://www.oodesign.com/template-method-pattern.html
 	 *
 	 * @author tschw
 	 */
@@ -35240,7 +35240,7 @@
 
 					linear_scan: {
 
-						//- See http://jsperf.com/comparison-to-undefined/3
+						//- See https://jsperf.com/comparison-to-undefined/3
 						//- slower code:
 						//-
 						//- 				if ( t >= t1 || t1 === undefined ) {
@@ -35666,8 +35666,8 @@
 	 * A timed sequence of keyframes for a specific property.
 	 *
 	 *
-	 * @author Ben Houston / http://clara.io/
-	 * @author David Sarno / http://lighthaus.us/
+	 * @author Ben Houston / https://clara.io/
+	 * @author David Sarno / https://lighthaus.us/
 	 * @author tschw
 	 */
 
@@ -36109,8 +36109,8 @@
 	 * A Track of Boolean keyframe values.
 	 *
 	 *
-	 * @author Ben Houston / http://clara.io/
-	 * @author David Sarno / http://lighthaus.us/
+	 * @author Ben Houston / https://clara.io/
+	 * @author David Sarno / https://lighthaus.us/
 	 * @author tschw
 	 */
 
@@ -36143,8 +36143,8 @@
 	 * A Track of keyframe values that represent color.
 	 *
 	 *
-	 * @author Ben Houston / http://clara.io/
-	 * @author David Sarno / http://lighthaus.us/
+	 * @author Ben Houston / https://clara.io/
+	 * @author David Sarno / https://lighthaus.us/
 	 * @author tschw
 	 */
 
@@ -36173,8 +36173,8 @@
 	 *
 	 * A Track of numeric keyframe values.
 	 *
-	 * @author Ben Houston / http://clara.io/
-	 * @author David Sarno / http://lighthaus.us/
+	 * @author Ben Houston / https://clara.io/
+	 * @author David Sarno / https://lighthaus.us/
 	 * @author tschw
 	 */
 
@@ -36238,8 +36238,8 @@
 	 *
 	 * A Track of quaternion keyframe values.
 	 *
-	 * @author Ben Houston / http://clara.io/
-	 * @author David Sarno / http://lighthaus.us/
+	 * @author Ben Houston / https://clara.io/
+	 * @author David Sarno / https://lighthaus.us/
 	 * @author tschw
 	 */
 
@@ -36274,8 +36274,8 @@
 	 * A Track that interpolates Strings
 	 *
 	 *
-	 * @author Ben Houston / http://clara.io/
-	 * @author David Sarno / http://lighthaus.us/
+	 * @author Ben Houston / https://clara.io/
+	 * @author David Sarno / https://lighthaus.us/
 	 * @author tschw
 	 */
 
@@ -36305,8 +36305,8 @@
 	 * A Track of vectored keyframe values.
 	 *
 	 *
-	 * @author Ben Houston / http://clara.io/
-	 * @author David Sarno / http://lighthaus.us/
+	 * @author Ben Houston / https://clara.io/
+	 * @author David Sarno / https://lighthaus.us/
 	 * @author tschw
 	 */
 
@@ -36332,8 +36332,8 @@
 	 *
 	 * Reusable set of Tracks that represent an animation.
 	 *
-	 * @author Ben Houston / http://clara.io/
-	 * @author David Sarno / http://lighthaus.us/
+	 * @author Ben Houston / https://clara.io/
+	 * @author David Sarno / https://lighthaus.us/
 	 */
 
 	function AnimationClip( name, duration, tracks ) {
@@ -36770,7 +36770,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	function MaterialLoader( manager ) {
@@ -36984,7 +36984,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	function BufferGeometryLoader( manager ) {
@@ -37082,7 +37082,7 @@
 	};
 
 	/**
-	 * @author alteredq / http://alteredqualia.com/
+	 * @author alteredq / https://alteredqualia.com/
 	 */
 
 	function Loader() {}
@@ -37444,8 +37444,8 @@
 	};
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
-	 * @author alteredq / http://alteredqualia.com/
+	 * @author mrdoob / https://mrdoob.com/
+	 * @author alteredq / https://alteredqualia.com/
 	 */
 
 	function JSONLoader( manager ) {
@@ -38009,7 +38009,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	function ObjectLoader( manager ) {
@@ -38923,7 +38923,7 @@
 	};
 
 	/**
-	 * @author thespite / http://clicktorelease.com/
+	 * @author thespite / https://clicktorelease.com/
 	 */
 
 
@@ -39029,7 +39029,7 @@
 	};
 
 	/**
-	 * @author zz85 / http://www.lab4games.net/zz85/blog
+	 * @author zz85 / https://www.lab4games.net/zz85/blog
 	 * minimal class for proxing functions to Path. Replaces old "extractSubpaths()"
 	 **/
 
@@ -39308,8 +39308,8 @@
 	} );
 
 	/**
-	 * @author zz85 / http://www.lab4games.net/zz85/blog
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author zz85 / https://www.lab4games.net/zz85/blog
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 
@@ -39450,7 +39450,7 @@
 	}
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	function FontLoader( manager ) {
@@ -39506,7 +39506,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	var context;
@@ -39534,7 +39534,7 @@
 	};
 
 	/**
-	 * @author Reece Aaron Lecrivain / http://reecenotes.com/
+	 * @author Reece Aaron Lecrivain / https://reecenotes.com/
 	 */
 
 	function AudioLoader( manager ) {
@@ -39569,7 +39569,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	function StereoCamera() {
@@ -39616,7 +39616,7 @@
 					zoom = camera.zoom;
 
 					// Off-axis stereoscopic effect based on
-					// http://paulbourke.net/stereographics/stereorender/
+					// https://paulbourke.net/stereographics/stereorender/
 
 					var projectionMatrix = camera.projectionMatrix.clone();
 					eyeSep = this.eyeSep / 2;
@@ -39664,7 +39664,7 @@
 	 * Camera for rendering cube maps
 	 *	- renders scene into axis-aligned cube
 	 *
-	 * @author alteredq / http://alteredqualia.com/
+	 * @author alteredq / https://alteredqualia.com/
 	 */
 
 	function CubeCamera( near, far, cubeResolution ) {
@@ -39766,7 +39766,7 @@
 	CubeCamera.prototype.constructor = CubeCamera;
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	function AudioListener() {
@@ -39895,8 +39895,8 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
-	 * @author Reece Aaron Lecrivain / http://reecenotes.com/
+	 * @author mrdoob / https://mrdoob.com/
+	 * @author Reece Aaron Lecrivain / https://reecenotes.com/
 	 */
 
 	function Audio( listener ) {
@@ -40211,7 +40211,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	function PositionalAudio( listener ) {
@@ -40327,7 +40327,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	function AudioAnalyser( audio, fftSize ) {
@@ -40372,8 +40372,8 @@
 	 * Buffered scene graph property that allows weighted accumulation.
 	 *
 	 *
-	 * @author Ben Houston / http://clara.io/
-	 * @author David Sarno / http://lighthaus.us/
+	 * @author Ben Houston / https://clara.io/
+	 * @author David Sarno / https://lighthaus.us/
 	 * @author tschw
 	 */
 
@@ -40577,8 +40577,8 @@
 	 * A reference to a real property in the scene graph.
 	 *
 	 *
-	 * @author Ben Houston / http://clara.io/
-	 * @author David Sarno / http://lighthaus.us/
+	 * @author Ben Houston / https://clara.io/
+	 * @author David Sarno / https://lighthaus.us/
 	 * @author tschw
 	 */
 
@@ -41678,8 +41678,8 @@
 	 * Action provided by AnimationMixer for scheduling clip playback on specific
 	 * objects.
 	 *
-	 * @author Ben Houston / http://clara.io/
-	 * @author David Sarno / http://lighthaus.us/
+	 * @author Ben Houston / https://clara.io/
+	 * @author David Sarno / https://lighthaus.us/
 	 * @author tschw
 	 *
 	 */
@@ -42346,8 +42346,8 @@
 	 * Player for AnimationClips.
 	 *
 	 *
-	 * @author Ben Houston / http://clara.io/
-	 * @author David Sarno / http://lighthaus.us/
+	 * @author Ben Houston / https://clara.io/
+	 * @author David Sarno / https://lighthaus.us/
 	 * @author tschw
 	 */
 
@@ -43094,7 +43094,7 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	function Uniform( value ) {
@@ -43224,9 +43224,9 @@
 	} );
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
-	 * @author bhouston / http://clara.io/
-	 * @author stephomi / http://stephaneginier.com/
+	 * @author mrdoob / https://mrdoob.com/
+	 * @author bhouston / https://clara.io/
+	 * @author stephomi / https://stephaneginier.com/
 	 */
 
 	function Raycaster( origin, direction, near, far ) {
@@ -43354,7 +43354,7 @@
 	} );
 
 	/**
-	 * @author alteredq / http://alteredqualia.com/
+	 * @author alteredq / https://alteredqualia.com/
 	 */
 
 	function Clock( autoStart ) {
@@ -43425,8 +43425,8 @@
 	} );
 
 	/**
-	 * @author bhouston / http://clara.io
-	 * @author WestLangley / http://github.com/WestLangley
+	 * @author bhouston / https://clara.io
+	 * @author WestLangley / https://github.com/WestLangley
 	 *
 	 * Ref: https://en.wikipedia.org/wiki/Spherical_coordinate_system
 	 *
@@ -43574,7 +43574,7 @@
 	} );
 
 	/**
-	 * @author bhouston / http://clara.io
+	 * @author bhouston / https://clara.io
 	 */
 
 	function Box2( min, max ) {
@@ -43814,7 +43814,7 @@
 	} );
 
 	/**
-	 * @author bhouston / http://clara.io
+	 * @author bhouston / https://clara.io
 	 */
 
 	function Line3( start, end ) {
@@ -43961,7 +43961,7 @@
 	} );
 
 	/**
-	 * @author alteredq / http://alteredqualia.com/
+	 * @author alteredq / https://alteredqualia.com/
 	 */
 
 	function ImmediateRenderObject( material ) {
@@ -43979,8 +43979,8 @@
 	ImmediateRenderObject.prototype.isImmediateRenderObject = true;
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
-	 * @author WestLangley / http://github.com/WestLangley
+	 * @author mrdoob / https://mrdoob.com/
+	 * @author WestLangley / https://github.com/WestLangley
 	 */
 
 	function VertexNormalsHelper( object, size, hex, linewidth ) {
@@ -44123,9 +44123,9 @@
 	}() );
 
 	/**
-	 * @author alteredq / http://alteredqualia.com/
-	 * @author mrdoob / http://mrdoob.com/
-	 * @author WestLangley / http://github.com/WestLangley
+	 * @author alteredq / https://alteredqualia.com/
+	 * @author mrdoob / https://mrdoob.com/
+	 * @author WestLangley / https://github.com/WestLangley
 	 */
 
 	function SpotLightHelper( light, color ) {
@@ -44217,10 +44217,10 @@
 	}();
 
 	/**
-	 * @author Sean Griffin / http://twitter.com/sgrif
-	 * @author Michael Guerrero / http://realitymeltdown.com
-	 * @author mrdoob / http://mrdoob.com/
-	 * @author ikerr / http://verold.com
+	 * @author Sean Griffin / https://twitter.com/sgrif
+	 * @author Michael Guerrero / https://realitymeltdown.com
+	 * @author mrdoob / https://mrdoob.com/
+	 * @author ikerr / https://verold.com
 	 * @author Mugen87 / https://github.com/Mugen87
 	 */
 
@@ -44334,8 +44334,8 @@
 	}();
 
 	/**
-	 * @author alteredq / http://alteredqualia.com/
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author alteredq / https://alteredqualia.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	function PointLightHelper( light, sphereSize, color ) {
@@ -44420,9 +44420,9 @@
 	};
 
 	/**
-	 * @author abelnation / http://github.com/abelnation
-	 * @author Mugen87 / http://github.com/Mugen87
-	 * @author WestLangley / http://github.com/WestLangley
+	 * @author abelnation / https://github.com/abelnation
+	 * @author Mugen87 / https://github.com/Mugen87
+	 * @author WestLangley / https://github.com/WestLangley
 	 */
 
 	function RectAreaLightHelper( light, color ) {
@@ -44494,8 +44494,8 @@
 	};
 
 	/**
-	 * @author alteredq / http://alteredqualia.com/
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author alteredq / https://alteredqualia.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 * @author Mugen87 / https://github.com/Mugen87
 	 */
 
@@ -44579,7 +44579,7 @@
 	}();
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	function GridHelper( size, divisions, color1, color2 ) {
@@ -44623,9 +44623,9 @@
 	GridHelper.prototype.constructor = GridHelper;
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
-	 * @author Mugen87 / http://github.com/Mugen87
-	 * @author Hectate / http://www.github.com/Hectate
+	 * @author mrdoob / https://mrdoob.com/
+	 * @author Mugen87 / https://github.com/Mugen87
+	 * @author Hectate / https://www.github.com/Hectate
 	 */
 
 	function PolarGridHelper( radius, radials, circles, divisions, color1, color2 ) {
@@ -44710,8 +44710,8 @@
 	PolarGridHelper.prototype.constructor = PolarGridHelper;
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
-	 * @author WestLangley / http://github.com/WestLangley
+	 * @author mrdoob / https://mrdoob.com/
+	 * @author WestLangley / https://github.com/WestLangley
 	 */
 
 	function FaceNormalsHelper( object, size, hex, linewidth ) {
@@ -44819,9 +44819,9 @@
 	}() );
 
 	/**
-	 * @author alteredq / http://alteredqualia.com/
-	 * @author mrdoob / http://mrdoob.com/
-	 * @author WestLangley / http://github.com/WestLangley
+	 * @author alteredq / https://alteredqualia.com/
+	 * @author mrdoob / https://mrdoob.com/
+	 * @author WestLangley / https://github.com/WestLangley
 	 */
 
 	function DirectionalLightHelper( light, size, color ) {
@@ -44908,13 +44908,13 @@
 	}();
 
 	/**
-	 * @author alteredq / http://alteredqualia.com/
+	 * @author alteredq / https://alteredqualia.com/
 	 * @author Mugen87 / https://github.com/Mugen87
 	 *
 	 *	- shows frustum, line of sight and up of the camera
 	 *	- suitable for fast updates
 	 * 	- based on frustum visualization in lightgl.js shadowmap example
-	 *		http://evanw.github.com/lightgl.js/tests/shadowmap.html
+	 *		https://evanw.github.com/lightgl.js/tests/shadowmap.html
 	 */
 
 	function CameraHelper( camera ) {
@@ -45107,8 +45107,8 @@
 	}();
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
-	 * @author Mugen87 / http://github.com/Mugen87
+	 * @author mrdoob / https://mrdoob.com/
+	 * @author Mugen87 / https://github.com/Mugen87
 	 */
 
 	function BoxHelper( object, color ) {
@@ -45204,7 +45204,7 @@
 	};
 
 	/**
-	 * @author WestLangley / http://github.com/WestLangley
+	 * @author WestLangley / https://github.com/WestLangley
 	 */
 
 	function Box3Helper( box, hex ) {
@@ -45251,7 +45251,7 @@
 	};
 
 	/**
-	 * @author WestLangley / http://github.com/WestLangley
+	 * @author WestLangley / https://github.com/WestLangley
 	 */
 
 	function PlaneHelper( plane, size, hex ) {
@@ -45304,9 +45304,9 @@
 	};
 
 	/**
-	 * @author WestLangley / http://github.com/WestLangley
-	 * @author zz85 / http://github.com/zz85
-	 * @author bhouston / http://clara.io
+	 * @author WestLangley / https://github.com/WestLangley
+	 * @author zz85 / https://github.com/zz85
+	 * @author bhouston / https://clara.io
 	 *
 	 * Creates an arrow for visualizing directions
 	 *
@@ -45413,8 +45413,8 @@
 	};
 
 	/**
-	 * @author sroucheray / http://sroucheray.org/
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author sroucheray / https://sroucheray.org/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	function AxesHelper( size ) {
@@ -45447,7 +45447,7 @@
 	AxesHelper.prototype.constructor = AxesHelper;
 
 	/**
-	 * @author mrdoob / http://mrdoob.com/
+	 * @author mrdoob / https://mrdoob.com/
 	 */
 
 	function Face4( a, b, c, d, normal, color, materialIndex ) {
@@ -47214,7 +47214,7 @@
 
 		console.error( 'THREE.CanvasRenderer has been moved to /examples/js/renderers/CanvasRenderer.js' );
 
-		this.domElement = document.createElementNS( 'http://www.w3.org/1999/xhtml', 'canvas' );
+		this.domElement = document.createElementNS( 'https://www.w3.org/1999/xhtml', 'canvas' );
 		this.clear = function () {};
 		this.render = function () {};
 		this.setClearColor = function () {};
