@@ -6,11 +6,11 @@
 
 @font-face {
     font-family: 'SS';
-    src:url('./css/media/NexaBlack.otf');}
+    src:url('./media/NexaBlack.otf');}
 
 @font-face {
     font-family: 'SS2';
-    src:url('./css/media/Nexa-bold.otf');}
+    src:url('./media/Nexa-bold.otf');}
 
 body,html {
   width:100%;
@@ -993,7 +993,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
 }
 .P_1{
   font-weight:500;
-  font-family: SS2, Noto Sans TC;
+  font-family:SS2, Noto Sans TC;
   font-size: 2vh;
   letter-spacing: 1px;
   color:black;
