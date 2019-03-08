@@ -9,7 +9,7 @@
 
 
 
-@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css)
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css)
 @import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
 /*@font-face {
     font-family: 'Alte-DIN-1451-Mittelschrift';
@@ -1077,7 +1077,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
 
 /*
   Just use WOFF2 and WOFF for webfonts
-  https://css-tricks.com/snippets/css/using-font-face/ */
+  http://css-tricks.com/snippets/css/using-font-face/ */
 
 /* Texta Heavy */
 
