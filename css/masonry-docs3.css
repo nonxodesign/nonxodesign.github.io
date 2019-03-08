@@ -1,282 +1,47 @@
-/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
-
-/**
- * 1. Change the default font family in all browsers (opinionated).
- * 2. Correct the line height in all browsers.
- * 3. Prevent adjustments of font size after orientation changes in IE and iOS.
- */
-
 
 
 
 @import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css)
 @import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
-/*@font-face {
-    font-family: 'Alte-DIN-1451-Mittelschrift';
-    src:url('./media/Alte-DIN-1451-Mittelschrift.ttf.woff') format('woff'),
-        url('./media/Alte-DIN-1451-Mittelschrift.ttf.svg#Alte-DIN-1451-Mittelschrift') format('svg'),
-        url('./media/Alte-DIN-1451-Mittelschrift.ttf.eot'),
-        url('./media/Alte-DIN-1451-Mittelschrift.ttf.eot?#iefix') format('embedded-opentype'); 
-        font-weight: normal;
-        font-style: normal;
-}
-*/
+
 @font-face {
     font-family: 'SS';
-    src:url('./media/NexaBlack.otf');
-}
+    src:url('./media/NexaBlack.otf');}
 
 @font-face {
     font-family: 'SS2';
-    src:url('./media/Nexa-bold.otf');
-}
+    src:url('./media/Nexa-bold.otf');}
 
 body,html {
   background-color: #FFF;
   font-family: 'SS2';
-  /*text-align: justify;*/
-  /*letter-spacing: 1px;*/
-  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   font-kerning: auto;
 }
 
-
-
 html {
-
   line-height: 1.15; /* 2 */
   -ms-text-size-adjust: 100%; /* 3 */
   -webkit-text-size-adjust: 100%; /* 3 */
-  
 }
 
-/**
- * Remove the margin in all browsers (opinionated).
- */
 
-body {
-  margin: 0;
-
-
-}
-
-/* HTML5 display definitions
-   ========================================================================== */
-
-/**
- * Add the correct display in IE 9-.
- * 1. Add the correct display in Edge, IE, and Firefox.
- * 2. Add the correct display in IE.
- */
-
-article,
-aside,
-details, /* 1 */
-figcaption,
-figure,
-footer,
-header,
-main, /* 2 */
-menu,
-nav,
-section,
-summary { /* 1 */
-  display: block;
-
-}
-
-/**
- * Add the correct display in IE 9-.
- */
-
-audio,
-canvas,
-progress,
-video {
-  display: inline-block;
-}
-
-/**
- * Add the correct display in iOS 4-7.
- */
-
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-
-/**
- * Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
-
-progress {
-  vertical-align: baseline;
-}
-
-/**
- * Add the correct display in IE 10-.
- * 1. Add the correct display in IE.
- */
-
-template, /* 1 */
-[hidden] {
-  display: none;
-}
-
-/* Links
-   ========================================================================== */
-
-/**
- * 1. Remove the gray background on active links in IE 10.
- * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
- */
-
-a {
-  background-color: transparent; /* 1 */
-  -webkit-text-decoration-skip: objects; /* 2 */
-  color:#55565a;
-}
-
-/**
- * Remove the outline on focused links when they are also active or hovered
- * in all browsers (opinionated).
- */
 
 a:active,
 a:hover {
   outline-width: 0;
 }
 
-/* Text-level semantics
-   ========================================================================== */
 
-/**
- * 1. Remove the bottom border in Firefox 39-.
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
-
-abbr[title] {
-  border-bottom: none; /* 1 */
-  text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
-}
-
-/**
- * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
- */
-
-b,
-strong {
+b,strong {
   font-weight: inherit;
 }
-
-/**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
-
-b,
-strong {
-  font-weight: bolder;
-}
-
-/**
- * Add the correct font style in Android 4.3-.
- */
-
-dfn {
-  font-style: italic;
-}
-
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
 
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
-
-/**
- * Add the correct background and color in IE 9-.
- */
-
-mark {
-
-  background-color: #ff0;
-  color: #000;
-}
-
-/**
- * Add the correct font size in all browsers.
- */
-
-small {
-  font-size: 80%;
-}
-
-/**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
- */
-
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
-}
-
-/* Embedded content
-   ========================================================================== */
-
-/**
- * Remove the border on images inside links in IE 10-.
- */
-.contentimg{
-  margin:0 auto;
-  display: inline-block;
-  width: 100%;
-}
-
-.contentimg_ss{
-  margin:0 auto;
-  display: inline-block;
-  width: 49.5%;
-}
-
-
-.contentimg_sn{
-  margin:0 auto;
-  display: inline-block;
-  width: 100%;
-}
-
-@media screen and ( min-width: 800px ) {
-  .contentimg{
-    width:100%;
-  }
-
-  .contentimg_ss{
-  margin:0 auto;
-  display: inline-block;
-  width: 49.8%;
-}
-
-  }
-
-
-
 
 @media screen and ( max-width: 765px ) {
   .grid__item_content{
@@ -301,91 +66,15 @@ sup {
     
   }
 
-@media screen and ( min-width: 800px ) {
-
-a.image {
-    overflow: hidden;
-    height:100%;
-    width:100%;
-  }
-
-    a.image img {
-/*      -moz-transition: -moz-transform 0.2s ease;
-      -webkit-transition: -webkit-transform 0.2s ease;
-      -ms-transition: -ms-transform 0.2s ease;
-      transition: transform 0.2s ease;*/
-    }
-
-    a.image:hover img {
-/*      -moz-transform: scale(1.075);
-      -webkit-transform: scale(1.075);
-      -ms-transform: scale(1.075);
-      transform: scale(1.075);*/
-    }
-  }
-
-
-/**
- * Hide the overflow in IE.
- */
-
-svg:not(:root) {
-  overflow: hidden;
-}
-
-/* Grouping content
-   ========================================================================== */
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-
-code,
-kbd,
-pre,
-samp {
-  font-family: Quicksand,Noto Sans TC, sans-serif, monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
-}
-
-/**
- * Add the correct margin in IE 8.
- */
-
-figure {
-  margin: 1em 40px;
-}
-
-/**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
 
 hr {
-  /*box-sizing: content-box; /* 1 */*/
   height: 0; /* 1 */
   overflow: visible; /* 2 */
   border: 0;
   border-bottom: 3.2px solid #AD0000;
 }
 
-/* Forms
-   ========================================================================== */
 
-/**
- * 1. Change font properties to `inherit` in all browsers (opinionated).
- * 2. Remove the margin in Firefox and Safari.
- */
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  font: inherit; /* 1 */
-  margin: 0; /* 2 */
-}
 
 /**
  * Restore the font weight unset by the previous rule.
@@ -1389,7 +1078,6 @@ body{
 }
 
 .index_img{
-
   display: block;
   overflow: hidden;
   transform:translateY(-110%);
@@ -1566,108 +1254,12 @@ body{
 
 
 
-.hero{
-  height:100%;
-  overflow:hidden;
-  float:right;
-  /*margin: 0 auto;*/
-  width: 85vw;
-  /*margin-bottom:20em;*/
-  /*padding-top: 5em;*/
 
-}
-
-@media screen and ( min-width: 769px ) {
-    .hero{
-    padding-top: 5vh;
-   }
-   
-}
-
-@media screen and ( max-width: 767px ) {
-  .hero {
-    width: 100%;
-  }
-  .container {
-    margin: 0 auto;
-    /*width: 95%;*/
-    max-width: 1400px;
-    /*padding-top:4em;*/
-  }
-}
-
-
-/* duo
-two columns for large devices
-------------------------- */
-
-/* clearfix */
-.duo:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
-.duo__cell {
-  margin-bottom: 10px;
-}
-
-@media screen and ( min-width: 768px ) {
-
-  .duo__cell {
-    float: left;
-    width: 48.5%;
-  }
-
-  .duo__cell:first-child {
-    margin-right: 3%;
-  }
-
-}
-
-/* example
-------------------------- */
-
-.example pre {
-  margin-top: 0;
-}
-
-.example__demo--fit-width {
-  border: 2px solid white;
-  border-radius: 5px;
-}
-
-/* edit-demo
-------------------------- */
-
-.edit-demo {
-  clear: both;
-  font-size: 0.92em;
-}
-
-/* fizzy-bear-shirt
-------------------------- */
-
-.fizzy-bear-shirt {
-  margin: 40px 0;
-}
-
-.fizzy-bear-shirt__title {
-  font-size: 1.6rem;
-}
-
-.fizzy-bear-shirt__image {
-  display: block;
-  max-width: 100%;
-  margin-bottom: 10px;
-}
 
 /* grid
 ------------------------- */
 
-.grid, .grid_project {
-  /*width: 90vw;*/。
-  margin: 0 auto;
+.grid_project {
   overflow:hidden;
   padding-top: 15vh;
 
@@ -1675,14 +1267,11 @@ two columns for large devices
 
 
 @media screen and ( min-width: 767px ) {
-  .grid {
-    width:60vw;
-    padding-top: 3vh;
-  }
+
 
   .grid_project{
-    width:80vw;
-    padding-top: 1vh;
+    width:70vw;
+    padding-top: 5vh;
     float:right;
   }
 }
@@ -1826,9 +1415,6 @@ two columns for large devices
   width: 48%;
 }
 
-/* hero
-------------------------- */
-
 
 /* necessary for proper sizing with margins */
 .grid__grid-sizer {
@@ -1849,17 +1435,6 @@ two columns for large devices
 .grid__gutter-sizer {
   width: 2%;
 }
-
-/*物件圓角*/
-.grid__item {
-
-}
-
-.grid__item:hover {
-  /*border: solid 1px grey;*/
-
-  
-
 }
 
 /* ----  ---- */
@@ -1980,15 +1555,15 @@ two columns for large devices
  
   .grid__grid-sizer,
   .grid__item {
-    width: 300px; 
-    padding: 1.2em;
+    width: 30vh; 
+    padding: 1vh;
     display:inline-block;
   }
 
   .grid__item__big {
-    width: 600px;
-    height: 304.79px;
-    padding: 1.2em;
+    width: 60vh;
+    height: 100%;
+    padding: 1vh;
   }
 
    .grid__item__full {
@@ -2043,140 +1618,6 @@ two columns for large devices
 
 }
 
-/* other-products
-------------------------- */
-
-.other-product {
-  margin-bottom: 10px;
-}
-
-.other-product__link {
-  position: relative; /* gonna abs */
-  display: block;
-  padding: 0px;
-  background: #E8E5E2;
-  border-radius: 5px;
-  color: #333;
-}
-
-.other-product__link:hover {
-  background: white;
-  color: #55565a;
-}
-
-.other-product__link:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
-.other-product__image {
-  float: left;
-  display: block;
-  width: 100%;
-  max-width: 140px;
-  margin: 10px;
-  border-radius: 5px;
-}
-
-.other-product__title {
-  margin: 10px 0;
-  padding-top: 10px;
-  line-height: 1.2;
-  font-weight: bold;
-  font-size: 2.0em;
-}
-
-.other-product__description {
-  line-height: 1.2;
-  margin: 0;
-}
-
-@charset "UTF-8";
-
-/* page-nav
-------------------------- */
-
-.page-nav {
-  padding: 1.0em 0;
-  font-size: 0.8rem;
-  z-index: 2; /* above packeries */
-}
-
-.page-nav__item {
-  display: inline-block;
-}
-
-.page-nav__item:after {
-  content: ' •';
-  margin: 0 10px;
-  opacity: 0.5;
-}
-
-.page-nav__item:last-child:after {
-  content: none;
-}
-
-/* desktop */
-@media screen and ( min-width: 1100px ) {
-
-  .page-nav {
-    position: absolute;
-    right: 0;
-    top: 60px;
-    width: 200px;
-    list-style: none;
-    padding: 0;
-    padding: 10px;
-  }
-
-  .page-nav__item {
-    display: block;
-    margin-bottom: 4px;
-    margin-left: 0;
-  }
-
-  .page-nav__item:after {
-    content: none;
-  }
-
-  .page-nav__item a {
-    display: block;
-  }
-
-  .page-nav__item--h3 a {
-    padding-left: 10px;
-  }
-
-}
-
-/* fix .page-nav only if we have enough height */
-@media screen and ( min-width: 1100px ) and ( min-height: 540px ) {
-  .page-nav {
-    position: fixed;
-  }
-}
-
-/* refactor-shirt
-------------------------- */
-
-.refactor-shirt {
-  margin: 40px 0;
-}
-
-.refactor-shirt__title {
-  font-size: 1.6rem;
-}
-
-.refactor-shirt__image {
-  display: block;
-  width: 100%;
-  max-width: 1000px;
-  margin-bottom: 10px;
-}
-
-/* site-footer
-------------------------- */
 
 
   .big__text{
@@ -2313,282 +1754,6 @@ button:focus {outline:0;}
   }
 }
 
-
-/* site nav
-------------------------- */
-
-.site-nav .container{
-  /*border-bottom: 2px solid white;*/
-
-}
-
-.site-nav {
-  /*border-bottom: 2px solid white;*/
-
-  background: white;
-  box-shadow:  0 1px 10px hsla(0, 0%, 0%, 0.5);
-  padding: 2em 0em 2em 2em;
-  
-
-}
-
-/* bottom nav */
-.content ~ .site-nav .container {
-  position: relative;
-  margin-top: 80px;
-  /*border-top: 2px solid white;*/
-  border-bottom: none;
-
-
-}
-
-.site-nav__list {
-  list-style: none;
-  padding: 2em;
-  float: right;
-  display: inline;
-
-}
-
-.site-nav__list:after {
-  content: '';
-  clear: both;
-  display: block;
-}
-
-.site-nav__item {
-  width: 90%;     /*標頭*/
-  float: right;
-  line-height: 28px;
-  list-style: none;
-}
-
-.site-nav__item a {
-  padding: 5px
-}
-
-.site-nav__item--homepage {
-  font-size: 1.15rem;
-  font-weight: bold;
-}
-
-.site-nav__item--homepage a {
-  color: #333;
-}
-
-.site-nav__item a:hover {
-  background: #333;
-  color: white;
-}
-
-.site-nav__item a:active {
-  background: white;
-  color: #333;
-}
-
-/* selected */
-.page--options .site-nav__item--options a,
-.page--methods .site-nav__item--methods a,
-.page--events .site-nav__item--events a,
-.page--extras .site-nav__item--extras a,
-.page--faq .site-nav__item--faq a {
-  color: white;
-}
-
-.page--index .site-nav__item--homepage {
-  visibility: hidden;
-}
-
-/* size at which it can fit */
-@media screen and ( min-width: 768px ) {
-
-  .site-nav__item {
-    width: auto;
-    font-size: 1.15rem;
-    line-height: 70px;
-  }
-
-  .site-nav__item a {
-    padding: 0px 25px;
-  }
-
-  .site-nav__item--homepage {
-    font-size: 1.5rem;
-  }
-
-}
-
-@charset "UTF-8";
-/* variable
-------------------------- */
-
-.variable {
-  margin: 0.5em 0;
-  padding: 5px 10px;
-  border-radius: 5px;
-  background: hsla(0, 0%, 0%, 0.075);
-}
-
-.variable__type {
-  color: #27C;
-}
-
-.variable__type,
-.variable__description {
-  margin-left: 10px;
-}
-
-.variable__type:before,
-.variable__description:before {
-  content: '·';
-  padding-right: 0.4em;
-  display: inline-block;
-}
-
-/* animate-item-size-item
-------------------------- */
-
-.animate-item-size-item {
-  float: left;
-}
-
-/* animate-item-size-item is invisible, but used for layout */
-.animate-item-size-item,
-.animate-item-size-item__content {
-  width: 60px;
-  height: 60px;
-}
-
-/* animate-item-size-item__content is visible, and transitions size */
-.animate-item-size-item__content {
-  background: #333;
-  border: 2px solid #333;
-  border-color: hsla(0, 0%, 0%, 0.7);
-  border-radius: 5px;
-  -webkit-transition: width 0.4s, height 0.4s;
-          transition: width 0.4s, height 0.4s;
-}
-
-.animate-item-size-item:hover .animate-item-size-item__content {
-  border-color: white;
-  background: #55565a;
-  cursor: pointer;
-}
-
-/* both animate-item-size-item and animate-item-size-item content change size */
-.animate-item-size-item.is-expanded,
-.animate-item-size-item.is-expanded .animate-item-size-item__content {
-  width: 180px;
-  height: 120px;
-}
-
-.animate-item-size-item.is-expanded {
-  z-index: 2;
-}
-
-.animate-item-size-item.is-expanded .animate-item-size-item__content {
-  background: #F90;
-}
-
-/* ---- responsive ---- */
-
-.grid--animate-item-size-responsive .animate-item-size-item,
-.grid--animate-item-size-responsive .grid-sizer {
-  width: 20%;
-}
-
-.grid--animate-item-size-responsive .animate-item-size-item__content,
-.grid--animate-item-size-responsive .animate-item-size-item.is-expanded .animate-item-size-item__content {
-  width: 100%;
-  height: 100%;
-}
-
-/* item has expanded size */
-.grid--animate-item-size-responsive .animate-item-size-item.is-expanded {
-  width: 60%;
-}
-
-/* bootstrap 3
-------------------------- */
-
-.bootstrap-3__container-fluid {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-
-
-}
-
-.bootstrap-3__col-xs-4,
-.bootstrap-3__col-xs-6,
-.bootstrap-3__col-xs-8,
-.bootstrap-3__col-xs-12 {
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-.bootstrap-3__col-xs-4 { width: 33.333%; }
-.bootstrap-3__col-xs-6 { width: 50%; }
-.bootstrap-3__col-xs-8 { width: 66.666%; }
-
-.bootstrap-3__grid-item-content {
-  height: 100px;
-  background: #333;
-  border: 2px solid hsla(0, 0%, 0%, 0.5);
-  border-radius: 5px;
-}
-
-.bootstrap-3__grid-item-content--height2 { height: 200px; }
-
-/* sm */
-@media (min-width: 768px) {
-  .bootstrap-3__col-sm-4 { width: 33.333%; }
-  .bootstrap-3__col-sm-8 { width: 66.666%; }
-}
-
-/* md */
-@media (min-width: 992px) {
-  .bootstrap-3__col-md-3 { width: 25%; }
-  .bootstrap-3__col-md-6 { width: 50%; }
-}
-
-/* stamp
-------------------------- */
-
-.stamp {
-  position: absolute;
-  width: 30%;
-  height: 60px;
-  background: orange;
-  border: 4px dotted #55565a;
-}
-
-.stamp--static-stamp1 {
-  left: 30%;
-  top: 10px;
-  width: 20%;
-  height: 100px;
-}
-
-.stamp--static-stamp2 {
-  right: 10%;
-  top: 20px;
-  width: 70%;
-  height: 30px;
-}
-
-/* stamp-methods-demo
-------------------------- */
-
-.grid--stamp-methods-demo .grid-item {
-  opacity: 0.8;
-}
-
-.stamp--stamp-methods-demo {
-  left: 10px;
-  top: 10px;
-}
 
 
 @keyframes fadein {
