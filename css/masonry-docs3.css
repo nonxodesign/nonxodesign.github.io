@@ -254,7 +254,6 @@ html {
 }
 
 html.export {
-  font-family: Quicksand,Noto Sans TC, sans-serif, sans-sans-serif;
   font-size: 15px;
 }
 
@@ -284,7 +283,6 @@ a:hover code {
 h1, h3, h4, h5{
   line-height: 1.2;
   margin: .5em;
-  font-family: Quicksand,Noto Sans TC,
   font-weight: 300;
   display: inline-block;
   color:black;
@@ -293,7 +291,6 @@ h1, h3, h4, h5{
 h2 {
   font-size: 1.2em;
   line-height: 1.2;
-  font-family: Quicksand,Noto Sans TC,
   font-weight: 400;
   display: inline-block;
   color:black;
@@ -407,7 +404,6 @@ h5 {
 
 p{
 
-  font-family: Quicksand,Noto Sans TC, sans-serif;
   font-weight: 400;
   text-shadow: 0 0 0.5px rgba(0,0,0,0.2);
   color: #000;
@@ -482,11 +478,6 @@ ul, ol, li {
 }
 
 /* ---- code ---- */
-
-pre, code {
-  font-family: Quicksand,Noto Sans TC, sans-serif, Consolas, Menlo, monospace;
-  font-size: 14px;
-}
 
 @media screen and ( min-width: 768px ) {
 
@@ -942,7 +933,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
   border-radius: 50%;
   text-align: center;
   color: white;
-  font-family: Quicksand,Noto Sans TC, sans-serif, Consolas, Georgia, sans-serif;
+
   font-style: italic;
 }
 
@@ -993,7 +984,15 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
 }
 .P_1{
   font-weight:500;
-  font-family:SS2, Noto Sans TC;
+  font-family: SS2;
+  font-size: 2vh;
+  letter-spacing: 1px;
+  color:black;
+  display:inline-block;
+}
+.P_2{
+  font-weight:500;
+  font-family: Noto Sans TC;
   font-size: 2vh;
   letter-spacing: 1px;
   color:black;
@@ -1023,7 +1022,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
 }
 
 #about_show{
-  font-family: Noto Sans TC;
+  font-family: SS2;
   z-index: 999;
   display:none;
   position: fixed;
@@ -1445,7 +1444,7 @@ body{
 
 .title {
   padding-top: .5em;
-  font-family: Quicksand,Noto Sans TC, sans-serif, 'Baloo Tamma', cursive;
+ 
   margin: 0;
   line-height: .7;
   font-size: 2rem;
