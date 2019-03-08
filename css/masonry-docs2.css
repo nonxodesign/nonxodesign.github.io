@@ -28,11 +28,7 @@
 
 @font-face {
     font-family: 'SS2';
-<<<<<<< HEAD
-    src:url('./media/Nexa-Bold.otf');
-=======
-    src:url('./media/Nexa-bold.otf');
->>>>>>> parent of 0e7c0a7... font
+    src:url('./media/NexaBold.otf');
 }
 
 body,html {
