@@ -1,7 +1,5 @@
 
 
-
-
 @media screen and ( max-width: 766px ) {
 
 	.TopBar{
@@ -150,9 +148,10 @@
 }
 
 #mobie_menu{
+	top:100vh;
 	/*display:none;*/
 	opacity:0; 
-	transform:translateY(100vh);
+	/*transform:translateY(100vh);*/
 	padding-top:15vh;
 	font-family: 'xofontbold';
 	z-index: 999;
@@ -164,6 +163,7 @@
 	font-size: 2em;
 	text-align: center;
 	line-height: 10vh;
+	transition: all ease-in-out 900ms;
 }
 .menu_button{
 	font-family: 'xofontbold';
