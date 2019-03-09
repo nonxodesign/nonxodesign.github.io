@@ -46,6 +46,7 @@ $(document).ready(function(){
 	        		$("#mobie_menu").fadeIn("slow");
 	        		$(".mobile_menu_icon").fadeOut("fast");
 	        		$('.mobile_menu_cross').fadeIn("slow");
+	        		$(".grid_project").fadeOut("ease");
 
    				});
 			});
@@ -55,6 +56,9 @@ $(document).ready(function(){
 	        		$('.mobile_menu_cross').fadeOut("ease");
 	        		$('.mobile_menu_icon').fadeIn("ease");
 	        		$("#mobie_menu").fadeOut("ease");
+	        		$(".grid_project").fadeIn("ease");
+
+	        		
 
 
 

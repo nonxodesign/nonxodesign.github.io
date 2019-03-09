@@ -6,7 +6,7 @@
 
 	.TopBar{
 		
-		width: 100%;
+		width: 98%;
 		z-index: 1000;
 		position: fixed;
 		/*transform:translateY(120%);*/
@@ -130,7 +130,7 @@
 .mobile_menu_icon{
 	display:inline-block;
 	color:　black;
-	font-size: 7vw;
+	font-size: 5vw;
 	z-index: 1000;
 	text-decoration: none;
 	background: none;
@@ -140,7 +140,7 @@
 
 	display:inline-block;
 	color: black;
-	font-size: 7vw;
+	font-size: 5vw;
 	z-index: 1000;
 	text-decoration: none;
 	background: none;
