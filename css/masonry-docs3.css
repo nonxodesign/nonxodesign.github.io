@@ -7,16 +7,13 @@
 @font-face {
     font-family:'xofont_black';
     src: url(media/nexablack.otf);
-    src: url(media/font/nexablack_webfont.woff2) format('woff2'), /* Super Modern Browsers */
-         url(media/font/nexablack_webfont.woff) format('woff'); /* Pretty Modern Browsers */
+    src: url(media/nexablack.ttf) format('ttf'); 
   }
 
 @font-face {
     font-family:'xofont_bold';
     src: url(media/nexabold.otf);
-    src: url(media/nexabold_webfont.ttf) format('ttf'),
-         url(media/font/nexabold_webfont.woff2) format('woff2'), /* Super Modern Browsers */
-         url(media/font/nexabold_webfont.woff) format('woff'); /* Pretty Modern Browsers */
+    src: url(media/nexabold.ttf) format('ttf'); 
   }
 
 body,html {
