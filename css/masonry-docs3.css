@@ -6,14 +6,12 @@
 
 @font-face {
     font-family:'xofont_black';
-    src: url(media/nexablack.otf);
-    src: url(media/nexablack.ttf) format('ttf'); 
+    src: url(media/nexablack.otf) format("opentype")
   }
 
 @font-face {
     font-family:'xofont_bold';
-    src: url(media/nexabold.otf);
-    src: url(media/nexabold.ttf) format('ttf'); 
+    src: url(media/nexabold.otf) format("opentype"); 
   }
 
 body,html {
