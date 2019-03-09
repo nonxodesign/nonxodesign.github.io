@@ -1430,7 +1430,7 @@ body{
 .grid__item,
 .grid__grid-sizer {
   width: 75%;
-  overflow: hidden;
+  /*overflow: hidden;*/
 /*  padding:.5em;
   padding-top:.8em;*/
 }
