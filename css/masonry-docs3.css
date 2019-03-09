@@ -268,7 +268,6 @@ body {
 
 a,
 a code {
-  color: #55565a;
   text-decoration: none;
   margin:0;
   padding:0;
@@ -277,6 +276,9 @@ a code {
 a:hover,
 a:hover code {
   color: #aaa;
+}
+a:visited{
+  color:black;
 }
 
 
