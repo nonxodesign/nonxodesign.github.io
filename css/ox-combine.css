@@ -130,13 +130,15 @@
 	#icon_s:hover{
 		color: #333;
 	}
-}
+
 
 /*logo hover浮出字*/
 
 .logo{
 	margin: 5vh 0 0 2vw;
 	display: inline-block;
+	width: 10vw;
+}
 }
 
 .logo_v2{
@@ -145,6 +147,7 @@
 .logo_v2-2{
 		display:none;
 }
+
 
 
 .nonxo{
@@ -248,6 +251,7 @@
 	.logo{
 	margin: 2vh 0 0 3vw;
 	display: inline-block;
+	width: 50vw;
 }
 
 	.logo_v2{
@@ -498,9 +502,7 @@
 	}
 }
 
-.logo{
-	width: 15em;
-}
+
 
 
 

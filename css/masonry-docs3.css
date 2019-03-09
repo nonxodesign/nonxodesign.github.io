@@ -6,16 +6,17 @@
 
 @font-face {
     font-family:'xofont_black';
-    src: url(media/font/NexaBlack.otf);
-    src: url(media/font/NexaBlack_webfont.woff2) format('woff2'), /* Super Modern Browsers */
-         url(media/font/NexaBlack_webfont.woff) format('woff'); /* Pretty Modern Browsers */
+    src: url(media/nexablack.otf);
+    src: url(media/font/nexablack_webfont.woff2) format('woff2'), /* Super Modern Browsers */
+         url(media/font/nexablack_webfont.woff) format('woff'); /* Pretty Modern Browsers */
   }
 
 @font-face {
     font-family:'xofont_bold';
-    src: url(media/font/NexaBold.otf);
-    src: url(media/font/NexaBold_webfont.woff2) format('woff2'), /* Super Modern Browsers */
-         url(media/font/NexaBold_webfont.woff) format('woff'); /* Pretty Modern Browsers */
+    src: url(media/nexabold.otf);
+    src: url(media/nexabold_webfont.ttf) format('ttf'),
+         url(media/font/nexabold_webfont.woff2) format('woff2'), /* Super Modern Browsers */
+         url(media/font/nexabold_webfont.woff) format('woff'); /* Pretty Modern Browsers */
   }
 
 body,html {
@@ -991,14 +992,14 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
 .P_1{
   font-weight:500;
   font-family: xofont_bold, Noto Sans TC;
-  font-size: 2vh;
+  font-size: .7em;
   letter-spacing: 1px;
   color:black;
   display:inline-block;
 }
 .P_2{
   font-weight:500;
-  font-family: Noto Sans TC;
+  font-family: xofont_bold, Noto Sans TC;
   font-size: 2vh;
   letter-spacing: 1px;
   color:black;
@@ -1045,7 +1046,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
   font-size: 1em;
   z-index: 100099900;
   border-radius: 100%;
-  border: 1.5px solid #A0A0A0;
+  border: 1px solid #A0A0A0;
   width: 3em;
   height: 3em;
   background: transparent;
@@ -1054,7 +1055,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
   padding:0;
   cursor: grab;
   text-decoration: none;
-  /*opacity:0;*/
+  opacity:0;
 
 
 
@@ -1279,7 +1280,7 @@ body{
 
 
   .grid_project{
-    width:70vw;
+    width:75vw;
     padding-top: 5vh;
     float:right;
   }
@@ -1564,15 +1565,17 @@ body{
  
   .grid__grid-sizer,
   .grid__item {
-    width: 30vh; 
+    width:14vw;
     padding: 1vh;
     display:inline-block;
+    overflow:hidden;
   }
 
   .grid__item__big {
-    width: 60vh;
-    height: 100%;
-    padding: 1vh;
+    width: 28vw;
+    height: 14.3vw;
+    /*padding: 1vh;*/
+    overflow: hidden;
   }
 
    .grid__item__full {
