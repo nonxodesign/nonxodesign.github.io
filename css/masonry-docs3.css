@@ -1427,8 +1427,7 @@ body{
 }
 
 
-.grid__item,
-.grid__grid-sizer {
+.grid__item{
   width: 75%;
   /*overflow: hidden;*/
 /*  padding:.5em;
@@ -1541,7 +1540,8 @@ body{
   .grid__item {
     width: 49.5%; 
     display: inline-block;
-    padding: .5em .5em;
+    padding: .5em .2em;
+    overflow:hidden;
   }
 
 
@@ -1560,10 +1560,11 @@ body{
  
   .grid__grid-sizer,
   .grid__item {
+    padding: .5em .5em;
     width:14vw;
     padding: 1vh;
     display:inline-block;
-    /*overflow:hidden;*/
+    overflow:hidden;
   }
 
   .grid__item__big {
