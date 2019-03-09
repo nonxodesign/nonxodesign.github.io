@@ -40,22 +40,32 @@ $(document).ready(function(){
 		    }
 		});
 
+
+
 			//phone
 			$(document).ready(function(){
-			$(".mobile_menu_icon").click(function(){
-	        		$("#mobie_menu").fadeIn("slow");
-	        		$(".mobile_menu_icon").fadeOut("fast");
-	        		$('.mobile_menu_cross').fadeIn("slow");
+				$(".ham").click(function(){
+				 $(this).toggleClass('icon--active');
+	        		$("#mobie_menu").transition({ opacity:1, y: 0 },800 ,'ease');
+					
+					$(".mobile_menu_icon").transition({ opacity:0, x: '-7vw' },300 ,'ease');
+	        		$(".mobile_menu_icon").fadeOut("ease-in-out");
+	        		
+	        		$('.mobile_menu_cross').transition({ opacity:1, x: 0 },1500 ,'ease');
+	        		// $('.mobile_menu_cross').fadeIn("slow");
 	        		$(".grid_project").fadeOut("ease");
-
+	        		
    				});
 			});
 
 			$(document).ready(function(){
-			$(".mobile_menu_cross").click(function(){
-	        		$('.mobile_menu_cross').fadeOut("ease");
-	        		$('.mobile_menu_icon').fadeIn("ease");
-	        		$("#mobie_menu").fadeOut("ease");
+				$(".ham.active").click(function(){
+	        		$("#mobie_menu").transition({ opacity:0, y: '100vh'  },800 ,'ease');
+	        		
+	        		$('.mobile_menu_cross').transition({ opacity:0, x: '25vw' },800 ,'ease');
+	        		// $('.mobile_menu_cross').fadeOut("ease");
+	        		// $('.mobile_menu_icon').fadeIn("ease");
+
 	        		$(".grid_project").fadeIn("ease");
 
 	        		

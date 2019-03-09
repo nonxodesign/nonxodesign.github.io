@@ -118,6 +118,7 @@
 }
 
 .mobile_menu_iconbox{
+
 		overflow:hidden;
 		margin: 4vw;
 		float:right;
@@ -135,29 +136,30 @@
 	text-decoration: none;
 	background: none;
 	border: 0;
+	opacity:1;
 }
 .mobile_menu_cross{
-
-	display:inline-block;
 	color: black;
 	font-size: 5vw;
 	z-index: 1000;
 	text-decoration: none;
 	background: none;
 	border: 0;
-	/*transform:translateX(15vw);*/
-	display: none;
+	transform:translateX(7vw);	
+	
 }
 
 #mobie_menu{
+	/*display:none;*/
+	opacity:0; 
+	transform:translateY(100vh);
 	padding-top:15vh;
 	font-family: 'xofontbold';
 	z-index: 999;
-	display:none;
 	position: fixed;
 	width:100vw;
 	height:100vh;
-	background: #F3F3F3;
+	background: white;
 	overflow:hidden;
 	font-size: 2em;
 	text-align: center;
