@@ -5,19 +5,19 @@
 @import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
 
 @font-face {
-    font-family:'xofont_black';
+    font-family:'xofontblack';
     src: url(media/nexablack.otf) format("opentype");
   }
 
 @font-face {
-    font-family:'xofont_bold';
+    font-family:'xofontbold';
     src: url(media/nexabold.otf) format("opentype"); 
   }
 
 body,html {
   width:100%;
   background-color: #FFF;
-  font-family: 'xofont_bold';
+  font-family: 'xofontbold';
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   font-kerning: auto;
@@ -977,7 +977,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
   -webkit-font-smoothing: antialiased;*/
   /*width:55vw;*/
   font-width:100;
-  font-family: 'xofont_black';
+  font-family: 'xofontblack';
   font-size: 1.5em;
   letter-spacing: 2px;
   color:black;
@@ -986,7 +986,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
 }
 .P_1{
   font-weight:500;
-  font-family: 'xofont_bold', Noto Sans TC;
+  font-family: 'xofontbold', Noto Sans TC;
   font-size: .7em;
   letter-spacing: 1px;
   color:black;
@@ -994,7 +994,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
 }
 .P_2{
   font-weight:500;
-  font-family: 'xofont_bold', Noto Sans TC;
+  font-family: 'xofontbold', Noto Sans TC;
   font-size: 2vh;
   letter-spacing: 1px;
   color:black;
@@ -1006,7 +1006,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
   -webkit-font-smoothing: antialiased;*/
   width:20vw;
   font-width:100;
-  font-family: 'xofont_bold';
+  font-family: 'xofontbold';
   font-size:1.5em;
   letter-spacing: 2px;
   color:black ;
@@ -1024,7 +1024,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
 }
 
 #about_show{
-  font-family: 'xofont_bold';
+  font-family: 'xofontbold';
   z-index: 999;
   display:none;
   position: fixed;
@@ -1037,7 +1037,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
 
 #about_cross{
   text-align: center;
-  font-family: 'xofont_bold';
+  font-family: 'xofontbold';
   font-size: 1em;
   z-index: 100099900;
   border-radius: 100%;
@@ -1699,7 +1699,7 @@ body{
     font-size:1.5vh;
   }
 .about__link , .project__link {
-  font-family: 'xofont_bold';
+  font-family: 'xofontbold';
   position: relative;
   font-size:1.8vh;
   color:#333;
