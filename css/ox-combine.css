@@ -264,7 +264,7 @@
 }
 
 	.index_img{
-		overflow: hidden;
+		/*overflow: hidden;*/
 		display: inline-block;
 		width: 100%;
 	}

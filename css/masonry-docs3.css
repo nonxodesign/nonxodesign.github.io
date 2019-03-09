@@ -1084,7 +1084,7 @@ body{
 
 .index_img{
   display: block;
-  overflow: hidden;
+  /*overflow: hidden;*/
   transform:translateY(-110%);
   animation:h 2s forwards;
   
@@ -1563,7 +1563,7 @@ body{
     width:14vw;
     padding: 1vh;
     display:inline-block;
-    overflow:hidden;
+    /*overflow:hidden;*/
   }
 
   .grid__item__big {
