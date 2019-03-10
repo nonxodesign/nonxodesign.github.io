@@ -1552,8 +1552,8 @@ body{
 
 
   .grid__item__big {
-    width: 99.3%;
-    padding: .2em .5em;
+    width: 100vw;
+    /*padding: .2em .5em;*/
   }
 
 .grid__item__full {
