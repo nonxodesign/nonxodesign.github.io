@@ -38,7 +38,7 @@
 		padding: 2em 0em 0 2em;
 		margin-bottom: -2em;
 		position:fixed;
-		z-index: 1000;
+		/*z-index: 1000;。*/
 	}
 	.youtubeframe{
 		width: 100%;
@@ -117,7 +117,7 @@
 
 .mobile_menu_iconbox{
 
-		overflow:hidden;
+		/*overflow:hidden;*/
 		margin: 4vw;
 		float:right;
 		/*background: #d3d3d3d3;*/
@@ -150,17 +150,22 @@
 
 
 #mobie_menu{
+	box-shadow: 0 0 5px 5px   #F7F8F8, 
+				0 0 10px 10px #F7F8F8, 
+				0 0 20px 20px #F7F8F8,  
+				0 0 40px 40px #F7F8F8,  
+				0 0 70px 70px #F7F8F8;
 	top:100vh;
 	/*display:none;*/
 	opacity:0; 
 	/*transform:translateY(100vh);*/
-	padding-top:15vh;
+	/*padding-top:15vh;*/
 	font-family: 'xofontbold';
 	z-index: 999;
 	position: fixed;
 	width:100vw;
 	height:100vh;
-	background: white;
+	background: #F7F8F8;
 	overflow:hidden;
 	font-size: 2em;
 	text-align: center;
@@ -168,23 +173,25 @@
 	transition: all ease-in-out 900ms;
 }
 .menu_button{
+	line-height: 14vh;
+	height: 14vh;
 	font-family: 'xofontbold';
 	margin:0 auto;
 	padding:0;
 	width:100%;
-	height:12vh;
 	text-align: center;
-	display: inline-block;
 	z-index: 1000;
-	background: white;
-	border: 1px solid #F3F3F3;
+	background: #F7F8F8;
+	border: 2px solid #F3F3F3;
 	font-size: 2em
+}
+#mobie_menu span{
+	display: inline-block;
 }
 
 #mobie_menu ul:nth-child(1) {
-	
+
 	animation-delay:5s;
-	color:red;
 }
 
 

@@ -278,7 +278,7 @@ a:hover code {
   color: #aaa;
 }
 a:visited{
-  color:black;
+  color:#333;
 }
 
 
@@ -1546,7 +1546,7 @@ body{
   .grid__item {
     width: 49.5%; 
     display: inline-block;
-    padding: .45em .5em;
+    /*padding: .45em .5em;*/
     overflow:hidden;
   }
 
