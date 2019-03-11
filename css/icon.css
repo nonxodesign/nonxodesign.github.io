@@ -13,10 +13,11 @@
 
 }
 .hamRotate {
+  transition: transform 700ms ease;
   transform: rotate(0deg);
 }
 .hamRotate.active {
-  transform: rotate(-45deg);
+  /*transform: rotate(-45deg);*/
 }
 .hamRotate180.active {
   /*transform: rotate(180deg);*/
@@ -91,17 +92,8 @@
   stroke-dashoffset: 0;
   stroke-dasharray: 40 200;
   transform-origin: 50%;
-   transform: rotate(0deg);
    transition: all 200ms ease-in-out;
 }
-
-.ham8.active .middle6 {
-   /*transform: rotate(-45deg);*/
-  /*stroke-dashoffset: -20px;*/
-  /*transform: rotate(0deg);*/
-  /*stroke-dashoffset: 0;*/
-}
-
 
 
 
