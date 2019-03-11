@@ -3,9 +3,6 @@
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
   transition: transform 700ms ease;
-  -moz-transition: transform 700ms ease;
-  -webkit-transition: transform 700ms ease;
-  -ms-transition: transform 700ms ease;
 
   -moz-user-select: none;
   -webkit-user-select: none;
@@ -27,9 +24,6 @@
 .line {
   fill:none;
   transition: all 1000ms ease;
-  -webkit-transition: all 1000ms ease;
-  -ms-transition: all 1000ms ease;
-  -moz-transition: all 1000ms ease;
   stroke:#1C1C1C;
   stroke-width:6;
   /*stroke-linecap:square;*/
