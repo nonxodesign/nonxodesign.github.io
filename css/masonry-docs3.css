@@ -6,12 +6,16 @@
 
 @font-face {
     font-family:'xofontblack';
-    src: url('media/nexablack.otf') format("opentype");
+    src: url('media/nexablack.otf') format("opentype"), 
+         url('media/nexablack.ttf') format("truetype"),
+         url('media/nexablack.woff') format("woff");
   }
 
 @font-face {
     font-family:'xofontbold';
-    src: url('media/nexabold.otf') format("opentype"); 
+    src: url('media/nexabold.otf') format("opentype"),
+         url('media/nexabold.ttf') format("truetype"),
+         url('media/nexabold.woff') format("woff");;
   }
 
 body,html {
@@ -278,6 +282,10 @@ a:hover code {
   color: #aaa;
 }
 a:visited{
+  color:#333;
+}
+
+a:visited .mobile_menu{
   color:#333;
 }
 
@@ -1547,7 +1555,7 @@ body{
     width: 49.5%; 
     display: inline-block;
     /*padding: .45em .5em;*/
-    padding: 0em .3em;
+    padding: 0em .1em;
     overflow:hidden;
   }
 
@@ -1568,15 +1576,15 @@ body{
   .grid__grid-sizer,
   .grid__item {
     padding: .5em .5em;
-    width:14vw;
+    width:23em;
     padding: 1vh;
     display:inline-block;
     overflow:hidden;
   }
 
   .grid__item__big {
-    width: 28vw;
-    height: 14.3vw;
+    width: 46em;
+    height: 23em;
     /*padding: 1vh;*/
     overflow: hidden;
   }

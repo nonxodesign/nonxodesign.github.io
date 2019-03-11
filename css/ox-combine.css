@@ -167,10 +167,10 @@
 	height:100vh;
 	background: #F7F8F8;
 	overflow:hidden;
-	font-size: 2em;
 	text-align: center;
 	line-height: 10vh;
 	transition: all ease-in-out 900ms;
+	-webkit-transition: all ease-in-out 900ms;
 }
 .menu_button{
 	line-height: 14vh;
@@ -182,8 +182,8 @@
 	text-align: center;
 	z-index: 1000;
 	background: #F7F8F8;
-	border: 2px solid #F3F3F3;
-	font-size: 2em
+	border: 1px solid #EDEDED;
+	font-size: 3em;	
 }
 #mobie_menu span{
 	display: inline-block;
@@ -402,7 +402,6 @@
 		/*-webkit-transform-style: preserve-3d;*/
 		transform: translate3d(0,0,0);
 
--WebKit-Transform: translate3d(0,0,0);
 
 	    
 	    transition: all 0.4s ease;
