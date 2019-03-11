@@ -11,8 +11,8 @@
 }
 
 .ham.active {
-  transform: rotate(30deg);
-  -webkit-transform: rotate(75deg);
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
 .hamRotate180.active {
   /*transform: rotate(180deg);*/
@@ -33,7 +33,7 @@
 }
 .ham8 .middle {
   stroke-dasharray: 40 142;
-  transform-origin: 50%;
+ 
   transition: transform 400ms ease  ;
 }
 .ham8 .middle2 {
@@ -49,7 +49,7 @@
 .ham8 .middle3 {
   stroke-dashoffset: 0;
   stroke-dasharray: 40 140;
-  transform-origin: 50%;
+  
 }
 .ham8.active .middle3 {
   /*stroke-dashoffset: -20px;*/
@@ -61,7 +61,7 @@
     transform: rotate(90deg);
   stroke-dashoffset: 40;
   stroke-dasharray: 13 1550;
-  transform-origin: 50%;
+  
    transition: all 900ms ease;
 }
 .ham8.active .middle4 {
@@ -74,7 +74,7 @@
     transform: rotate(90deg);
   stroke-dashoffset: -70;
   stroke-dasharray: 40 500;
-  transform-origin: 50%;
+  
    transition: all 700ms ease-out;
 }
 .ham8.active .middle5 {
@@ -86,7 +86,7 @@
 .ham8 .middle6 {
   stroke-dashoffset: 0;
   stroke-dasharray: 40 200;
-  transform-origin: 50%;
+ 
    transition: all 200ms ease-in-out;
 }
 
