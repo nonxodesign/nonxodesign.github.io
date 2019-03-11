@@ -8,9 +8,12 @@
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  transform: rotate(0deg);
 }
 
-
+.hamRotate{
+  transform: rotate(0deg);
+}
 .hamRotate.active {
   transform: rotate(45deg);
 }
