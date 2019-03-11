@@ -8,7 +8,7 @@
     font-family:'xofontblack';
     src: url('media/nexablack.otf') format("opentype"), 
          url('media/nexablack.ttf') format("truetype"),
-         url('media/nexablack.woff') format("woff");
+         url('media/nexablack.ttf') format("truetype");
   }
 
 @font-face {
@@ -285,7 +285,7 @@ a:visited{
   color:#333;
 }
 
-a:visited .menu_button{
+a:visited .mobile_menu{
   color:#333;
 }
 
