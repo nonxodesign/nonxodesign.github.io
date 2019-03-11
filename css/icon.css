@@ -61,7 +61,7 @@
 }
 
 .ham8 .middle4 {
-    transform: rotate(90deg);
+    /*transform: rotate(90deg);*/
   stroke-dashoffset: 40;
   stroke-dasharray: 13 1550;
   transform-origin: 50%;
@@ -74,7 +74,7 @@
 }
 
 .ham8 .middle5 {
-    transform: rotate(90deg);
+    /*transform: rotate(90deg);*/
   stroke-dashoffset: -70;
   stroke-dasharray: 40 500;
   transform-origin: 50%;
