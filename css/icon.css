@@ -8,16 +8,12 @@
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
-
+transform: rotate(180deg);
 }
 
-}
-.hamRotate {
-  transition: transform 700ms ease;
-  transform: rotate(0deg);
-}
+
 .hamRotate.active {
-  /*transform: rotate(-45deg);*/
+  transform: rotate(315deg);
 }
 .hamRotate180.active {
   /*transform: rotate(180deg);*/
