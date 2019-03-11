@@ -13,7 +13,7 @@
 
 }
 .hamRotate {
-  transform: rotate(-180deg);
+  transform: rotate(0deg);
 }
 .hamRotate.active {
   transform: rotate(-45deg);
