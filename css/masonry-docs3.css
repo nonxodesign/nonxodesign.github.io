@@ -1280,7 +1280,7 @@ body{
 
 .grid_project {
   overflow:hidden;
-  padding-top: 15vh;
+  padding-top: 13vh;
 
 }
 
@@ -1718,21 +1718,21 @@ body{
     margin:0 0em 0 1em;
     font-size:1.5vh;
   }
-.about__link , .project__link {
+.about__link, .project__link {
   /*display: block;*/
   display: block;
-  font-family: 'xofontbold';
+  font-family: 'xofontblack';
   position: relative;
-  font-size: 2em;
-  color:#333;
+  font-size: 1.5em;
+  color:#888;
   cursor: grab;
   z-index: 1000;
   text-decoration: none;
   border: 0;
   background: none;
   text-align: left;
-  line-height: 1.5em;
-
+  line-height: 2em;
+ text-transform: uppercase;
 }
 button:focus {outline:0;}
 

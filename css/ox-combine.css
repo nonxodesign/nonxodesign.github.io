@@ -120,7 +120,7 @@
 	justify-content: center;
 		display:block;
 		/*overflow:hidden;*/
-		margin: 2vh 0;
+		margin: 1.5vh 0;
 		position:absolute;
 		right:5vw;		/*background: #d3d3d3d3;*/
 		width: 11vw;
@@ -171,7 +171,7 @@
 	overflow:hidden;
 	text-align: center;
 	line-height: 10vh;
-	transition: all ease-in-out 900ms;
+	transition: all 600ms ease;
 	
 }
 .menu_button{
