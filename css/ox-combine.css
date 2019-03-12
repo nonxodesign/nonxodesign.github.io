@@ -38,7 +38,7 @@
 		padding: 2em 0em 0 2em;
 		margin-bottom: -2em;
 		position:fixed;
-		/*z-index: 1000;。*/
+		z-index: 1000;
 	}
 	.youtubeframe{
 		width: 100%;
@@ -116,11 +116,13 @@
 }
 
 .mobile_menu_iconbox{
-
+	align-items: center;
+	justify-content: center;
+		display:block;
 		/*overflow:hidden;*/
-		margin: 4vw;
-		float:right;
-		/*background: #d3d3d3d3;*/
+		margin: 2vh 0;
+		position:absolute;
+		right:5vw;		/*background: #d3d3d3d3;*/
 		width: 11vw;
 		height:11vw;
 		line-height: 15vw;
@@ -218,7 +220,7 @@
 /*logo hover浮出字*/
 
 .logo{
-	margin: 5vh 0 0 2vw;
+	margin: 3vh 0 0 3vh;
 	display: inline-block;
 	width: 10vw;
 }

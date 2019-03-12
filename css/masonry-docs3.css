@@ -1648,12 +1648,13 @@ body{
   }
 
    .footer__text{
-    font-size:14vh;
+    font-size:300vh;
     display:none;
-     top:60vh;
+     /*top:60vh;*/
     /*bottom:-85vh;*/
     margin:1em 1em 1em 2vw;
     position: fixed;
+
  }
 
 
@@ -1696,14 +1697,17 @@ body{
 
 
   .footer__text{
-    top:70vh;
+    display: block;
+
+    bottom:5vh;
+    /*top:70vh;*/
     /*bottom:-85vh;*/
     position: fixed;
-    display: block;
+
     font-size:1.4vh;
-    float: left;
+    /*float: left;*/
     padding:1em 5em 0 .5em;
-    line-height:1.6;
+    line-height:1.6em;
     color:#888;
 
   }
@@ -1715,15 +1719,19 @@ body{
     font-size:1.5vh;
   }
 .about__link , .project__link {
+  /*display: block;*/
+  display: block;
   font-family: 'xofontbold';
   position: relative;
-  font-size:1.8vh;
+  font-size: 2em;
   color:#333;
   cursor: grab;
   z-index: 1000;
   text-decoration: none;
   border: 0;
   background: none;
+  text-align: left;
+  line-height: 1.5em;
 
 }
 button:focus {outline:0;}
