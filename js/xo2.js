@@ -14,3 +14,18 @@ var toggleStatus = 1;
 				toggleStatus = 1;
 			}
 		}
+
+
+var toggleStatus = 1;
+		function about__link() {
+			if (toggleStatus == 1) {
+				document.getElementById("about_show").style.top = '0vh';
+				$(".grid_project").transition({ opacity:.01 }, 500, 'ease');
+				toggleStatus = 0;
+
+			} else if (toggleStatus == 0) {
+				document.getElementById("about_show").style.top = "100vh";
+				$(".grid_project").transition({ opacity:1 }, 1500, 'ease');
+				toggleStatus = 1;
+			}
+		}

@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	    <meta name="description" content="叉圈 nonxo® 位於台灣台北，是一個專注於提供形象設計與動畫設計服務的工作室，歡迎關注我們，以接收最新的的設計、動畫分享，或者詢問我們的設計服務！">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>叉圈</title>
+		<title> NONXO 叉圈 | Motion & Design</title>
 <!-- search -->
 		<meta name="keywords" content="叉圈設計 nonxo">
 		<link rel="Shortcut Icon" type="image/x-icon" href="./img/icon/NONXO128-3.ico" />
@@ -41,6 +41,9 @@
 		<link rel="stylesheet" href="css/masonry-docs3.css" media="screen">
 		<link rel="stylesheet" href="css/ox-combine.css" media="screen">
 		<link rel="stylesheet" href="css/icon.css" media="screen">
+		<link rel="stylesheet" href="css/keyframes.css" media="screen">
+		<link rel="stylesheet" href="css/pageTransitions.css" media="screen">
+
 
 		 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
@@ -48,6 +51,11 @@
 		<script src="./js/jquery.transit.min.js"></script>
 		
 		<script src="./js/xo2.js"></script>
+		<script src="./js/jquery.smoothState.min.js"></script>
+		<script src="./js/smoothstate_main.js"></script>
+		<!-- <script src="./js/quicksand.js"></script> 篩選 -->
+
+		
 	</head>
 
 	<body>
@@ -72,7 +80,7 @@
 						 <path class="line middle3" d="m 30,62	 h 40" />
 						 <!-- <path class="line middle2" d="m 30,65	 h 40" /> -->
 						 
-						 	<path class="line middle4" d="m 30,50	 h 10" />
+						 	<path class="line middle4" d="m 30,50	 h 12" />
 						 	<path class="line middle4_5" d="m 30,50	 h 20" />
 						 	<path class="line middle6" d="m 30,50	 h 40" />
 						 <!-- <path class="line middle5" d="m 30,50	 h 10" /> -->
@@ -86,7 +94,7 @@
 	</div>
 	<div class="footer__text" style="z-index: 1000000;">
 		      	<ul>
-			      	<li><div class="about__link">
+			      	<li><div class="about__link" onclick="about__link()">
 				      		<span>About Us<br/>
 				      			<!-- <div id="about_cross" title="back">↓</div></span> -->
 				      	</div>
@@ -158,19 +166,20 @@
 					<div class="grid__item grid__item__big" >
 						<div class="index_img" >
 							<a href="./poster_collection">
-								<img src="./img/indeximg/indeximg_c_poster.jpg" alt="叉圈設計 nonxo" />
+								<!-- <img src="./img/indeximg/indeximg_c_poster.jpg" alt="叉圈設計 nonxo" /> -->
+								<video class="video-section__video" width="100%" poster="/app/themes/tenten/assets/img/index/video-poster.jpg" autoplay="" loop="" muted="" playsinline="" style="display: inline;">
+        <source src="https://s3.amazonaws.com/uploads.hipchat.com/56770/387439/EOp1PHe2twPZ6xe/tenten_video_2016.webm" type="video/webm">
+        <source src="https://s3.amazonaws.com/uploads.hipchat.com/56770/387439/oNnUdHi81UFoiNI/tenten_video_2016.mp4" type="video/mp4">
+      </video>
 									<div class="overlay" >
-
+										<div id="overlay_title">
+										<h7 class="index_title"> POSTER <br/> Collection  </h7>
 										
-										<div id="overlay_a">
-										<h7 class="index_title" style="margin-bottom: 7em"> POSTER <br/> Collection  </h7>
-										
-										<h7 class="content_text_index">
-											<p id="content_year2" style="color:black;">POSTER Collection</p>
+										<h7 class="content_text_index" style="top:16.5em;">
 												叉圈<br/>
 												海報作品合集 </h7>
 												</div>
-												<h8 id="overlay_b">SELECTION </h8>
+												<h8 id="overlay_year">SELECTION </h8>
 								</div></a><br/>
 						</div>
 					</div>
@@ -181,16 +190,15 @@
 						<div class="index_img">
 						<a href="./manner">
 							<img src="./img/indeximg/indeximg_square_2v.jpg" alt="叉圈設計 nonxo" />
+
 								<div class="overlay" >
-										<div id="overlay_a">
-											<h7 class="index_title" style="letter-spacing:2px">45°の<br/>敬意</h7>
+										<div id="overlay_title">
+											<h7 class="index_title" style="letter-spacing:2px">
+												45°の<br/>敬意</h7>
 											<h7 class="content_text_index">
-												<p id="content_year2" style="color:black">45°の敬意</p>
-												TYPE: Activity<br/> 
-												Client: Shih Chien University <br/>
-												實 踐 大 學</h7>
+												實踐大學<br/>Shih Chien University</h7>
 										</div>
-										<h8 id="overlay_b">2016</h8>
+										<h8 id="overlay_year">BRANDING</h8>
 								</div>
 						</a>
 						</div>
@@ -201,15 +209,15 @@
 							<a href="./projectO">
 							<img src="./img/indeximg/indeximg_Project.jpg" alt="叉圈設計 nonxo" />
 								<div class="overlay" >
-										<div id="overlay_a">
-										<h7 class="index_title">台 灣 大 學  <br/> 優秀青年代表  </h7>
+										<div id="overlay_title">
+										<h7 class="index_title">台 灣 大 學  <br/> 優秀青年代表   </h7>
 												<h7 class="content_text_index">
-													<p id="content_year2" style="color:black">台灣大學 優秀青年代表 Outstanding College Youth</p>
-													TYPE: Graphics <br/>
-													Client: National Taiwan <br/>University
+													
+													台灣大學<br/>
+													 National Taiwan University
 												</h7>
 										</div>
-										<h8 id="overlay_b">2014 </h8>
+										<h8 id="overlay_year">GRAPHICS </h8>
 								</div></a>
 						</div>
 					</div>
@@ -222,16 +230,16 @@
 								
 								
 								<div class="overlay" >
-										<div id="overlay_a">
+										<div id="overlay_title">
 										<h7 class="index_title">Caddy Maxi <br/> 福斯汽車 <br/> </h7>
 										
 										<h7 class="content_text_index">
-											<p id="content_year2" style="color:black">Caddy Maxi </p>
-												TYPE: Advertising <br/>
-												Client: 福斯汽車 Ford & Redbit Pictures
+											
+												<br/>
+												福斯汽車 Volkswagen 
 										</h7>
 										</div>
-										<h8 id="overlay_b" >2016 </h8>
+										<h8 id="overlay_year" >AD </h8>
 								</div></a>
 						</div>
 					</div>
@@ -245,16 +253,16 @@
 								
 								
 								<div class="overlay" >
-										<div id="overlay_a">
+										<div id="overlay_title">
 										<h7 class="index_title">週六<br/>鯊魚夜<br/> </h7>
 										
 										<h7 class="content_text_index">
-											<p id="content_year2" style="color:black">週六鯊魚夜 Shark</p>
-												TYPE: Animation <br/>
-												Client: Discovery & Redbit Pictures
+											
+												 <br/>
+												探索頻道 Discovery 
 										</h7>
 										</div>
-										<h8 id="overlay_b">2016</h8>
+										<h8 id="overlay_year">AD</h8>
 								</div></a>
 						</div>
 					</div>
@@ -269,20 +277,20 @@
 								
 								
 								<div class="overlay" >
-										<div id="overlay_a">
+										<div id="overlay_title">
 											<h7 class="index_title">
 												拉 丁 美 洲  <br/> 
 												動物面對面  <br/> 
 											</h7>
 										
 											<h7 class="content_text_index">
-												<p id="content_year2" style="color:black">拉丁美洲 動物面對面</p>TYPE: Advertising <br/>
-												Client: Animal Planet<br/>
+												 <br/>
+												動物星球頻道 Animal Planet<br/>
 											</h7>
 
 										</div>
 
-										<h8 id="overlay_b">2015 </h8>
+										<h8 id="overlay_year">AD </h8>
 										<!-- <h9 class="text_big"> G</h9> -->
 								</div></a>
 						</div>
@@ -297,16 +305,16 @@
 							<a href="./sn">
 							<img src="./img/indeximg/indeximg_sngift.jpg" alt="叉圈設計 nonxo" />
 								<div class="overlay" >
-										<div id="overlay_a">
+										<div id="overlay_title">
 										<h7 class="index_title">Travels in <br/>Paris <br/> </h7>
 										
 										<h7 class="content_text_index">
-											<p id="content_year2" style="color:black">Caddy Maxi </p>
-												TYPE: Advertising <br/>
-												Client: SN
+											
+												 <br/>
+												Sheng-Nan Chang
 										</h7>
 										</div>
-										<h8 id="overlay_b" >　2016 </h8>
+										<h8 id="overlay_year" >BRADING</h8>
 								</div></a>
 						</div>
 					</div>
@@ -318,19 +326,17 @@
 							<a href="./apsec">
 							<img src="./img/indeximg/indeximg_apsec2.jpg" alt="叉圈設計 nonxo" />
 								<div class="overlay" >
-										<div id="overlay_a">
-											<h7 class="index_title" style="margin-right:0;">
+										<div id="overlay_title">
+											<h7 class="index_title" >
 												Asia Pacific <br/> 
 												Social Entrepreneur<br/>
 												Congress</h7>
 											
 											<h7 class="content_text_index">
-												
-												TYPE: Activity <br/>
-												Client: AIESEC Taiwan	
+												國際經濟學商學學生會 <br/>AIESEC Taiwan	
 											</h7>
 										</div>
-										<h8 id="overlay_b">2015</h8>
+										<h8 id="overlay_year">IDENTITY</h8>
 								</div></a>
 						</div>
 					</div>
@@ -342,24 +348,18 @@
 							<a href="./tafcaa">
 							<img src="./img/indeximg/indeximg_tafcaa.jpg" alt="叉圈設計 nonxo" />
 								<div class="overlay" >
-										<div id="overlay_a">
-											<h7 class="index_title" style="margin-bottom: 4.5em; margin-right:0;">
+										<div id="overlay_title">
+											<h7 class="index_title" style=" ">
 												Taiwan  <br/> 
 												Atrial Fibrillation & <br/>
 												Cardiac Arrhythmia<br/>
 												Alliance </h7>
 										
 											<h7 class="content_text_index">
-												<p id="content_year2" style="color:black;">
-													Taiwan  <br/> 
-													Atrial Fibrillation & <br/>
-													Cardiac Arrhythmia<br/>
-													Alliance</p>
-												TYPE: Identity <br/>
-												Client: TAFCAA
+												台大醫院 National Taiwan <br/>University Hospital <br/>
 											</h7>
 										</div>
-										<h8 id="overlay_b">2015</h8>
+										<h8 id="overlay_year">IDENTITY</h8>
 								</div></a>
 						</div>
 					</div>
@@ -370,19 +370,17 @@
 							<a href="./sn_logo">
 							<img src="./img/indeximg/indeximg_sn.jpg" alt="叉圈設計 nonxo" />
 								<div class="overlay" >
-										<div id="overlay_a">
+										<div id="overlay_title">
 										<h7 class="index_title" style="margin-right:0;">
 										Sheng-Nan Chang<br/>
 										Personal <br/>Identity</h7>
 										
 										<h7 class="content_text_index">
-											<p id="content_year2" style="color:black; margin-top: 0em">
-												Sheng-Nan <br/>Chang<br/>
-												Personal Identity</p>
-											TYPE: Identity <br/>
-											Client: Sheng-Nan Chang
+											
+											<br/>
+											Sheng-Nan Chang
 										</h7>
-										</div><h8 id="overlay_b">2015</h8>
+										</div><h8 id="overlay_year">BRANDING</h8>
 								</div></a>
 						</div>
 					</div>
@@ -396,19 +394,17 @@
 							<a href="./visualpsy">
 							<img src="./img/indeximg/indeximg_visualpsy.jpg" alt="叉圈設計 nonxo" />
 								<div class="overlay" >
-										<div id="overlay_a">
-										<h7 class="index_title" style="margin-bottom: 7em; margin-right:0;">
+										<div id="overlay_title">
+										<h7 class="index_title" style="margin-right:0;">
 										Visual Psycology<br/>
 										視 覺 心 理 學</h7>
 										
 										<h7 class="content_text_index">
-											<p id="content_year2" style="color:black; margin-top: 0em">
-												Visual Psycology<br/>
-												視覺心理學</p>
-											TYPE: Graphic <br/>
-											Client: N/A
+											
+											<br/>
+											N/A
 										</h7>
-										</div><h8 id="overlay_b">2015</h8>
+										</div><h8 id="overlay_year">GRAPHICS</h8>
 								</div></a>
 						</div>
 					</div>
@@ -420,19 +416,17 @@
 							<a href="./TaipeiFilm">
 							<img src="./img/indeximg/indeximg_taipeifilm3.jpg" alt="叉圈設計 nonxo" />
 								<div class="overlay" >
-										<div id="overlay_a">
-										<h7 class="index_title" style="margin-bottom: 7em; margin-right:0;">
+										<div id="overlay_title">
+										<h7 class="index_title" style="margin-right:0;">
 										Taipei Film Award<br/>
 										-Animation</h7>
 										
 										<h7 class="content_text_index">
-											<p id="content_year2" style="color:black; margin-top: 0em">
-												Taipei Film Award<br/>
-												-Animation</p>
-											TYPE: Graphic <br/>
-											Client: N/A
+											
+											<br/>
+											N/A
 										</h7>
-										</div><h8 id="overlay_b">2015</h8>
+										</div><h8 id="overlay_year">GRAPHICS</h8>
 								</div></a>
 						</div>
 					</div>
@@ -444,13 +438,13 @@
 							<a href="./logo_collection">
 							<img src="./img/indeximg/indeximg_underconstruction.png" alt="叉圈設計 nonxo" />
 								<div class="overlay" >
-										<div id="overlay_a">
+										<div id="overlay_title">
 										<h7 class="index_title">LOGO<br/> COLLECTION  <br/><br/></h7>
 										
 										<h7 class="content_text_index"><br/>
-											<p id="content_year2" style="color:black">Under Construction</p>Comming Soon...<br/>
+											
 										</h7>
-										</div><h8 id="overlay_b">XO</h8>
+										</div><h8 id="overlay_year">XO</h8>
 								</div></a>
 						</div>
 					</div>

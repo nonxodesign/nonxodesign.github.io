@@ -6,7 +6,7 @@
     -webkit-user-select: none;
     -ms-user-select: none;
   user-select: none;
-  stroke-linecap: butt;
+  /*stroke-linecap: butt;*/
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
@@ -16,7 +16,10 @@
     -ms-perspective: 1000;
   perspective: 1000;
 }
-
+.mobile_menu_iconbox.is-exiting {
+  -webkit-animation-direction: alternate-reverse;
+  animation-direction: alternate-reverse; 
+}
 
 .hamRotate.active {
   transform: rotate(-45deg);
@@ -69,7 +72,7 @@
 .ham8 .middle4 {
     transform: rotate(90deg);
   stroke-dashoffset: 20;
-  stroke-dasharray: 10 240;
+  stroke-dasharray: 12 240;
   transform-origin: 50%;
    transition: all 500ms ease;
 
@@ -113,7 +116,10 @@
   stroke-dashoffset: 0;
   stroke-dasharray: 40 200;
   transform-origin: 50%;
-   transition: all 200ms ease-in-out;
+   transition: all 500ms ease-in-out;
+}
+.ham8.active .middle6 {
+  stroke:#AD0000;
 }
 
 
