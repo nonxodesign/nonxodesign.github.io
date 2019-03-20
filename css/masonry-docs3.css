@@ -20,6 +20,9 @@
 
 body,html {
   width:100%;
+  margin:0;
+  padding:0;
+  width:100%;
   background-color: #FFF;
   font-family: 'xofontbold';
 /*  font-smoothing: antialiased;
@@ -51,6 +54,9 @@ h1 {
 }
 
 @media screen and ( max-width: 765px ) {
+  #about_show{
+    display: none;
+  }
   .grid__item_content{
     width:100%;
   } 
@@ -460,7 +466,12 @@ ul, ol, li {
 }
 
 video{
-  width: 100%;
+  margin:0 auto;
+  display:inline-block;
+  /*height:1em;*/
+}
+.video-section__video{
+  overflow: hidden;
 }
 
 @media screen and ( min-width: 768px ) {
@@ -1076,7 +1087,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
 }
 
 body{
-  margin:0;
+
   animation:fadein 1.5s cubic-bezier(.25,.1,.25,1) forwards;
 }
 
@@ -1259,6 +1270,46 @@ body{
 }
 
 
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
 
 
 
@@ -1270,7 +1321,6 @@ body{
 .grid_project {
   overflow:hidden;
   padding-top: 13vh;
-
 }
 
 
@@ -1551,6 +1601,7 @@ body{
 
   .grid__item__big {
     width: 100vw;
+    margin-top:7em;
     /*padding: .2em .5em;*/
   }
 
@@ -1565,17 +1616,19 @@ body{
   .grid__grid-sizer,
   .grid__item {
     padding: .5em .5em;
-    width:23em;
+    width:28em;
+    height:28em;
     padding: 1vh;
     display:inline-block;
     overflow:hidden;
   }
 
   .grid__item__big {
-    width: 46em;
-    height: 23em;
+    width: 56em;
+    height: 28.45em;
     /*padding: 1vh;*/
     overflow: hidden;
+    margin-top: 0;
   }
 
    .grid__item__full {
