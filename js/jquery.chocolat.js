@@ -357,7 +357,7 @@
             }).appendTo(this.elems.wrapper)
 
             this.elems.bottom = $('<div/>', {
-                class: 'chocolat-bottom',
+                class: 'chocolat-bsottom',
             }).appendTo(this.elems.wrapper)
 
             this.elems.close = $('<span/>', {

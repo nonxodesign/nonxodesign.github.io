@@ -48,10 +48,15 @@ $(document).ready(function(){
 	});
 });
 
-$(document).ready(function(){
-    $('.chocolat-parent').Chocolat();
-});
+       
+                    $(function(){
+                $('.container_project').Chocolat({
+                    imageSize: 'default',
+                    // loop: true,
+                    overlayOpacity : 0.9,
+                    duration: 500,
+                    fullScreen:false,
+                    lastImage:0
+                });
 
-$(document).ready(function(){
-    var instance = $('.chocolat-parent').Chocolat().data('chocolat');
-});
+            });

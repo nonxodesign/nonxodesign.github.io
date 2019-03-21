@@ -66,6 +66,7 @@ h1 {
   }
   .grid__item_content{
     width:100%;
+    margin:0;
   } 
   .content_text{
     width: 95%;
@@ -376,6 +377,7 @@ h5 {
     hyphens: auto;
       position:absolute;
   }
+}
 
 
 
@@ -433,13 +435,13 @@ p{
 }
 
 .content_title{
-  
+  margin:2em;
   font-size:1.5em;
   font-weight:600;
   line-height: 1.2;
   letter-spacing: 0;
   margin:.5em;
-  border-left: 3px solid black;
+  border-left: 2px solid black;
   padding-left: .5em;
 }
 
