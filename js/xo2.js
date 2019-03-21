@@ -51,3 +51,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     $('.chocolat-parent').Chocolat();
 });
+
+$(document).ready(function(){
+    var instance = $('.chocolat-parent').Chocolat().data('chocolat');
+});
