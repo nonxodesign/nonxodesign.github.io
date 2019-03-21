@@ -380,7 +380,9 @@
 
 
 @media screen and ( min-width: 768px ) {
-
+	.index_title,.index_subtitle, .content_text_index{
+		display: block;
+	}
 
 	.index_img {
 
@@ -400,6 +402,7 @@
 	    left: 0;
 	    background-color: rgba( 0, 0, 0, .6);
 	    opacity: 0;
+	    display:block;
 		/*will-change: transform;*/
 		/*-webkit-backface-visibility: hidden;*/
 		/*-webkit-transform-style: preserve-3d;*/
@@ -549,7 +552,7 @@
 		display: inline-block;
 		font-weight: 500;
 		z-index: 15;
-		font-size: 2em;
+		font-size: 1.7em;
 		color: white;
 	}
 	.index_subtitle {
@@ -567,7 +570,9 @@
 }
 
 
-
+.container_project{
+	width:50%;
+}
 
 
 

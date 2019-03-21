@@ -36,7 +36,9 @@ html {
   -webkit-text-size-adjust: 100%; /* 3 */
 }
 
-
+h7{
+  font-family: 'xofontbold';
+}
 
 a:active,
 a:hover {
@@ -52,6 +54,11 @@ h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
+ .grid__item_content{
+    width:70%;
+    float:right;
+    margin-right:10em;
+  } 
 
 @media screen and ( max-width: 765px ) {
   #about_show{
@@ -432,6 +439,8 @@ p{
   line-height: 1.2;
   letter-spacing: 0;
   margin:.5em;
+  border-left: 3px solid black;
+  padding-left: .5em;
 }
 
 ul, ol, li {
@@ -441,6 +450,7 @@ ul, ol, li {
   .content_title{
     font-size: 2em;
     letter-spacing: 0;
+
   }
 
 
@@ -1321,6 +1331,7 @@ body{
 .grid_project {
   overflow:hidden;
   padding-top: 13vh;
+  font-family: 'xofontblack';
 }
 
 
@@ -1625,10 +1636,11 @@ body{
 
   .grid__item__big {
     width: 56em;
-    height: 28.45em;
+    height: 28em;
     /*padding: 1vh;*/
     overflow: hidden;
     margin-top: 0;
+
   }
 
    .grid__item__full {
