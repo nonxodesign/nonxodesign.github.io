@@ -46,7 +46,7 @@ $(document).ready(function(){
 
 			$(document).ready(function(){
 				$("#nav-icon3").click(function(){
-	        		$("#mobie_menu").transition({ opacity:1, y: 0 },800 ,'ease');
+	        		$("#mobile_menu").transition({ opacity:1, y: 0 },800 ,'ease');
 					
 					$(".mobile_menu_icon").transition({ opacity:0, x: '-7vw' },300 ,'ease');
 	        		$(".mobile_menu_icon").fadeOut("ease-in-out");
@@ -60,7 +60,7 @@ $(document).ready(function(){
 
 			$(document).ready(function(){
 				$('#nav-icon3.open').click(function(){
-	        		$("#mobie_menu").transition({ opacity:0, y: '100vh'  },800 ,'ease');
+	        		$("#mobile_menu").transition({ opacity:0, y: '100vh'  },800 ,'ease');
 	        		
 	        		$('.mobile_menu_cross').transition({ opacity:0, x: '25vw' },800 ,'ease');
 	        		// $('.mobile_menu_cross').fadeOut("ease");

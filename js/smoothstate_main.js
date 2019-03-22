@@ -1,6 +1,6 @@
 $(function(){
   'use strict';
-  var $page = $('#mobie_menu'), 
+  var $page = $('#mobile_menu'), 
       options = {
         debug: true,
         prefetch: true,

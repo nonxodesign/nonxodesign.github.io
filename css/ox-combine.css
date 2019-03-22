@@ -27,7 +27,16 @@
 	.imgsmall{
 		width:100%;
 	}
+	.contentimg{
+		width:100%;
+	}
+	.contentimg_ss{
+		width:49%;
+	}
+	
 }
+
+
 @media screen and ( min-width: 767px ) {
 
 	.TopBar{
@@ -53,7 +62,6 @@
 	}
 
 }
-
 .about_text{
 	float: right;
 	color: black; 
@@ -151,7 +159,7 @@
 
 
 
-#mobie_menu{
+#mobile_menu{
 	box-shadow: 0 0 5px 5px   #F7F8F8, 
 				0 0 10px 10px #F7F8F8, 
 				0 0 20px 20px #F7F8F8,  
@@ -187,11 +195,11 @@
 	border: 1px solid #EDEDED;
 	font-size: 3em;	
 }
-#mobie_menu span{
+#mobile_menu span{
 	display: inline-block;
 }
 
-#mobie_menu ul:nth-child(1) {
+#mobile_menu ul:nth-child(1) {
 
 	animation-delay:5s;
 }
@@ -213,9 +221,9 @@
 	.mobile_menu_iconbox{
 		display:none;
 	}
-	.mobie_menu{
+	.mobile_menu{
 		display:none;
-		}
+	}
 
 /*logo hover浮出字*/
 
