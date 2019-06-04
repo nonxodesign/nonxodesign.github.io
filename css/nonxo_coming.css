@@ -27,8 +27,8 @@ html,body{
 .css{}
 
 .containerx{
-	background: linear-gradient(180deg, #fff, #000000);
-	background-size: 400% 400%;
+	background: linear-gradient(135deg, #f9f9f9, #ccc);
+	/*background-size: 400% 400%;*/
 	width:100%;
 	height:100%;
 	margin:0, auto;

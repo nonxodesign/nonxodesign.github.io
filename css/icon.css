@@ -1,0 +1,175 @@
+.ham {
+  cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  transition: transform 700ms ease;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  user-select: none;
+  /*stroke-linecap: butt;*/
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -ms-perspective: 1000;
+  perspective: 1000;
+}
+.mobile_menu_iconbox.is-exiting {
+  -webkit-animation-direction: alternate-reverse;
+  animation-direction: alternate-reverse; 
+}
+
+.hamRotate.active {
+  transform: rotate(-45deg);
+  /*-webkit-transform: rotate(45deg);*/
+}
+.hamRotate180.active {
+  /*transform: rotate(180deg);*/
+}
+.line {
+  fill:none;
+  transition: stroke-dasharray , stroke-dashoffset 1000ms ease;
+  stroke:#1C1C1C;
+  stroke-width:6;
+  /*stroke-linecap: square;*/
+  
+}
+
+
+
+
+.ham8 .top {
+  stroke-dasharray: 40 160;
+}
+.ham8 .middle {
+  stroke-dasharray: 40 142;
+  transform-origin: 50%;
+  transition: transform 400ms ease;
+}
+.ham8 .middle2 {
+  stroke-dashoffset: 0;
+  stroke-dasharray: 40 200;
+  /*transform-origin: 50%;*/
+}
+.ham8.active .middle2 {
+  /*stroke-dashoffset: -20px;*/
+  /*transform: rotate(0deg);*/
+  stroke-dashoffset: 130;
+}
+.ham8 .middle3 {
+  stroke-dashoffset: 0;
+  stroke-dasharray: 40 140;
+  transform-origin: 50%;
+}
+.ham8.active .middle3 {
+  /*stroke-dashoffset: -20px;*/
+  /*transform: rotate(0deg);*/
+  stroke-dashoffset: -130;
+}
+
+.ham8 .middle4 {
+    transform: rotate(90deg);
+  stroke-dashoffset: 20;
+  stroke-dasharray: 12 240;
+  transform-origin: 50%;
+   transition: all 500ms ease;
+
+}
+.ham8.active .middle4 {
+  /*stroke-dashoffset: -20px;*/
+  /*transform: rotate(0deg);*/
+  stroke-dashoffset: 0;
+
+}
+
+.ham8 .middle4_5 {
+    transform: rotate(270deg);
+  stroke-dashoffset: 20;
+  stroke-dasharray: 20 240;
+  transform-origin: 50%;
+   transition: all 500ms ease;
+
+}
+.ham8.active .middle4_5 {
+  /*stroke-dashoffset: -20px;*/
+  /*transform: rotate(0deg);*/
+  stroke-dashoffset: 0;
+
+}
+
+.ham8 .middle5 {
+    transform: rotate(270deg);
+  stroke-dashoffset: -70;
+  stroke-dasharray: 40 100;
+  transform-origin: 50%;
+   transition: all 700ms ease;
+}
+.ham8.active .middle5 {
+  /*stroke-dashoffset: -20px;*/
+  /*transform: rotate(0deg);*/
+  stroke-dashoffset: -18;
+}
+
+.ham8 .middle6 {
+  stroke-dashoffset: 0;
+  stroke-dasharray: 40 200;
+  transform-origin: 50%;
+   transition: all 500ms ease-in-out;
+}
+.ham8.active .middle6 {
+  stroke:#AD0000;
+}
+
+
+
+
+
+
+
+
+
+.ham8 .bottom {
+
+  stroke-dasharray: 40 85;
+  transform-origin: 50%;
+  transition: all 400ms;
+}
+.ham8.active .top {
+  stroke-dashoffset: 64;
+}
+
+.ham8.active .middle {
+  /*stroke-dashoffset: -20px;*/
+  /*transform: rotate(90deg);*/
+}
+
+.ham8.active .bottom {
+  stroke-dashoffset: -64;
+  stroke-dasharray: 10 85;
+}
+
+
+
+.circle_a{
+transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  fill:none;
+stroke-width: 5;
+ stroke:#000;
+ /*stroke-dasharray: 100 200;*/
+/* stroke-dasharray: 10;
+  stroke-dashoffset: 1000;*/
+
+
+}
+.ham8 .circle_a{
+  stroke-dasharray: 130;
+
+  stroke-dashoffset: 130;
+  transform-origin: 50%;
+}
+
+.ham8.active .circle_a{
+ stroke-dashoffset: 0;
+}
