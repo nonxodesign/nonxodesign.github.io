@@ -58,6 +58,9 @@ h1 {
     width:70%;
     float:right;
     margin-right:10em;
+    padding-bottom:10em;
+   /* background: #f1f1f1;
+    padding:5em;*/
   } 
 
 @media screen and ( max-width: 765px ) {
@@ -69,10 +72,10 @@ h1 {
     margin:0;
   } 
   .content_text{
+    /*text-align: center;*/
     width: 95%;
-    float: left;
-    margin:0 1em;
     margin-left: 1em;
+    margin-top: 1em; 
   }
 }
 
@@ -436,46 +439,41 @@ p{
 }
 
 .content_title{
-  margin:2em;
+  display: inline-block;
   font-size:1.5em;
   font-weight:600;
   line-height: 1.2;
   letter-spacing: 0;
-  margin:.5em;
-  border-left: 2px solid black;
+  border-left: 3.5px solid grey;
   padding-left: .5em;
+
 }
 
 ul, ol, li {
     list-style: none;
 }
+.content_project{
+  margin-top: .5em;
+}
+
 @media screen and ( min-width: 766px ) {
   .content_title{
-    font-size: 2em;
+    font-size: 2.2em;
     letter-spacing: 0;
+    width:20vw;
+    float:left;
 
   }
+    .content_text{
+      /*text-align: center*/
+      line-height: 1.8;
+      width: 20vw;
+      font-size: 1.2em;
+      display: inline-block;
+      float: left;
+      margin-right: 2em;
+      text-align:justify;
 
-
-
-
-.content_text{
-    hyphens: auto;
-    text-align: justify;
-  　/*text-justify: inter-ideograph;
-  　-ms-text-justify: inter-ideograph;
-  　-moz-text-align-last:justify; 
-  　-webkit-text-align-last:justify;*/
-     margin-bottom:3em;
-
-  /*  -moz-transform:rotate(90deg);
-    -webkit-transform:rotate(90deg);
-    -o-transform:rotate(90deg);
-    -ms-transform:rotate(90deg);
-    transform:rotate(90deg);*/
-  
-    
-     /*margin-left: 1em;*/
 }
 
 video{
@@ -495,13 +493,6 @@ video{
   overflow: hidden;
 }
 
-@media screen and ( min-width: 768px ) {
-  .content_text{
-    margin: .5em 0 0 1em;
-    width: 45%;
-    float: right;
-  }
-}
 
 
 /* ---- lists ---- */
@@ -1377,6 +1368,8 @@ body{
   overflow:hidden;
   padding-top: 13vh;
   font-family: 'xofontblack';
+  /*transform:skew(-2deg,-2deg);*/
+  /*transform:rotate(-3deg);*/
 }
 
 
@@ -1832,6 +1825,11 @@ body{
   text-align: left;
   line-height: 2em;
  text-transform: uppercase;
+ opacity: .5;
+ transition: all 0.3s ease;
+}
+.about__link:hover,.project__link:hover{
+  opacity:1;
 }
 button:focus {outline:0;}
 
@@ -1888,6 +1886,10 @@ button:focus {outline:0;}
 
 @keyframes fadein {
     from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@keyframes fadeinLogo {
+    from { opacity: .5; }
     to   { opacity: 1; }
 }
 

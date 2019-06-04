@@ -8,6 +8,7 @@
 		z-index: 1000;
 		position: fixed;
 		/*transform:translateY(120%);*/
+
 	}
 	.logomask{
 		display:none;
@@ -48,6 +49,7 @@
 		margin-bottom: -2em;
 		position:fixed;
 		z-index: 1000;
+
 	}
 	.youtubeframe{
 		width: 100%;
@@ -235,13 +237,19 @@
 }
 
 .logo_v2{
-		width:150%;
+		width:130%;
+
+		opacity:.5;
+		transition: all 0.3s ease;
 }
 .logo_v2-2{
 		display:none;
 }
 
-
+.logo_v2:hover{
+	width:140%;
+	opacity:1;
+}
 
 .nonxo{
 	
