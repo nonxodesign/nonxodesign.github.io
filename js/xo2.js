@@ -60,8 +60,8 @@ $(document).ready(function(){
 });
 
        
-                    $(function(){
-                $('.container_project').Chocolat({
+                $(document).ready(function(){
+                jQuery('.container_project').Chocolat({
                     imageSize: 'default',
                     // loop: true,
                     overlayOpacity : 0.9,
