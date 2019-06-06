@@ -1,5 +1,5 @@
 /**
- * @author mrdoob / http://mrdoob.com/
+ * @author mrdoob / https://mrdoob.com/
  */
 
 THREE.OBJLoader = ( function () {
@@ -592,9 +592,9 @@ THREE.OBJLoader = ( function () {
 					// Example asset: examples/models/obj/cerberus/Cerberus.obj
 
 					/*
-					 * http://paulbourke.net/dataformats/obj/
+					 * https://paulbourke.net/dataformats/obj/
 					 * or
-					 * http://www.cs.utah.edu/~boulos/cs3505/obj_spec.pdf
+					 * https://www.cs.utah.edu/~boulos/cs3505/obj_spec.pdf
 					 *
 					 * From chapter "Grouping" Syntax explanation "s group_number":
 					 * "group_number is the smoothing group number. To turn off smoothing groups, use a value of 0 or off.

@@ -1,7 +1,7 @@
 $(document).ready(function() {
       /*
        * Replace all SVG images with inline SVG
-       * source: http://stackoverflow.com/questions/11978995/how-to-change-color-of-svg-image-using-css-jquery-svg-image-replacement
+       * source: https://stackoverflow.com/questions/11978995/how-to-change-color-of-svg-image-using-css-jquery-svg-image-replacement
      */
 
     $('img.redSVG').each(function(){
@@ -26,7 +26,7 @@ $(document).ready(function() {
           MYsvg = MYsvg.attr('style', imgStyle);
         }
 
-        // Remove any invalid XML tags as per http://validator.w3.org
+        // Remove any invalid XML tags as per https://validator.w3.org
         MYsvg = MYsvg.removeAttr('xmlns:a');
 
         // Replace image with new SVG
