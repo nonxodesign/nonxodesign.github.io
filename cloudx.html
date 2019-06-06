@@ -89,8 +89,8 @@
 				var context = canvas.getContext( '2d' );
 
 				var gradient = context.createLinearGradient( 0, 0, 0, canvas.height );
-				gradient.addColorStop(0, "#1e4877");
-				gradient.addColorStop(0.5, "#4584b4");
+				gradient.addColorStop(0, "#b2b2b2");
+				gradient.addColorStop(0.5, "#ffffff");
 
 				context.fillStyle = gradient;
 				context.fillRect(0, 0, canvas.width, canvas.height);
@@ -102,7 +102,7 @@
 
 				camera = new THREE.PerspectiveCamera( 30, window.innerWidth / window.innerHeight, 1, 3000 );
 				camera.position.z = 6000;
-				camera.position.y = -3000;
+				camera.position.y = -1000;
 
 				scene = new THREE.Scene();
 
