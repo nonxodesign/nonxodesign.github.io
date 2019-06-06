@@ -36,6 +36,18 @@ html {
   -webkit-text-size-adjust: 100%; /* 3 */
 }
 
+img {
+    vertical-align: top;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+video {
+    vertical-align: top;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
 h7{
   font-family: 'xofontbold';
 }
@@ -80,7 +92,8 @@ h1 {
 }
 
  .image img {
-      /*border-radius*/: 0.375em;
+
+      /*border-radius: 0.375em;*/
       /*display: block;*/
     }
  .image{
@@ -439,6 +452,7 @@ p{
 }
 
 .content_title{
+  font-family:'xofontblack'; 
   display: inline-block;
   font-size:1.5em;
   font-weight:600;
@@ -477,8 +491,8 @@ ul, ol, li {
 }
 
 video{
-  margin:0 auto;
-  display:inline-block;
+    margin:0 auto;
+  display:block;
   /*height:1em;*/
     position: absolute;
     top: 0;
@@ -493,6 +507,21 @@ video{
   overflow: hidden;
 }
 
+.video-container {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
 
 
 /* ---- lists ---- */
@@ -1079,7 +1108,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
   position: absolute;
   left: 15px;
   content: ' ';
-  height: 33px;
+  height: 1.7em;
   width: 2px;
   background-color: #333;
 
@@ -1380,6 +1409,7 @@ body{
     width:75vw;
     padding-top: 5vh;
     float:right;
+    padding-bottom:10vh;
   }
 }
 
@@ -1673,6 +1703,7 @@ body{
   }
 
   .grid__item__big {
+    padding: .5em .5em;
     width: 56em;
     height: 28em;
     /*padding: 1vh;*/
