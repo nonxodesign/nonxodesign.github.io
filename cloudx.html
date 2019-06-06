@@ -6,7 +6,7 @@
 		<link rel="stylesheet" href=".css/init.css">
 		<style type="text/css">
 			body {
-				background-color: #326696;
+				background-color: #fff;
 				margin: 0px;
 				overflow: hidden;
 				font-family:Monospace;
@@ -89,7 +89,7 @@
 				var context = canvas.getContext( '2d' );
 
 				var gradient = context.createLinearGradient( 0, 0, 0, canvas.height );
-				gradient.addColorStop(0, "#b2b2b2");
+				gradient.addColorStop(0, "#fff");
 				gradient.addColorStop(0.5, "#ffffff");
 
 				context.fillStyle = gradient;
@@ -100,19 +100,19 @@
 
 				//
 
-				camera = new THREE.PerspectiveCamera( 30, window.innerWidth / window.innerHeight, 1, 3000 );
-				camera.position.z = 6000;
-				camera.position.y = 3000;
+				camera = new THREE.PerspectiveCamera( 30, window.innerWidth / window.innerHeight, 1, 2000 );
+				camera.position.z = 1000;
+				camera.position.y = -1000;
 
 				scene = new THREE.Scene();
 
 				geometry = new THREE.Geometry();
 
-				var texture = THREE.ImageUtils.loadTexture( 'cloud10.png', null, animate );
+				var texture = THREE.ImageUtils.loadTexture( './nonxoindex/dot.png', null, animate );
 				texture.magFilter = THREE.LinearMipMapLinearFilter;
 				texture.minFilter = THREE.LinearMipMapLinearFilter;
 
-				var fog = new THREE.Fog( 0xffffff, - 100, 3000 );
+				var fog = new THREE.Fog( 0xffffff, 0, 3000 );
 
 				material = new THREE.ShaderMaterial( {
 
