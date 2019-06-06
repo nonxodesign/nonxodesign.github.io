@@ -21,10 +21,10 @@
     {
       "name": "Nicolas Turlais",
       "email": "nicolas@insipi.de",
-      " homepage": "https://nicolasturlais.com"
+      " homepage": "http://nicolasturlais.com"
     }
   ],
-  "homepage": "https://chocolat.insipi.de",
+  "homepage": "http://chocolat.insipi.de",
   "repository": {
     "type": "git",
     "url": "git://github.com/nicolas-t/Chocolat.git"

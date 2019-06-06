@@ -764,7 +764,7 @@ exports.use(assert);
 require.register("chai/lib/chai/assertion.js", function (exports, module) {
 /*!
  * chai
- * https://chaijs.com
+ * http://chaijs.com
  * Copyright(c) 2011-2014 Jake Luer <jake@alogicalparadox.com>
  * MIT Licensed
  */
@@ -952,7 +952,7 @@ module.exports = {
 require.register("chai/lib/chai/core/assertions.js", function (exports, module) {
 /*!
  * chai
- * https://chaijs.com
+ * http://chaijs.com
  * Copyright(c) 2011-2014 Jake Luer <jake@alogicalparadox.com>
  * MIT Licensed
  */
@@ -4714,7 +4714,7 @@ function formatValue(ctx, value, recurseTimes) {
           // Firefox 11- do not support outerHTML
           //   It does, however, support innerHTML
           //   Use the following to render the element
-          var ns = "https://www.w3.org/1999/xhtml";
+          var ns = "http://www.w3.org/1999/xhtml";
           var container = document.createElementNS(ns, '_');
 
           container.appendChild(value.cloneNode(false));

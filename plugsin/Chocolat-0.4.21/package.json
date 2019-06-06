@@ -41,11 +41,11 @@
   "licenses": [
     {
       "type": "GPLv3",
-      "url": "https://chocolat.insipi.de"
+      "url": "http://chocolat.insipi.de"
     }
   ],
   "bugs": {
     "url": "https://github.com/nicolas-t/Chocolat/issues"
   },
-  "homepage": "https://chocolat.insipi.de"
+  "homepage": "http://chocolat.insipi.de"
 }

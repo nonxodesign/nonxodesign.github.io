@@ -1,6 +1,6 @@
 /**
- * @author alteredq / https://alteredqualia.com/
- * @author mr.doob / https://mrdoob.com/
+ * @author alteredq / http://alteredqualia.com/
+ * @author mr.doob / http://mrdoob.com/
  */
 
 Detector = {
@@ -26,13 +26,13 @@ Detector = {
 		if ( ! this.webgl ) {
 
 			domElement.innerHTML = window.WebGLRenderingContext ? [
-				'Sorry, your graphics card doesn\'t support <a href="https://khronos.org/webgl/wiki/Getting_a_WebGL_Implementation">WebGL</a>'
+				'Sorry, your graphics card doesn\'t support <a href="http://khronos.org/webgl/wiki/Getting_a_WebGL_Implementation">WebGL</a>'
 			].join( '\n' ) : [
-				'Sorry, your browser doesn\'t support <a href="https://khronos.org/webgl/wiki/Getting_a_WebGL_Implementation">WebGL</a><br/>',
+				'Sorry, your browser doesn\'t support <a href="http://khronos.org/webgl/wiki/Getting_a_WebGL_Implementation">WebGL</a><br/>',
 				'Please try with',
-				'<a href="https://www.google.com/chrome">Chrome 10</a>, ',
-				'<a href="https://www.mozilla.com/en-US/firefox/all-beta.html">Firefox 4</a> or',
-				'<a href="https://nightly.webkit.org/">Safari 6</a>'
+				'<a href="http://www.google.com/chrome">Chrome 10</a>, ',
+				'<a href="http://www.mozilla.com/en-US/firefox/all-beta.html">Firefox 4</a> or',
+				'<a href="http://nightly.webkit.org/">Safari 6</a>'
 			].join( '\n' );
 
 		}

@@ -2,9 +2,9 @@
 -----------
 Chocolat is a responsive lightbox  
 What you are looking for is in the `/dist/` folder.  
-[Demo page is here](https://chocolat.insipi.de/#demo)
+[Demo page is here](http://chocolat.insipi.de/#demo)
   
-[![Image of Chocolat](https://full.ouplo.com/10/9/jzbY.jpg)](https://chocolat.insipi.de/#demo)
+[![Image of Chocolat](http://full.ouplo.com/10/9/jzbY.jpg)](http://chocolat.insipi.de/#demo)
 
 
 ## Installation
