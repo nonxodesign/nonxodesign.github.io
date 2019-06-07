@@ -100,8 +100,8 @@
 
 				//
 
-				camera = new THREE.PerspectiveCamera( 30, window.innerWidth / window.innerHeight, 1, 2000 );
-				camera.position.z = 1000;
+				camera = new THREE.PerspectiveCamera( 30, window.innerWidth / window.innerHeight, 1, 1500 );
+				camera.position.z = 0000;
 				camera.position.y = -1000;
 
 				scene = new THREE.Scene();
@@ -112,7 +112,7 @@
 				texture.magFilter = THREE.LinearMipMapLinearFilter;
 				texture.minFilter = THREE.LinearMipMapLinearFilter;
 
-				var fog = new THREE.Fog( 0xffffff, -1000, 3000 );
+				var fog = new THREE.Fog( 0xffffff, -1000, 1500 );
 
 				material = new THREE.ShaderMaterial( {
 
