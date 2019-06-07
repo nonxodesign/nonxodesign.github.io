@@ -752,17 +752,30 @@
 	letter-spacing: 5px;
 
 	animation:fadein2 10s ease forwards;
-	
 }
 .index_text2{
 	text-align: center;
 	font-family: 'xofontbold';
 	font-size: 14px;
-	line-height: 1;
+	line-height: 1.5;
 	font-weight: 500;
-	animation:fadein2 11s ease forwards;
+	animation:fadein2 12s ease forwards;
 	letter-spacing:1px;
 }
+@media screen and ( max-width: 765px ) {
+		.index_text{
+			font-size: 12px;
+			animation:fadein2 15s ease forwards;
+			
+		}
+		.index_text2{
+			font-size: 10px;
+			animation:fadein2 17s ease forwards;
+		}
+		.index_animation_t{
+			
+			top:40vh;
+	}
 
 
 
