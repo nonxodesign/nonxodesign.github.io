@@ -1123,10 +1123,10 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
 
 
 }
-   #div1{
-    z-index: 10000;
-    position:fixed;
-  }
+ #div1{
+  z-index: 10000;
+  position:fixed;
+}
 
 .about_container{
   width:75%;
@@ -1684,6 +1684,9 @@ body{
     /*padding: .2em .5em;*/
   }
 
+.grid__item_content img{
+  padding-bottom: 3px;
+}
 .grid__item__full {
     /*height:100vh;*/
     overflow:hidden;
