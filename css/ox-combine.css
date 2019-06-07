@@ -799,3 +799,12 @@
   100% { opacity:0; }
 }
 
+@keyframes fadein3 {
+  0%   { top: -100px; opacity:0; }
+  20%  { top: -100px; opacity:0; }
+  40%  { top: -100px; opacity:0; }
+  50%  { top: 0px; opacity:1; }
+  100% { top: 0px; opacity:1; }
+}
+
+
