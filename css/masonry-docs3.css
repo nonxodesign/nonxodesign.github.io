@@ -23,7 +23,7 @@ body,html {
   padding:0;
   width:100%;
   background-color: #FFF;
-  font-family: 'xofontbold';
+  font-family: 'xofontbold','Noto Sans TC';
 /*  font-smoothing: antialiased;
   text-rendering: optimizeLegibility;*/
   font-kerning: auto;
@@ -48,7 +48,7 @@ video {
     margin: 0;
 }
 h7{
-  font-family: 'xofontbold';
+  font-family: 'xofontbold','Noto Sans TC';
 }
 
 a:active,
@@ -451,13 +451,13 @@ p{
 }
 
 .content_title{
-  font-family:'xofontblack'; 
+  font-family:'xofontbold','Noto Sans TC'; 
   display: inline-block;
   font-size:1.5em;
-  font-weight:600;
+  font-weight:400;
   line-height: 1.2;
   letter-spacing: 0;
-  border-left: 3.5px solid grey;
+  border-left: 2.5px solid grey;
   padding-left: .5em;
 
 }
@@ -486,6 +486,7 @@ ul, ol, li {
       float: left;
       margin-right: 2em;
       text-align:justify;
+      font-family: 'xofontbold','Noto Sans TC';
 
 }
 
@@ -1038,7 +1039,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
 }
 .P_1{
   font-weight:500;
-  font-family: 'xofontbold', Noto Sans TC;
+  font-family: 'Noto Sans TC','xofontbold';
   font-size: .6em;
   letter-spacing: 1px;
   color:black;
@@ -1046,7 +1047,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
 }
 .P_2{
   font-weight:500;
-  font-family: 'xofontbold', Noto Sans TC;
+  font-family: 'Noto Sans TC','xofontbold';
   font-size: 2vh;
   letter-spacing: 1px;
   color:black;
@@ -1058,7 +1059,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
   -webkit-font-smoothing: antialiased;*/
   width:20vw;
   font-width:100;
-  font-family: 'xofontbold';
+  font-family: 'xofontbold','Noto Sans TC';
   font-size:1.5em;
   letter-spacing: 2px;
   color:black ;
@@ -1077,7 +1078,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
 
 #about_show{
   top:100vh;
-  font-family: 'xofontbold';
+  font-family: 'xofontbold','Noto Sans TC';
   z-index: 150;
   opacity: 1;
   position: fixed;
