@@ -5,6 +5,8 @@
 <style type="text/css">
 	.st0{fill:none;stroke:#040000;stroke-width:3.1718;stroke-miterlimit:10;}
 	.st1{fill:none;stroke:#040000;stroke-width:5.14;stroke-miterlimit:10;}
+	.st2{fill:#A52727;}
+	.st3{fill:none;stroke:#A52727;stroke-miterlimit:10;}
 </style>
 <circle class="st0" cx="48.6" cy="55" r="12.9"/>
 <circle class="st0" cx="174.3" cy="304.7" r="12.9"/>
@@ -24,4 +26,22 @@
 <line class="st0" x1="287.6" y1="31.4" x2="263.2" y2="58.3"/>
 <line class="st0" x1="91.2" y1="193.9" x2="115.5" y2="220.9"/>
 <line class="st0" x1="115.5" y1="193.9" x2="91.2" y2="220.9"/>
+<text transform="matrix(1 0 0 1 405.5323 64.0424)" style="font-family:'Nexa-Bold'; font-size:12px;">There&apos;s No Wrong or Right. It&apos;s Just Not Perfect Enough.</text>
+<image style="overflow:visible;" width="1280" height="720" xlink:href="16FB3AC2.jpg"  transform="matrix(1 0 0 1 -169 -187.1102)">
+</image>
+<image style="overflow:visible;" width="950" height="400" xlink:href="16FB3AC6.jpg"  transform="matrix(1 0 0 1 -194 -111.1102)">
+</image>
+<image style="overflow:visible;" width="354" height="281" xlink:href="C:\Users\HEQIANCHEN\Pictures\Saved Pictures\2019-06-08 02_57_50-NONXO 叉圈 _ Motion &amp; Design.png"  transform="matrix(0.75 0 0 0.75 452 -296.1102)">
+</image>
+<path class="st2" d="M-777.2-437L-777.2-437c-7.7,0-14-6.3-14-14v0c0-7.7,6.3-14,14-14l0,0c7.7,0,14,6.3,14,14v0
+	C-763.2-443.2-769.4-437-777.2-437z"/>
+<path class="st2" d="M-811.4-437L-811.4-437c-7.7,0-14-6.3-14-14v0c0-7.7,6.3-14,14-14h0c7.7,0,14,6.3,14,14v0
+	C-797.4-443.2-803.7-437-811.4-437z"/>
+<path class="st2" d="M-811.4-409L-811.4-409c-7.7,0-14-6.3-14-14v0c0-7.7,6.3-14,14-14h0c7.7,0,14,6.3,14,14v0
+	C-797.4-415.2-803.7-409-811.4-409z"/>
+<path class="st2" d="M-811.4-381L-811.4-381c-7.7,0-14-6.3-14-14v0c0-7.7,6.3-14,14-14h0c7.7,0,14,6.3,14,14v0
+	C-797.4-387.2-803.7-381-811.4-381z"/>
+<rect x="-739.3" y="-379.6" transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 -1030.3085 274.3511)" class="st2" width="174" height="3.2"/>
+<rect x="-828.2" y="-356" transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 -1119.1489 435.1915)" class="st3" width="102" height="28"/>
+<rect x="-799.2" y="-429" transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 -1192.1489 362.1915)" class="st3" width="44" height="28"/>
 </svg>

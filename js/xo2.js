@@ -19,10 +19,11 @@ var toggleStatus = 1;
 var toggleStatus = 1;
 		function about__link() {
 			if (toggleStatus == 1) {
-				document.getElementById("about_show").style.top = '0vh';
+				document.getElementById("about_show").style.top = '5vh';
 				document.getElementById("about_show").style.opacity = '1';
-				$(".grid_project").transition({ opacity:.01 }, 500, 'ease');
-				$(".about__link").transition({ y:'-45.5vh' }, 1500, 'ease');
+				$(".grid_project").transition({ opacity:.01, y:'20vh' }, 500, 'ease');
+				$(".container_project").transition({ opacity:.01, y:'20vh' }, 500, 'ease');
+				$(".about__link").transition({ y:'-45.5vh' }, 1000, 'ease');
 				$('.about_cross').transition({ opacity:.5 },800 ,'ease');
 				toggleStatus = 0;
 
@@ -31,7 +32,8 @@ var toggleStatus = 1;
 
 				document.getElementById("about_show").style.top = "100vh";
 				document.getElementById("about_show").style.opacity = "0";
-				$(".grid_project").transition({ opacity:1 }, 1500, 'ease');
+				$(".grid_project").transition({ opacity:1, y:'0'}, 1500, 'ease');
+				$(".container_project").transition({ opacity:1, y:'0'}, 1500, 'ease');
 				$(".about__link").transition({ y:'0' }, 1000, 'ease');
 				$('.about_cross').transition({ opacity:0 },800 ,'ease');
 				toggleStatus = 1;

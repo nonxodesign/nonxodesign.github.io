@@ -59,7 +59,7 @@
 		<!-- <script src="./js/quicksand.js"></script> 篩選 -->
 		<style>
 			.TopBar{
-				animation: fadein3 20s;
+				animation: fadein3 5s;
 			}
 		</style>
 	</head>
@@ -67,8 +67,8 @@
 			<div class="TopBar">
 			<div class="logo">
 				<a href="./cloudx.html">
-					<img class="logo_v2" src="./img/icon/logov2.svg" alt="叉圈設計 nonxo" >
-					<img class="logo_v2-2" src="./img/icon/logov2-2.svg" alt="叉圈設計 nonxo">
+					<img class="logo_v2" src="./img/icon/logov3.svg" alt="叉圈設計 nonxo" >
+					<img class="logo_v2-2" src="./img/icon/logov3.svg" alt="叉圈設計 nonxo">
 					</a></div>
 
 
@@ -207,8 +207,8 @@
 		<div class="index_animation">
 			<div class="index_animation_t">
 				<!-- NONXO -->
-				<p class="index_text"> 這世界沒有錯對，只是還仍不夠完美 </p>
-				<p class="index_text2">THERE'S NO WRONG OR RIGHT. IT'S JUST NOT PERFECT ENOUGH.</p>
+				<!-- <p class="index_text"> 這世界沒有錯對，只是還仍不夠完美 </p>
+				<p class="index_text2">THERE'S NO WRONG OR RIGHT. IT'S JUST NOT PERFECT ENOUGH.</p> -->
 				<!-- <p class="index_text2">Answer the Question as X or O, Not For Distinguishing between Wrong or Right. <br/> But in order to guide us finding the answer of future.</p> -->
 				<!-- <div class="index_text"> 成千上萬的抉擇中，答案沒有叉或圈<br/> -->
 				</div>
@@ -268,6 +268,8 @@
 				geometry = new THREE.Geometry();
 
 				var texture = THREE.ImageUtils.loadTexture( './nonxoindex/dot.png', null, animate );
+				
+
 				texture.magFilter = THREE.LinearMipMapLinearFilter;
 				texture.minFilter = THREE.LinearMipMapLinearFilter;
 
