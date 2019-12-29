@@ -82,6 +82,7 @@ h1 {
   #about_show{
     display: none;
   }
+
   
   .grid__item_content{
     width:100%;
@@ -1159,6 +1160,11 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
 }
 
 .mobile_about_container{ 
+  display:none;
+}
+@media screen and ( max-width: 767px ) {
+.mobile_about_container{ 
+  display: inline-block;
   /*text-align: justify;*/
     font-kerning: auto;
   position: relative;
@@ -1168,12 +1174,10 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
   margin-top: 5em;
   font-size: 1.6em;
   z-index: 1;
+  
 }
 
-@media screen and ( min-width: 768px ) {
-.mobile_about_container{
-    display: none;
-}
+
 
 }
 
