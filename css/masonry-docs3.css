@@ -1194,6 +1194,7 @@ body{
 }
 
 .index_img{
+  border-radius: 1em;
   display: block;
   /*overflow: hidden;*/
   transform:translateY(-110%);
@@ -1730,6 +1731,7 @@ body{
     padding: 1vh;
     display:inline-block;
     overflow:hidden;
+    border-radius: 1em;
   }
 
   .grid__item__big {

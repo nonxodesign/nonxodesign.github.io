@@ -515,7 +515,7 @@
 		/*will-change: transform;*/
 		/*-webkit-backface-visibility: hidden;*/
 		/*-webkit-transform-style: preserve-3d;*/
-
+		border-radius: 1em;
 	    transition: all 0.5s ease;
 
 
@@ -759,6 +759,16 @@
 	letter-spacing: 5px;
 
 	animation:fadein2 10s ease forwards;
+}
+
+.index_word{
+	animation:fadein3 3s ease-in forwards;
+	font-size:5em;
+	line-height: 1em;
+	font-family: 'xofontbold';	
+	width:50%;
+	/*float:right;*/
+	/*background: black;*/
 }
 .index_text2{
 	text-align: center;
