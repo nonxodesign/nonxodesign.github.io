@@ -766,7 +766,8 @@
 	font-size:5em;
 	line-height: 1em;
 	font-family: 'xofontbold';	
-	width:50%;
+	width:1em;
+	height:5em;
 	/*float:right;*/
 	/*background: black;*/
 }
