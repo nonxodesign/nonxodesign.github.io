@@ -70,15 +70,24 @@ h1 {
   margin: 0.67em 0;
 }
  .grid__item_content{
+  margin-left:3em;
+  overflow: hidden;
     width:70%;
     float:right;
     margin-right:10em;
     padding-bottom:10em;
+        animation : fadein4 2s;
    /* background: #f1f1f1;
     padding:5em;*/
   } 
+  .videofadein{
+  }
 
-
+ul, ol, li {
+    list-style: none;
+    display: inline-block;
+    text-decoration: none;
+}
 @media screen and ( max-width: 768px ) {
   .photo_small{
     width:49.75%;
@@ -93,10 +102,13 @@ h1 {
     margin:0;
   } 
   .content_text{
+    text-align: justify;
+    text-justify:inter-ideograph;
     /*text-align: center;*/
-    width: 95%;
+    width: 90%;
     margin-left: 1em;
     margin-top: 1em; 
+    margin-right:10em;
   }
 }
 
@@ -461,10 +473,10 @@ p{
 }
 
 .content_title{
-  font-family:'xofontbold','Noto Sans TC', sans-serif, sans-serif; 
+  font-family:'xofontblack','Noto Sans TC', sans-serif, sans-serif; 
   display: inline-block;
   font-size:1.5em;
-  font-weight:900;
+  font-weight:600;
   line-height: 1.2;
   letter-spacing: 0;
   border-left: 2.5px solid grey;
@@ -491,14 +503,77 @@ ul, ol, li {
     .content_text{
       /*text-align: center*/
       line-height: 1.8;
-      width: 25vw;
-      font-size: 1.2em;
+      width: 45vw;
+      font-size: 1.4em;
       display: inline-block;
       float: left;
       margin-right: 2em;
       text-align:justify;
       font-family: 'xofontbold','Noto Sans TC', sans-serif;
 
+}  }  
+
+.ul-img {
+  display: flex;
+  width:100%;
+  height:auto;
+  overflow: hidden;
+  /*flex-wrap: wrap;*/
+  margin-top:0;
+  padding:0 0 .2em 0;
+
+  margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+.li-img{
+  height: auto;
+  flex-grow: 10;
+}
+.li-img:nth-child(1) img{
+  margin-right:.4em;
+}
+.li-img:nth-child(2) img{
+  margin-left:.4em;
+}
+
+.aaaimg {
+  max-width: 100%;
+  min-width:100%;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+
+@media (max-aspect-ratio: 1/1) {
+  li {
+    height: 30vh;
+  }
+}
+
+@media (max-height: 480px) {
+  li {
+    height: 80vh;
+  }
+}
+
+@media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+  ul {
+    flex-direction: row;
+  }
+
+  li {
+    height: auto;
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+    max-height: 75vh;
+    min-width: 0;
+  }
 }
 
 video{
@@ -537,11 +612,7 @@ height: 100%;
 
 /* ---- lists ---- */
 
-ul, ol, li {
-    list-style: none;
-    display: inline-block;
-    text-decoration: none;
-}
+
 
 /* ---- code ---- */
 
@@ -1831,7 +1902,7 @@ body{
   }
 
    .footer__text{
-    font-size:300vh;
+    font-size:2em;
     display:none;
      /*top:60vh;*/
     /*bottom:-85vh;*/
@@ -1882,7 +1953,7 @@ body{
   .footer__text{
     display: block;
 
-    bottom:5vh;
+    bottom:2.5vh;
     /*top:70vh;*/
     /*bottom:-85vh;*/
     position: fixed;
@@ -1894,6 +1965,8 @@ body{
     color:#888;
 
   }
+
+
   .footer__bottom {
     
     display: block;
@@ -1903,10 +1976,11 @@ body{
   }
 .about__link, .project__link {
   /*display: block;*/
+  text-transform: uppercase;
   display: inline-block;
-  font-family: 'xofontbold','Noto Sans TC', sans-serif;
+  font-family: 'xofontblack','Noto Sans TC', sans-serif;
   position: relative;
-  font-size: 1.5em;
+  font-size: 1.2em;
   color:#888;
   cursor: grab;
   z-index: 1000;
@@ -1964,12 +2038,12 @@ button:focus {outline:0;}
   }
    .footer__copyright:hover{
     color:black;
-      animation : fadein 1s;
+    animation : fadein 1s;
     -webkit-transition: opacity 3s ease-in;
     -moz-transition:    opacity 3s ease-in;
     -o-transition:      opacity 3s ease-in;
-   -ms-transition:     opacity 3s ease-in;
-   transition:         opacity 3s ease-in;
+    -ms-transition:     opacity 3s ease-in;
+    transition:         opacity 3s ease-in;
   }
 }
 
@@ -2006,6 +2080,14 @@ button:focus {outline:0;}
 @-o-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
+}
+
+
+@keyframes fadein4 {
+  0%   {  opacity:0; }
+  20%  {  opacity:0; }
+  40%  {  opacity:0; }
+  100% {  opacity:1; }
 }
 
 @keyframes h{
