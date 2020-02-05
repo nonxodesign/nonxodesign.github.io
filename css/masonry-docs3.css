@@ -76,11 +76,13 @@ h1 {
     float:right;
     margin-right:10em;
     padding-bottom:10em;
-        animation : fadein4 2s;
    /* background: #f1f1f1;
     padding:5em;*/
+
+  /*animation : fadein4 3s;*/
   } 
   .videofadein{
+    animation : fadein4 3s;
   }
 
 ul, ol, li {
@@ -2086,9 +2088,7 @@ button:focus {outline:0;}
 
 
 @keyframes fadein4 {
-  0%   {  opacity:0; }
-  20%  {  opacity:0; }
-  40%  {  opacity:0; }
+  0%   {  opacity:1; }
   100% {  opacity:1; }
 }
 

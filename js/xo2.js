@@ -22,7 +22,7 @@ var toggleStatus = 1;
 				document.getElementById("about_show").style.top = '5vh';
 				document.getElementById("about_show").style.opacity = '1';
 				$(".grid_project").transition({ opacity:.01, y:'20vh' }, 500, 'ease');
-				$(".container_project").transition({ opacity:.01, y:'20vh' }, 500, 'ease');
+				$(".container_project").transition({ opacity:.1, y:'20vh' }, 500, 'ease');
 				$(".about__link").transition({ y:'-55.5vh' }, 1000, 'ease');
 				$('.about_cross').transition({ opacity:.5 },800 ,'ease');
 				toggleStatus = 0;

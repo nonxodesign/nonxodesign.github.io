@@ -534,9 +534,7 @@
 	    padding:1.5em;
 	    font-family: 'xofont-bold';
 	    z-index: 2;
-	}ol,ul { 
-list-style:none; 
-} 
+	}
 	
 	/*#overlay_a:hover{
 		transform: translateX( 0px);
@@ -828,4 +826,10 @@ list-style:none;
   100% { top: 0px; opacity:1; }
 }
 
+
+@keyframes fadein4 {
+  0%   {  opacity:.0001; }
+  40%  {  opacity:.0001; }
+  100% {  opacity:1; }
+}
 
