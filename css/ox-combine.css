@@ -210,11 +210,11 @@
 
 
 #mobile_menu{
-	/*box-shadow: 0 0 5px 5px   #F7F8F8, 
+	box-shadow: 0 0 5px 5px   #F7F8F8, 
 				0 0 10px 10px #F7F8F8, 
 				0 0 20px 20px #F7F8F8,  
 				0 0 40px 40px #F7F8F8,  
-				0 0 70px 70px #F7F8F8;*/
+				0 0 70px 70px #F7F8F8;
 	top:120vh;
 	/*display:none;*/
 	/*opacity:0; */
@@ -225,7 +225,7 @@
 	position: fixed;
 	width:100vw;
 	height:100vh;
-	/*background: #F7F8F8;*/
+	background: #F7F8F8;
 	overflow:hidden;
 	text-align: center;
 	line-height: 10vh;

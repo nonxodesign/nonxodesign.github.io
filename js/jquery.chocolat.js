@@ -189,7 +189,7 @@
                     height = holderGlobalHeight
                     width = height / imgRatio
                 } else {
-                    width = holderGlobalWidth
+                    width = holderWidth //原本是holderGlobalRatio
                     height = width * imgRatio
                 }
                 if (
@@ -689,7 +689,7 @@
         imageSize: 'default', // 'default', 'contain', 'cover' or 'native'
         initialZoomState: null,
         fullScreen: false,
-        loop: false,
+        loop: true,
         linkImages: true,
         duration: 300,
         setTitle: '',
@@ -702,7 +702,7 @@
         timer: false,
         timerDebounce: false,
         images: [],
-        enableZoom: true,
+        enableZoom: false,
         imageSource: 'href',
         afterInitialize: function() {},
         afterMarkup: function() {},
