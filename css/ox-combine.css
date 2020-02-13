@@ -15,7 +15,7 @@
          url('media/nexabold.ttf') format("truetype"),
          url('media/nexabold.woff') format("woff");;
      }
-@media screen and ( max-width: 766px ) {
+@media screen and ( max-width: 1024px ) {
 
 	.TopBar{
 		
@@ -83,7 +83,7 @@
     position:absolute;
 }
 
-@media screen and ( min-width: 767px ) {
+@media screen and ( min-width: 1025px ) {
 	.space{
 		height: 100vh;
 		width: 100vw;
@@ -230,7 +230,10 @@
 	text-align: center;
 	line-height: 10vh;
 	transition: all 1200ms ease;
-	
+	margin-top:5em;
+}
+#mobile_menu li{
+	height:0;
 }
 .menu_button{
 	line-height: 14vh;
@@ -255,7 +258,7 @@
 }
 
 
-@media screen and ( min-width: 767px ) {
+@media screen and ( min-width: 1024px ) {
 
 	#icon_s{
 	margin-right: 1.2em;
@@ -278,14 +281,14 @@
 /*logo hover浮出字*/
 
 .logo{
-	margin: 3vh 0 0 3vh;
+	margin: 3em 0 0 3em;
 	display: inline-block;
 	width: 10vw;
 }
 }
 
 .logo_v2{
-		width:70%;
+		width:60%;
 
 		opacity:1;
 		transition: all .3s ease;
@@ -394,19 +397,34 @@
 }
 {}
 
+@media screen and ( width: 768px ) {
+	.logo{
+		margin: 1em 0 0 2em;
+		display: inline-block;
+		width: 35vw;
+		}
+}
+
+@media screen and ( width: 1024px ) {
+	.logo{
+		margin: 2em 0 0 2.5em;
+		display: inline-block;
+		width: 20vw;
+		}
+}
 
 
 
-@media screen and ( max-width: 768px ) {
+@media screen and ( max-width: 767px ) {
 	.gird__item{
 			overflow: hidden;
 			width: 95%;
 	}
 
 	.logo{
-	margin: 2vh 0 0 3vw;
+	margin: 1em 0 0 1.5em;
 	display: inline-block;
-	width: 50vw;
+	width: 45vw;
 	}
 
 	.logo_v2{
@@ -638,6 +656,20 @@
 			-o-transform:scale(1.15);
 			-ms-transform:scale(1.15);
 			transform:scale(1.15);
+
+	}
+	.index_img video {
+	    width: 100%;
+		transition: all 0.4s ease;
+	}
+	.index_img:hover video {
+	    width: 100%;
+	    
+	    -moz-transform:scale(1.1);
+			-webkit-transform:scale(1.1);
+			-o-transform:scale(1.1);
+			-ms-transform:scale(1.1);
+			transform:scale(1.1);
 
 	}
 	.index_img:hover .overlay {

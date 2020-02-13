@@ -8,13 +8,13 @@
 		<title> NONXO 叉圈 | Motion & Design</title>
 <!-- search -->
 		<meta name="keywords" content="叉圈設計 nonxo">
-		<link rel="Shortcut Icon" type="image/x-icon" href="./img/icon/NONXO128-3.ico" />
+		<link rel="Shortcut Icon" type="image/x-icon" href="./img/icon/nonxo_logo.png" />
 <!-- Favicon and touch icons -->
 		<!-- <link type="image/x-icon" href="./img/NONXO128.ico" rel="icon" />
 		<link type="image/x-icon" href="./img/NONXO128.ico" rel="shortcut icon" />
 		<link type="image/x-icon" href="./img/NONXO128.ico" rel="bookmark" /> -->
 <!-- Favicon for Chrome -->
-		<link rel="icon" type="image/png" sizes="192x192" href="./img/icon/nonxo_192x192.png" />
+		<link rel="icon" type="image/png" sizes="192x192" href="./img/icon/nonxo_192x192.png" />	
 		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,500,900" rel="stylesheet">
 
 <!-- Favicon for Win10 Edge -->
@@ -38,35 +38,34 @@
 <!-- iphone icon end -->
 
 		<!-- <link rel="stylesheet" href="css/ox4.css" media="screen"> -->
-		<link rel="stylesheet" href="css/masonry-docs3.css" media="screen">
-		<link rel="stylesheet" href="css/ox-combine.css" media="screen">
-		<link rel="stylesheet" href="css/icon.css" media="screen">
-		<link rel="stylesheet" href="css/keyframes.css" media="screen">
+		<link rel="stylesheet" href="./css/masonry-docs3.css" media="screen">
+		<link rel="stylesheet" href="./css/ox-combine.css" media="screen">
+		<link rel="stylesheet" href="./css/icon.css" media="screen">
+		<link rel="stylesheet" href="./css/keyframes.css" media="screen">
+		<link rel="stylesheet" href="./css/pageTransitions.css" media="screen">
 
 
 		 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+		 <link rel="stylesheet" href="./css/chocolat.css" />
+		<script src="./js/jquery.js"></script>
+		<script type="text/javascript" src="./js/jquery.chocolat.js"></script>
+		<script src="./js/jquery.transit.min.js"></script>
+		<script src="./js/xo2.js"></script>
+		<script src="./js/svg.js"></script>
+		<!-- <script src="https://kit.fontawesome.com/fdf3c3eee5.js" crossorigin="anonymous"></script> -->
 
-		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
-		
-		
-		
-		
-
-		<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-
+		<!-- <script type="text/javascript" src="./js/chocolat.js"></script> -->
+		<!-- <script src="./js/jquery.smoothState.min.js"></script> -->
+		<!-- <script src="./js/smoothstate_main.js"></script> -->
 		<!-- <script src="./js/quicksand.js"></script> 篩選 -->
-		<link rel="stylesheet" href="./css/chocolat.css" />
-        <script src="./js/jquery.transit.min.js"></script>
-        <script type="text/javascript" src="./js/jquery.chocolat.js"></script>
-        <script src="./js/xo2.js"></script>
-		
-	</head>
 
-<body>
-		<div class="TopBar">
+	</head>
+	<body>
+	<div class="TopBar">
+
 			<div class="logo">
 				<a href="./index.html">
-					<img class="logo_v2" src="./img/icon/logov3.svg" alt="叉圈設計 nonxo">
+					<img class="logo_v2" src="./img/icon/logov3.svg" alt="叉圈設計 nonxo" >
 					<img class="logo_v2-2" src="./img/icon/logov3.svg" alt="叉圈設計 nonxo">
 					</a></div>
 
@@ -97,74 +96,128 @@
 			</div>
 
 	</div>
-	<div class="footer__text" style="z-index: 1000000;">
+	<div class="footer__text" style="z-index: 1000000; ">
 		      	<ul>
-			      	<li><div class="about__link" onclick="about__link()">
-				      		About Us
-				      		<div class="about_cross" title="back" style="opacity: 0"></div><br/>
-				      			
+
+			      	<li class="footer_block">
+			      		<div class="about__link" onclick="about__link()" >
+				      	About Us  <div class="about_cross" title="back" style="opacity: 0"></div>
 				      	</div>
-				      
-			      	
-			      	<br/><a href="./index.html"><div class="project__link">
-			      		Project</div></a><br/>
+				    </li>
 
-			     	<a href="https://fb.me/nonxoworkshop"><div class="project__link">
-			      		Facebook</div></a><br/>
+				    <li class="footer_block"><a href="./index.html"><div class="project__link" >
+			      		Home</div></a>
+			      	</li> 
 
-			      	<a href="https://www.instagram.com/nonxo.workshop/"><div class="project__link">
-			      		Instagram</div></a><br/>
-			      		<!-- <span class="" style="font-size:1em; color:#EFEFEF; width:20em;">Copyright © 2020 nonxo Workshop <br/>All rights reserved.</span> -->
+			      	<li class="footer_block"><a href="./index.html"><div class="project__link" >
+			      		PROJECT</div></a>
 			      	</li>
+
+			      	
+
+			      	<li class="footer_li"><a href="https://www.instagram.com/nonxo.workshop/">
+			      		<i class="fab fa-instagram"></i></a>
+			      	</li>
+			      	
+			      	
+			      	<li class="footer_li"><a href="https://www.behance.net/nonxo">
+			      		<i class="fab fa-behance"></i></a>
+			      	</li>
+			      	<li class="footer_li"><a href="https://vimeo.com/nonxo">
+			      		<i class="fab fa-vimeo-v"></i></a>
+			      	</li>
+			      	<li class="footer_li" ><a href="https://fb.me/nonxoworkshop" >
+			      		<i class="fab fa-facebook"></i></a>
+			      	</li><br/>
+			      	
+			      	
+
+			      	
+			      	
+				    <!--  <li class="footer_icon"  style="display: inline-block;">
+				      	<a href="https://www.instagram.com/nonxo.workshop/"><div class="project__link" >
+			      		<img src="./img/icon/webicon/icon_ig.svg" width="100%"></div></a>
+			      		
+			      	</li>
+			      	<li class="footer_icon" style="display: inline-block;">
+				     	<a href="https://fb.me/nonxoworkshop"　target="_blank"><div class="project__link" >
+				      		<img src="./img/icon/webicon/icon_fb.svg" width="100%"></div></a> -->
+				     </li>
 			      	</ul>
 	</div>
 
 
-<div id="mobile_menu">
-	<ul><br/>
-		<a href="https://nonxo.com/aboutus.html">
-			<div class="menu_button"><span>About Us</span></div>
+	<div id="mobile_menu">
+		<a href="./index.html">
+			<div class="menu_button">Home</div>
+		</a>
+
+		<a href="./aboutus.html">
+			<div class="menu_button">About Us</div>
 		</a>
 			<a href="https://nonxo.com/"><div class="menu_button">
-				<span>Project</span></div>
+				Project</div>
 			</a>
-		<!-- <div class="menu_button"><span>Contact Us</span></div> -->
+		<!-- <div class="menu_button">Contact Us</div> -->
 		
-		<a href="https://fb.com/nonxoworkshop/">
-			<div class="menu_button">
-			<span>Facebook</span></div></a>
+					<li class="footer_li"><a href="https://www.instagram.com/nonxo.workshop/">
+			      		<i class="fab fa-instagram"></i></a></li>
 
-		<a href="https://www.instagram.com/nonxo.workshop/"><div class="menu_button">
-			<span>Instagram</span></div></a>
+			      	<li class="footer_li"><a href="https://www.behance.net/nonxo">
+			      		<i class="fab fa-behance"></i></a></li>
 
-		<div  style="font-size:1em; color:#E5E5E5;  text-align: center;"><span>Copyright © 2018 nonxo workshop All rights reserved.</span></div>
-	</ul>
-</div>
+			      	<li class="footer_li"><a href="https://vimeo.com/nonxo">
+			      		<i class="fab fa-vimeo-v"></i></a></li>
+
+			      	<li class="footer_li" ><a href="https://fb.me/nonxoworkshop" >
+			      		<i class="fab fa-facebook"></i></a></li>
+
+		<div  style="font-size:1em; color:#E5E5E5;  text-align: center;"><span>Copyright © 2020 nonxo workshop All rights reserved.</span></div>
+	</div>
 
 <!-- PC about -->
 	<div id="about_show">
 		<div class="about_container">
-			<h2 class="S_0" style="width:60%">WE ARE<hr>
-			<p class="P_1">
-				Nonxo® is a Design workshop based in Taiwan, Taipei. We Focus on 3D animation, Motion Graphics, Commercial Film, and Branding identity design work. 
-			Be free to Contact us, if you want to know how We work or what we love. <br/><br/>
-			<p class="P_1" style=" line-height: 4vh; letter-spacing:1px; text-align: justify;">叉圈 Nonxo® 位於台北，是一個專注於提供 3D, 2D 動態設計、商業廣告以及品牌識別設計服務的工作室，如果有任何相關設計需求或疑問，請不必有負擔，歡迎聯絡我們！
-			</p>
+				<h2  class="S_0" style="width:60%">WE ARE <hr>
+				<p class="P_1">
+					Nonxo® is a Design workshop based in Taiwan. We Focus on 3D animation, Motion Graphics, Commercial Film, and Branding identity design.<br/>
+					Please be free to <a class="word_dash" href="mailto:info@nonxo.com">Contact Us</a>, if you want to know how We work or what we love. <br/><br/>
+				<div class="P_1" style=" letter-spacing:1px; text-align: justify;">
+						叉圈 Nonxo® 是一個專注於提供 3D, 2D 動態設計、商業廣告以及品牌識別		計服務的工作室，如果有任何相關設計需求或疑問，請不必有負擔，歡迎
+					<a class="word_dash" href="mailto:info@nonxo.com">聯絡我們</a>！
+					<!-- 「給予答案」 —— 一如應試教育給我們的答案，只要在人生田野間不斷尋找兩段弧線所圍起的區域，畫上叉叉或者圈圈，一切似乎那麼簡單圓滿。但我們都遺忘了，有些問題似乎沒有正確的解答，必須透過不斷地與自我、與他人反覆對話、反覆琢磨， -->
+					</div>
 			<br/><br/><br/><br/><br/><br/><br/><br/><br/>
-			<p class="P_1" style="font-size:.5em; color:#CECECE">Copyright © 2020 nonxo workshop All rights reserved.
-</p>
+			<p class="P_1" style="font-size:.5em; color:#CECECE">Copyright © 2020 nonxo workshop® All rights reserved.
+</p></h2>
 
-			</h2>
+				<h2 class="S_0" style="width:40%">CONTACT US<hr>
 
-			<h2 class="S_0" style="width:40%">CONTACT US<hr>
+				<p class="P_1" style="">
+				5F., No. 178, Sec. 1, Tonghe E. St., Shilin Dist., Taipei City 111, Taiwan<br/>11169 台北市士林區通河東街一段178號5樓	<br/></p>
+				<a class="word_dash" href="mailto:info@nonxo.com"><p class="P_1" style="line-height: 10vh;">
+				info@nonxo.com</a>
 
-			<p class="P_1">
-				
-			5F., No. 178, Sec. 1, Tonghe E. St., Shilin Dist., Taipei City 111, Taiwan (R.O.C.)<br/><br/>台北市士林區通河東街一段<br/>178 號 5 樓<br/><br/></p>
-			<p class="P_1">
-			info@nonxo.com
-			<br/> </p></h2>
-		</div>
+						<div style="font-size:.5em; margin:0; padding:0 height:0">
+							<li class="footer_li" style="height:0em;"><a href="https://www.instagram.com/nonxo.workshop/">
+					      		<i class="fab fa-instagram"></i></a></li>
+
+					      	<li class="footer_li" style="height:0em;"><a href="https://www.behance.net/nonxo">
+					      		<i class="fab fa-behance"></i></a></li>
+
+					      	<li class="footer_li" style="height:0em;"><a href="https://vimeo.com/nonxo">
+					      		<i class="fab fa-vimeo-v"></i></a></li>
+
+					      	<li class="footer_li" style="height:0em;"><a href="https://fb.me/nonxoworkshop" >
+					      		<i class="fab fa-facebook"></i></a></li>
+					     </div>
+			      	
+
+
+				<br/> </p></h2>
+			</div>
+		
+
 	</div>
 <!-- 
 	<div class="hero" data-js-module="hero" style="clear:both;"> -->
@@ -177,7 +230,7 @@
             <p class="tagline">XO</p>
           </div> -->
 
-					<div class="grid__item_content">
+					<div class="grid__item_content"><br/>
 
 						<div  style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/381873213?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 					
@@ -223,29 +276,29 @@
 							<!-- ee848d -->
 						<div class="content_project">
 							<p class="content_text" style="color:grey;">
-							｜客戶：臺南市觀光旅遊局 <br/>
-							｜製作：赤兔影像製作有限公司<br/>
-							｜樂團：甜約翰 SweetJohn　<br/>
-							｜監製：王威人、詹前俊<br/>
+							｜客戶 — 臺南市觀光旅遊局 
+							｜製作 — 赤兔影像製作有限公司
+							｜樂團 — 甜約翰 SweetJohn
+							｜監製 — 王威人 詹前俊
 
-							｜導演 & 創意腳本：李邱熙<br/>
-							｜攝影：高興萱<br/>
-							<br/>
-							｜製片：朱芸廷<br/>
-							｜執行製片：楊維芳<br/>
-							｜製片助理：游士弘<br/>
-							｜攝影大助：陳奕麟<br/>
-							｜攝影助理：董士宇<br/>
-							｜燈光：楊奇澔<br/>
-							｜美術：陳品融<br/>
-							｜造型：王禎旎<br/>
-							｜妝髮：王禎旎、彭虹禎<br/>
-							｜空拍：林育為、張凱捷<br/>
-							｜剪接：吳霽千<br/>
-							｜調光：阿鞭<br/>
-							｜行銷：Tino<br/>
-							<br/>
-							｜動畫及標準字設計：叉圈設計、陳和謙、許心瑜<br/>
+							｜導演, 腳本創意 — 李邱熙
+							｜攝影 — 高興萱
+							
+							｜製片 — 朱芸廷
+							｜執行製片 — 楊維芳
+							｜製片助理 — 游士弘
+							｜攝影大助 — 陳奕麟
+							｜攝影助理 — 董士宇
+							｜燈光 — 楊奇澔
+							｜美術 — 陳品融
+							｜造型 — 王禎旎
+							｜妝髮 — 王禎旎、彭虹禎
+							｜空拍 — 林育為、張凱捷
+							｜剪接 — 吳霽千
+							｜調光 — 阿鞭
+							｜行銷 — Tino
+							<br/><br/>
+							<span style="color:black">｜3D Art, Motion Design, VFX & Title Design — 叉圈 Nonxo® Workshop
 							<p class="content_text" style="color:grey;">
 							<!-- Digital Singularity Award</p> -->
 						</p>

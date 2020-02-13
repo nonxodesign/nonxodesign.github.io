@@ -8,13 +8,13 @@
 		<title> NONXO 叉圈 | Motion & Design</title>
 <!-- search -->
 		<meta name="keywords" content="叉圈設計 nonxo">
-		<link rel="Shortcut Icon" type="image/x-icon" href="./img/icon/NONXO128-3.ico" />
+		<link rel="Shortcut Icon" type="image/x-icon" href="./img/icon/nonxo_logo.png" />
 <!-- Favicon and touch icons -->
 		<!-- <link type="image/x-icon" href="./img/NONXO128.ico" rel="icon" />
 		<link type="image/x-icon" href="./img/NONXO128.ico" rel="shortcut icon" />
 		<link type="image/x-icon" href="./img/NONXO128.ico" rel="bookmark" /> -->
 <!-- Favicon for Chrome -->
-		<link rel="icon" type="image/png" sizes="192x192" href="./img/icon/nonxo_192x192.png" />
+		<link rel="icon" type="image/png" sizes="192x192" href="./img/icon/nonxo_192x192.png" />	
 		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,500,900" rel="stylesheet">
 
 <!-- Favicon for Win10 Edge -->
@@ -52,6 +52,8 @@
 		<script src="./js/jquery.transit.min.js"></script>
 		<script src="./js/xo2.js"></script>
 		<script src="./js/svg.js"></script>
+		<!-- <script src="https://kit.fontawesome.com/fdf3c3eee5.js" crossorigin="anonymous"></script> -->
+
 		<!-- <script type="text/javascript" src="./js/chocolat.js"></script> -->
 		<!-- <script src="./js/jquery.smoothState.min.js"></script> -->
 		<!-- <script src="./js/smoothstate_main.js"></script> -->
@@ -60,6 +62,7 @@
 	</head>
 	<body>
 	<div class="TopBar">
+
 			<div class="logo">
 				<a href="./index.html">
 					<img class="logo_v2" src="./img/icon/logov3.svg" alt="叉圈設計 nonxo" >
@@ -93,30 +96,62 @@
 			</div>
 
 	</div>
-	<div class="footer__text" style="z-index: 1000000;">
+	<div class="footer__text" style="z-index: 1000000; ">
 		      	<ul>
-			      	<li><div class="about__link" onclick="about__link()" style="color:black;">
-				      		ABOUT US
-				      		<div class="about_cross" title="back" style="opacity: 0"></div><br/>
-				      			
+
+			      	<li class="footer_block">
+			      		<div class="about__link" onclick="about__link()" >
+				      	About Us  <div class="about_cross" title="back" style="opacity: 0"></div>
 				      	</div>
-				      
-			      	
-			      	<br/><a href="./index.html"><div class="project__link" style="color:black;">
-			      		PROJECT</div></a><br/>
+				    </li>
 
-			     	<a href="https://fb.me/nonxoworkshop"　target="_blank"><div class="project__link" style="color:black;">
-			      		FACEBOOK</div></a><br/>
+				    <li class="footer_block"><a href="./index.html"><div class="project__link" >
+			      		Home</div></a>
+			      	</li> 
 
-			      	<a href="https://www.instagram.com/nonxo.workshop/"><div class="project__link" style="color:black;">
-			      		INSTAGRAM</div></a><br/>
-			      		<!-- <span class="" style="font-size:1em; color:#EFEFEF; width:20em;">Copyright © 2020 nonxo Workshop <br/>All rights reserved.</span> -->
+			      	<li class="footer_block"><a href="./index.html"><div class="project__link" >
+			      		PROJECT</div></a>
 			      	</li>
+
+			      	
+
+			      	<li class="footer_li"><a href="https://www.instagram.com/nonxo.workshop/">
+			      		<i class="fab fa-instagram"></i></a>
+			      	</li>
+			      	
+			      	
+			      	<li class="footer_li"><a href="https://www.behance.net/nonxo">
+			      		<i class="fab fa-behance"></i></a>
+			      	</li>
+			      	<li class="footer_li"><a href="https://vimeo.com/nonxo">
+			      		<i class="fab fa-vimeo-v"></i></a>
+			      	</li>
+			      	<li class="footer_li" ><a href="https://fb.me/nonxoworkshop" >
+			      		<i class="fab fa-facebook"></i></a>
+			      	</li><br/>
+			      	
+			      	
+
+			      	
+			      	
+				    <!--  <li class="footer_icon"  style="display: inline-block;">
+				      	<a href="https://www.instagram.com/nonxo.workshop/"><div class="project__link" >
+			      		<img src="./img/icon/webicon/icon_ig.svg" width="100%"></div></a>
+			      		
+			      	</li>
+			      	<li class="footer_icon" style="display: inline-block;">
+				     	<a href="https://fb.me/nonxoworkshop"　target="_blank"><div class="project__link" >
+				      		<img src="./img/icon/webicon/icon_fb.svg" width="100%"></div></a> -->
+				     </li>
 			      	</ul>
 	</div>
 
 
 	<div id="mobile_menu">
+		<a href="./index.html">
+			<div class="menu_button">Home</div>
+		</a>
+
 		<a href="./aboutus.html">
 			<div class="menu_button">About Us</div>
 		</a>
@@ -125,12 +160,17 @@
 			</a>
 		<!-- <div class="menu_button">Contact Us</div> -->
 		
-		<a href="https://facebook.com/nonxoworkshop/">
-			<div class="menu_button">
-			Facebook</div></a>
+					<li class="footer_li"><a href="https://www.instagram.com/nonxo.workshop/">
+			      		<i class="fab fa-instagram"></i></a></li>
 
-		<a href="https://www.instagram.com/nonxo.workshop/"><div class="menu_button">
-			Instagram</div></a>
+			      	<li class="footer_li"><a href="https://www.behance.net/nonxo">
+			      		<i class="fab fa-behance"></i></a></li>
+
+			      	<li class="footer_li"><a href="https://vimeo.com/nonxo">
+			      		<i class="fab fa-vimeo-v"></i></a></li>
+
+			      	<li class="footer_li" ><a href="https://fb.me/nonxoworkshop" >
+			      		<i class="fab fa-facebook"></i></a></li>
 
 		<div  style="font-size:1em; color:#E5E5E5;  text-align: center;"><span>Copyright © 2020 nonxo workshop All rights reserved.</span></div>
 	</div>
@@ -142,8 +182,10 @@
 				<p class="P_1">
 					Nonxo® is a Design workshop based in Taiwan. We Focus on 3D animation, Motion Graphics, Commercial Film, and Branding identity design.<br/>
 					Please be free to <a class="word_dash" href="mailto:info@nonxo.com">Contact Us</a>, if you want to know how We work or what we love. <br/><br/>
-				<div class="P_1" style=" letter-spacing:1px; text-align: justify;">		叉圈 Nonxo® 是一個專注於提供 3D, 2D 動態設計、商業廣告以及品牌識別		計服務的工作室，如果有任何相關設計需求或疑問，請不必有負擔，歡迎
+				<div class="P_1" style=" letter-spacing:1px; text-align: justify;">
+						叉圈 Nonxo® 是一個專注於提供 3D, 2D 動態設計、商業廣告以及品牌識別		計服務的工作室，如果有任何相關設計需求或疑問，請不必有負擔，歡迎
 					<a class="word_dash" href="mailto:info@nonxo.com">聯絡我們</a>！
+					<!-- 「給予答案」 —— 一如應試教育給我們的答案，只要在人生田野間不斷尋找兩段弧線所圍起的區域，畫上叉叉或者圈圈，一切似乎那麼簡單圓滿。但我們都遺忘了，有些問題似乎沒有正確的解答，必須透過不斷地與自我、與他人反覆對話、反覆琢磨， -->
 					</div>
 			<br/><br/><br/><br/><br/><br/><br/><br/><br/>
 			<p class="P_1" style="font-size:.5em; color:#CECECE">Copyright © 2020 nonxo workshop® All rights reserved.
@@ -155,6 +197,23 @@
 				5F., No. 178, Sec. 1, Tonghe E. St., Shilin Dist., Taipei City 111, Taiwan<br/>11169 台北市士林區通河東街一段178號5樓	<br/></p>
 				<a class="word_dash" href="mailto:info@nonxo.com"><p class="P_1" style="line-height: 10vh;">
 				info@nonxo.com</a>
+
+						<div style="font-size:.5em; margin:0; padding:0 height:0">
+							<li class="footer_li" style="height:0em;"><a href="https://www.instagram.com/nonxo.workshop/">
+					      		<i class="fab fa-instagram"></i></a></li>
+
+					      	<li class="footer_li" style="height:0em;"><a href="https://www.behance.net/nonxo">
+					      		<i class="fab fa-behance"></i></a></li>
+
+					      	<li class="footer_li" style="height:0em;"><a href="https://vimeo.com/nonxo">
+					      		<i class="fab fa-vimeo-v"></i></a></li>
+
+					      	<li class="footer_li" style="height:0em;"><a href="https://fb.me/nonxoworkshop" >
+					      		<i class="fab fa-facebook"></i></a></li>
+					     </div>
+			      	
+
+
 				<br/> </p></h2>
 			</div>
 		
@@ -187,6 +246,30 @@
 								</div></a><br/>
 						</div>
 					</div>
+<!-- －－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－ -->
+					
+					<div class="grid__item">
+						<div class="index_img">
+						<a href="./taipei_fringefestival.html">
+							<!-- <img src="./img/indeximg/DSA_07.png" alt="叉圈設計 nonxo" /> -->
+							<video class="video-section__video"   width="100%" autoplay="" loop="" muted="" playsinline="" >
+								<source src="./img/video/tpe_fringefestival4.mp4" type="video/mp4">
+								</video>
+							
+								<div class="overlay" >
+										<div id="overlay_title">
+											<h7 class="index_title" style="letter-spacing:2px">
+												台北藝穗節</h7>
+												<p class="index_subtitle">Taipei Fringe Festival</p>
+											<h7 class="content_text_index">
+												臺北市政府文化局 Department of Cultural Affairs, Taipei City Government</h7>
+										</div>
+										<h8 id="overlay_year">BRAND FILM</h8>
+								</div>
+						</a>
+						</div>
+					</div>
+
 
 <!-- －－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－ -->
 					
@@ -219,7 +302,7 @@
 						<a href="./dsa-singularity.html">
 							<!-- <img src="./img/indeximg/DSA_07.png" alt="叉圈設計 nonxo" /> -->
 							<video class="video-section__video" width="100%" autoplay="" loop="" muted="" playsinline="" >
-								<source src="./img/video/dsa_small.mp4" type="video/mp4">
+								<source src="./img/video/dsa_small2.mp4" type="video/mp4">
 								</video>
 							
 								<div class="overlay" >
@@ -267,7 +350,7 @@
 						<a href="./amazingshow-kingoflight.html">
 							<!-- <img src="./img/indeximg/DSA_07.png" alt="叉圈設計 nonxo" /> -->
 							<video class="video-section__video" width="100%" autoplay="" loop="" muted="" playsinline="" >
-								<source src="./img/video/kingoflight_small.mp4" type="video/mp4">
+								<source src="./img/video/kingoflight_small2.mp4" type="video/mp4">
 								</video>
 							
 								<div class="overlay" >
@@ -291,7 +374,7 @@
 						<a href="./thechairs-dedede.html">
 							<!-- <img src="./img/indeximg/DSA_07.png" alt="叉圈設計 nonxo" /> -->
 							<video class="video-section__video" width="100%" autoplay="" loop="" muted="" playsinline="" >
-								<source src="./img/video/dedede_small.mp4" type="video/mp4">
+								<source src="./img/video/dedede_small2.mp4" type="video/mp4">
 								</video>
 							
 								<div class="overlay" >
