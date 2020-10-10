@@ -1517,10 +1517,11 @@ body{
 
 
   .grid_project{
-    width:75vw;
+    width:70vw;
     padding-top: 5vh;
     float:right;
     padding-bottom:10vh;
+    margin-right:3vw;
   }
 }
 
@@ -1811,6 +1812,7 @@ body{
     /*margin-top:7em;*/
     /*padding: .2em .5em;*/
   }
+
    .grid__item{
     height:25em;
    }
@@ -1853,7 +1855,15 @@ body{
     padding: 1vh;
     display:inline-block;
     overflow:hidden;
+    float:left;
+
     /*border-radius: 1em; */
+  }
+   .grid__item_2x{
+     width:56em;
+     height:56em;
+     display:inline-block;
+     float:left;
   }
 
   .grid__item__big {
@@ -1863,6 +1873,7 @@ body{
     /*padding: 1vh;*/
     overflow: hidden;
     margin-top: 0;
+    float:left;
 
   }
 

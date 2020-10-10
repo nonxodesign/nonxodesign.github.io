@@ -1,0 +1,8 @@
+  2020/10/11 上午 03:07:42: Starting composition “Amazingshow_babao”.
+
+  Output To: E:\00. NONXO\06. Web\nonxodesign.github.io\img\video\apng\Amazingshow_babao.png    2020/10/11 上午 03:08:08: Finished composition “Amazingshow_babao”.
+
+
+  Total Time Elapsed: 26 Seconds
+Log closed on 2020/10/11 at 上午 03:08:08
+
