@@ -1,74 +1,88 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<link rel="stylesheet" href="./css/masonry-docs3.css" media="screen">
-		<meta charset=utf-8>
-		<title>My first three.js app</title>
-		<style>
-			
-			body { margin: 0; }
-			canvas { width: 100%; height: 100%; color:white;}
-		</style>
-		<link rel="stylesheet" href="css/three.css">
-		<link href="https://fonts.googleapis.com/css?family=Markazi+Text:400,500,600,700" rel="stylesheet">
-	</head>
-	<body>
+
+<head>
+	<link rel="stylesheet" href="./css/masonry-docs3.css" media="screen">
+	<meta charset=utf-8>
+	<title>My first three.js app</title>
+	<style>
+		body {
+			margin: 0;
+		}
+
+		canvas {
+			width: 100%;
+			height: 100%;
+			color: white;
+		}
+	</style>
+	<link rel="stylesheet" href="css/three.css">
+	<link href="https://fonts.googleapis.com/css?family=Markazi+Text:400,500,600,700" rel="stylesheet">
+</head>
+
+<body>
 
 
-		<div id="info">NONXO</div>
-		<script src="js/three.js"></script>
-		<script>
-			// Our Javascript will go here.
-			var scene = new THREE.Scene();
-			var camera = new THREE.PerspectiveCamera(	45 ,	window.innerWidth / window.innerHeight, 	0.1,	10000 );
-			//創建攝影機								 	FOV(度)		    Aspect Ratio (長寬比), 				Near,	Far (可視範圍)
-			camera.position.set( 0, 0, 100 );
-			camera.lookAt( 0, 0, 0 );
-			//避免物件與立方體重疊
+	<div id="info">NONXO</div>
+	<script src="js/three.js"></script>
+	<script>
+		// Our Javascript will go here.
+		var scene = new THREE.Scene();
+		var camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 10000);
+		//創建攝影機								 	FOV(度)		    Aspect Ratio (長寬比), 				Near,	Far (可視範圍)
+		camera.position.set(0, 0, 100);
+		camera.lookAt(0, 0, 0);
+		//避免物件與立方體重疊
 
-			// var renderer = new THREE.WebGLRenderer();
-			var renderer = new THREE.WebGLRenderer({ alpha: true });
-			// var scene = new THREE.Scene(); // initialising the scene
-			// scene.background = new THREE.Color( 0xffff00 );	
-			renderer.setSize( window.innerWidth, window.innerHeight );
-			document.body.appendChild( renderer.domElement );
-			//創建渲染器 Renderer (WebGL)
-
-
-			var material_A = new THREE.LineBasicMaterial( { color: "rgb(200, 200, 200)" } );
-
-			// var geometry = new THREE.Geometry();
-			// geometry.vertices.push(new THREE.Vector3( -10, 0, 0) );
-			// geometry.vertices.push(new THREE.Vector3( 0, 10, 0) );
-			// geometry.vertices.push(new THREE.Vector3( 10, 0, 0) );
-			// geometry.vertices.push(new THREE.Vector3( -10, 0, 0) );
-			var geometry = new THREE.SphereGeometry( 200, 100, 100 );
-			var material = new THREE.MeshBasicMaterial( {color:"rgb(100%, 0%, 0%)"} );
-			var sphere = new THREE.Mesh( geometry, material );
-			scene.add( sphere );
-
-			
-			var line = new THREE.Line( geometry, material_A );
-			scene.add( line );
-			renderer.render( scene, camera );
-
-			
-
-			var animate = function () {
-				requestAnimationFrame( animate );
-
-				line.rotation.x += 0.01;
-				line.rotation.y += 0.01;
-				line.rotation.z += 0.01;
-
-				renderer.render( scene, camera );
-			};
-
-			animate();
+		// var renderer = new THREE.WebGLRenderer();
+		var renderer = new THREE.WebGLRenderer({
+			alpha: true
+		});
+		// var scene = new THREE.Scene(); // initialising the scene
+		// scene.background = new THREE.Color( 0xffff00 );	
+		renderer.setSize(window.innerWidth, window.innerHeight);
+		document.body.appendChild(renderer.domElement);
+		//創建渲染器 Renderer (WebGL)
 
 
-			//須添加以上才可渲染，what's called a render or animate loop 這將創建一個循環，使渲染器在每次刷新屏幕時繪製場景
+		var material_A = new THREE.LineBasicMaterial({
+			color: "rgb(200, 200, 200)"
+		});
 
-		</script>
-	</body>
+		// var geometry = new THREE.Geometry();
+		// geometry.vertices.push(new THREE.Vector3( -10, 0, 0) );
+		// geometry.vertices.push(new THREE.Vector3( 0, 10, 0) );
+		// geometry.vertices.push(new THREE.Vector3( 10, 0, 0) );
+		// geometry.vertices.push(new THREE.Vector3( -10, 0, 0) );
+		var geometry = new THREE.SphereGeometry(200, 100, 100);
+		var material = new THREE.MeshBasicMaterial({
+			color: "rgb(100%, 0%, 0%)"
+		});
+		var sphere = new THREE.Mesh(geometry, material);
+		scene.add(sphere);
+
+
+		var line = new THREE.Line(geometry, material_A);
+		scene.add(line);
+		renderer.render(scene, camera);
+
+
+
+		var animate = function () {
+			requestAnimationFrame(animate);
+
+			line.rotation.x += 0.01;
+			line.rotation.y += 0.01;
+			line.rotation.z += 0.01;
+
+			renderer.render(scene, camera);
+		};
+
+		animate();
+
+
+		//須添加以上才可渲染，what's called a render or animate loop 這將創建一個循環，使渲染器在每次刷新屏幕時繪製場景
+	</script>
+</body>
+
 </html>
