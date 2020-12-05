@@ -10,6 +10,15 @@
 }
 
 @font-face {
+  font-family: 'xofontheavy';
+  src: url('media/nexaheavy.otf') format("opentype"),
+    url('media/nexaheavy.ttf') format("truetype"),
+    url('media/nexaheavy.ttf') format("truetype"),
+    url('media/nexaheavy.eot') format("eot");
+  unicode-range: U+00-024F
+}
+
+@font-face {
   font-family: 'xofontbold';
   src: url('media/nexabold.otf') format("opentype"),
     url('media/nexabold.ttf') format("truetype"),
@@ -73,6 +82,49 @@ h1 {
   margin: 0.67em 0;
 }
 
+.home-screen {
+  position: absolute;
+  height: 90vh;
+  width: 75%;
+  overflow: hidden;
+}
+
+.home-screen-text {
+  z-index: 1000;
+  position: absolute;
+  text-align: left;
+  color: black;
+  font-size: 5em;
+  font-family: 'xofontheavy', 'Noto Sans TC', sans-serif;
+  line-height: .8em;
+  margin: 1em;
+}
+
+.home-screen-text2 {
+  position: absolute;
+  text-align: left;
+  color: black;
+  font-size: 5em;
+  font-family: 'xofontheavy', 'Noto Sans TC', sans-serif;
+  line-height: 1.29em;
+  margin: 1em;
+}
+
+.home-screen-text2 span {
+  background-color: rgba(255, 255, 255, .5);
+  padding: 0 .3em 0 .3em;
+}
+
+.tm-text {
+  font-size: .6em;
+  font-family: 'xofontblack';
+  margin-left: -.3em;
+  display: inline;
+  line-height: 1.29em;
+
+}
+
+
 .grid__item_content {
   margin-left: 3em;
   overflow: hidden;
@@ -80,7 +132,7 @@ h1 {
   float: right;
   margin-right: 5em;
   padding-top: 3em;
-  padding-bottom: 10em;
+  padding-bottom: 5em;
   /* background: #f1f1f1;
     padding:5em;*/
 
@@ -1425,6 +1477,17 @@ code .masonry_keyword {
     font-size: 1.6em;
     z-index: 1;
 
+  }
+
+  .home-screen {
+    position: absolute;
+    height: 90%;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .home-screen img {
+    height: 200vh;
   }
 
 
