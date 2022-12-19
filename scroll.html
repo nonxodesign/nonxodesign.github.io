@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <style>
+        .content {
+            height:100%;
+            width:100%;
+        }
+        .slide {
+            background-image: url('https://nonxo.com/img/work/Babaoshan/Babaoshan_00.png');
+            height: 100%;
+            width: 100%;
+            /* animation: slideUp 10s ease-in-out; */
+            transition: background-image 1s linear;
+            position: fixed;
+            top: 30px;
+            left: 20px;
+            }
+            
+        @keyframes slideUp {
+        from {
+            transform: translateY(100%);
+        }
+        to {
+            transform: translateY(0%);
+        }
+        }
+
+
+    </style>
+
+    <div class="slide">
+        <div class="content">
+          <!-- Add your content here -->
+          </div>
+          </div>
+          <div></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+          </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+        </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+    </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+        </div>
+
+      <script>
+        window.addEventListener('scroll', function() {
+            var slide = document.querySelector('.slide');
+            if (window.scrollY < -10) {
+                slide.style.backgroundImage = 'url("https://nonxo.com/img/work/Babaoshan/Babaoshan_00.png")';
+            } else {
+                slide.style.backgroundImage = 'url("https://nonxo.com/img/work/Babaoshan/Babaoshan_01.png")';
+            }
+            });
+            window.addEventListener('scroll', function() {  
+            var slide = document.querySelector('.slide');
+            if (window.scrollY > 10) {
+                slide.style.backgroundImage = 'url("https://nonxo.com/img/work/Babaoshan/Babaoshan_01.png")';
+            } else {
+                slide.style.backgroundImage = 'url("https://nonxo.com/img/work/Babaoshan/Babaoshan_00.png")';
+            }
+            });
+    </Script>
+</body>
