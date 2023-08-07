@@ -64,6 +64,9 @@
 </head>
 
 <body>
+	
+	
+
 	<div class="TopBar">
 
 		<div class="logo">
@@ -234,11 +237,51 @@
 			</h2>
 		</div>
 	</div>
+	<video id="bg-video" autoplay muted >
+		<source src="img\video\Amazingshow_babao5.mp4" type="video/mp4">
+		<source src="img\video\Amazingshow_babao5.mp4" type="video/webm">
+	  </video>
+
+	  <script>
+		document.addEventListener('DOMContentLoaded', function() {
+		  // 確保所有元素都在文檔中。
+		  const bgVideo = document.getElementById('bg-video');
+		  const gridProject = document.querySelector('.grid_project');
+	  
+		  if (!bgVideo) {
+			gridProject.style.display = 'block';
+		  } else {
+			// 監聽滾動事件
+			window.addEventListener('scroll', function() {
+			  // 獲取當前頁面滾動的高度
+			  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+	  
+			  // 如果滾動距離大於 0，隱藏視頻並顯示目標 div
+			  if (scrollTop > 0) {
+				bgVideo.classList.add('fade-out');
+				if (gridProject) {
+				  gridProject.style.display = 'block';
+				}
+			  }
+			});
+	  
+			// 監聽視頻播放完畢事件
+			bgVideo.addEventListener('ended', function() {
+			  // 隱藏視頻並顯示目標 div
+			  bgVideo.classList.add('fade-out');
+			  if (gridProject) {
+				gridProject.style.display = 'block';
+			  }
+			});
+		  }
+		});
+	  </script>
+	  
 	<div class="grid_project">
 		<!-- －－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－ -->
+		
 
-
-		<div class="grid__item grid__item__big">
+		<div class="grid__item grid__item__big" >
 			<div class="index_img">
 				<!-- <a href="./poster_collection.html"> -->
 				<!-- <img src="./img/indeximg/indeximg_c_poster.jpg" alt="叉圈設計 nonxo" /> -->
