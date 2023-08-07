@@ -162,11 +162,11 @@ function draw() {
   pg.textFont(fontZH);
   pg.textSize(420);
 
-  pg.text("實", -150, 90);
-  pg.text("驗", 150, 530);
-  pg.text("新", -525, 875);
-  pg.text("嘉", 525, 1150);
-  pg.text("義", 0, 1575);
+  //pg.text("實", -150, 90);
+  //pg.text("驗", 150, 530);
+  //pg.text("新", -525, 875);
+  //pg.text("嘉", 525, 1150);
+  //pg.text("義", 0, 1575);
 
   pg.pop();
 
