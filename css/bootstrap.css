@@ -902,7 +902,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family:'Roboto Slab' , "Helvetica Neue", Helvetica, 'Noto Sans TC', sans-serif, Arial, sans-serif;
+  font-family:'Roboto Slab' , "Helvetica Neue", Helvetica,  'Gabarito', 'Noto Sans TC', sans-serif, Arial, sans-serif;
   font-size: 1.5em;
   color: #333;
   background-color: #fff;

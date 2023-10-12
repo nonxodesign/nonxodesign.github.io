@@ -1,18 +1,8 @@
-@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css) @import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;700;900&display=swap');
 
-@font-face {
-	font-family: 'xofontblack';
-	src: url('media/nexablack.otf') format("opentype"),
-		url('media/nexablack.ttf') format("truetype"),
-		url('media/nexablack.ttf') format("truetype");
-}
-
-@font-face {
-	font-family: 'xofontbold', 'Noto Sans TC';
-	src: url('media/nexabold.otf') format("opentype"),
-		url('media/nexabold.ttf') format("truetype"),
-		url('media/nexabold.woff') format("woff");
-	;
+body{
+	font-family: Gabarito;
 }
 
 @media screen and (max-width: 1024px) {
@@ -239,7 +229,7 @@
 	/*opacity:0; */
 	/*transform:translateY(100vh);*/
 	/*padding-top:15vh;*/
-	font-family: 'xofontbold', 'Noto Sans TC';
+	font-family:   'Gabarito','Noto Sans TC';
 	z-index: 999;
 	position: fixed;
 	width: 100vw;
@@ -259,7 +249,7 @@
 .menu_button {
 	line-height: 14vh;
 	height: 14vh;
-	font-family: 'xofontbold', 'Noto Sans TC';
+	font-family:   'Gabarito','Noto Sans TC';
 	margin: 0 auto;
 	padding: 0;
 	width: 100%;
@@ -549,7 +539,7 @@ h8 {
 	.index_subtitle,
 	.content_text_index {
 		display: block;
-		font-family: 'xofontbold', 'Noto Sans TC';
+		font-family:   'Gabarito','Noto Sans TC';
 	}
 
 	.index_img {
@@ -590,7 +580,6 @@ h8 {
 		left: -3em;
 		position: absolute;
 		padding: 1.5em;
-		font-family: 'xofont-bold';
 		z-index: 2;
 	}
 
@@ -745,11 +734,11 @@ h8 {
 		z-index: 15;
 		font-size: 1.7em;
 		color: white;
-		font-family: 'xofontbold', 'Noto Sans TC';
+		font-family:   'Gabarito','Noto Sans TC';
 	}
 
 	.index_subtitle {
-		font-family: 'xofontbold', 'Noto Sans TC';
+		font-family:   'Gabarito','Noto Sans TC';
 		letter-spacing: 1px;
 		display: block;
 		font-weight: 500;
@@ -771,7 +760,7 @@ h8 {
 .content_title2 {
 	font-size: 16px;
 	line-height: 2;
-	font-family: 'xofontbold', 'Noto Sans TC';
+	font-family:   'Gabarito','Noto Sans TC';
 	font-weight: 500;
 	margin-top: 2em;
 }
@@ -819,7 +808,7 @@ h8 {
 .index_animation {
 	position: absolute;
 	width: 100vw;
-	font-family: 'xofontbold', 'Noto Sans TC';
+	font-family:   'Gabarito','Noto Sans TC';
 	background: none;
 }
 
@@ -829,7 +818,7 @@ h8 {
 	margin: 0 auto;
 	width: 100%;
 	top: 30vh;
-	font-family: 'xofontbold', 'Noto Sans TC';
+	font-family:   'Gabarito','Noto Sans TC';
 }
 
 .logo_index {
@@ -854,7 +843,7 @@ h8 {
 	animation: fadein3 3s ease-in forwards;
 	font-size: 5em;
 	line-height: 1em;
-	font-family: 'xofontbold';
+	font-family:  'Gabarito';
 	width: 1em;
 	height: 5em;
 	/*float:right;*/
@@ -863,7 +852,7 @@ h8 {
 
 .index_text2 {
 	text-align: center;
-	font-family: 'xofontbold', 'Noto Sans TC';
+	font-family:   'Gabarito','Noto Sans TC';
 	font-size: 14px;
 	line-height: 1.5;
 	font-weight: 500;

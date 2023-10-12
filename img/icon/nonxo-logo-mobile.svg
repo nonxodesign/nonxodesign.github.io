@@ -88,8 +88,8 @@
 	</g>
 	<g class="st1">
 		<g>
-			<text transform="matrix(0.9723 0 0 1 -353.6953 -108.4486)" style="font-family:'NexaBlack'; font-size:43.8446px;">NONXO</text>
-			<text transform="matrix(0.9723 0 0 1 -353.6953 -59.4086)" style="font-family:'NexaBlack'; font-size:43.8446px;">WORKSHOP</text>
+			<text transform="matrix(0.9723 0 0 1 -353.6953 -108.4486)" style="font-family:  font-size:43.8446px;">NONXO</text>
+			<text transform="matrix(0.9723 0 0 1 -353.6953 -59.4086)" style="font-family:  font-size:43.8446px;">WORKSHOP</text>
 		</g>
 		<line class="st5" x1="-172.6" y1="-125.7" x2="-87.8" y2="-125.7"/>
 		<g>
@@ -588,7 +588,7 @@
 		<path d="M128,78.5c-6.4,0-11-3.8-11-10.7c0-6.6,4.5-10.7,11-10.7s11,3.8,11,10.7S134.5,78.5,128,78.5z M128,62.2
 			c-3.2,0-5.3,2.3-5.3,5.8s2.2,5.8,5.3,5.8c3.3,0,5.3-2.3,5.3-5.8C133.4,64.5,131.3,62.2,128,62.2z"/>
 	</g>
-	<text transform="matrix(0.9723 0 0 1 -70.0986 118.0919)" class="st1" style="font-family:'NexaBlack'; font-size:29.0193px;">NONXO</text>
+	<text transform="matrix(0.9723 0 0 1 -70.0986 118.0919)" class="st1" style="font-family:  font-size:29.0193px;">NONXO</text>
 	
 		<text transform="matrix(0.9723 0 0 1 -28.2461 23.3199)" class="st1" style="font-family:'NotoSansCJKtc-Black-B5pc-H'; font-size:25.3604px;">影</text>
 	<path class="st1" d="M120.1,95.1l0.2,0.2h1.5v1h-4.7v-1h1.7c0-0.1-0.1-0.1-0.1-0.2H120.1z"/>

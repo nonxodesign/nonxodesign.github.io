@@ -1,23 +1,7 @@
 @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css)
 @import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
 
-@font-face {
-    font-family:'xofontblack';
-    src: url('media/nexablack.otf') format("opentype"), 
-         url('media/nexablack.ttf') format("truetype"),
-         url('media/nexablack.ttf') format("truetype"),
-         url('media/nexablack.eot') format("eot");
-         unicode-range: U+00-024F
-  }
 
-@font-face {
-    font-family:'xofontbold';
-    src: url('media/nexabold.otf') format("opentype"),
-         url('media/nexabold.ttf') format("truetype"),
-         url('media/nexabold.woff') format("woff"),
-         url('media/nexabold.eot') format("eot");
-         unicode-range: U+00-024F
-  }
 
 #info {
 	font-family: 'xofontblack';
