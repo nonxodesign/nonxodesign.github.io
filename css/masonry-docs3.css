@@ -1,5 +1,5 @@
 
-  @import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;700;900&family=Noto+Sans+TC:wght@100;500;700;900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&family=Noto+Sans+TC:wght@100;500;900&display=swap');
 
 
 
@@ -1302,6 +1302,7 @@ code .masonry_keyword {
   /*width:55vw;*/
   /*font-width:100;*/
   font-family:'Gabarito', 'Gabarito', 'Noto Sans TC', sans-serif;
+  font-weight: 600;
   font-size: 1.5em;
   letter-spacing: 0px;
   color: black;
