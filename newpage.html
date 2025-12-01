@@ -7,38 +7,72 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/gvb3qwx.css">
     <style>
         /* --- 1. 核心變數 --- */
         :root {
             --cursor-size: 20px; --cursor-hover-size: 80px;
-            /* LIGHT MODE (Default) */
-            --bg-color: #f0f0f0; --text-color: #1a1a1a; --accent-color: #ff3300; --border-color: rgba(0,0,0,0.1); --secondary-text: #4b5563; --logo-filter: invert(1); 
+            /* LIGHT MODE */
+            --bg-color: #f0f0f0; --text-color: #1a1a1a; --accent-color: #ff3300; 
+            
+            --border-color: rgba(0,0,0,0.1); --secondary-text: #4b5563; --logo-filter: invert(0); 
         }
         [data-theme="dark"] {
             /* DARK MODE */
-            --bg-color: #080808; --text-color: #e0e0e0; --accent-color: #CCFF00; --border-color: rgba(255,255,255,0.15); --secondary-text: #6b7280; --logo-filter: invert(0);
+            --bg-color: #080808; --text-color: #e0e0e0; --accent-color: #CCFF00; 
+            --border-color: rgba(255,255,255,0.15); --secondary-text: #6b7280; --logo-filter: invert(1);
         }
+        
+        html { scroll-behavior: smooth; }
+
         body {
+            /* background-color: var(--bg-color); color: var(--text-color); font-family: 'Space Grotesk', sans-serif; */
             background-color: var(--bg-color); color: var(--text-color); font-family: 'Space Grotesk', sans-serif;
             overflow-x: hidden; cursor: none; -webkit-font-smoothing: antialiased;
             transition: background-color 0.6s cubic-bezier(0.16, 1, 0.3, 1), color 0.6s cubic-bezier(0.16, 1, 0.3, 1);
         }
         .font-mono { font-family: 'JetBrains Mono', monospace; }
+        .font-brico { font-family: 'Bricolage Grotesque', sans-serif; }
+        .font-avr { font-family: avenir-next-lt-pro, sans-serif;}
+        /* --- 2. 特效元件 (Noise Fix) --- */
+        .noise-overlay { 
+            position: fixed; top: -50%; left: -50%; width: 200%; height: 200%; 
+            pointer-events: none; z-index: 90; 
+            opacity: 0.05; 
+            background-repeat: repeat; 
+            will-change: transform; 
+            transition: opacity 0.3s;
+            
+            /* [修改] 電腦版預設尺寸 (Canvas 是 200x200) */
+            background-size: 200px 200px;
+        }
 
-        /* --- 2. 特效 --- */
-        .noise-overlay { position: fixed; top: -50%; left: -50%; width: 200%; height: 200%; pointer-events: none; z-index: 90; opacity: 0.05; background-repeat: repeat; will-change: transform; transition: opacity 0.3s; }
-        
+        /* [新增] 手機版噪點細緻化 */
+        @media (max-width: 768px) {
+            .noise-overlay {
+                /* 強制縮小背景圖，讓噪點顆粒變細 (利用手機的高 DPI) */
+                background-size: 100px 100px; 
+                /* 因為點變小了，視覺會變淡，稍微補一點點不透明度 */
+                opacity: 0.07; 
+            }
+        }
+        /* 預覽視窗 */
         #row-preview-container {
-            position: fixed; width: 360px; height: 200px; z-index: 60; pointer-events: none; opacity: 0; transform-origin: center center;
-            transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1); overflow: hidden; background: #000; will-change: transform, opacity;
+            position: fixed; width: 360px; height: 200px; z-index: 60; pointer-events: none; 
+            opacity: 0; transform-origin: center center;
+            transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1); 
+            overflow: hidden; background: #000; 
+            will-change: transform, opacity;
+            -webkit-backface-visibility: hidden; backface-visibility: hidden; transform: translateZ(0); outline: 1px solid transparent;
         }
         #row-preview-container.active { opacity: 1; }
         #row-preview-container img, #row-preview-container video { width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; }
         .preview-media { display: none; }
         .preview-media.show { display: block; }
 
+        /* 游標 */
         #cursor {
             position: fixed; top: 0; left: 0; width: var(--cursor-size); height: var(--cursor-size);
             border: 1px solid rgba(128, 128, 128, 0.5); background: rgba(128, 128, 128, 0.1);
@@ -50,6 +84,16 @@
             position: fixed; top: 0; left: 0; width: 4px; height: 4px; background: var(--accent-color);
             border-radius: 50%; pointer-events: none; z-index: 10000; transform: translate(-50%, -50%); will-change: transform;
         }
+        .blueprint-bg {
+            /* 使用 CSS 繪製無限網格，顏色隨變數改變 */
+            background-size: 100px 100px;
+            background-image:
+                linear-gradient(to right, var(--border-color) 1px, transparent 1px),
+                linear-gradient(to bottom, var(--border-color) 1px, transparent 1px);
+            /* 讓網格淡一點，不要搶戲 */
+            mask-image: linear-gradient(to bottom, black 20%, transparent 100%);
+            -webkit-mask-image: linear-gradient(to bottom, black 20%, transparent 100%);
+        }
 
         .project-item {
             display: flex; text-decoration: none; color: inherit; border-top: 1px solid var(--border-color);
@@ -58,40 +102,92 @@
         .project-item:hover { padding-left: 2rem; opacity: 1; }
         .project-item:not(:hover) { opacity: 0.5; }
 
+        /* [需求 1 & 4] Hero Bg Logo: 透過 JS 控制位置與旋轉，CSS 負責濾鏡與過渡 */
         .hero-bg-logo {
-            position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 60vw; height: auto;
-            opacity: 0.03; pointer-events: none; z-index: 0; filter: var(--logo-filter); transition: filter 0.6s; will-change: transform;
+            position: absolute; top: 50%; left: 50%; 
+            /* 初始狀態，transform 交給 JS render loop 接管 */
+            width: 60vw; height: auto;
+            opacity: 0.03; pointer-events: none; z-index: 0; 
+            filter: var(--logo-filter); 
+            transition: filter 0.6s; /* 只對 filter 做 CSS transition，避免跟 JS transform 打架 */
+            will-change: transform;
         }
 
-        /* --- 3. 動畫 --- */
-        .lang-switch-container { position: relative; height: 1.5rem; width: 100%; overflow: hidden; display: flex; justify-content: center; }
-        .lang-text {
-            position: absolute; top: 0; left: 0; width: 100%; text-align: center; opacity: 0; 
-            animation-duration: 5s; animation-iteration-count: infinite; animation-timing-function: ease-in-out;
+        /* --- 3. Hero 文字樣式 --- */
+        .hero-title-line {
+            display: block;
+            color: var(--text-color);
+            transition: color 0.3s ease;
         }
-        .lang-en { animation-name: fade-en; }
-        .lang-zh { animation-name: fade-zh; }
-        @keyframes fade-en {
-            0% { opacity: 0; transform: translateY(5px); }
-            5%, 40% { opacity: 1; transform: translateY(0); }
-            45%, 100% { opacity: 0; transform: translateY(-10px); }
+        .hero-title-line:hover {
+            color: var(--accent-color);
         }
-        @keyframes fade-zh {
-            0%, 40% { opacity: 0; transform: translateY(10px); }
-            45%, 90% { opacity: 1; transform: translateY(0); }
-            100% { opacity: 0; transform: translateY(-10px); }
+        /* --- [修正] 強制顯形的毛玻璃 --- */
+        .glass-header {
+            /* 1. 關鍵：提高不透明度 (從 0.05 改為 0.75) */
+            /* 這樣才有「介質」去呈現模糊效果，否則只是空氣 */
+            background: rgba(240, 240, 240, 0.75); 
+            
+            /* 2. 加大模糊半徑 */
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
         }
 
-        /* --- 4. Footer & Loader --- */
+        /* 深色模式適配 */
+        [data-theme="dark"] .glass-header {
+            background: rgba(8, 8, 8, 0.75); /* 深色也要加重 */
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* --- 4. 動畫 --- */
+        /* [需求 2] 星號旋轉：確保 inline-block */
+        .animate-spin-slow { 
+            animation: spin 10s linear infinite; 
+            display: inline-block; 
+        }
+        @keyframes spin { 
+            from { transform: rotate(0deg); } 
+            to { transform: rotate(360deg); } 
+        }
+
+        /* 箭頭彈跳 */
+        .animate-text-bounce { animation: text-bounce 2s ease-in-out infinite; }
+        @keyframes text-bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(10px); }
+        }
+
+        /* 文字入場 */
+        .reveal-up { opacity: 0; transform: translateY(100%); animation: textReveal 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+        @keyframes textReveal { to { opacity: 1; transform: translateY(0); } }
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+
+        /* --- 5. Footer & Marquee --- */
         .text-outline { color: transparent; -webkit-text-stroke: 1px rgba(128, 128, 128, 0.3); transition: all 0.5s ease; }
         [data-theme="dark"] .text-outline { -webkit-text-stroke: 1px rgba(255, 255, 255, 0.15); }
         .text-outline:hover { color: var(--accent-color); -webkit-text-stroke: 0px; }
 
-        .footer-marquee-container { border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); padding: 1rem 0; margin-top: 6rem; }
-        .footer-marquee-content { display: inline-block; animation: marquee-scroll 60s linear infinite; }
-        @keyframes marquee-scroll { 0% { transform: translateX(50%); } 100% { transform: translateX(-100%); } }
+        .footer-marquee-container { 
+            border-top: 1px solid var(--border-color); 
+            border-bottom: 1px solid var(--border-color); 
+            padding: 1.5rem 0; margin-top: 0; overflow: hidden;
+            display: flex; 
+        }
+        .footer-marquee-content { 
+            display: inline-block; 
+            animation: marquee-scroll 40s linear infinite; 
+            white-space: nowrap; 
+            flex-shrink: 0; 
+            min-width: 100%;
+            padding-right: 4rem;
+        }
+        @keyframes marquee-scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-100%); } }
 
-        /* [修復] Loader 樣式 */
+        /* Loader */
         #loader {
             position: fixed; top: 0; left: 0; width: 100%; height: 100%;
             background: var(--bg-color); z-index: 10000; 
@@ -103,6 +199,7 @@
 
         .hero-section-container { overflow: hidden; position: relative; }
         .logo-adaptive { filter: var(--logo-filter); transition: filter 0.6s; }
+        .opacity-05 { opacity: 0.05; }
 
         @media (hover: none) and (pointer: coarse) {
             #cursor, #cursor-dot, #row-preview-container { display: none !important; }
@@ -130,19 +227,21 @@
     </div>
 
     <main class="relative w-full min-h-screen flex flex-col justify-between z-10">
-        
-        <header class="fixed top-0 left-0 w-full px-6 py-6 md:px-12 md:py-8 flex justify-between items-center z-[100] backdrop-blur-[3px]">
+        <div class="absolute inset-0 z-0 blueprint-bg pointer-events-none opacity-50"></div>
+       <header class="border-b-[2px] glass-header fixed top-0 left-0 w-full px-6 py-4 md:px-12 md:py-8 flex justify-between items-center z-[100] transition-all duration-500 ">
+            
             <a href="index.html" class="hover-trigger block">
-                <img src="./img/nonxo-logosymbol.svg" alt="STUDIO NONXO" class="h-10 w-auto block md:hidden logo-adaptive">
-                <img src="./img/nonxo-logo.svg" alt="STUDIO NONXO" class="h-10 w-auto hidden md:block logo-adaptive">
+                <img src="./img/nonxo-logosymbol.svg" alt="STUDIO NONXO" class="h-8 md:h-10 w-auto block md:hidden logo-adaptive">
+                <img src="./img/nonxo-logo.svg" alt="STUDIO NONXO" class="h-8 md:h-10 w-auto hidden md:block logo-adaptive">
+                <!-- <div class="flex flex-col gap-1 text-[0.15em] mt-1 ml-1"><span> 叉  圈  影  畫 </span></div> -->
             </a>
             
-            <div class="flex flex-col items-end gap-1">
-                <button id="system-toggle" class="font-mono text-xs text-[var(--accent-color)] border border-[var(--accent-color)] px-3 py-1 hover:bg-[var(--accent-color)] hover:text-[var(--bg-color)] transition-all cursor-pointer uppercase font-bold tracking-widest">
+            <div class="flex flex-col items-end gap-2">
+                <button id="system-toggle" class="font-mono text-[10px] md:text-xs text-[var(--accent-color)] border border-[var(--accent-color)] px-2 py-1 md:px-3 hover:bg-[var(--accent-color)] hover:text-[var(--bg-color)] transition-all cursor-pointer uppercase font-bold tracking-widest">
                     SYSTEM: ONLINE
                 </button>
                 
-                <nav class="flex gap-6 text-sm mt-2 font-bold" style="color: var(--text-color);">
+                <nav class="flex gap-4 md:gap-6 text-[10px] md:text-sm font-bold" style="color: var(--text-color);">
                     <a href="work.html" class="hover-trigger hover:underline decoration-1 underline-offset-4">WORK</a>
                     <a href="studio.html" class="hover-trigger hover:underline decoration-1 underline-offset-4">STUDIO</a>
                     <a href="#main-footer" onclick="scrollToContact(event)" class="hover-trigger hover:underline decoration-1 underline-offset-4">CONTACT</a>
@@ -150,34 +249,64 @@
             </div>
         </header>
 
-        <section class="mt-48 mb-32 relative hero-section-container px-6 md:px-12">
+        <section class="relative w-full h-screen overflow-hidden px-6 md:px-12 pt-32 pb-12">
             
-            <img id="hero-bg-logo" src="./img/nonxo-logosymbol.svg" class="hero-bg-logo logo-adaptive" alt="Background Logo">
+            <img id="hero-bg-logo" src="./img/nonxo-logosymbol-blank.svg" 
+                 class="absolute top-1/2 right-[-50%] transform -translate-y-1/2 w-[120vw] md:w-[80vw] opacity-05 pointer-events-none z-0 logo-adaptive transition-transform duration-100 ease-out" 
+                 alt="Background Structure">
 
-            <h1 class="text-[11vw] leading-[0.85] font-light tracking-tight select-none slogan-text-container relative z-10">
-                <span id="text-crossing" class="block hover-trigger transition-colors duration-500" style="line-height:1.2em;">
-                    Cr<span style="color:var(--accent-color)">o</span>ssing
-                </span>
-                <span id="text-vision" class="block text-right hover-trigger transition-colors duration-500">
-                    Vision 
-                </span>
-                <span id="text-emotion" class="block hover-trigger ml-12 italic font-serif transition-colors duration-500">
-                    & Emotion.
-                </span>
-            </h1>
-            
-            <div class="absolute top-1/3 left-0 transform -translate-y-1/2 w-full font-mono text-xl text-[var(--secondary-text)] hidden md:block z-20 pointer-events-none">
-                <br><br><br><br>
-                <p class="ml-12 opacity-60">交 織 視 野 　　情 感 成 圈</p>
-            </div>
+            <div class="relative z-10 w-full h-full flex flex-col justify-between">
 
-            <button onclick="scrollToNext()" class="mt-32 w-full text-center hover-trigger group z-20 relative outline-none">
-                <div class="lang-switch-container">
-                    <span class="text-[var(--accent-color)] text-sm tracking-widest lang-text lang-en">SCROLL TO EXPLORE</span>
-                    <span class="text-[var(--accent-color)] text-sm tracking-widest lang-text lang-zh">滑 動 探 索</span>
+                <div class="w-full flex justify-between items-start text-[10px] md:text-xs font-mono text-[var(--secondary-text)] mix-blend-difference  reveal-up">
+                    <div class="flex flex-col gap-1">
+                        
+                        <!-- <span>有 限 公 司</span> -->
+                    </div>
+                    <div class="flex flex-col gap-1 text-right">
+                        <span>Art Direction</span>
+                        <span>EST. 2025</span>
+                    </div>
                 </div>
-                <span class="text-[var(--text-color)] text-xl block group-hover:translate-y-2 transition-transform duration-300 delay-75">↓</span>
-            </button>
+
+                <div id="hero-title-container" class="flex-grow flex flex-col justify-end my-auto">
+                    
+                    <div class="mb-4 overflow-hidden">
+                        <p class="text-[var(--accent-color)] font-mono text-xs tracking-widest uppercase reveal-text reveal-up">
+                            /// Defined by the Unknown
+                        </p>
+                    </div>
+                    
+                    <h1 class="font-bold tracking-tighter select-none mix-blend-difference whitespace-nowrap leading-[0.71] md:leading-[0.77]" style="font-size: clamp(3rem, 14vw, 20rem);  ">
+                    
+                    <div class="pb-1">
+                        <span class="hero-title-line block w-fit reveal-up delay-100 hover-trigger transition-colors duration-300 hover:text-[var(--accent-color)]">Design</span>
+                    </div>
+                    
+                    <div class=" flex items-center gap-[0.2em] pb-1 ml-[0em]">
+                        <span class="reveal-up delay-200 inline-flex items-center justify-center h-full">
+                            <span class="animate-spin-slow text-[0.15em] text-[var(--accent-color)] block pt-0 ml-[.3em] mr-[-.7em] font-black">╳</span>
+                        </span>
+                        <span class="hero-title-line block reveal-up delay-200 hover-trigger w-fit">Without</span>
+                    </div>
+                    
+                    <div class="overflow-hidden pb-1 ml-[0 em]">
+                        <span class="hero-title-line block reveal-up delay-300 hover-trigger w-fit">Noise.</span>
+                    </div>
+                </h1>
+                    
+                    <p class="mt-8 font-mono text-xs text-[var(--secondary-text)] max-w-md reveal-up delay-100 pl-1">
+                        [ 視 覺 工 程 / 感 官 重 構 ]
+                    </p>
+                </div>
+
+                <div class="absolute bottom-0 right-0 z-20 reveal-up delay-300">
+                    <a href="#works-section" onclick="scrollToNext(event)" class="flex flex-col items-center group cursor-pointer animate-sharp-bounce">
+                        <span class="text-[10px] font-mono text-[var(--secondary-text)] mb-2 vertical-text tracking-widest opacity-50 group-hover:opacity-100 transition-opacity">EXPLORE</span>
+                        <span class="font-bold font-brico text-[3rem] md:text-[5rem] leading-none text-[var(--text-color)] group-hover:text-[var(--accent-color)] transition-colors">↓</span>
+                    </a>
+                </div>
+
+            </div>
         </section>
 
         <section id="works-section" class="w-full max-w-6xl mx-auto mb-32 px-6 md:px-12">
@@ -186,7 +315,6 @@
                 <span>(001-004)</span>
             </div>
 
-            <!-- 第一個連結放電腦版影像720p，第二個連結為手機背景圖片600-800px -->
             <div class="flex flex-col">
                 <a href="project-01.html" class="project-item py-10 justify-between items-center cursor-pointer group relative overflow-hidden" 
                      data-img="./img/video/de_04.mp4">
@@ -234,72 +362,78 @@
             </div>
         </section>
 
-        <footer id="main-footer" class="relative w-full pt-32 pb-0 bg-[var(--bg-color)] overflow-hidden">
+        <footer id="main-footer" class="relative w-full pt-24 pb-0 bg-[var(--bg-color)] overflow-hidden">
             
-            <div id="wild-bg-text" class="absolute top-1/2 left-0 w-full select-none pointer-events-none z-0 mix-blend-difference" style="transform: translateY(-50%);">
-                <h2 class="text-[20vw] leading-none font-bold text-outline opacity-10 text-center tracking-tighter">
-                    NONXO
-                </h2>
-            </div>
+            <div id="wild-bg-text" class="absolute top-1/2 left-0 w-full select-none pointer-events-none z-0" style="transform: translateY(-50%);"></div>
 
             <div class="relative z-10 w-full max-w-[90%] mx-auto px-6">
                 
-                <div class="grid grid-cols-1 md:grid-cols-12 gap-12 border-t border-[var(--border-color)] pt-12 mb-24">
-                    <div class="md:col-span-6 lg:col-span-7">
-                        <span class="font-mono text-xs text-[var(--accent-color)] mb-6 block">/// MANIFESTO</span>
-                        <h3 class="text-2xl md:text-4xl font-light leading-tight mb-8">
-                            WE DISTURB THE <span class="text-[var(--secondary-text)]">COMFORTABLE</span>.<br>
-                            WE COMFORT THE <span class="text-[var(--secondary-text)]">DISTURBED</span>.
-                        </h3>
-                        <p class="text-sm md:text-base text-[var(--secondary-text)] max-w-lg leading-relaxed">
-                            Studio Nonxo is a visual engineering facility based in Taipei. We deconstruct reality to build digital hallucinations. Specializing in Art Direction, VFX, and Motion Design.
-                        </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 border-t border-[var(--border-color)] pt-12 mb-24">
+                    
+                    <div class="flex flex-col justify-between h-full">
+                        <div>
+                            <span class="font-mono text-sm text-[var(--accent-color)] mb-4 block">/// PHILOSOPHY</span>
+                            <p class="text-base text-[var(--secondary-text)] leading-relaxed">
+                                Eliminating the noise. Amplifying the signal.<br>
+                                We structure the unknown.
+                            </p>
+                        </div>
+                        <div class="mt-8">
+                            <!-- <img src="./img/nonxo-logosymbol.svg" class="w-12 h-12 logo-adaptive opacity-80" alt="Small Logo"> -->
+                        </div>
                     </div>
-                    <div class="md:col-span-6 lg:col-span-5 flex flex-col justify-between h-full">
-                        <div class="grid grid-cols-2 gap-8">
-                            <div>
-                                <span class="font-mono text-xs text-[var(--secondary-text)] block mb-4">SOCIALS</span>
-                                <div class="flex flex-col gap-2 font-mono text-sm">
-                                    <a href="#" class="hover:text-[var(--accent-color)] hover:pl-2 transition-all">INSTAGRAM ↗</a>
-                                    <a href="#" class="hover:text-[var(--accent-color)] hover:pl-2 transition-all">BEHANCE ↗</a>
-                                    <a href="#" class="hover:text-[var(--accent-color)] hover:pl-2 transition-all">VIMEO ↗</a>
-                                </div>
-                            </div>
-                            <div>
-                                <span class="font-mono text-xs text-[var(--secondary-text)] block mb-4">LOCATION</span>
-                                <div class="flex flex-col gap-1 font-mono text-sm text-[var(--text-color)]">
-                                    <p>Taipei, Taiwan</p>
-                                    <p class="text-[var(--secondary-text)] text-xs mt-1">VAT: 12345678</p>
-                                </div>
-                            </div>
+
+                    <div>
+                        <span class="font-mono text-base text-[var(--text-color)] mb-4 block font-bold">SITEMAP</span>
+                        <ul class="flex flex-col gap-3 font-mono text-base text-[var(--secondary-text)]">
+                            <li><a href="#" class="hover:text-[var(--accent-color)] transition-colors">HOME</a></li>
+                            <li><a href="#" class="hover:text-[var(--accent-color)] transition-colors">WORK</a></li>
+                            <!-- <li><a href="#" class="hover:text-[var(--accent-color)] transition-colors">STUDIO</a></li> -->
+                        </ul>
+                    </div>
+
+                    <div>
+                        <span class="font-mono text-base text-[var(--text-color)] mb-4 block font-bold">SOCIALS</span>
+                        <ul class="flex flex-col gap-3 font-mono text-base text-[var(--secondary-text)]">
+                            <li><a href="#" class="hover:text-[var(--accent-color)] transition-colors">INSTAGRAM ↗</a></li>
+                            <li><a href="#" class="hover:text-[var(--accent-color)] transition-colors">BEHANCE ↗</a></li>
+                            <li><a href="#" class="hover:text-[var(--accent-color)] transition-colors">VIMEO ↗</a></li>
+                            <!-- <li><a href="#" class="hover:text-[var(--accent-color)] transition-colors">LINKEDIN ↗</a></li> -->
+                        </ul>
+                    </div>
+
+                    <div class="flex flex-col justify-between">
+                        <div>
+                            <span class="font-mono text-base text-[var(--text-color)] mb-4 block font-bold">LOCATION</span>
+                            <p class="text-base text-[var(--secondary-text)] font-mono leading-relaxed">
+                                Taipei, Taiwan<br>
+                            </p>
+                            <!-- <div class="mt-8"><p class="text-sm text-[var(--secondary-text)] font-mono">© 2025 Studio Nonxo. All Rights Reserved. </p> -->
+                        </div>
+                        
                         </div>
                     </div>
                 </div>
 
-                <div class="w-full text-center relative group">
-                    <span id="copy-hint" class="font-mono text-xs text-[var(--accent-color)] absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div class="w-full text-center relative group pb-12 border-b border-[var(--border-color)]">
+                    <span id="copy-hint" class="font-mono text-sm text-[var(--accent-color)] absolute top-0 left-1/2 transform -translate-y-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         CLICK TO COPY
                     </span>
-                    <a href="mailto:info@nonxo.com" onclick="handleEmailClick(event)" class="block text-[7vw] leading-[0.8] font-bold tracking-tighter text-[var(--text-color)] hover:text-[var(--accent-color)] transition-colors duration-500 hover-trigger break-all cursor-pointer">
-                        INFO@NONXO
+                    <a id="footer-email-link" href="mailto:info@nonxo.com" onclick="handleEmailClick(event)" class="block text-center mx-auto text-[6vw] leading-[0.8] font-bold tracking-tighter text-[var(--text-color)] hover:text-[var(--accent-color)] transition-colors duration-500 hover-trigger break-all cursor-pointer py-8">
+                        info@nonxo.com
                     </a>
+                </div>
+
+            </div>
+
+            <div class="footer-marquee-container">
+                <div class="footer-marquee-content font-mono text-base font-bold text-[var(--secondary-text)] tracking-widest">
+                    © 2025 Studio Nonxo. All Rights Reserved. © 2025 Studio Nonxo. All Rights Reserved. © 2025 Studio Nonxo. All Rights Reserved. © 2025 Studio Nonxo. All Rights Reserved. © 2025 Studio Nonxo. All Rights Reserved. © 2025 Studio Nonxo. All Rights Reserved. © 2025 Studio Nonxo. All Rights Reserved. © 2025 Studio Nonxo. All Rights Reserved. © 2025 Studio Nonxo. All Rights Reserved. © 2025 Studio Nonxo. All Rights Reserved.
                 </div>
             </div>
 
-            <div class="w-full mt-24 bg-[var(--bg-color)] z-20 relative">
-                <div class="footer-marquee-container">
-                    <div class="footer-marquee-content font-mono text-xs font-bold text-[var(--text-color)] tracking-widest" >
-                        studio nonxo — VISUAL FX — GRAPHICS  — MOTION DESIGN — EST. 2025 — TAIPEI BASED — GLOBAL VISION — 
-                        studio nonxo — VISUAL FX — GRAPHICS  — MOTION DESIGN — EST. 2025 — TAIPEI BASED — GLOBAL VISION — 
-                        studio nonxo — VISUAL FX — GRAPHICS  — MOTION DESIGN — EST. 2025 — TAIPEI BASED — GLOBAL VISION — 
-                    </div>
-                </div>
-                <div class="w-full py-4 px-6 md:px-12 flex justify-between items-center text-[10px] md:text-xs font-mono text-[var(--secondary-text)]">
-                    <span>© 2025 STUDIO NONXO. ALL RIGHTS RESERVED.</span>
-                    <span>SCROLL TO TOP ↑</span>
-                </div>
-            </div>
         </footer>
+
     </main>
 
     <script>
@@ -328,33 +462,58 @@
                 setTimeout(() => { hint.innerText = originalText; hint.style.opacity = ''; }, 2000);
             });
         }
-        function scrollToNext() { document.getElementById('works-section').scrollIntoView({ behavior: 'smooth' }); }
+        function scrollToNext(e) { 
+            if(e) e.preventDefault();
+            document.getElementById('works-section').scrollIntoView({ behavior: 'smooth' }); 
+        }
         function scrollToContact(e) { if(e) e.preventDefault(); document.getElementById('main-footer').scrollIntoView({ behavior: 'smooth' }); }
 
         // --- 3. Theme Toggle ---
         const toggleBtn = document.getElementById('system-toggle');
-        const titles = {
-            online: { line1: 'Cr<span style="color:var(--accent-color)">o</span>ssing', line2: 'Vision ', line3: '& Emotion.' },
-            offline: { line1: 'Rev<span style="color:var(--accent-color)">e</span>rsing', line2: 'Logic ', line3: '& Reality.' }
-        };
         toggleBtn.addEventListener('click', () => {
             const body = document.body;
             const isDark = body.getAttribute('data-theme') === 'dark';
-            const t1 = document.getElementById('text-crossing'); const t2 = document.getElementById('text-vision'); const t3 = document.getElementById('text-emotion');
             if (isDark) {
                 body.removeAttribute('data-theme'); toggleBtn.innerText = 'SYSTEM: ONLINE';
                 document.getElementById('noise-layer').style.backgroundImage = `url(${generateNoise(false)})`;
-                t1.innerHTML = titles.online.line1; t2.innerHTML = titles.online.line2; t3.innerHTML = titles.online.line3;
             } else {
                 body.setAttribute('data-theme', 'dark'); toggleBtn.innerText = 'SYSTEM: OFFLINE';
                 document.getElementById('noise-layer').style.backgroundImage = `url(${generateNoise(true)})`;
-                t1.innerHTML = titles.offline.line1; t2.innerHTML = titles.offline.line2; t3.innerHTML = titles.offline.line3;
             }
         });
 
-        // --- 4. Animations Loop ---
-        let mouseX = 0, mouseY = 0, scrollY = 0;
-        let currentScrollY = 0, currentMouseX = 0, currentMouseY = 0;
+        // --- 4. [核心] Hero Text Spotlight Logic ---
+        const heroTitle = document.querySelector('.spotlight-title');
+        const heroTitleContainer = document.getElementById('hero-title-container');
+
+        if (heroTitle && heroTitleContainer) {
+            heroTitleContainer.addEventListener('mousemove', (e) => {
+                const rect = heroTitle.getBoundingClientRect();
+                const x = ((e.clientX - rect.left) / rect.width) * 100;
+                const y = ((e.clientY - rect.top) / rect.height) * 100;
+                
+                heroTitle.style.setProperty('--x', `${x}%`);
+                heroTitle.style.setProperty('--y', `${y}%`);
+            });
+
+            heroTitleContainer.addEventListener('mouseenter', () => {
+                heroTitle.classList.add('hovered');
+                heroTitle.style.setProperty('--r', '150%'); 
+            });
+
+            heroTitleContainer.addEventListener('mouseleave', () => {
+                heroTitle.classList.remove('hovered');
+                heroTitle.style.setProperty('--r', '0%');
+            });
+        }
+
+        // --- 5. Animations Loop ---
+        // [修正] 初始值設為螢幕中心，避免初始畫面歪斜
+        let mouseX = window.innerWidth / 2, mouseY = window.innerHeight / 2;
+        let scrollY = 0;
+        let currentScrollY = 0;
+        let currentMouseX = window.innerWidth / 2; // 預設在中心
+        let currentMouseY = window.innerHeight / 2; // 預設在中心
         
         const cursor = document.getElementById('cursor');
         const cursorDot = document.getElementById('cursor-dot');
@@ -363,61 +522,87 @@
         const previewImg = document.getElementById('preview-img');
         const previewVideo = document.getElementById('preview-video');
         const heroBgLogo = document.getElementById('hero-bg-logo');
-        const textCrossing = document.getElementById('text-crossing');
-        const textVision = document.getElementById('text-vision');
-        const textEmotion = document.getElementById('text-emotion');
+        const heroTitleRef = document.getElementById('hero-title-container'); 
         const footerBgText = document.getElementById('wild-bg-text');
+        const footerEmail = document.getElementById('footer-email-link');
         const footerSection = document.getElementById('main-footer');
         let isHoveringProject = false;
 
         document.addEventListener('mousemove', (e) => { mouseX = e.clientX; mouseY = e.clientY; });
         window.addEventListener('scroll', () => { scrollY = window.scrollY; }, { passive: true });
 
+        // 偵測是否為手機版 (無 Hover 能力)
+        const isMobile = window.matchMedia("(hover: none) and (pointer: coarse)").matches;
+
         function render() {
             currentScrollY += (scrollY - currentScrollY) * 0.1;
-            currentMouseX += (mouseX - currentMouseX) * 0.1;
-            currentMouseY += (mouseY - currentMouseY) * 0.1;
-
-            const centerX = window.innerWidth / 2; const centerY = window.innerHeight / 2;
-            const moveX = (currentMouseX - centerX) * -0.05; const moveY = (currentMouseY - centerY) * -0.05;
-            noiseLayer.style.transform = `translate(${moveX}px, ${moveY}px)`;
-
-            if(heroBgLogo) {
-                const scrollOffset = currentScrollY * 0.3;
-                const mouseOffsetX = (currentMouseX - centerX) * -0.04;
-                const mouseOffsetY = (currentMouseY - centerY) * -0.04;
-                const tilt = (currentMouseX - centerX) * 0.005;
-                heroBgLogo.style.transform = `translate(calc(-50% + ${mouseOffsetX}px), calc(-50% - ${scrollOffset}px + ${mouseOffsetY}px)) rotate(${tilt}deg)`;
+            
+            if (!isMobile) {
+                // 只有電腦版才需要計算滑鼠延遲跟隨
+                currentMouseX += (mouseX - currentMouseX) * 0.08;
+                currentMouseY += (mouseY - currentMouseY) * 0.08;
             }
 
-            if(textVision) textVision.style.transform = `translate(${-currentScrollY * 2}px, 0px)`;
-            if(textCrossing) textCrossing.style.transform = `translate(0px, ${-currentScrollY * 1}px)`;
-            if(textEmotion) textEmotion.style.transform = `translate(${currentScrollY * 1.5}px, 0px)`;
+            const centerX = window.innerWidth / 2; const centerY = window.innerHeight / 2;
+            
+            // Noise Parallax (手機版也可以保留一點點，或取消)
+            const moveX = (currentMouseX - centerX) * -0.05; 
+            const moveY = (currentMouseY - centerY) * -0.05;
+            noiseLayer.style.transform = `translate(${moveX}px, ${moveY}px)`;
 
+            // [修正] Hero Logo 邏輯分流
+            if(heroBgLogo) {
+                // 基礎滾動視差 (極慢速上升)
+                const scrollOffset = currentScrollY * 0.05; 
+
+                if (isMobile) {
+                    // 手機版：強制置中，只保留垂直滾動視差，移除旋轉與左右偏移
+                    heroBgLogo.style.transform = `translate(-50%, calc(-50% - ${scrollOffset}px))`;
+                } else {
+                    // 電腦版：保留原本的滑鼠互動 (反向移動 + 旋轉)
+                    const mouseOffsetX = (currentMouseX - centerX) * -0.05;
+                    const mouseOffsetY = (currentMouseY - centerY) * -0.05;
+                    const tilt = (currentMouseX - centerX) * 0.01;
+                    
+                    heroBgLogo.style.transform = `translate(calc(-50% + ${mouseOffsetX}px), calc(-50% - ${scrollOffset}px + ${mouseOffsetY}px)) rotate(${tilt}deg)`;
+                }
+            }
+
+            // Hero Text Parallax
+            if(heroTitleRef) {
+                const textScrollOffset = currentScrollY * 0.5; 
+                heroTitleRef.style.transform = `translateY(${-textScrollOffset}px)`;
+            }
+
+            // Footer Parallax
             if (footerSection) {
                 const sectionTop = footerSection.offsetTop;
                 if (currentScrollY + window.innerHeight > sectionTop) {
                     const relativeScroll = currentScrollY - sectionTop;
                     footerBgText.style.transform = `translateY(-50%) translateX(${relativeScroll * 0.1}px)`;
+                    if (footerEmail) footerEmail.style.transform = `translateX(${relativeScroll * 0.08}px)`;
                 }
             }
 
-            if (isHoveringProject) {
+            // Project Preview (電腦版才需要)
+            if (isHoveringProject && !isMobile) {
                 const tiltX = (currentMouseX - centerX) / 50;
                 const imgMoveX = (currentMouseX - centerX) * 0.15; 
                 const imgMoveY = (currentMouseY - centerY) * 0.15;
                 previewContainer.style.transform = `translate(calc(-50% + ${imgMoveX}px), calc(-50% + ${imgMoveY}px)) rotate(${tiltX}deg) scale(1)`;
             }
 
+            // Cursor (電腦版才需要)
             if (window.matchMedia("(hover: hover)").matches) {
-                 cursor.style.transform = `translate(${mouseX - 10}px, ${mouseY - 10}px)`; 
-                 cursorDot.style.transform = `translate(${mouseX}px, ${mouseY}px)`;
+                 cursor.style.transform = `translate(${currentMouseX}px, ${currentMouseY}px) translate(-50%, -50%)`;
+                 cursorDot.style.transform = `translate(${mouseX}px, ${mouseY}px) translate(-50%, -50%)`;
             }
+            
             requestAnimationFrame(render);
         }
         render();
 
-        // --- 5. Project Interactions ---
+        // --- 6. Project Interactions ---
         const projectItems = document.querySelectorAll('.project-item');
         projectItems.forEach(item => {
             item.addEventListener('mouseenter', () => {
@@ -463,16 +648,15 @@
             el.addEventListener('mouseleave', () => { cursor.classList.remove('active'); cursorDot.style.opacity = '1'; });
         });
 
-        // --- 6. Loader Unlock ---
         function hideLoader() {
             const loader = document.getElementById('loader');
             loader.classList.add('hidden');
         }
-        // Faster unlock
         window.addEventListener('DOMContentLoaded', () => { setTimeout(hideLoader, 500); });
         window.addEventListener('load', hideLoader);
-        // Fail-safe
         setTimeout(hideLoader, 3500);
+
+        
     </script>
 </body>
 </html>

@@ -1,0 +1,45 @@
+
+
+        .reveal-container {
+            position: absolute;
+            width: 100vw;
+            height: 100%;
+            /* border-radius: 8px; */
+            overflow: hidden;
+            /* box-shadow: 0 10px 30px rgba(0,0,0,0.5); */
+            margin:0 auto;
+            padding:0;
+        }
+
+        /* 底層圖片 */
+        .reveal-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        /* 上層 Canvas */
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            /* 這裡保留液體濾鏡，讓粒子聚集時像液體，分開時像拉絲 */
+            /* filter: url('#liquid-filter'); */
+        }
+
+        .svg-filters {
+            position: absolute;
+            width: 0;
+            height: 0;
+            pointer-events: none;
+        }
+
+        .canvas-t {
+            margin: 0 auto;
+            text-align: ;
+        }
